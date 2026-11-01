@@ -1,6 +1,6 @@
 # If I Disappear
 
-**When a parent leaves Sri Lanka to work abroad, the house still has to run.** If I Disappear turns one walk through the house, explained out loud in Sinhala or English, into checked, bilingual handover steps, and proves, before the parent leaves, that someone at home can really do each job.
+**Before someone leaves home for months, to work abroad or for a long hospital stay , If I Disappear finds what only they know or hold, shows what will stop and when, and builds the smallest plan the family can do and practise. Film the house once: Meta's models turn it into checked handover steps in Sinhala and English, we check this as When a parent leaves Sri Lanka to work abroad, the house still has to run.** If I Disappear turns one walk through the house, explained out loud in Sinhala or English, into checked, bilingual handover steps, and proves, before the parent leaves, that someone at home can really do each job.
 
 [![Meta Global AI Developer Hackathon 2026, Indie track](https://img.shields.io/badge/Meta%20Global%20AI%20Hackathon%202026-Indie%20track-0866ff)](docs/HACKATHON.md)
 [![Theme 1: Build for Your World](https://img.shields.io/badge/Theme%201-Build%20for%20Your%20World-c98500)](#theme-1-build-for-your-world)
