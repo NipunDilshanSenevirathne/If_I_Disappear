@@ -1,0 +1,148 @@
+{
+ "checked_at": "2026-10-31T17:50:09Z",
+ "provider": "fireworks",
+ "base_url": "https://api.fireworks.ai/inference/v1",
+ "models": {
+  "reading": "accounts/fireworks/models/muse-spark-open",
+  "second_reading": "accounts/fireworks/models/muse-spark-open",
+  "sam": null,
+  "voice": null
+ },
+ "usd": 0.029651,
+ "checks": [
+  {
+   "check": "model list",
+   "status": "pass",
+   "detail": "all listed",
+   "usd": 0.0,
+   "ms": 1263,
+   "models": [
+    "accounts/fireworks/models/deepseek-v4p1-flash",
+    "accounts/fireworks/models/deepseek-v4p1-flash-1017",
+    "accounts/fireworks/models/ember-1",
+    "accounts/fireworks/models/glm-5p3",
+    "accounts/fireworks/models/glm-5p3-flash",
+    "accounts/fireworks/models/gpt-oss-120b",
+    "accounts/fireworks/models/inkling",
+    "accounts/fireworks/models/kimi-k3",
+    "accounts/fireworks/models/minimax-m3",
+    "accounts/fireworks/models/minimax-m3p1-flash",
+    "accounts/fireworks/models/muse-spark-open",
+    "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+    "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+    "accounts/fireworks/models/qwen3-embedding-8b",
+    "accounts/fireworks/models/qwen3-reranker-8b",
+    "accounts/fireworks/models/qwen3p8-2p4t-a95b",
+    "accounts/fireworks/models/qwen3p8-max",
+    "accounts/fireworks/models/rune",
+    "accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
+    "accounts/fireworks/routers/deepseek-v4p1-flash-spot",
+    "accounts/fireworks/routers/glm-5p2-fast",
+    "accounts/fireworks/routers/glm-5p3-fast",
+    "accounts/fireworks/routers/glm-5p3-spot",
+    "accounts/fireworks/routers/kimi-k3-fast",
+    "accounts/fireworks/routers/kimi-k3-spot",
+    "accounts/fireworks/routers/rune",
+    "accounts/fireworks/routers/spot-deepseek-v4-flash",
+    "auto",
+    "firerouter/auto"
+   ]
+  },
+  {
+   "check": "strict JSON (English + Sinhala)",
+   "status": "pass",
+   "detail": "'Reset Tripped Breaker' / 'ට්\\u200dරිප් එක දාන එක', safety electricity",
+   "usd": 0.003152,
+   "ms": 13689,
+   "output": {
+    "safety": "electricity",
+    "title_en": "Reset Tripped Breaker",
+    "title_si": "ට්‍රිප් එක දාන එක"
+   }
+  },
+  {
+   "check": "image input and a point",
+   "status": "pass",
+   "detail": "visible=True, point=(0.38, 0.63)",
+   "usd": 0.002472,
+   "ms": 5027,
+   "output": {
+    "visible": true,
+    "point_x": 0.382,
+    "point_y": 0.627
+   }
+  },
+  {
+   "check": "tool calling",
+   "status": "pass",
+   "detail": "called search_steps({'query': 'what to do when power goes off outage'})",
+   "usd": 0.001234,
+   "ms": 2628
+  },
+  {
+   "check": "prompt caching (informational)",
+   "status": "pass",
+   "detail": "cached input tokens on the repeat: 2560 (first call 0)",
+   "usd": 0.017704,
+   "ms": 69542,
+   "cached_tokens": [
+    0,
+    2560
+   ]
+  },
+  {
+   "check": "second reading",
+   "status": "pass",
+   "detail": "accounts/fireworks/models/muse-spark-open: uphold (The owner said to find the switch that fell down and push it up, which matches the claim exactly.)",
+   "usd": 0.005088,
+   "ms": 13899,
+   "output": {
+    "verdict": "uphold",
+    "reason": "The owner said to find the switch that fell down and push it up, which matches the claim exactly.",
+    "reason_si": "අයිතිකරු පහළට වැටිලා තියෙන ස්විච් එක හොයලා උඩට තල්ලු කරන්න කිව්වා, ඒක ක්ලේම් එකේ තියෙනවා වගේමයි."
+   }
+  },
+  {
+   "check": "SAM 3.1 by name",
+   "status": "skipped",
+   "detail": "SAM 3.1 is not offered by fireworks",
+   "usd": 0.0,
+   "ms": 0
+  },
+  {
+   "check": "SAM 3.1 by point",
+   "status": "skipped",
+   "detail": "SAM 3.1 is not offered by fireworks",
+   "usd": 0.0,
+   "ms": 0
+  },
+  {
+   "check": "SAM 3.1 video tracking",
+   "status": "skipped",
+   "detail": "SAM 3.1 is not offered by fireworks",
+   "usd": 0.0,
+   "ms": 0
+  },
+  {
+   "check": "Muse Voice Transcribe",
+   "status": "skipped",
+   "detail": "speech is not offered by fireworks",
+   "usd": 0.0,
+   "ms": 0
+  },
+  {
+   "check": "Sinhala speech service",
+   "status": "skipped",
+   "detail": "SINHALA_ASR_URL is not set",
+   "usd": 0.0,
+   "ms": 0
+  },
+  {
+   "check": "WhatsApp Cloud API",
+   "status": "skipped",
+   "detail": "run with --whatsapp",
+   "usd": 0.0,
+   "ms": 0
+  }
+ ]
+}

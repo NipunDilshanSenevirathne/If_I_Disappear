@@ -1,0 +1,33 @@
+sequenceDiagram
+  autonumber
+  participant P as Owner's phone
+  participant S as Server (code)
+  participant V as Muse Voice<br/>Transcribe
+  participant M as SAM 3.1
+  participant R as Muse Spark<br/>1.3
+  participant W as Muse Wonder<br/>1.0
+
+  P->>S: a 48-second walk-through
+  Note over S: #160;convert · a still every 2 s#160;
+  S->>V: 10 pieces, cut at pauses
+  V-->>S: words, with times
+  Note over S: #160;hide the gate code,#160;<br/>#160;silence its 3.5 s#160;
+  S->>M: 3 searches of the whole video:<br/>cards, ID cards, screens
+  S->>R: turns + stills · strict JSON
+  R-->>S: 10 facts: quote · time · point
+  S->>R: the Sinhala, in a short call
+  Note over S: #160;kept only if well formed#160;
+  loop every fact
+    Note over S: #160;words: find the quote#160;
+    S->>M: outline the noun
+    M-->>S: masks + confidence
+    Note over S: #160;pixels: point inside?#160;
+    opt electricity, gas or fire
+      S->>W: a second reading
+      W-->>S: uphold or flag, and why
+    end
+    Note over S: #160;pinned rules decide#160;
+  end
+  P->>S: accept the 10 verified facts
+  S->>M: track the 3 objects
+  Note over P,W: 114 events · hash chain intact · 37 model calls · $0.34

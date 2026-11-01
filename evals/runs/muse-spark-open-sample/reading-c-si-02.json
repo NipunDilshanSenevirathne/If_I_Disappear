@@ -1,0 +1,9 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:20:36Z",
+ "output": {
+  "verdict": "uphold",
+  "reason": "The owner's words directly say to come here first if the power goes out.",
+  "reason_si": "අයිතිකාරයා කරන්ට් ගියොත් මුලින්ම මෙතනට එන්න කියලා පැහැදිලිවම කියලා තියෙනවා."
+ }
+}

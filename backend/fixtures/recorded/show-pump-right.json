@@ -1,0 +1,18 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:36:04Z",
+ "output": {
+  "explanation_en": "Photo B shows the same physical blue centrifugal water pump as Photo A on the same concrete plinth against the same stained wall. Motor shape and cooling fins, blue colour, mounting feet and bolts, top white vertical pipe with elbow, front white union, wall stains and concrete damp marks all align. The right-side horizontal pipe is more visible in B due to wider framing, not a different object.",
+  "explanation_si": "B ඡායාරූපයේ පෙනෙන්නේ A ඡායාරූපයේ ඇති එම නිල් වතුර පොම්පයම එකම කොන්ක්‍රීට් පදනම මත එකම පැල්ලම් සහිත බිත්තිය ඉදිරිපිටය. මෝටරයේ හැඩය සහ සිසිලන පෙති, නිල් පැහැය, පාදම් සහ ඇණ, උඩ සුදු සිරස් බටය සහ ඇලය, ඉදිරිපස සුදු සන්ධිය, බිත්තියේ පැල්ලම් සහ කොන්ක්‍රීට් තෙත් පැල්ලම් සියල්ල ගැලපේ. දකුණු පැත්තේ තිරස් බටය B හි වැඩිපුර පෙනෙන්නේ රාමුව පුළුල් නිසා මිස වෙනත් උපකරණයක් නිසා නොවේ.",
+  "matched_features": [
+   "bright blue electric motor with cooling fins and rear fan cover on left",
+   "blue pump volute and blue mounting feet bolted to concrete plinth",
+   "white vertical PVC pipe on top with 90-degree elbow",
+   "white front union fitting",
+   "off-white stained wall behind with same marks",
+   "weathered concrete plinth and floor with same dark damp stains"
+  ],
+  "mismatches": [],
+  "same_object": true
+ }
+}

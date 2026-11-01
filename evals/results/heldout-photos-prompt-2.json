@@ -1,0 +1,1354 @@
+{
+ "run_at": "2026-11-01T06:12:21Z",
+ "frozen": {
+  "frozen_at": "2026-10-29T05:32:31Z",
+  "files": 52,
+  "sha256": "6f08b6044444b97096998140a05b6ac97693c14dcdfe8467cf48c9269d18bcac"
+ },
+ "policy_sha256": "147480f1443462fa9230885672ed61fc0566937d698a4938e2d9305b662c9dfb",
+ "models": {
+  "spark": "muse-spark-1.3",
+  "wonder": "muse-wonder-1.0",
+  "sam": "sam-3.1"
+ },
+ "suites": {
+  "photos": {
+   "name": "Show me: Muse Spark alone vs SAM 3.1 then Muse Spark (the app)",
+   "pairs": 29,
+   "spark_alone": {
+    "by_expectation": {
+     "same": {
+      "n": 12,
+      "right": 9,
+      "wrong": 3,
+      "abstained": 0
+     },
+     "different": {
+      "n": 10,
+      "right": 10,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_same": {
+      "n": 5,
+      "right": 2,
+      "wrong": 3,
+      "abstained": 0
+     },
+     "unclear_none": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_different": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     }
+    },
+    "false_accepts": 0,
+    "wrong_rejections": 6,
+    "abstentions": 0,
+    "median_seconds": 10.5,
+    "usd": 0.3546
+   },
+   "sam_then_spark": {
+    "by_expectation": {
+     "same": {
+      "n": 12,
+      "right": 9,
+      "wrong": 2,
+      "abstained": 1
+     },
+     "different": {
+      "n": 10,
+      "right": 10,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_same": {
+      "n": 5,
+      "right": 4,
+      "wrong": 1,
+      "abstained": 0
+     },
+     "unclear_none": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_different": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     }
+    },
+    "false_accepts": 0,
+    "wrong_rejections": 3,
+    "abstentions": 8,
+    "median_seconds": 11.3,
+    "usd": 0.3282
+   },
+   "reference_outlines_found": 19,
+   "references": 20,
+   "flagged_as_not_a_new_photo": [],
+   "items": [
+    {
+     "id": "same-padlock-angle",
+     "expect": "same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "both are heavy iron padlock form with short blocky body and very thick U-curved shackle on top",
+       "dark ferrous metal appearance",
+       "plain light background"
+      ],
+      "mismatches": [
+       "red painted inventory number on shackle edge clearly visible in B is not present/visible in A",
+       "reddish-brown mottled rust patina on front in A vs uniform near-black surface in B with bottom keyhole and side notches not confirmable in A",
+       "no shared unique mark, wear pattern or rust spot can be matched in both views"
+      ],
+      "why": "Both photos show the same KIND of object - a heavy iron block padlock with a very thick curved shackle - but there is no shared unique identifier to prove it is the same physical piece. Photo A is a front view with reddish-brown mottled rust and no visible numbers. Photo B is a bottom/side view showing a near-black uniform surface, a bottom keyhole slot with side notches, and a red painted inventory number '16.100.191' on the shackle edge that has no counterpart in A. Patina tone, visible details and viewpoint differ, and no label, mark, wear spot or shape detail visible in both can be matched. Same type is not enough, so it cannot be confirmed as the same object.",
+      "seconds": 19.7,
+      "usd": 0.015795
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "abstained",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a padlock in this photo. Take it again from the front, closer, with more light.",
+      "seconds": 0.8,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "same-padlock-front",
+     "expect": "same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "massive forged-iron padlock with thick arched shackle",
+       "dark brown-black rust patina",
+       "rectangular top cross-bar",
+       "ornate lower body shape with symmetric scrolls",
+       "two upper side eye-like openings with slit to edge",
+       "two lower round through-holes",
+       "central vertical strap ending in fleur-like bottom point with two symmetric lower cut-outs",
+       "plain light studio background"
+      ],
+      "mismatches": [
+       "shackle-joint round rivet on right leg in Photo A vs on left leg in Photo B",
+       "small round pin on edge of central strap visible in Photo A but absent in same area in Photo B"
+      ],
+      "why": "Both photos show the same TYPE of big old hand-forged iron padlock - thick arched shackle, rectangular top bar, ornate lower body with two upper side eye-like openings with slits to the edge, two lower round holes, central vertical strap with symmetric lower cut-outs and fleur-like bottom point, dark brown-black rust colour on plain light background. However key fixing details do not agree when both joint areas are clearly visible: Photo A has a round shackle-joint rivet on the right leg and a small round pin on the edge of the central strap, Photo B has the shackle-joint rivet on the left leg and no pin on the central strap in the same area. There is no unique scratch, pit pattern or mark that positively ties them as one individual, and the differences are not explained by light or compression alone. Strictly this cannot be confirmed as the same physical object, only the same kind.",
+      "seconds": 34.1,
+      "usd": 0.031761
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.813,
+      "matched": [
+       "big forged-iron padlock with dark brown-black patina",
+       "thick arched shackle on top",
+       "ornate body with side eye-like round holes with horizontal slit to edge",
+       "small lower round holes on left and right lobes",
+       "central vertical hasp plate down front",
+       "plain light background"
+      ],
+      "mismatches": [
+       "shackle pivot rivet head on right leg in Photo A vs on left leg in Photo B while both show the front face"
+      ],
+      "why": "Both photos show the same kind of big old forged-iron padlock with arched shackle, dark patina and ornate front with eye-like side holes and lower round holes and central vertical plate. However both photos show the same front face, yet the prominent round shackle-pivot rivet is clearly on the right shackle leg in Photo A and clearly on the left shackle leg in Photo B. The opposite leg front face is visible in each photo without that rivet. Viewing angle, light or compression cannot move a rivet to the opposite leg. This is a real structural difference, so it is not the same physical object.",
+      "seconds": 20.8,
+      "usd": 0.020308
+     }
+    },
+    {
+     "id": "same-padlock-key-out",
+     "expect": "same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "cylindrical dark iron body with same stepped rings and proportions",
+       "thick hand-forged U-shackle with same irregular curve and flattened top",
+       "V-shaped notch at left shackle insertion point",
+       "light wear at right shackle foot",
+       "irregular hand-forged oval ring on key end with same shape and rust texture",
+       "small rectangular side lug on key shaft",
+       "mottled brown-black patina and embossed decoration on key barrel"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same long iron padlock as Photo A, only with the key-plug pulled out of the body. The body, shackle, and key all match: same cylindrical stepped body, same thick irregular U-shackle with light wear at the right foot, same V-mark at the left shackle socket, same irregular forged ring, side lug, patina and embossed decoration on the key barrel. The visible screw thread in B was hidden inside in A, which is explained by disassembly, not a different object.",
+      "seconds": 8.4,
+      "usd": 0.008008
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.926,
+      "matched": [
+       "cylindrical iron barrel with two bulges separated by narrow waist",
+       "thick dark U-shaped top shackle with flat-cut right foot",
+       "small V-shaped mark on top-left of barrel at shackle joint",
+       "plain light background and overall dark iron colour"
+      ],
+      "mismatches": [
+       "Photo A has long stem with large irregular ring and side lug protruding from left end; Photo B left end is empty with no stem or ring visible"
+      ],
+      "why": "Both show a dark cylindrical barrel with a narrow waist and a thick U-shaped shackle with a V-mark where the left leg meets the body. However Photo A shows the defining long key-stem with a large irregular ring protruding from the left end, while Photo B shows the left end of the barrel empty with no stem or ring, only a tiny threaded tip at the frame edge. The complete object with ring is not present in B.",
+      "seconds": 11.9,
+      "usd": 0.011692
+     }
+    },
+    {
+     "id": "same-kettle-other-side",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "squat matte-black iron body on three small feet",
+       "flat lid with concentric rings and small upright central ring",
+       "overhead bail handle with circular ring at apex",
+       "short thick curved pouring spout on side of body",
+       "long thin curved arm attached beside the spout with slightly thickened tip",
+       "same material, colour and plain grey studio background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same black iron kettle seen from different sides. The squat round body on three small feet, the flat lid with concentric rings and small central ring, the overhead bail handle with a circular ring at the apex, the short thick curved pouring spout, and the long thin curved arm attached beside the spout with a slightly thickened tip all match. In Photo A the spout assembly is on the right, in Photo B it is on the left because the kettle has been rotated about 180 degrees, which also changes the spout opening from slit-like to oval by perspective. Colour, material and grey background are consistent.",
+      "seconds": 12.0,
+      "usd": 0.01284
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.89,
+      "matched": [
+       "black matte iron squat globular body",
+       "horizontal seam around middle of body",
+       "three short feet at base",
+       "flat lid with small central ring",
+       "large bail handle with top circular ring and side lugs",
+       "short thick curved pouring spout on one side",
+       "long thin curved side-handle with wrapped tip on same side as spout",
+       "overall proportions and studio grey background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same black iron kettle photographed from different angles around the spout side. The squat globular black body, horizontal seam, three short feet, lid with small central ring, large bail handle with top ring and side lugs, and the combination of a short thick pouring spout with a long thin curved side-handle with wrapped tip are identical in shape, position and colour. The left-right swap, whether one or two feet are visible, and whether the spout opening looks like a slit or a round hole are due to rotation and viewpoint, not different parts. No part, label, mark or shape present in one is absent or different in the other.",
+      "seconds": 15.9,
+      "usd": 0.01657
+     }
+    },
+    {
+     "id": "same-kettle-copper",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "egg-shaped dark copper body on short flared foot base",
+       "long straight tapered brass spout with beaded circular flange at base",
+       "high over-arching brass handle joining near spout to opposite lower body",
+       "small collar rings on handle near lower joint and near upper joint visible in both",
+       "small lid with central pin on top of egg",
+       "overall proportions, colours of copper body and brass parts and studio grey background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same egg-shaped copper kettle with brass handle and spout, viewed from opposite sides. Photo A has spout on the right, Photo B has spout on the left, which is expected when turning the object 180 degrees. The arched handle with small collar rings, the long tapered spout with beaded circular flange at the base, the short flared foot, the small lid pin, and the dark copper body with brass parts are identical in shape, proportion and position. No part, mark or colour clearly visible in both views contradicts sameness; differences in reflections and patina visibility are due to viewpoint and light.",
+      "seconds": 15.9,
+      "usd": 0.015525
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.942,
+      "matched": [
+       "egg-shaped copper body with dark purple-brown iridescent patina",
+       "short flared foot base",
+       "straight tapered brass spout angled upward with toothed decorative flange at body junction",
+       "large thin brass over-arch handle connecting opposite side to spout side",
+       "two handle collar rings - low on opposite-end, high on spout-end",
+       "small lid finial at top center",
+       "plain grey studio background in both"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same egg-shaped copper kettle, viewed from opposite sides with about 180-degree rotation. The copper egg body with dark purple-brown patina, short flared foot, straight tapered brass spout with toothed flange at the body, large thin brass over-arch handle from opposite side to spout side, small lid finial on top, and plain grey studio background all correspond. The left-right swap of spout and handle is expected. Handle collar details match: low ring on opposite-end and high ring on spout-end in both. Differences in brightness and how clearly mottled patina shows are light, white balance and compression, not different parts.",
+      "seconds": 25.8,
+      "usd": 0.017479
+     }
+    },
+    {
+     "id": "same-kettle-lacquer",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "barrel-shaped hammered brown-copper body with same proportions and colour",
+       "overhead arched copper handle with same shape and side pivot attachments",
+       "flat copper lid with central knob with light dot inlay",
+       "engraved floral pattern on lid around knob",
+       "gold-tone dragon with clouds inlaid on body, positioned with head near spout side",
+       "narrow vertically-incised band below lid and matching base band",
+       "short high-attached curved spout with flared tip of same shape"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same barrel-shaped hammered brown-copper kettle. Shape, colour, handle, lid, knob, rim bands, spout shape and dragon-with-clouds inlay all match. The spout appears on the right in Photo A and on the left in Photo B because the kettle is photographed from opposite sides, with the dragon design visible near the spout side in both views. Differences in brightness and sharpness are due to light, phone camera and compression, not a different object.",
+      "seconds": 10.3,
+      "usd": 0.010413
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.836,
+      "matched": [
+       "barrel-shaped dark-brown copper body with same proportions",
+       "arched copper handle with same shape and side-lug attachments",
+       "flat lid with central knob and same engraved pattern around knob",
+       "short angled spout with same shape and body joint",
+       "embossed dragon with clouds in low relief with same style and gold tone",
+       "hammered texture on upper body and dark band at base",
+       "plain light background with soft shadow"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same brown copper kettle. The barrel-shaped body, arched copper handle with side lugs, flat lid with central knob and engraved pattern, short angled spout, hammered upper texture, dark base band, and embossed dragon-with-clouds motif all match. The spout appears on the right in A and on the left in B because the kettle was rotated, not because it is a different object. Differences in sharpness and warmth are from light, camera and compression.",
+      "seconds": 14.2,
+      "usd": 0.013907
+     }
+    },
+    {
+     "id": "same-teapot-back",
+     "expect": "same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "same white globular china body with small foot ring",
+       "same lid form with small knob and orange tip and orange-green enamel",
+       "same animal-head spout with yellow-orange crest and orange cheek spot and red eye dot",
+       "same animal-head handle with green crest and outward-facing beak",
+       "same multicolour floral enamel palette - iron-red/orange, green, blue, yellow",
+       "same grey studio background and proportions, spout/handle positions swapped as expected for opposite view"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same teapot as Photo A but viewed from the opposite side. In A the spout is on the left and handle on the right; in B they are swapped left-right, as expected after a 180-degree rotation. The spout shape with animal-head tip, yellow crest on top and orange cheek spot matches in both. The handle shape with animal-head top and green crest matches in both. White globular body with small foot ring, lid with small knob and orange tip, and same Kakiemon palette of iron-red/orange, green, blue and yellow floral enamel match. The different floral layout on the body is the back versus front of the same hand-painted pot, not a different colour or missing part. No clearly visible part, mark or colour contradicts same identity.",
+      "seconds": 12.5,
+      "usd": 0.015001
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.949,
+      "matched": [
+       "globular white porcelain body with short straight foot",
+       "domed lid with small round knob and orange-green enamel rim decoration",
+       "pouring spout formed as animal/dragon head with yellow-orange painted crest",
+       "handle with S-curve and upper terminal formed as animal/dragon head with green-blue painted crest",
+       "polychrome floral decoration in orange-red, turquoise-green, blue and yellow on white",
+       "plain grey studio background in both"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same white porcelain teapot seen from opposite sides. In A the pouring spout is on the left and the handle on the right; in B the handle is on the left and the spout is on the right, as expected when turned 180 degrees. Shape matches: globular body with short foot, domed lid with small knob, spout formed as an animal head with yellow-orange crest, handle top formed as an animal head with green-blue crest. Lid border with orange-green enamel, polychrome floral decoration in orange-red, green, blue and yellow, and grey studio background all correspond. The different main floral scene is the front vs back of the same pot, not a different part. No clearly visible part, mark or colour differs.",
+      "seconds": 14.3,
+      "usd": 0.01555
+     }
+    },
+    {
+     "id": "same-teapot-cabbage",
+     "expect": "same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "white glossy porcelain colour in both",
+       "globular body fully molded as cabbage leaves with raised veins",
+       "short upturned ribbed spout shape",
+       "curved twig/bamboo handle shape",
+       "round lid with leaf-vein molding",
+       "three small molded feet",
+       "plain grey gradient studio background"
+      ],
+      "mismatches": [
+       "bamboo-ring joints on handle at different heights/number in A vs B",
+       "lid finial with side-pointing leaf projection in A vs compact centered knob in B",
+       "no shared unique mark visible on the same surface to prove same individual piece, only same model"
+      ],
+      "why": "Both photos show a white porcelain cabbage-leaf molded teapot with a bamboo-twig curved handle, short ribbed spout, round veined lid with floral-bud finial, globular body on three small feet, on the same grey studio background. However Photo A shows handle left / spout right, Photo B shows handle right / spout left, so opposite sides are compared with no shared unique mark, scratch or label visible in both to link the same physical piece. The handle bamboo-joint count/position and the lid-finial silhouette look different and cannot be reconciled by light/compression alone. This proves same type/model, not provably the same individual teapot.",
+      "seconds": 20.2,
+      "usd": 0.018731
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.953,
+      "matched": [
+       "white glossy porcelain body molded as overlapping cabbage leaves with fine radiating ribs",
+       "globular body on small stubby feet",
+       "bamboo-twig style handle with two raised joint rings",
+       "short ribbed spout with flared tip",
+       "flat leaf-molded lid with small flower-bud finial in centre",
+       "same dark-grey seamless studio background with soft shadow to the right"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same white cabbage-leaf teapot, seen from opposite sides. Photo A shows handle on the left / spout on the right, Photo B shows handle on the right / spout on the left, as expected when the same pot is turned 180 degrees. Shape, decoration and surroundings match with no differing part, label or mark.",
+      "seconds": 16.0,
+      "usd": 0.016858
+     }
+    },
+    {
+     "id": "same-clock-angle",
+     "expect": "same",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "dark reddish-brown rectangular wooden case with same proportions",
+       "white circular dial with black Roman numerals, 60 at top 30 at bottom",
+       "two small black winding holes left and right below centre and same script text",
+       "brass bezel around dial",
+       "vertical brass-rod grille below dial centred on front",
+       "four small brass urn finials on top corners with dentil brass gallery rail",
+       "overhanging cornice and thin brass horizontal trim lines",
+       "three-tier stepped base",
+       "plain grey studio background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same dark red mahogany mantel clock. Front case shape, white circular dial with black Roman numerals, 60 at top and 30 at bottom, two black winding holes, and script text below centre all match. Brass bezel, vertical brass rod grille below dial, brass horizontal trims, dentil top gallery rail, four brass urn finials on top, and 3-tier stepped base all match. Photo B is a 3/4 view so the side glass panel is visible and Photo A is straight front, and hand positions differ because time has passed. No part, label, mark or colour really differs.",
+      "seconds": 10.9,
+      "usd": 0.011224
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.805,
+      "matched": [
+       "round white face with black Roman numerals and minute-dot track with 60 at top, 15-30-45 around",
+       "two black winding holes at left ~8 o'clock and right ~4 o'clock positions",
+       "dark script brand text below centre of dial",
+       "gold-tone round bezel around dial",
+       "dark red mahogany wooden case with vertical panels directly behind clock",
+       "thin vertical pendulum rods visible below dial"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same round wall clock. White face with black Roman numerals, outer minute-dot track with 60/15/30/45, two black winding holes left and right, dark script text below centre, gold-tone round bezel, dark red wooden case with vertical panels, and thin pendulum rods below. Hand style and layout match. Differences are only softness, crop and white-balance between the still and the live photo, not a different part, mark or colour.",
+      "seconds": 11.3,
+      "usd": 0.012126
+     }
+    },
+    {
+     "id": "same-clock-dome",
+     "expect": "same",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "tall tapered flame-mahogany column on octagonal faceted base",
+       "tall clear glass dome with faceted crown finial",
+       "small round white dial with black Roman numerals and dark rim centred under dome",
+       "brass collar ring between glass and wood column",
+       "gold laurel-wreath mount centred on front base panel",
+       "four gold ball feet with front-centre foot visible",
+       "flame veneer figure on column front",
+       "plain light-grey studio background and proportions"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same distinctive tall clock. The tapered flame-mahogany column, octagonal base with centred gold laurel-wreath mount, brass collar, small white Roman dial with dark rim under a tall glass dome with crown finial, four gold ball feet, wood figure on the column front, and plain light-grey background all match. The lighter brown in B is lighting/white-balance, not a different colour. Different hand position is expected for a running clock, not a different object.",
+      "seconds": 11.4,
+      "usd": 0.012152
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.773,
+      "matched": [
+       "tall tapering mahogany column on stepped octagonal base",
+       "small white dial with black Roman numerals under glass dome",
+       "glass dome with knopped crystal finial and visible gold pendulum bob",
+       "brass collar ring between dome and wood",
+       "central gilt ornamental applique on front base panel in same position",
+       "three gold ball feet with front centre foot",
+       "same proportions, plain light-grey background and surroundings"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same tall mahogany dome clock. The tapering wood column on a stepped octagonal base, white Roman dial with black hands under a glass dome with knopped finial, brass collar between glass and wood, central gilt applique on the front base panel, three gold ball feet, and plain light background all match in shape and position. Apparent differences in brightness, warmth and sharpness of wood grain and gilt are due to light, white balance and compression. Movable clock hands show approximately similar time and are not a structural difference. No part, label, mark or colour that is clearly different in both photos is visible.",
+      "seconds": 13.4,
+      "usd": 0.014212
+     }
+    },
+    {
+     "id": "same-teapot-side-handle",
+     "expect": "same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "globular polished silver body with horizontal mid-band and stepped round foot",
+       "short upturned side spout on left with tip loop and shell-like junction to body",
+       "domed lid with beaded rim, central floral finial and rear hinge in same position",
+       "right-side dark wooden handle with round concentric silver flange mount",
+       "small dome-topped stud on body just behind handle joint",
+       "fine bead-chain from spout tip draped across front to handle side in same route"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same silver side-handled teapot. The globular body, stepped foot, mid-band, short spout with shell junction, beaded lid with floral finial and rear hinge, round flanged side mount with small dome stud behind it, dark wooden side handle, and bead-chain from spout tip across the front all correspond in shape and position. The handle looks shorter/thicker in B due to slight angle toward camera and foreshortening, and reflections/background tone differ due to light and exposure, not a different part, mark or colour. No true mismatch.",
+      "seconds": 13.3,
+      "usd": 0.012748
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.895,
+      "matched": [
+       "small silver globular body with horizontal band and stepped circular foot",
+       "domed lid with gadrooned / beaded rim and central flower-like finial",
+       "short straight spout on left with shell ornament at base and looped tip",
+       "dark ebonized wooden side handle on right set in silver socket with small dome on top",
+       "rectangular lid hinge block on right side of lid",
+       "thin link safety chain draped across body from spout to handle mount"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same small silver side-handled teapot. The globular silver body, stepped foot, domed lid with gadrooned rim and flower finial, short left spout with shell base, dark wooden side handle on right in silver socket, lid hinge block, and thin draped link chain are identical in shape and position. Apparent shorter handle in B is perspective foreshortening, and brighter reflections are lighting, not a different part or colour.",
+      "seconds": 8.4,
+      "usd": 0.010231
+     }
+    },
+    {
+     "id": "same-kettle-modern",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "hemispherical polished silver body",
+       "straight tapered spout - left in A, right in B due to opposite viewpoint",
+       "central round lid with small ball knob on short stem",
+       "small lid hinge opposite the spout visible in both",
+       "large pivoting handle with two silver arms and long black bar grip with silver collar",
+       "four short cylindrical feet under body",
+       "same grey gradient studio background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same round polished-silver kettle. Hemispherical body, straight tapered spout, central lid with small ball knob, lid hinge opposite the spout, four short cylindrical feet, and large pivoting double-arm handle with long black grip and silver collar all match in shape, colour and construction. Spout appears left in A and right in B and handle is swung to opposite sides because the kettle is viewed from opposite sides and the handle pivots. No differing part, label, mark or colour is visible.",
+      "seconds": 12.6,
+      "usd": 0.013704
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.895,
+      "matched": [
+       "round hemispherical polished silver body on four short cylindrical peg feet",
+       "straight tapered conical spout with same angle and base blend",
+       "flat round lid with small spherical knob in centre",
+       "small lid hinge positioned opposite the spout in both views",
+       "overhead arched double-rod handle with black cylindrical bar grip and silver collar",
+       "same handle mounting discs and same proportions throughout"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same physical round silver kettle, with Photo B taken from the opposite side. The hemispherical polished body on four short peg feet, straight tapered spout, round lid with small ball knob, lid hinge opposite the spout, and overhead double-rod handle with black bar grip and silver collar all match in shape, position and proportion. Left-right swap of spout and handle is viewpoint rotation, not a physical difference. No differing part, label, mark or colour is visible.",
+      "seconds": 14.0,
+      "usd": 0.014754
+     }
+    },
+    {
+     "id": "diff-padlock-iron",
+     "expect": "different",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "both are dark brown-black heavily rusted iron",
+       "both have a thick inverted-U curved shackle on top",
+       "both photographed against a plain light grey-white background"
+      ],
+      "mismatches": [
+       "body in A is a short plain block; body in B is large wide ornate composite with layered plates",
+       "four circular holes and central vertical plate with curved bottom cut-outs in B are absent in A",
+       "shackle inner opening is tall-narrow in A vs short-wide in B",
+       "round rivet on right shackle-to-body joint in B not present in A"
+      ],
+      "why": "Both are dark rusted iron padlocks with a thick curved shackle on a light background, but the physical construction is different. Photo A has a short plain block body and a tall narrow shackle opening. Photo B has a large wide composite ornate body with layered plates, four round holes, side lugs and a curved bottom cut-out, a short wide shackle opening, and a round rivet on the right shackle joint. These structural differences in body shape, holes/plates, and shackle proportions are visible in both photos and cannot be explained by light, angle or compression.",
+      "seconds": 12.5,
+      "usd": 0.009932
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.64,
+      "matched": [
+       "both are heavy dark rusty brown-black iron padlocks",
+       "both have thick U-shaped curved shackle on top spanning body width",
+       "both photographed against plain light background"
+      ],
+      "mismatches": [
+       "body in A is simple plain rectangular block with flat straight bottom vs body in B is large complex ornate with multiple circular through-holes and lobed lower extensions",
+       "shackle in A is tall with high interior clearance above body vs shackle in B is low and wide sitting close to body with small clearance",
+       "B has riveted mounting block and stepped plates at shackle base not present in A",
+       "bottom silhouette flat and complete in A vs irregular notched with central cutout in B"
+      ],
+      "why": "Both are dark rusty iron padlocks with a thick curved shackle, but the physical construction is clearly different. A has a simple plain rectangular block body with a flat bottom and a tall arch with high clearance. B has a large complex ornate body with multiple circular through-holes, stepped plates, lobed lower extensions and an irregular notched bottom, and a low arch sitting close to the body with small clearance plus a rivet boss on the mounting. These are structural differences visible in both photos, not explainable by light, white-balance, angle or compression. Therefore a different physical object.",
+      "seconds": 14.2,
+      "usd": 0.014174
+     }
+    },
+    {
+     "id": "diff-padlock-long",
+     "expect": "different",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are dark aged iron objects photographed horizontally on a plain light background",
+       "Both have a ring at the left / key end as described"
+      ],
+      "mismatches": [
+       "Body shape: cylindrical barrel in A vs rectangular decorated box with four feet in B",
+       "Top locking part: thick U-shaped shackle in A vs long flat stepped bar with eyelet hole in B",
+       "Key-end: thick stem with large irregular oval ring in A vs long tapered spike with very small round ring in B",
+       "Decoration: plain with small punched V mark in A vs extensive raised geometric maze pattern and X-bracing in B"
+      ],
+      "why": "Photo B does not show the same physical padlock as Photo A. Photo A is a cylindrical barrel padlock with a thick U-shaped shackle on top and a large irregular ring on the left key end. Photo B is a rectangular box padlock with feet, extensive raised geometric decoration, a long flat top bar with an eyelet, and a tapered spike with a very small ring. The differences in body shape, shackle form, decoration and ring size are structural and cannot be explained by light, white balance or compression.",
+      "seconds": 7.8,
+      "usd": 0.007708
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a padlock in this photo. Take it again from the front, closer, with more light.",
+      "seconds": 0.2,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "diff-kettle-black",
+     "expect": "different",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are dark black iron kettles",
+       "Both have an overhead arched bail handle",
+       "Both have a side pouring spout",
+       "Both photographed against a plain light-grey background"
+      ],
+      "mismatches": [
+       "Lid finial is a small upright ring in A vs a solid flat knob in B",
+       "Bail handle apex has a circular ring in A vs plain arch with no ring in B",
+       "Body is short squat globular on small feet in A vs tall barrel-shaped on flat banded base with no feet in B",
+       "A has a thick short curved spout plus a separate long thin curved rod above it, B has only a single simple spout with no upper rod"
+      ],
+      "why": "Photo B is not the same physical kettle as Photo A. A has a squat globular body on small feet, a lid with a small upright ring, a bail handle with a circular ring at the apex, and a pouring side with a thick short spout plus a separate long thin curved rod above it. B has a tall barrel-shaped body on a flat banded base with no feet, a lid with a solid flat knob not a ring, a plain arched handle with no top ring, and a single simple spout with no upper rod. These are structural differences, not light or compression.",
+      "seconds": 7.6,
+      "usd": 0.008293
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.688,
+      "matched": [
+       "Both are dark black iron kettles",
+       "Both have an arched bail handle spanning over the lid",
+       "Both have a side pouring spout",
+       "Both photographed against a plain light-grey background"
+      ],
+      "mismatches": [
+       "Body shape and base: A is short squat globular on three small feet with horizontal seam; B is tall straight barrel-cylinder with flat base band and no feet",
+       "Lid finial: A has small upright ring loop on lid; B has solid flat mushroom knob with no ring",
+       "Bail handle top: A has extra small ring at apex and rectangular hinge mounts; B is plain thick arch with no top ring",
+       "Spout assembly: A has short thick upturned spout plus separate long thin curved rod extending from spout base; B has single tall narrow straight spout and no extra rod",
+       "Surface: B body shows embossed relief decoration; A body is plain"
+      ],
+      "why": "Photo B is not the same physical kettle as Photo A. Photo A is a short squat globular pot on small feet with a lid ring and a short thick spout plus a separate long thin curved rod. Photo B is a tall barrel-shaped pot with no feet, a solid knob on the lid with no ring, a plain arch handle with no top ring, and a single tall straight spout with no extra rod. Body shape, lid, handle and spout clearly differ.",
+      "seconds": 11.2,
+      "usd": 0.011404
+     }
+    },
+    {
+     "id": "diff-kettle-copper",
+     "expect": "different",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "both are copper-toned metal vessels photographed against a grey gradient studio background"
+      ],
+      "mismatches": [
+       "long straight brass spout with flanged base in A, no spout at all in B",
+       "tall egg-shaped closed body on flared foot in A vs low squat globular open-top bowl with no foot in B",
+       "large thin tubular over-arching handle from side to spout in A vs short thick arched bail handle attached to rim lugs in B",
+       "plain patinated copper body in A vs engraved inscription/decorative band around shoulder in B",
+       "small closed lid on top in A vs wide open mouth in B"
+      ],
+      "why": "Photo B is not the same physical object as Photo A. Photo A is a tall egg-shaped closed copper kettle on a flared foot with a long straight brass spout and a large thin over-arching tubular handle. Photo B is a low, squat, open-top bowl/cauldron with no spout, no foot, a short thick bail handle attached to rim lugs, and an engraved decorative band around the shoulder.",
+      "seconds": 5.9,
+      "usd": 0.007352
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a kettle in this photo. Take it again from the front, closer, with more light.",
+      "seconds": 0.5,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "diff-teapot-silver-straight",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are silver-coloured metal teapots",
+       "Both have a long straight tapered spout on the right side",
+       "Both have a C-shaped side handle attached at two points on the left",
+       "Both have a lidded fluted body on a plain light grey background"
+      ],
+      "mismatches": [
+       "Handle colour: black in A vs brown wood-colour in B",
+       "Central side engraving: large crest/coat of arms in A vs small initials in B",
+       "Upper and lower decorative border: floral scroll band in A vs swag/drape pattern in B",
+       "Lid finial/knob: low flat mushroom shape in A vs tall pointed finial in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. While both are silver teapots with a straight spout on the right, the handle colour, central engraving, decorative borders and lid finial are clearly different.",
+      "seconds": 4.6,
+      "usd": 0.00632
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.945,
+      "matched": [
+       "Both are silver-coloured metal teapots",
+       "Both have a straight tapered spout on the right side",
+       "Both have a side handle on the left and a lidded top"
+      ],
+      "mismatches": [
+       "Handle colour and material: black in Photo A vs brown wood in Photo B",
+       "Body shape: flat octagonal panels in Photo A vs vertically fluted/ribbed body in Photo B",
+       "Engraved decoration: wide floral border bands with large crest in centre in Photo A vs swag/garland drape pattern with small monogram in Photo B",
+       "Lid finial shape: short rounded knob in Photo A vs tall pointed pinecone finial in Photo B"
+      ],
+      "why": "Both are silver teapots with a straight spout, but they are not the same physical object. Photo A has a black handle, flat octagonal panels, wide floral engraved borders with a large crest, and a short rounded lid knob. Photo B has a brown wooden handle, a vertically fluted body, swag/garland engraving with a small monogram, and a tall pointed finial. These are different parts, marks and shapes clearly visible in both photos.",
+      "seconds": 7.9,
+      "usd": 0.010134
+     }
+    },
+    {
+     "id": "diff-teapot-silver-shield",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are polished silver-coloured teapots with a top lid, a side handle opposite a side spout",
+       "Both photographed against a plain grey background"
+      ],
+      "mismatches": [
+       "Body shape: faceted square/octagonal in A vs round cylindrical in B",
+       "Handle colour: light/medium brown wood in A vs black in B",
+       "Spout: short stout tapered spout in A vs long thin straight spout in B",
+       "Lid finial: low flat-topped finial in A vs tall pointed pinecone finial in B",
+       "Lid and base trim: plain in A vs rope/beaded borders in B",
+       "Engraving: shield-shaped crest in A vs circular foliate script monogram in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. A has a faceted square/octagonal body, light-brown wooden handle, short stout tapered spout, low flat-topped finial, plain lid and base, and shield-shaped engraving. B has a round cylindrical body, black handle, long thin straight spout, tall pointed pinecone finial, rope/beaded lid and base borders, and a circular foliate monogram. These are clearly different parts, shapes, colours and marks, not light or compression differences.",
+      "seconds": 10.5,
+      "usd": 0.011415
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.938,
+      "matched": [
+       "Both are silver-coloured metal teapots with a lid on top",
+       "Both have a curved side handle opposite a straight pouring spout",
+       "Both have a central engraved monogram on the body",
+       "Both photographed against a plain light-grey background"
+      ],
+      "mismatches": [
+       "Handle colour/material: light brown carved wood in A vs black handle in B",
+       "Body shape: faceted straight-sided / square body in A vs smooth round cylindrical body in B",
+       "Central engraving: shield crest with dotted top and bottom border bands in A vs foliate script monogram with no border bands in B",
+       "Lid and finial: low flat lid with small plain finial in A vs domed lid with tall pinecone finial and beaded rim in B",
+       "Trim: flat engraved bands at shoulder and base in A vs raised rope/beaded rims at shoulder and base in B",
+       "Spout form: plain smooth tapered spout in A vs long thin fluted/ribbed spout in B"
+      ],
+      "why": "B is not the same physical teapot as A. Both are silver teapots with a top lid, opposite handle and spout, and a central engraving, but the specific parts clearly differ: brown wooden handle vs black handle, faceted square body vs round body, shield crest engraving vs script foliate monogram, different lid finial and different base/shoulder trim. These are structural differences, not light or compression shade differences.",
+      "seconds": 9.7,
+      "usd": 0.0112
+     }
+    },
+    {
+     "id": "diff-teapot-white",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are white / light-coloured ceramic teapots",
+       "Both viewed in side profile with handle on left and spout on right"
+      ],
+      "mismatches": [
+       "Body decoration: A has large raised cabbage-leaf veins covering body; B has classical figural relief of seated woman and cherub with trees",
+       "Feet/base: A stands on three small separate feet; B has continuous flat circular foot ring",
+       "Handle form: A has smooth bent handle with bamboo-like bands; B has twisted vine-textured handle",
+       "Lid finial: A has flat leaf lid with clustered flower finial; B has lid with single pointed bud finial",
+       "Spout surface: A has ribbed/veined spout; B has smooth spout",
+       "Body shape: A is squat globular cabbage form; B is taller bell/ovoid form"
+      ],
+      "why": "Both are white teapots but they are different physical objects. Photo A has a squat globular body fully molded as overlapping cabbage leaves, stands on three small feet, has a smooth bent handle with bamboo-like joints, a leaf lid with a flower-cluster finial, and a ribbed spout. Photo B has a taller bell-shaped body with figural relief of a seated woman and cherub, a flat circular ring base with no separate feet, a twisted vine-textured handle, a pointed bud finial, and a smooth spout. These are structural differences visible in both photos, not light or compression.",
+      "seconds": 6.4,
+      "usd": 0.007292
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.965,
+      "matched": [
+       "Both are white lidded ceramic teapots",
+       "Both shown in side view with handle on left and spout on right with lid on top"
+      ],
+      "mismatches": [
+       "Body decoration: A has large cabbage-leaf veined relief covering body; B has figural relief scene of two classical figures with foliage, no cabbage leaves",
+       "Handle form: A has short C-shaped handle with bamboo-ring joints; B has tall curved branch-textured handle with no rings",
+       "Spout form: A has short heavily ribbed spout with wide flared tip; B has longer smooth spout with narrow pointed tip",
+       "Lid and knob: A has flat leaf-shaped lid with flower-cluster knob; B has domed lid with single upright bud knob",
+       "Base: A stands on small separate molded feet; B stands on continuous circular foot-ring",
+       "Body shape: A is low squat globular; B is taller ovoid/bell-shaped"
+      ],
+      "why": "Photo B is a different teapot, not the cabbage-leaf teapot in Photo A. The large cabbage-leaf veined body, bamboo-ring handle, heavily ribbed spout, flower-cluster leaf lid and small molded feet in A are all absent in B, which instead has a figural relief of two figures, a smooth spout, a tall branch-textured handle, a single bud knob, and a continuous ring foot.",
+      "seconds": 8.6,
+      "usd": 0.010683
+     }
+    },
+    {
+     "id": "diff-clock-carriage",
+     "expect": "different",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are upright box-form carriage clocks with a round dial centred on the front"
+      ],
+      "mismatches": [
+       "Top structure: A has flat decorated top with Greek-key corners, B has raised balustrade handle with 5 balusters and two spire finials",
+       "Front panel decoration: A has brown panel with raised oak-leaf relief and scrollwork, B has plain flat panel with no relief",
+       "Frame ornament: A has heavy gold scrollwork border all around, B has straight plain pillars with small floral medallions",
+       "Dial: A has brown/gold dial with stylized numerals and gold bezel, B has white dial with black Arabic 1-12 numerals",
+       "Base and feet: A has solid Greek-key base with square block feet, B has thin base with small round bun feet and arched cutout"
+      ],
+      "why": "Photo B is a different physical clock, not the same object as Photo A. Photo A has a heavy gold scrollwork frame, a brown front panel with raised oak-leaf relief above and scroll below the dial, a brown/gold dial, a flat decorated top with Greek-key corners, and a solid Greek-key base with square block feet. Photo B has straight plain pillars with small floral medallions, a plain flat front with no leaf relief, a white dial with black Arabic 1-12 numerals, a raised gallery handle top with 5 balusters and two spire finials, and a thin base with small round bun feet and a central arch cutout. These are differences in parts, shape and decoration clearly visible in both photos and cannot be explained by light, white balance or compression.",
+      "seconds": 9.5,
+      "usd": 0.009525
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.879,
+      "matched": [
+       "both are upright rectangular carriage-type table clocks with a central round dial on the front"
+      ],
+      "mismatches": [
+       "frame and front colour/decoration: A has ornate gold gilt scrollwork with brown leaf-relief panels, B has dark straight metal with engraved floral corner motifs and plain panels",
+       "dial: A has brown/gold dial with stylized numerals and ornate gold bezel with diamond side lugs, B has white dial with standard black Arabic 1-12 numerals and plain bezel with dark hands",
+       "top: A has flat top with patterned inset and Greek-key corners and no handle, B has raised gallery carrying handle with balusters and finials",
+       "base/feet: A has integrated gilt Greek-key skirt base, B has arched apron with separate small bun feet"
+      ],
+      "why": "Photo B is not the same physical clock as Photo A. Photo A is a gold-framed clock with brown mottled panels, ornate scrollwork, a brown/gold dial with stylized numerals, a flat decorated top with no handle, and a gilt Greek-key base. Photo B has a dark straight frame with engraved floral corners, a white dial with standard black Arabic 1-12 numerals, a raised gallery handle with balusters and finials on top, and small separate feet with an arched apron. The top structure, dial design, frame ornament, and base shape are clearly different parts, not lighting or shade differences.",
+      "seconds": 8.7,
+      "usd": 0.010729
+     }
+    },
+    {
+     "id": "diff-lamp-turquoise",
+     "expect": "different",
+     "noun": "oil lamp",
+     "reference_outlined": false,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Same general type: small glazed oil lamp with squat globular body, tall central neck, right-side loop handle and left-side spout in side profile",
+       "Crackled glaze surface visible in both",
+       "Dark plain background behind object"
+      ],
+      "mismatches": [
+       "Neck shape: A straight cylindrical narrow mouth vs B tall flared trumpet mouth with chipped rim",
+       "Spout length/condition: A long tapered intact spout with black encrustation at tip vs B short truncated/broken spout",
+       "Handle: A small short heavily brown/black encrusted handle vs B larger tall clean pale loop handle",
+       "Glaze colour and weathering: A vivid turquoise with heavy brown/black patches on neck, shoulder and spout vs B pale blue-green uniform glaze with fine crackle and no dark patches",
+       "Base/foot: A glazed foot edge with turquoise drips and brown spots vs B rough unglazed sandy foot"
+      ],
+      "why": "The two photos show the same kind of lamp but not the same physical lamp. Neck shape differs structurally: straight cylindrical narrow mouth in A vs widely flared trumpet mouth with chipped rim in B. Spout in A is long, tapered and intact with black encrustation on tip, while in B it is short/truncated and broken. Handle in A is small, short and heavily brown/black encrusted, while in B it is a larger, taller clean loop. Glaze weathering and base are different: vivid turquoise with heavy brown/black patches in A vs pale even glaze with fine crackle and bare sandy unglazed foot in B. These are clearly visible shape and material differences, not light, white-balance or compression.",
+      "seconds": 10.0,
+      "usd": 0.010876
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a oil lamp in this photo. Take it again from the front, closer, with more light.",
+      "seconds": 0.4,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "diff-teapot-round-silver",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "both are round globular silver teapot bodies",
+       "both have a side handle opposite a side spout",
+       "both have a central lid with finial and a raised foot",
+       "both have an engraved crest on the body"
+      ],
+      "mismatches": [
+       "handle colour/material: black in A vs brown wood in B",
+       "handle shape: simple C-curve in A vs S-scroll with top curl in B",
+       "lid finial: black knob in A vs silver pointed finial in B",
+       "lid rim: ribbed/fluted in A vs plain smooth in B",
+       "spout shape: straight tapered spout in A vs curved swan-neck spout with shaped tip in B",
+       "body engraving: large elaborate coat-of-arms in A vs much smaller different crest in B",
+       "foot base: patterned decorative band in A vs plain flared foot in B"
+      ],
+      "why": "Not the same physical teapot. Photo A has a black C-curved handle, black lid knob, ribbed/fluted lid rim, straight tapered spout, decorated foot band, and a large elaborate coat-of-arms engraving. Photo B has a brown wooden scrolled handle, silver pointed finial, plain smooth lid, curved swan-neck spout, plain foot, and a much smaller different engraving. The shapes, colours and designs of multiple parts clearly differ.",
+      "seconds": 7.7,
+      "usd": 0.009104
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.965,
+      "matched": [
+       "Both are round globular polished silver teapot bodies",
+       "Both have a side spout opposite a side handle",
+       "Both have an engraved crest centered on the body",
+       "Both photographed against a plain light grey background"
+      ],
+      "mismatches": [
+       "Handle colour: matte black in A vs brown wood in B",
+       "Handle top shape: simple curve with small spur in A vs large scrolled curl in B",
+       "Lid knob: large black knob in A vs small silver pointed finial in B",
+       "Lid rim: fluted ribbed band in A vs plain smooth dome in B",
+       "Spout shape: long straight tapered spout in A vs short curved swan-neck spout in B",
+       "Engraving: large elaborate coat of arms with ship motif in A vs much smaller fainter different crest in B",
+       "Foot base: decorative patterned band in A vs plain smooth foot in B"
+      ],
+      "why": "Both are round silver teapots, but key physical parts clearly differ. Photo A has a matte black handle, black lid knob, fluted lid rim, long straight spout, large elaborate engraved crest, and patterned foot. Photo B has a brown wooden handle with a scroll top, silver pointed finial, plain lid, short curved spout, smaller different engraving, and plain foot. These are different colours, shapes and parts, not light or compression, so it is a different object of the same kind.",
+      "seconds": 7.6,
+      "usd": 0.010539
+     }
+    },
+    {
+     "id": "unclear-clock-old-photo",
+     "expect": "unclear_same",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "same rectangular carriage-case with scroll-work borders on top edge, vertical sides and base",
+       "same central round dial with stylized outer-ring numerals",
+       "same pair of diamond-shaped lugs holding the dial left and right",
+       "same oak-leaf relief above the dial and same scrolled tendril with small flying insect/bird below the dial",
+       "same Greek-key feet and Greek-key corners on top cap",
+       "same relief pattern on visible right side panel"
+      ],
+      "mismatches": [
+       "frame/metal colour: warm gold in A vs light silver-grey/white in B",
+       "front panel colour: medium brown in A vs very dark grey/black in B"
+      ],
+      "why": "The case shape, ornament and dial layout match very closely, but the colours do not. Photo A shows a warm gold metal frame with a medium brown front panel. Photo B is monochrome and shows a light silver-grey/white metal frame with a very dark grey/black front panel. Gold vs silver-grey and brown vs black are different colours, not just light/white-balance shades. Because colour, which defines the described object, cannot be confirmed as the same, it could be the same model in a different colourway rather than the same physical clock. Strict decision is false.",
+      "seconds": 13.6,
+      "usd": 0.014221
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.782,
+      "matched": [
+       "same rectangular carriage-clock case with same proportions",
+       "same ornate scroll border pattern on top, vertical sides and base",
+       "same round central dial with double decorative ring and same stylized numerals",
+       "same leaf motifs above the dial in same position",
+       "same curved stem with bird motif below the dial",
+       "same diamond-shaped lugs flanking the dial left and right",
+       "same Greek-key pattern on top corners and base feet",
+       "same embossed motif on visible right side panel"
+      ],
+      "mismatches": [
+       "frame colour: warm gold in Photo A vs light silver-grey in Photo B",
+       "front panel colour: medium brown in Photo A vs very dark grey/black in Photo B",
+       "Photo B is monochrome so gold and brown colours described by owner cannot be verified"
+      ],
+      "why": "The case shape and ornament match in layout, but the defining colours do not match. Photo A clearly shows a warm gold frame with a medium brown front and light top insert. Photo B is monochrome and shows a light silver-grey frame with a very dark front. A different colour is a mismatch, not just shade or lighting, and gold/brown cannot be verified in B. Strictly, the same physical object cannot be confirmed.",
+      "seconds": 15.8,
+      "usd": 0.016821
+     }
+    },
+    {
+     "id": "unclear-teapot-in-a-group",
+     "expect": "unclear_same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "tall stepped domed lid with urn-shaped finial",
+       "squat globular pewter body with stepped ringed neck",
+       "dark S-shaped side handle with lower outward curl and metal mounts",
+       "slender slightly upturned spout opposite handle",
+       "overall pewter tone and proportions"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows a group of vessels, the leftmost is the teapot from Photo A. The tall stepped domed lid with urn finial, squat globular pewter body with ringed neck, slender upturned spout, and dark S-shaped handle with lower outward curl all match. Handle on left vs right is viewpoint rotation. No part, shape or colour clearly differs; tone and texture clarity differences are due to distance, light and compression.",
+      "seconds": 16.8,
+      "usd": 0.016203
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.899,
+      "matched": [
+       "globular squat pewter body",
+       "tall stepped domed lid with central finial knob",
+       "dark S-shaped side handle with lower scroll",
+       "pewter sleeve mounts for handle",
+       "slender up-curved spout opposite handle"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same KIND of object: a globular pewter teapot with a tall stepped domed lid with finial knob and a black S-shaped side handle. General silhouette, lid height, spout shape and handle shape are consistent. However Photo B is a very tiny low-resolution distant view with opposite orientation (handle left / spout right in B vs handle right / spout left in A). No unique identifier - individual pitting, scratches, marks, labels - can be clearly seen and matched in both photos. What matches proves type only, not the same physical instance. Being strict, same object cannot be confirmed.",
+      "seconds": 14.8,
+      "usd": 0.016398
+     }
+    },
+    {
+     "id": "unclear-padlock-from-above",
+     "expect": "unclear_same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "both are large heavy dark-brown rusted iron padlocks",
+       "both have thick top shackle strap and layered riveted block body construction"
+      ],
+      "mismatches": [
+       "A has distinctive shaped front with eye-like round holes and central curved cutout, B shows plain rectangular face with horizontal slit and no eye-holes",
+       "A top shackle is wide arched with visible arch opening, B top is narrow flat-topped strap with no opening visible",
+       "A bottom silhouette is irregular with rounded lobes and central downward point, B bottom is straight flat rectangle",
+       "B has faint red stencil text on upper bar not seen in A"
+      ],
+      "why": "Photo A shows the ornate front with eye-like round holes, side notches and irregular shaped bottom projection. Photo B shows a plain rectangular block with no eye-holes, a narrow flat-topped shackle strap with no arch opening, and a straight flat bottom. While both are large dark rusted iron padlocks of similar type and colour, no unique mark, label, rust pattern or shape detail visible in both confirms it is the same physical instance. The distinctive front described by the owner is not visible in B. Viewpoint alone cannot explain with certainty, so it cannot be confirmed as the same object.",
+      "seconds": 18.3,
+      "usd": 0.019472
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a padlock in this photo. Take it again from the front, closer, with more light.",
+      "seconds": 0.5,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "unclear-pot-old-photo",
+     "expect": "unclear_same",
+     "noun": "pot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "globular rounded body with wide everted rim",
+       "overhead arched handle with central ribbed panel",
+       "hooked zoomorphic handle ends engaging two vertical lugs in same position",
+       "wide upper engraved band with inscription/arabesque between thin lines",
+       "narrow lower geometric engraved band at same height"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same globular pot with wide rim, overhead arched handle with central ribbed decoration and hooked animal-head ends engaging two vertical lugs, upper wide engraved inscription/arabesque band and lower narrow geometric band in the same positions and proportions. No structural part, mark or shape differs. The brown vs grey tone is lighting / monochrome rendering, not a different colour of the object.",
+      "seconds": 10.1,
+      "usd": 0.010766
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.766,
+      "matched": [
+       "globular rounded body with wide mouth and thick rim",
+       "arched swing handle with central ribbed panel",
+       "symmetrical hooked zoomorphic handle terminals through two vertical rim lugs",
+       "wide upper engraved band with same inscription/floral scroll layout between lines",
+       "narrow lower engraved band near base"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same globular pot with identical diagnostic details: rounded body with wide mouth and thick rim, swing handle with central ribbed panel, symmetrical hooked zoomorphic terminals engaging two vertical rim lugs, wide upper engraved band with the same inscription and floral scroll between lines, and narrow lower engraved band. Differences are only photographic: Photo B is monochrome/grayscale versus Photo A color, with different framing and contrast. No part, mark, shape or pattern clearly differs.",
+      "seconds": 12.8,
+      "usd": 0.011018
+     }
+    },
+    {
+     "id": "unclear-kettle-dim-blurred",
+     "expect": "unclear_same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [],
+      "mismatches": [
+       "Ring on lid visible in A is not discernible in B",
+       "Spout shape visible in A is not discernible in B",
+       "Handle, body shape and feet detail visible in A is lost to extreme blur and darkness in B"
+      ],
+      "why": "Photo B is severely out of focus and underexposed. Only a dark blurred blob is visible. The defining features from Photo A - ring on the lid, arched handle with top ring, body shape with small feet, and spout shape - cannot be verified in Photo B. Because identity cannot be confirmed, same_object is false.",
+      "seconds": 8.6,
+      "usd": 0.009323
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.867,
+      "matched": [
+       "both show a black kettle-like rounded squat body",
+       "both show a dark arched handle silhouette over the top",
+       "both have a similar plain grey gradient background"
+      ],
+      "mismatches": [],
+      "why": "Photo B is extremely blurred and dark. While both show a generally black, squat rounded shape with a top handle silhouette on a grey gradient background, none of Photo A's identifying details can be verified in B: the ring on the lid, the bail handle with top ring and side mounts, the short curved pouring spout, the long thin upper extension, the body seam and small feet. Because the specific features that would prove the same physical kettle cannot be told from B, it must be judged as not confirmed.",
+      "seconds": 11.6,
+      "usd": 0.01274
+     }
+    },
+    {
+     "id": "unclear-only-the-marks",
+     "expect": "unclear_none",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "both show silver-toned metal"
+      ],
+      "mismatches": [
+       "diagnostic features of A - straight side, black handle, long thin spout, engraved crest, beaded edges, lid finial - are not visible in B",
+       "diagnostic features of B - two REVERE stamps and central punch on scratched surface - are not visible in A, so no overlapping identity can be verified"
+      ],
+      "why": "Photo A shows a full side view of a straight-sided silver teapot with black handle, long thin spout, engraved crest, beaded trim and finial. Photo B shows only an extreme close-up of scratched silver with two REVERE stamps and a central pit. There is no overlapping view, no common mark, shape, or detail visible in both to link B to that specific teapot. Silver colour alone is not enough to confirm same physical object, so it cannot be confirmed.",
+      "seconds": 9.1,
+      "usd": 0.010034
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a teapot in this photo. Take it again from the front, closer, with more light.",
+      "seconds": 0.5,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "unclear-other-teapot-dim",
+     "expect": "unclear_different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "overall lidded teapot silhouette",
+       "straight tapered spout on right side",
+       "arched side handle on left side",
+       "light silvery body tone"
+      ],
+      "mismatches": [
+       "handle colour black in Photo A vs reddish-brown in Photo B",
+       "engraved crest on side clearly visible in Photo A not verifiable in Photo B",
+       "decorative patterned bands top and bottom clearly visible in Photo A not verifiable in Photo B"
+      ],
+      "why": "Photo B is extremely blurry and dark, so identity cannot be strictly verified. The general lidded teapot silhouette with left handle and right straight spout is similar, but the handle appears reddish-brown in B versus black in A, and the defining engraved crest and top/bottom decorative bands clearly visible in A cannot be confirmed in B. Under strict same-object rule, this is insufficient to confirm the same physical teapot.",
+      "seconds": 7.9,
+      "usd": 0.008826
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.918,
+      "matched": [
+       "silver-toned lidded teapot body",
+       "straight tapering spout on right side",
+       "arched side handle on left side",
+       "octagonal/panelled body silhouette with central lid knob"
+      ],
+      "mismatches": [
+       "handle colour is black in Photo A but appears brown/reddish in Photo B"
+      ],
+      "why": "Photo B is extremely blurred and cannot confirm the same physical teapot. The general lidded silver form with straight spout on the right and side handle on the left is similar, but the handle appears brown/reddish in B versus black in A, and the engraved crest and decorative border bands clearly seen in A cannot be verified in B. Under the strict rule, identity cannot be confirmed.",
+      "seconds": 10.4,
+      "usd": 0.013693
+     }
+    }
+   ]
+  }
+ },
+ "usd": 0.7328
+}

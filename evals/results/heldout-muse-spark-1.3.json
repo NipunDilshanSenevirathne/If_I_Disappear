@@ -1,0 +1,3132 @@
+{
+ "run_at": "2026-10-29T05:32:41Z",
+ "frozen": {
+  "frozen_at": "2026-10-29T05:32:31Z",
+  "files": 52,
+  "sha256": "6f08b6044444b97096998140a05b6ac97693c14dcdfe8467cf48c9269d18bcac"
+ },
+ "policy_sha256": "1d1229b8f112ee7a69a39d286d7ddfc9658d2d7c92854eba45d82e0e6dfa11b6",
+ "models": {
+  "spark": "muse-spark-1.3",
+  "wonder": "muse-wonder-1.0",
+  "sam": "sam-3.1"
+ },
+ "suites": {
+  "photos": {
+   "name": "Show me: Muse Spark alone vs SAM 3.1 then Muse Spark (the app)",
+   "pairs": 29,
+   "spark_alone": {
+    "by_expectation": {
+     "same": {
+      "n": 12,
+      "right": 11,
+      "wrong": 1,
+      "abstained": 0
+     },
+     "different": {
+      "n": 10,
+      "right": 10,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_same": {
+      "n": 5,
+      "right": 1,
+      "wrong": 4,
+      "abstained": 0
+     },
+     "unclear_none": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_different": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     }
+    },
+    "false_accepts": 0,
+    "wrong_rejections": 5,
+    "abstentions": 0,
+    "median_seconds": 9.6,
+    "usd": 0.2934
+   },
+   "sam_then_spark": {
+    "by_expectation": {
+     "same": {
+      "n": 12,
+      "right": 9,
+      "wrong": 2,
+      "abstained": 1
+     },
+     "different": {
+      "n": 10,
+      "right": 10,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_same": {
+      "n": 5,
+      "right": 2,
+      "wrong": 3,
+      "abstained": 0
+     },
+     "unclear_none": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     },
+     "unclear_different": {
+      "n": 1,
+      "right": 1,
+      "wrong": 0,
+      "abstained": 0
+     }
+    },
+    "false_accepts": 0,
+    "wrong_rejections": 5,
+    "abstentions": 6,
+    "median_seconds": 9.7,
+    "usd": 0.2964
+   },
+   "reference_outlines_found": 19,
+   "references": 20,
+   "flagged_as_not_a_new_photo": [],
+   "items": [
+    {
+     "id": "same-padlock-angle",
+     "expect": "same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "heavy dark brown-black forged iron material with mottled rust patina in both",
+       "very thick curved U-shaped shackle on top of short blocky faceted body with same proportions",
+       "small side plate/protrusion on body visible in A on left and in B on top-right",
+       "plain white isolated background in both"
+      ],
+      "mismatches": [],
+      "why": "Both images show the same heavy forged-iron padlock. Photo A is a front view of the dark blocky body with the tall thick U-shaped shackle on top. Photo B is the same lock turned on its side showing the bottom with the rectangular keyhole. Material, colour, patina, proportions and body details are consistent. The red inventory number on the edge of the shackle in B is not visible in the front view of A due to viewing angle, not a different object.",
+      "seconds": 10.7,
+      "usd": 0.011207
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "abstained",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a padlock in this photo. Try again closer, with more light.",
+      "seconds": 0.2,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "same-padlock-front",
+     "expect": "same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "large heavy hand-forged iron padlock with dark brown-black rust patina",
+       "thick U-shaped shackle of same width and arch shape on top",
+       "central vertical locking plate running to shaped bottom point",
+       "symmetrical shaped body with pair of upper eye-like side openings",
+       "pair of lower circular holes in same positions",
+       "scalloped side scrolls and bottom finial with same silhouette"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same big old iron padlock with shaped front and eye-like holes. Photo B is a straight-on front view while Photo A is an angled three-quarter view showing thickness. Overall silhouette, thick U shackle, central vertical plate, upper side notches and lower round holes, scalloped bottom, and dark rusted patina all correspond. Apparent differences in rivet side and hole shape are due to viewpoint change, not a different object.",
+      "seconds": 18.8,
+      "usd": 0.018602
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.813,
+      "matched": [
+       "same massive thick arched iron shackle on top",
+       "same ornate symmetric body with two upper eye-like side cut-outs and two lower round holes",
+       "same central vertical plate extending down to shaped / pointed bottom",
+       "same dark brown rusted iron material and mottled patina",
+       "same stepped side profile with outward flourishes",
+       "same plain light studio background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same large hand-forged iron padlock. The massive arched shackle, ornate symmetric body with two upper eye-like side holes and two lower round holes, central vertical plate running to a shaped bottom point, and dark brown mottled rust patina are identical. Photo A is an oblique three-quarter view showing thickness, Photo B is a straight frontal symmetric view. The shackle-foot rivet seen on the left in B appears on the right in A because of the changed viewing angle / front vs opposite side, which swaps left-right. No constructional difference indicates a different object.",
+      "seconds": 20.8,
+      "usd": 0.0195
+     }
+    },
+    {
+     "id": "same-padlock-key-out",
+     "expect": "same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "dark cylindrical iron lock body with same two-segment bands",
+       "V-shaped notch on left side of body at shackle pivot",
+       "thick U-shaped shackle with same curve and light wear ring at right insertion",
+       "large irregular corroded ring on key end with same oval shape",
+       "small rectangular lug on side of key near ring",
+       "mottled brown-green patina on key stem"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same physical long iron padlock as Photo A, only disassembled. In A the ring-ended key is inserted; in B it is pulled out to the left, revealing the threaded shaft that was hidden in A. The body, shackle, ring shape, lug and patina are identical.",
+      "seconds": 8.1,
+      "usd": 0.008536
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.922,
+      "matched": [
+       "Cylindrical dark iron padlock body with central groove",
+       "U-shaped shackle mounted on top of body",
+       "V-shaped mark on body at shackle hinge side",
+       "Light plain background in both photos"
+      ],
+      "mismatches": [
+       "Photo A has long shaft with large rusty ring protruding from left end; Photo B has no shaft or ring",
+       "Left end of body is closed by key in A but appears open/hollow in B",
+       "Small threaded detached piece visible at far left edge in B is not present in A"
+      ],
+      "why": "Photo B shows a similar cylindrical body and U-shackle, but the defining long key shaft with a ring on the left end seen in Photo A is missing in Photo B. The left end is open and a small threaded fragment appears instead. Therefore it cannot be confirmed as the same complete physical object.",
+      "seconds": 9.7,
+      "usd": 0.010426
+     }
+    },
+    {
+     "id": "same-kettle-other-side",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "matte-black globular iron body on three small feet",
+       "domed lid with concentric pattern and small central ring loop",
+       "overhead arched bail handle topped with circular ring with square attachment plates",
+       "short thick upcurved pouring spout with notched opening",
+       "long thin curved arm with small cylindrical tip attached near spout base",
+       "same grey gradient studio background and surface patina"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same physical black iron kettle. The globular matte-black body on three small feet, domed lid with central ring loop, overhead arched bail handle topped with a circular ring, short thick upcurved pouring spout, and the distinctive long thin curved tilting arm with a small tip near the spout are identical in shape, colour, material and attachment position. Photo B is only a different viewing angle with the movable long arm in a different position, no different physical features are visible.",
+      "seconds": 10.5,
+      "usd": 0.010041
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.89,
+      "matched": [
+       "matte black iron squat globular body with same patina",
+       "domed lid with small central ring eyelet",
+       "large overhead bail handle with circular ring at top centre",
+       "three short feet under base",
+       "horizontal seam around mid-body",
+       "short stout S-curved spout with bulbous base",
+       "long thin curved pouring handle attached on spout side with wrapped grip tip",
+       "identical studio grey gradient background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Both images show the same black iron kettle, just from different viewing angles. All distinctive parts match: squat body on three feet, lid with small ring, large bail with top ring, short thick spout plus the long thin pouring handle on the same side as the spout. Photo A is a side profile with spout to the right, Photo B is a rotated front view with spout to the left-front, which explains the apparent left-right swap with no physical differences.",
+      "seconds": 11.9,
+      "usd": 0.012774
+     }
+    },
+    {
+     "id": "same-kettle-copper",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "egg-shaped copper body with dark purple-brown mottled patina",
+       "overhead brass arch handle with trumpet body-attachment and collar ring",
+       "tapered brass spout with decorative dotted flange at base",
+       "short flared foot base with same shape and reflection",
+       "small lid finial on top center",
+       "same studio grey gradient background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same physical egg-shaped copper kettle as Photo A, viewed from the opposite side. The body shape, dark purplish-brown copper patina, overhead brass arch handle with collar ring on the body-attachment end, tapered brass spout with dotted flange base, short flared foot, and small lid finial are all identical. The left-right swap of spout and ring is due to 180-degree rotation, not a different object.",
+      "seconds": 8.3,
+      "usd": 0.009608
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.942,
+      "matched": [
+       "Egg-shaped copper body with dark purple-brown tarnished patina",
+       "High arched brass handle from side of body to spout-side top",
+       "Small collar-ring detail on handle on side away from spout",
+       "Straight tapered brass spout with decorative toothed flange at base",
+       "Short flared foot base with dark iridescent tone",
+       "Small lid knob/pin on top dome",
+       "Plain grey gradient studio background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same egg-shaped copper kettle with brass handle and spout. Photo B is viewed from the opposite side so the spout appears on the left instead of the right, but body shape, dark purple-brown copper patina, high arched brass handle with collar ring away from spout, straight tapered brass spout with toothed flange, flared foot base, and small lid pin all correspond. No physical difference indicates a different object.",
+      "seconds": 12.7,
+      "usd": 0.013214
+     }
+    },
+    {
+     "id": "same-kettle-lacquer",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "dark reddish-brown barrel-shaped hammered copper body with same patina",
+       "overhead arched copper handle with same shape and light wear on top",
+       "round lid with same engraved floral pattern around central knob",
+       "same central lid knob shape and colour",
+       "same short curved side spout shape and colour",
+       "embossed dragon with cloud motifs in same gold-brown tones on body",
+       "same dark bands at top rim and base",
+       "same plain light background with soft shadow"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same brown copper kettle with patterned body. The spout appears on the right in A and on the left in B because B is taken from the opposite side after rotating the kettle. All physical details - reddish-brown hammered barrel body, overhead arched handle with same wear, round lid with floral engraving and central knob, short curved spout, and embossed dragon with clouds - match.",
+      "seconds": 10.5,
+      "usd": 0.012072
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.836,
+      "matched": [
+       "dark reddish-brown hammered copper barrel body with same patina",
+       "arched copper top handle with same shape, colour and side-lug attachments",
+       "flat copper lid with same engraved floral border",
+       "central lid knob with same shape and light dot inlays",
+       "short angled spout with same shape and upper-body attachment",
+       "embossed gold dragon with clouds on body and same hammered texture",
+       "dark textured rim band and base band",
+       "plain off-white background with soft shadow"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same brown copper kettle. The dark reddish-brown hammered body, arched top handle with same shape and patina, flat lid with same engraved border and central knob with light inlays, short angled spout shape and height, dark rim and base bands, and gold dragon-with-clouds inlay style all match. Photo B is taken from the opposite side (spout on left vs spout on right in A), so a different segment of the wrap-around dragon is centered, but this is a rotation difference, not a physical difference. Background is the same plain studio white in both.",
+      "seconds": 25.8,
+      "usd": 0.017748
+     }
+    },
+    {
+     "id": "same-teapot-back",
+     "expect": "same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "same globular white porcelain body with low foot rim",
+       "same animal/bird-head spout with white beak and yellow-orange crest",
+       "same animal/bird-head handle with green-turquoise crest and open beak",
+       "same lid shape with small central knob",
+       "same Kakiemon-style enamel colours orange, blue, green, yellow on white",
+       "same grey studio background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same white porcelain teapot as Photo A, but from the opposite side. The globular body shape, foot rim, lid with small knob, bird/animal-head spout with yellow crest, and bird/animal-head handle with green-turquoise crest all match in form, colour and position. The Kakiemon palette of orange, blue, green and yellow floral enamel is the same, and the grey studio background is the same. The spout is on the left in A and on the right in B, and the central painted scene looks different, because A shows the front and B shows the back after ~180-degree rotation. There is no contradictory detail indicating a different object.",
+      "seconds": 13.8,
+      "usd": 0.014016
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.945,
+      "matched": [
+       "round white porcelain body with same low foot ring and profile",
+       "domed lid with small round knob tipped red and same orange-green floral border",
+       "animal-head spout with open mouth, yellow crest on top and orange spiral on cheek",
+       "animal-head handle with blue-green crest and same S-curved ridged shape",
+       "same enamel palette of iron-red/orange, green, blue and yellow on white ground with scattered floral sprigs",
+       "same small isolated green-orange-blue sprig just below lid",
+       "same plain grey gradient studio background"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same physical teapot as Photo A viewed from the opposite side. In A the animal-head spout is on the left and the animal-head handle is on the right; in B they are reversed left-right because the pot is turned 180 degrees. The spout with open mouth, yellow crest on top and orange spiral on the cheek is identical in both, and the handle with blue-green crest and same S-curved shape is identical in both. Body shape, low foot ring, domed lid with small knob tipped red, white porcelain ground with orange/green/blue/yellow floral enamels, small isolated sprig below the lid, and plain grey studio background all match. The different central scene is the reverse-side decoration, not a different object.",
+      "seconds": 11.8,
+      "usd": 0.014633
+     }
+    },
+    {
+     "id": "same-teapot-cabbage",
+     "expect": "same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "white glossy porcelain colour",
+       "cabbage-leaf molded body relief with prominent veins",
+       "bamboo-jointed twig handle shape",
+       "small round lid with leaf-flower finial",
+       "ridged tapered spout",
+       "three small stub feet",
+       "plain grey studio background and lighting"
+      ],
+      "mismatches": [
+       "handle on left and spout on right in A vs handle on right and spout on left in B - opposite viewpoint",
+       "no unique identifier like chip, crack, stain or label visible in either photo to prove token identity",
+       "visibility of handle joint rings differs slightly with angle, cannot verify same wear"
+      ],
+      "why": "Both photos show a white cabbage-leaf molded teapot with bamboo-joint handle, leaf lid with finial, ridged spout and small feet on grey background. However A shows handle on left / spout on right, B shows opposite view. There is no unique chip, stain, label or flaw visible to prove it is the same physical token, and molded porcelain can have identical copies. Strictly, identity cannot be confirmed.",
+      "seconds": 12.1,
+      "usd": 0.014302
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.949,
+      "matched": [
+       "white glossy body with molded cabbage-leaf veins",
+       "C-shaped twig / bamboo-joint handle with same joints",
+       "short ribbed spout with flared cut tip",
+       "flat leaf-shaped lid with small flower-bud finial on top",
+       "rounded body on three small stub feet",
+       "plain dark-grey studio background in both"
+      ],
+      "mismatches": [
+       "handle on left in A vs on right in B",
+       "spout on right in A vs on left in B - opposite side view",
+       "exact position of leaf wrinkles and lid finial looks different due to viewpoint, not verifiably identical",
+       "no shared unique identifier, damage, stain or label visible to link to same physical instance"
+      ],
+      "why": "Both photos show a white cabbage-leaf molded teapot with the same design, but from opposite sides. Photo A has handle left / spout right, Photo B has spout left / handle right. No unique chip, stain, label or wear mark is clearly visible in both to prove it is the same physical piece rather than another identical copy of the same model. Being strict, identity cannot be confirmed.",
+      "seconds": 12.5,
+      "usd": 0.014089
+     }
+    },
+    {
+     "id": "same-clock-angle",
+     "expect": "same",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "dark reddish-brown mahogany rectangular case with same proportions",
+       "3-tier stepped base",
+       "white round dial with black Roman numerals, 60 at top 30 at bottom",
+       "brass bezel around dial and two winding holes with same text below center",
+       "brass vertical grille bars below dial",
+       "brass dentil gallery trim along top edge",
+       "four small brass urn finials on top corners - overlapped in frontal Photo A, separated in angled Photo B",
+       "same grey studio background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same physical mantel clock, just from different angles. The dark reddish-brown wooden case, 3-stepped base, white round dial with black Roman numerals with 60 at top and 30 at bottom, brass bezel, two winding holes, brass vertical rods below the dial, brass dentil gallery on top, and four small brass urn finials on the corners all match. In frontal Photo A the front and back finials overlap into two clusters, while in angled Photo B the same four finials are seen separated. Different hand positions are due to time/movement, not a different object.",
+      "seconds": 9.6,
+      "usd": 0.009254
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.805,
+      "matched": [
+       "white circular face with black Roman numerals and 60/15/30/45 at top-right-bottom-left",
+       "brass-coloured round bezel around dial",
+       "dark reddish-brown wooden case with vertical panels directly behind dial",
+       "two small dark round winding holes left and right on dial",
+       "small script brand text below centre of dial",
+       "thin light pendulum rods visible below dial"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same physical wall clock. White round dial with black Roman numerals and 60/15/30/45 marks, brass-tone bezel, dark red wooden case behind, same winding holes and central script, and same pendulum rods below. Differences in hand position and framing are due to time passing and slightly different camera angle, not a different object.",
+      "seconds": 10.8,
+      "usd": 0.013194
+     }
+    },
+    {
+     "id": "same-clock-dome",
+     "expect": "same",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "tall tapered mahogany wood column with same grain",
+       "octagonal wooden base with gilt laurel-wreath mount centered on front",
+       "four gilt ball feet",
+       "small round white dial with black Roman numerals",
+       "black hands and brass bezel",
+       "brass ring at base of glass",
+       "clear glass dome with glass crown finial on top",
+       "plain light-grey seamless background and same proportions"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same tall wooden dome clock. The tapered mahogany column, octagonal base with central gilt wreath mount, four gilt ball feet, small white Roman-numeral dial, brass dome base ring, and clear glass dome with crown finial are identical in shape, colour, material and position. The light grey background is also the same. No physical differences in the object are visible; small variation is only photographic angle/exposure.",
+      "seconds": 9.9,
+      "usd": 0.009958
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.773,
+      "matched": [
+       "tall tapered dark-wood column on octagonal base",
+       "clear glass dome with decorative finial over dial",
+       "small white dial with black Roman numerals and brass bezel",
+       "brass collar between glass and wood",
+       "central gilt laurel-wreath ornament on front of base",
+       "gilt ball feet",
+       "plain light background"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same tall wooden pedestal clock: the same clear glass dome with finial top, same small white Roman-numeral dial with brass bezel, same brass collar between glass and wood, same tapered dark wood column, same octagonal base with central gilt laurel-wreath ornament, and same gilt ball feet, against the same plain light background. No physical difference is visible.",
+      "seconds": 11.0,
+      "usd": 0.013683
+     }
+    },
+    {
+     "id": "same-teapot-side-handle",
+     "expect": "same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "silver polished round body with horizontal band and stepped round foot",
+       "domed lid with beaded rim and central floral finial",
+       "short spout on left with shell junction at base and loop at tip",
+       "dark brown/black wooden side handle on right with silver ferrule mount",
+       "small round knob on top of handle mount",
+       "rectangular lid hinge on right side of lid",
+       "thin link chain from spout tip draped across body to handle mount"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same physical silver side-handled teapot. The round polished body, stepped foot, domed lid with beaded rim and floral finial, left spout with shell base, right dark wooden side handle with silver mount, lid hinge, top knob on mount, and the chain from spout tip to handle mount all match in shape and position. The apparently shorter handle in Photo B is perspective foreshortening from a slightly different camera angle, not a different part.",
+      "seconds": 11.4,
+      "usd": 0.010586
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.895,
+      "matched": [
+       "polished silver squat globular body on stepped round foot",
+       "domed lid with central fleur-de-lis flower finial and beaded rim",
+       "rectangular lid hinge on right side of lid",
+       "short side spout on left with shell decoration at base and chain loop at tip",
+       "side handle on right with silver socket and dark brown-black wooden grip perpendicular to spout",
+       "thin link chain draped in festoon across front from spout to handle mount",
+       "small domed stud on top of handle mount"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same distinctive silver side-handled teapot. Body shape, domed lid with flower finial, beaded lid rim, hinge, spout with shell base, dark wooden side handle, small domed stud on handle mount, and front draped chain are all identical in form, colour and position. The handle looks shorter in Photo B only because Photo B is taken more from behind along the handle axis causing foreshortening, not a different handle. No conflicting feature proves a different object.",
+      "seconds": 15.4,
+      "usd": 0.015574
+     }
+    },
+    {
+     "id": "same-kettle-modern",
+     "expect": "same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "round domed polished-silver body",
+       "straight tapered spout",
+       "lidded top with small ball finial",
+       "large pivoting arched handle with black bar grip and silver ferrules",
+       "four short cylindrical peg feet",
+       "same grey studio background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same round polished-silver dome kettle on four short peg feet, with a straight tapered spout, a lid with small ball finial, and a large pivoting arched handle with a black cylindrical bar grip and silver ferrules. Photo B is taken from the opposite side so left-right is swapped, the lid hinge becomes visible, and the movable handle is swung to the other side. Proportions, colours, materials and grey studio background match with no conflicting physical detail.",
+      "seconds": 10.3,
+      "usd": 0.011849
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.895,
+      "matched": [
+       "round hemispherical polished silver body",
+       "four short cylindrical feet under base",
+       "straight tapered spout",
+       "domed lid with small ball knob and small hinge/clasp on handle side",
+       "overhead double-arch steel handle with black cylindrical bar grip and silver ferrules",
+       "same grey studio background and lighting"
+      ],
+      "mismatches": [],
+      "why": "Photo B shows the same round silver kettle as Photo A viewed from the opposite side. The hemispherical polished body, four short feet, tapered spout, lid with ball knob and hinge, and the distinctive double-arch overhead handle with black bar grip and silver ferrules all match. The left-right reversal of spout side and handle tilt is explained by a ~180-degree change in viewpoint, not a different object. No conflicting detail is visible.",
+      "seconds": 16.4,
+      "usd": 0.016966
+     }
+    },
+    {
+     "id": "diff-padlock-iron",
+     "expect": "different",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are dark brown-black heavily rusted iron padlocks",
+       "Both have a thick curved shackle on top",
+       "Both photographed against a plain light background"
+      ],
+      "mismatches": [
+       "Body in A is a small plain rectangular block, body in B is a large complex built-up block with layers",
+       "B has four circular holes and wavy cutouts on the body, A has none",
+       "B has a central vertical plate and top cross-bar with a round rivet on the right side of the shackle, A shows a smooth shackle with no rivet or plates",
+       "Shackle shape differs: A is tall narrow U-shape, B is shorter wider arch"
+      ],
+      "why": "Photo A shows a small plain rectangular padlock body with a tall narrow smooth U-shaped shackle. Photo B shows a much larger complex layered body with circular holes, curved cutouts, plates and a rivet, and a shorter wider shackle. Although both are dark rusted iron with a thick top shackle on a light background, the body construction and shackle details do not match, so it is not the same physical padlock.",
+      "seconds": 6.7,
+      "usd": 0.009368
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.644,
+      "matched": [
+       "both are dark brown-black aged heavy iron padlocks",
+       "both have a thick curved U-shaped shackle on top",
+       "both photographed against a plain light background"
+      ],
+      "mismatches": [
+       "Photo A body is a simple plain rectangular block, Photo B body is large, layered and ornate",
+       "Photo B has four circular holes and a large central bottom cutout absent in Photo A",
+       "Photo B has a stepped top plate and a round rivet on the shackle housing, Photo A has none",
+       "Photo B has a vertical central plate on the front, Photo A front is smooth and continuous"
+      ],
+      "why": "Both are dark aged iron padlocks with a thick curved shackle, but the bodies are completely different. Photo A shows a simple plain rectangular block with a smooth front. Photo B shows a large, complex, layered lock body with four circular holes, a large central cutout, a stepped top plate, and a round rivet on the shackle housing. These major structural differences prove it is not the same physical object.",
+      "seconds": 9.3,
+      "usd": 0.010197
+     }
+    },
+    {
+     "id": "diff-padlock-long",
+     "expect": "different",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are dark aged iron padlocks",
+       "Both have a ring loop on the key/protruding end",
+       "Both are long padlock forms photographed on plain light background"
+      ],
+      "mismatches": [
+       "Body shape: smooth cylindrical barrel in A vs rectangular box with legs in B",
+       "Surface: plain dark with small V marks in A vs heavily carved geometric pattern in B",
+       "Top shackle: thick U-shaped shackle in A vs flat long stepped bar with pierced hole in B",
+       "Key end: thick short stem with large irregular ring in A vs long tapered pointed stem with small neat ring in B"
+      ],
+      "why": "Photo B is not the same physical padlock as Photo A. While both are dark iron long padlocks with a ring on the key end, the body shape, shackle, key stem and decoration are completely different.",
+      "seconds": 4.7,
+      "usd": 0.005964
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a padlock in this photo. Try again closer, with more light.",
+      "seconds": 0.4,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "diff-kettle-black",
+     "expect": "different",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are dark/black iron kettles",
+       "Both have an overhead arched bail handle",
+       "Both have a side spout",
+       "Both photographed against plain light background"
+      ],
+      "mismatches": [
+       "Lid finial: small ring in A vs solid flat knob in B",
+       "Bail handle top: circular loop present in A vs absent plain arch in B",
+       "Spout: short thick upturned spout plus separate long thin curved extension in A vs single thin upright pointed spout in B",
+       "Body shape: squat globular body on three small feet in A vs tall cylindrical barrel body with flat base band in B"
+      ],
+      "why": "Photo B does not show the same physical kettle as Photo A. Photo A has a squat globular body on small feet, a lid with a small ring handle, a bail handle with an extra circular loop on top, and a short thick upturned spout with a separate long thin curved rod attached beside it. Photo B has a tall cylindrical barrel body with a flat base band, a lid with a solid knob, a plain bail handle with no top loop, and a single thin upright pointed spout with no long extension. The lid, handle, spout, and body shape are all different, so it is a different object, not just a different view.",
+      "seconds": 12.6,
+      "usd": 0.016011
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.688,
+      "matched": [
+       "Both are dark black iron kettles",
+       "Both have an overhead bail handle",
+       "Both have a side pouring spout"
+      ],
+      "mismatches": [
+       "Body shape: A is squat globular on small feet, B is tall barrel-cylindrical with flat base",
+       "Lid: A has a small ring on the lid, B has a solid knob with no ring",
+       "Spout: A has a short thick spout plus a long thin curved extension, B has only a short spout with no long extension",
+       "Top handle: A has an extra small ring at apex of bail, B has plain bail",
+       "Surface: B shows embossed decoration on body and lid, A appears plain"
+      ],
+      "why": "Photo B is not the same physical kettle as Photo A. Photo A is a squat globular kettle on small feet with a lid ring and a long thin curved extension above the short pouring spout. Photo B is a tall barrel-shaped kettle with a flat base, a solid knob on the lid with no ring, and only a short spout with no long thin extension.",
+      "seconds": 8.1,
+      "usd": 0.008813
+     }
+    },
+    {
+     "id": "diff-kettle-copper",
+     "expect": "different",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both photos use a plain grey studio background"
+      ],
+      "mismatches": [
+       "Photo A is tall egg-shaped closed kettle on footed base; Photo B is short wide open pot with rounded base",
+       "Photo A has long brass spout on upper side; Photo B has no spout",
+       "Photo A has thin arched brass handle joining spout to lower body; Photo B has thick corroded swing bail handle with hooked ends",
+       "Photo A body is smooth polished copper with purple-brown patina; Photo B body is rough reddish-brown with green corrosion and engraved decorative bands",
+       "Photo A has closed top with small lid; Photo B has wide open mouth"
+      ],
+      "why": "Photo B does not show the same physical object as Photo A. Photo A is a tall egg-shaped copper kettle with a footed base, closed top, and long brass spout and arched handle. Photo B is a short wide open bronze pot with a rounded base, wide open mouth, engraved bands, thick corroded bail handle, and no spout.",
+      "seconds": 5.3,
+      "usd": 0.007059
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a kettle in this photo. Try again closer, with more light.",
+      "seconds": 0.5,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "diff-teapot-silver-straight",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "both are silver-coloured metal teapots",
+       "straight tapered spout on the right side",
+       "C-shaped side handle on the left side with metal mounts",
+       "lidded top centered on body",
+       "light grey studio background in both photos"
+      ],
+      "mismatches": [
+       "handle colour: black in A vs reddish-brown wood in B",
+       "lid finial: short flat oval knob in A vs tall pointed pinecone finial in B",
+       "side engraving: large crowned crest in centre in A vs small monogram in centre in B",
+       "top and bottom border pattern: floral scroll band in A vs swag drape with tassels in B",
+       "body construction: flat octagonal panels in A vs vertically fluted panels in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. While both are silver teapots with a straight spout, the handle colour, lid finial, body shape and engraved decoration are all different and cannot belong to the same object.",
+      "seconds": 5.3,
+      "usd": 0.006279
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.945,
+      "matched": [
+       "Both are silver-coloured metal teapots",
+       "Both have a straight tapered spout on the right side",
+       "Both have a C-shaped side handle on the left side",
+       "Both have a lidded top with central finial"
+      ],
+      "mismatches": [
+       "Handle colour/material: black in A vs brown wood-grain in B",
+       "Side engraving: large crowned crest in centre of A vs small monogram with swag drape festoons in B",
+       "Border decoration: wide floral scroll band top and bottom in A vs narrow swag drape bands in B",
+       "Lid finial shape: low flat-topped knob in A vs tall pointed pine-cone finial in B",
+       "Body form: flat octagonal panels in A vs vertically fluted/ribbed curved body in B"
+      ],
+      "why": "Photo B does not show the same physical teapot as Photo A. Both are silver teapots with a straight spout, but the handle in A is black while in B it is brown wood, the side engraving in A is a large crowned crest while in B it is a small monogram with swag drape decoration, the lid finial is low and flat in A versus tall and pointed in B, and the body shape and border patterns are different. Therefore it is a different object of the same kind.",
+      "seconds": 12.4,
+      "usd": 0.010771
+     }
+    },
+    {
+     "id": "diff-teapot-silver-shield",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are silver-coloured metal teapots with a lid on top",
+       "Both have a side spout with a curved handle on the opposite side",
+       "Both have a central engraved decoration on the body",
+       "Both photographed against a plain grey background"
+      ],
+      "mismatches": [
+       "Body shape: faceted square panels in A vs smooth round cylinder in B",
+       "Handle colour: light brown wood in A vs black wood in B",
+       "Central engraving: shield cartouche with M and dotted swag border in A vs foliate wreath monogram in B",
+       "Lid finial: low turned knob in A vs tall pinecone spire in B",
+       "Trim: flat engraved dotted border in A vs raised rope-beaded border on lid and base in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. The body shape is faceted square with flat panels in A versus smooth round cylindrical in B. The handle is light brown wood in A versus black in B. The central engraving is a shield cartouche with dotted swag borders in A versus a different foliate wreath monogram in B. The lid finial and base and lid trims are also of different designs.",
+      "seconds": 7.1,
+      "usd": 0.009177
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.938,
+      "matched": [
+       "Both are silver-coloured metal teapots with a side spout, top lid and side handle",
+       "Both photographed against a plain light-grey studio background"
+      ],
+      "mismatches": [
+       "Handle colour: light brown carved wood in A vs black/dark wood in B",
+       "Handle shape: tall curved handle with pointed top in A vs short D-loop handle in B",
+       "Body shape: faceted octagonal flat-panel body in A vs smooth round cylindrical body in B",
+       "Front engraving: shield crest with letter in A vs script initials in foliage wreath in B, with different border patterns",
+       "Lid finial: low flat disc finial in A vs tall pinecone finial in B",
+       "Trim: plain rims in A vs beaded/rope gadroon rims on lid and base in B",
+       "Spout form: short plain tapered spout in A vs long fluted narrow spout in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. While both are silver teapots, the body shape, handle colour and shape, lid finial, trim and engraving are all different and incompatible with the same object.",
+      "seconds": 7.1,
+      "usd": 0.008301
+     }
+    },
+    {
+     "id": "diff-teapot-white",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are white ceramic teapots shown in side view with handle on left and spout on right"
+      ],
+      "mismatches": [
+       "Body decoration: large cabbage-leaf veins in A vs figural relief of woman and cherub in B",
+       "Handle: thick bamboo-jointed handle in A vs thin twisted handle in B",
+       "Lid knob: flat floral cluster in A vs tall pointed bud in B",
+       "Base: four small feet in A vs continuous circular foot-ring in B",
+       "Spout texture: ribbed leaf-textured spout in A vs smooth plain spout in B"
+      ],
+      "why": "Photo A is a cabbage-leaf molded white teapot with large leaf veins, a bamboo-jointed handle, a flat floral lid knob, and four small feet. Photo B is a completely different white teapot with a figural relief of a seated woman and cherub, a thin twisted handle, a tall pointed lid knob, and a flat circular foot. The body decoration, handle, lid, base and spout do not match, so it is not the same physical object.",
+      "seconds": 6.2,
+      "usd": 0.007351
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.965,
+      "matched": [
+       "both are white porcelain teapots",
+       "both viewed with handle on left and spout on right",
+       "both photographed against plain grey background"
+      ],
+      "mismatches": [
+       "A has all-over cabbage-leaf ribbed moulding, B has smooth body with raised classical figures of woman and cherub",
+       "A stands on three small feet, B has a flat circular foot-ring base",
+       "A has short C-shaped bamboo-segment handle with rings, B has tall S-curved vine/bark-textured handle",
+       "A lid is flat leaf-shaped with flower-cluster finial, B lid is domed with tall pointed bud finial",
+       "A body is squat globular, B body is taller ovoid"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. Both are white and seen handle-left spout-right, but A has cabbage-leaf ribbed moulding, three small feet, a bamboo-segment handle and a flower-cluster lid finial, while B has a taller smooth body with classical figure relief of a woman and cherub, a flat foot-ring base, a vine-textured handle, and a pointed bud lid finial.",
+      "seconds": 7.2,
+      "usd": 0.009464
+     }
+    },
+    {
+     "id": "diff-clock-carriage",
+     "expect": "different",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are small upright rectangular carriage clocks with a central round face photographed against a plain light background"
+      ],
+      "mismatches": [
+       "Frame finish and colour: A is bright gold with heavy scrollwork border, B is dark silver/grey metal with plain narrow pillars",
+       "Front panel: A is brown with raised oak-leaf and acorn relief, B is plain metal with white circular dial",
+       "Dial and numerals: A has brown dial with gold stylized numerals, B has white dial with black standard Arabic numerals 1-12",
+       "Top: A has flat solid top with Greek-key trim, B has open gallery handle with two spire finials and five balusters",
+       "Base and feet: A has square gold bracket feet with Greek-key base molding, B has small round ball feet with arched cut-out base"
+      ],
+      "why": "Photo B does not show the same physical clock as Photo A. Photo A is a gold ornate clock with a brown relief front and brown dial, while Photo B is a silver-toned metal clock with a white dial and a completely different top handle and detailing. The frame color, dial, decoration and top structure all mismatch.",
+      "seconds": 5.9,
+      "usd": 0.007301
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.879,
+      "matched": [
+       "Both are upright rectangular carriage-clock form",
+       "Both have a centrally placed round dial"
+      ],
+      "mismatches": [
+       "Case finish and colour: A is ornate gold with brown front/side panels, B is dark plain metal",
+       "Dial: A is brown with ornate gold ring and stylized numerals, B is light/white with black Arabic numerals 1-12",
+       "Top handle: A is flat patterned top with Greek-key corners, B is open pillared gallery with finials",
+       "Front decoration: A has leaf/vine relief and scrollwork, B has plain metal with small rosette engravings",
+       "Base/feet: A has ornate gold base with square feet, B has different base with small round ball feet"
+      ],
+      "why": "Photo B is not the same physical clock as Photo A. The case finish, dial color and numerals, top handle design, and decorative details are completely different, showing a different carriage clock.",
+      "seconds": 6.2,
+      "usd": 0.008679
+     }
+    },
+    {
+     "id": "diff-lamp-turquoise",
+     "expect": "different",
+     "noun": "oil lamp",
+     "reference_outlined": false,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "both are small glazed ceramic oil lamps with squat body, side spout on left and small handle on right",
+       "both show crackled glaze surface",
+       "both photographed against dark background in side view"
+      ],
+      "mismatches": [
+       "glaze colour: bright turquoise in A vs pale celadon light green-grey in B",
+       "neck/rim shape: tall straight cylindrical neck in A vs flared trumpet-shaped mouth in B",
+       "spout length/condition: long pointed intact spout in A vs short blunt broken-off spout in B",
+       "weathering: heavy dark brown/black encrustation on spout tip, neck, base and handle in A vs absent in B, B has clean crackle and sandy unglazed base",
+       "handle form: small short lug in A vs large thick loop handle in B",
+       "base and display surface: dark spotted glazed base on blue cloth in A vs sandy unglazed foot on grey surface in B"
+      ],
+      "why": "Photo B is not the same physical object as Photo A. While both are the same kind of glazed lamp with body, spout and rear handle, the specific shape, colour, condition and details are different. A has a bright turquoise glaze with heavy dark-brown/black weathering, a tall straight cylindrical neck, and a long intact spout. B has a pale celadon-green glaze with fine crackle and no dark patches, a flared trumpet-shaped neck/mouth, a short broken-off spout, a larger loop handle, and an unglazed sandy base.",
+      "seconds": 6.3,
+      "usd": 0.005851
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a oil lamp in this photo. Try again closer, with more light.",
+      "seconds": 1.6,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "diff-teapot-round-silver",
+     "expect": "different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "Both are round globular silver teapots",
+       "Both have a side spout with opposite C-shaped side handle",
+       "Both have an engraved crest on the body side",
+       "Both photographed against plain light-grey background"
+      ],
+      "mismatches": [
+       "Handle colour: black in A vs brown wood in B",
+       "Lid knob/finial: black knob in A vs silver metal finial in B",
+       "Lid rim: fluted ribbed edge in A vs plain smooth in B",
+       "Body engraving: large detailed coat-of-arms with crown and mantling in A vs small faint different crest in B",
+       "Foot/base: decorative patterned band in A vs plain smooth foot in B",
+       "Spout shape: straight tapered spout in A vs S-curved spout with different tip in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. A has a black handle and black lid knob, a fluted lid rim, a large elaborate coat-of-arms engraving with crown, and a decorated patterned foot. B has a brown wooden handle, a silver metal finial, a plain lid, a much smaller different engraving, a plain foot, and a different S-curved spout shape.",
+      "seconds": 5.2,
+      "usd": 0.007353
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.965,
+      "matched": [
+       "Both are round globular silver teapot bodies",
+       "Both have a straight side spout opposite a C-shaped side handle",
+       "Both have an engraved crest on the side of the body"
+      ],
+      "mismatches": [
+       "Handle colour/material: black in A vs brown wood in B",
+       "Lid finial: large black knob in A vs small silver finial in B",
+       "Lid edge: fluted ribbed border in A vs plain smooth lid in B",
+       "Engraving: large highly detailed coat-of-arms with ship in A vs much smaller fainter different crest in B",
+       "Foot/base: decorative patterned band in A vs plain smooth foot in B"
+      ],
+      "why": "Photo B is not the same physical teapot as Photo A. While both are round silver teapots with an engraving, the key individual features are different: black handle and black lid knob vs brown handle and silver finial, heavily fluted lid and decorated foot vs plain lid and plain foot, and a large detailed coat-of-arms engraving vs a much smaller fainter different engraving.",
+      "seconds": 5.9,
+      "usd": 0.008534
+     }
+    },
+    {
+     "id": "unclear-clock-old-photo",
+     "expect": "unclear_same",
+     "noun": "clock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "same rectangular carriage-case form with four small feet",
+       "same scrollwork borders on top, sides and base",
+       "same Greek-key motif on top corners and base feet",
+       "same central round dial with stylized numerals and ornate bezel",
+       "same diamond-shaped lugs on both sides of dial",
+       "same embossed leaf/cloud relief above dial and scroll/bird relief below dial",
+       "same side-panel relief pattern"
+      ],
+      "mismatches": [
+       "colour: A shows gold metal and light-brown front, B shows no gold/brown and is monochrome with very dark front panel",
+       "metal tone: warm gold in A vs bright silvery tone in B",
+       "clock hands point to different positions in A vs B",
+       "no unique scratch, wear or mark to prove same physical instance, only same design"
+      ],
+      "why": "The case shape, ornament and dial layout are very similar, but Photo B is monochrome so the described gold metal and brown front from Photo A cannot be verified. The front panel in B appears very dark and the metal appears silvery-bright, not warm gold. Without colour confirmation and without any unique wear mark, this could be the same model rather than the same physical clock. Under a strict rule this is not enough to confirm identity.",
+      "seconds": 10.7,
+      "usd": 0.011203
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.782,
+      "matched": [
+       "same rectangular carriage-clock case with ornate scrolled frame on front edges, base and feet",
+       "same round central dial with stylized numerals and decorated dial ring",
+       "same raised oak-leaf motifs above dial on brown panel",
+       "same curved stem and swallow/bird relief below dial",
+       "same diamond-shaped side latches at 9 and 3 o'clock positions",
+       "same Greek-key pattern on top corners and base feet",
+       "same relief pattern on visible right side panel and same patterned top inset"
+      ],
+      "mismatches": [
+       "Photo A shows gold frame and brown front in colour; Photo B is grayscale with grey/black tones so gold and brown colours cannot be confirmed",
+       "overall material tone differs due to monochrome image and owner colour description cannot be verified in B"
+      ],
+      "why": "Both images show the same model/design of carriage clock with identical layout and ornament, but Photo B is monochrome so the described gold colour and brown front cannot be verified. Identical manufactured models can look the same, and without colour or unique wear to prove the same physical instance, it cannot be confirmed as the same object.",
+      "seconds": 12.7,
+      "usd": 0.012021
+     }
+    },
+    {
+     "id": "unclear-teapot-in-a-group",
+     "expect": "unclear_same",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "tall stepped dome lid with small knob finial",
+       "bulbous pewter body with narrow neck",
+       "dark S-curved side handle with metal mounts",
+       "slender upturned spout opposite handle"
+      ],
+      "mismatches": [
+       "left-right orientation reversed: handle on right in A vs on left in B",
+       "B is distant low-resolution group shot, individual pitting and scratches from A not verifiable",
+       "no unique mark, label or wear pattern visible to prove same token"
+      ],
+      "why": "Both images show a pewter teapot with a tall stepped lid and dark S-curved handle, but Photo B is a distant group shot with reversed left-right orientation. Individual surface pitting and wear visible in Photo A cannot be verified in Photo B, so the same physical token cannot be confirmed, only the same type.",
+      "seconds": 9.7,
+      "usd": 0.009727
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.899,
+      "matched": [
+       "Tall stepped dome lid with small turned finial",
+       "Black S-curved side handle with metal sockets at top and bottom",
+       "Squat globular pewter body",
+       "Slender tapered upright spout"
+      ],
+      "mismatches": [
+       "Viewpoint reversed: spout left / handle right in A vs spout right / handle left in B",
+       "Photo B is very small and low-resolution, surface patina and scratches seen in A cannot be verified",
+       "Photo B shows partial plate/Bowl at right edge not present in A",
+       "No legible unique marks, labels or dents to prove individual identity"
+      ],
+      "why": "Both photos show the same type of pewter teapot with a tall stepped lid and a black S-shaped handle, but Photo B is very small, low-resolution and taken from the opposite side. No unique surface marks, scratches, or hallmarks visible in Photo A can be verified in Photo B, so the same individual physical object cannot be confirmed.",
+      "seconds": 10.6,
+      "usd": 0.013456
+     }
+    },
+    {
+     "id": "unclear-padlock-from-above",
+     "expect": "unclear_same",
+     "noun": "padlock",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "Both are large heavy iron padlocks with dark brown mottled rust patina",
+       "Both have blocky built-up body with top shackle",
+       "Both photographed against plain light grey studio background"
+      ],
+      "mismatches": [
+       "Photo A shows wide arched shackle and ornate shaped front with eye-like holes, lower holes and sculpted bottom cutout; Photo B shows narrow vertical shackle bar and plain stacked rectangular face with no eye holes visible",
+       "Red painted inventory marking on cross-bar in Photo B is not visible in Photo A",
+       "Shackle width and body detailing do not correspond in the visible views"
+      ],
+      "why": "Both are large rusted iron padlocks, but the distinctive shaped front with eye-like holes and sculpted bottom seen in Photo A is not visible in Photo B. Photo B shows a narrow straight shackle bar and plain stacked rectangular face with red paint marking not seen in A. Without a shared unique mark visible in both views, it cannot be confirmed to be the same physical padlock.",
+      "seconds": 16.2,
+      "usd": 0.016801
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a padlock in this photo. Try again closer, with more light.",
+      "seconds": 0.3,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "unclear-pot-old-photo",
+     "expect": "unclear_same",
+     "noun": "pot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "verified",
+      "judged": "right",
+      "same_object": true,
+      "matched": [
+       "globular rounded body with wide mouth and thick everted rim",
+       "arched overhead handle with hooked terminals and central ribbed ornament",
+       "two small vertical lugs on rim holding the handle",
+       "wide engraved inscription-floral band around shoulder in same position and pattern",
+       "narrow engraved band around lower body in same position",
+       "surface patina texture and proportions identical"
+      ],
+      "mismatches": [],
+      "why": "Both photos show the same globular pot with wide mouth and thick everted rim, two small vertical rim lugs, and the same arched handle with hooked animal-style terminals and central ribbed panel. The wide engraved inscription-floral band on the shoulder and the narrow engraved band on the lower body are in the same positions with the same pattern. Photo B is grayscale so copper colour cannot be directly compared, but there is no difference in shape, handle form, or decoration. Background difference is photographic only.",
+      "seconds": 11.4,
+      "usd": 0.010926
+     },
+     "sam_then_spark": {
+      "outcome": "verified",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.766,
+      "matched": [
+       "Globular squat body with wide thick everted rim, same proportions",
+       "Arched swing handle with hooked terminals and central ribbed section at apex, same shape",
+       "Two vertical handle lugs at rim, same position and height",
+       "Upper wide engraved band with inscription/floral scroll between thin border lines, same pattern and placement",
+       "Lower narrow engraved band near base, same placement",
+       "Plain light studio background in both photos"
+      ],
+      "mismatches": [
+       "Overall colour tone: reddish-brown copper with greenish patina in Photo A vs grey monochrome tone in Photo B due to black-and-white image, copper colour not directly verifiable in B"
+      ],
+      "why": "Both photos show the same globular pot with identical proportions and details. The arched swing handle with hooked animal-head terminals and central ribbed grip, the two vertical lugs at the rim, the wide upper engraved band with inscription and floral scroll, and the lower narrow engraved band all match in shape, position and pattern. The grey tone in Photo B is a black-and-white photographic effect, not a different object, while the copper reddish colour is visible in Photo A.",
+      "seconds": 14.2,
+      "usd": 0.012613
+     }
+    },
+    {
+     "id": "unclear-kettle-dim-blurred",
+     "expect": "unclear_same",
+     "noun": "kettle",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "same_object": false,
+      "matched": [
+       "both appear black/dark",
+       "both show a rounded bulbous body with an arched bail handle over the top",
+       "similar grey gradient background"
+      ],
+      "mismatches": [
+       "long thin curved spout/lever clearly visible in A is not visible in B",
+       "ring on the lid clearly visible in A is not verifiable in B",
+       "lid profile, handle lugs and small feet details in A are lost in blur in B",
+       "B is heavily out of focus so no distinguishing marks can be compared"
+      ],
+      "why": "Photo B is extremely blurred and dark. While a general black rounded shape with an arched handle is vaguely visible, the key identifying features from Photo A - the ring on the lid, lid shape, the spout with the long thin curved lever, handle attachments, and small feet - cannot be seen or verified in Photo B. No concrete distinguishing detail can be confirmed to match. Strictly, the same physical object cannot be established.",
+      "seconds": 7.3,
+      "usd": 0.007935
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "wrong",
+      "found": 1,
+      "confidence": 0.867,
+      "matched": [
+       "black colour of kettle body",
+       "generally rounded squat body silhouette",
+       "arched handle over the top",
+       "dark grey studio-like background"
+      ],
+      "mismatches": [
+       "Photo B is severely blurry/out of focus, so details cannot be compared",
+       "ring on the lid not verifiable in Photo B",
+       "long thin spout and curved pouring spout not visible/verifiable in Photo B",
+       "handle joints, feet, surface texture and lid detail not verifiable in Photo B"
+      ],
+      "why": "Photo B is too blurry and out of focus to confirm it is the same physical kettle as Photo A. While the general dark silhouette is similar, the key identifying features from Photo A - the ring on the lid and the long thin spout and curved pouring spout - cannot be verified in Photo B.",
+      "seconds": 5.6,
+      "usd": 0.008101
+     }
+    },
+    {
+     "id": "unclear-only-the-marks",
+     "expect": "unclear_none",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [],
+      "mismatches": [
+       "Photo A shows full teapot with straight sides, black C-handle, long thin spout and lidded top; none of these parts are visible in Photo B",
+       "Photo B shows two rectangular REVERE stamps and central dot on scratched surface; these marks are not visible in Photo A",
+       "No overlapping engraved monogram, beaded trim, finial, or shape details to link the two views as same object"
+      ],
+      "why": "Photo B shows only a scratched silver surface with two REVERE stamps and a small punch mark. It does not show any of the distinctive form from Photo A - straight-sided body, black handle, long thin spout, domed lid with finial, engraved monogram, beaded trim. The stamps in B are not visible in A, and there is no overlapping detail to confirm B is the same physical teapot.",
+      "seconds": 7.8,
+      "usd": 0.008426
+     },
+     "sam_then_spark": {
+      "outcome": "cannot_verify",
+      "judged": "right",
+      "found": 0,
+      "confidence": null,
+      "matched": [],
+      "mismatches": [],
+      "why": "I couldn't find a teapot in this photo. Try again closer, with more light.",
+      "seconds": 0.2,
+      "usd": 0.0025
+     }
+    },
+    {
+     "id": "unclear-other-teapot-dim",
+     "expect": "unclear_different",
+     "noun": "teapot",
+     "reference_outlined": true,
+     "not_a_new_photo": false,
+     "spark_alone": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "same_object": false,
+      "matched": [
+       "silver-toned body",
+       "straight tapered spout on right side",
+       "C-shaped side handle on left side",
+       "lidded top with central knob",
+       "plain grey background"
+      ],
+      "mismatches": [
+       "handle looks brown in B vs black in A",
+       "engraved crest in centre of A not verifiable in blurry B",
+       "decorative engraved borders at top and bottom of A not verifiable in B",
+       "heavy blur in B prevents confirmation of lid, mounts and surface details"
+      ],
+      "why": "Photo B has a similar teapot silhouette but is heavily blurred. The black handle, central engraved crest, and top/bottom decorative bands seen clearly in A cannot be verified in B, and the handle looks brown rather than black. Because identifying details cannot be confirmed, it cannot be judged as the same physical object.",
+      "seconds": 5.8,
+      "usd": 0.006631
+     },
+     "sam_then_spark": {
+      "outcome": "mismatch",
+      "judged": "right",
+      "found": 1,
+      "confidence": 0.918,
+      "matched": [
+       "overall faceted silver teapot body silhouette",
+       "straight tapered spout on the right side angled upward",
+       "high C-shaped handle on the left side",
+       "central lid with top knob",
+       "plain light grey background"
+      ],
+      "mismatches": [
+       "handle colour: sharp black in A vs brownish blurred tone in B",
+       "engraved crest on side clearly visible in A not visible in B",
+       "engraved decorative border bands top and bottom visible in A not verifiable in B",
+       "Photo B is heavily blurred/out of focus so lid, spout and surface details cannot be compared"
+      ],
+      "why": "Photo B is too blurry to confirm it is the same physical teapot. The general silhouette matches, but the distinctive black handle and engraved crest and borders seen clearly in Photo A cannot be verified in B. The handle in B looks brownish, not black, and no surface detail is discernible. Under a strict check this cannot be accepted as the same object.",
+      "seconds": 7.7,
+      "usd": 0.008617
+     }
+    }
+   ]
+  },
+  "reading": {
+   "name": "Reading facts: Muse Spark alone vs the witnesses and the gate",
+   "transcripts": 8,
+   "facts": 22,
+   "wrong_facts": 1,
+   "gold_facts": 17,
+   "gold_found": 17,
+   "conditions": {
+    "alone": {
+     "verified": 22,
+     "wrong_facts_verified": 1,
+     "wrong_facts_caught": 0,
+     "right_facts_sent_to_review": 0,
+     "unsupported_quotes_verified": 3
+    },
+    "words": {
+     "verified": 19,
+     "wrong_facts_verified": 1,
+     "wrong_facts_caught": 0,
+     "right_facts_sent_to_review": 3,
+     "unsupported_quotes_verified": 0
+    },
+    "app": {
+     "verified": 17,
+     "wrong_facts_verified": 1,
+     "wrong_facts_caught": 0,
+     "right_facts_sent_to_review": 5,
+     "unsupported_quotes_verified": 0
+    },
+    "every_fact_read_twice": {
+     "verified": 16,
+     "wrong_facts_verified": 1,
+     "wrong_facts_caught": 0,
+     "right_facts_sent_to_review": 6,
+     "unsupported_quotes_verified": 0
+    }
+   },
+   "usd_reading": 0.1829,
+   "usd_second_readings": 0.4222,
+   "items": [
+    {
+     "id": "fuse-correction",
+     "lang": "en",
+     "note": "a correction mid-sentence: the red switch, not the blue",
+     "facts": [
+      {
+       "text_en": "The fuse box is under the stairs.",
+       "text_si": "ෆීයුෂ් බොක්ස් එක පඩිපෙෆ යට තියෙනවා.",
+       "quote": "fuse box, under the stairs",
+       "kind": "location",
+       "safety": "electricity",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said the fuse box is under the stairs, which matches the claim.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "If the power goes, push up the red switch on the left.",
+       "text_si": "ලයටක් ගියාම වම් පැත්තැකේ තියෙන රතු ස්විච් එක උඩට කරුට එක.",
+       "quote": "push up the blue switch. Sorry, not the blue one, the red one on the left",
+       "kind": "step",
+       "safety": "electricity",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner corrected himself to the red switch on the left when the power goes.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "The blue switch is for the water heater.",
+       "text_si": "නිල් ස්විච් එක වතුර හීටරේට.",
+       "quote": "The blue one is for the water heater",
+       "kind": "item",
+       "safety": "electricity",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said the blue one is for the water heater, which matches the claim.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [
+        "push-the-blue"
+       ],
+       "wrong": [
+        "push-the-blue"
+       ],
+       "app_why": ""
+      },
+      {
+       "text_en": "Leave the blue switch alone.",
+       "text_si": "නිල් ස්විච් එකට අත තියන්න එපා.",
+       "quote": "Leave that one alone.",
+       "kind": "warning",
+       "safety": "electricity",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner identified the blue one and said to leave that one alone.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      }
+     ],
+     "gold_found": {
+      "where": true,
+      "red-switch": true,
+      "leave-blue": true
+     },
+     "usd_reading": 0.025165,
+     "usd_second_readings": 0.08081
+    },
+    {
+     "id": "pump-night",
+     "lang": "en",
+     "note": "a negation",
+     "facts": [
+      {
+       "text_en": "The water pump is behind the kitchen.",
+       "text_si": "වතුර පොම්පය කුස්සිය පිටිපස්සේ තියෙනවා.",
+       "quote": "water pump behind the kitchen",
+       "kind": "location",
+       "safety": "water",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said the water pump is behind the kitchen, which matches the claim.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "Do not run the water pump at night, the neighbours complain about the noise.",
+       "text_si": "වතුර පොම්පය රෑට දාන්න එපා, සද්දේ නිසා අල්ලපු අය කම්ප්ලේන් කරනවා.",
+       "quote": "Don't run it at night",
+       "kind": "warning",
+       "safety": "water",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said not to run it at night because the neighbours complain about the noise, matching the claim.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "Run the water pump in the morning only for about twenty minutes.",
+       "text_si": "වතුර පොම්පය උදේ විතරක් විනාඩි විස්සක් විතර දාන්න.",
+       "quote": "in the morning only, for about twenty minutes",
+       "kind": "schedule",
+       "safety": "water",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said to run it in the morning only for about twenty minutes, which matches the claim.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      }
+     ],
+     "gold_found": {
+      "where": true,
+      "not-at-night": true,
+      "morning-twenty": true
+     },
+     "usd_reading": 0.024381,
+     "usd_second_readings": 0.09023
+    },
+    {
+     "id": "gas-regulator",
+     "lang": "si",
+     "note": "Sinhala mixed with English words, and a negation",
+     "facts": [
+      {
+       "text_en": "This is the gas regulator.",
+       "text_si": "මේ තමි ගැස් regulator එක.",
+       "quote": "මේ තමි ගැස් regulator එක.",
+       "kind": "location",
+       "safety": "gas",
+       "words": "fail",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said this is the gas regulator, matching the claim.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "needs_review",
+        "app": "needs_review",
+        "every_fact_read_twice": "needs_review"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": "words: These exact words are not in what was said."
+      },
+      {
+       "text_en": "Turn off the regulator after cooking.",
+       "text_si": "Cook කරසා ඉවර වුණාම regulator එක off කරන්න.",
+       "quote": "Cook කරසා ඉවර වුණාම regulator එක off කරන්න.",
+       "kind": "step",
+       "safety": "gas",
+       "words": "fail",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said to turn off the regulator after finishing cooking, which matches the claim.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "needs_review",
+        "app": "needs_review",
+        "every_fact_read_twice": "needs_review"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": "words: These exact words are not in what was said."
+      },
+      {
+       "text_en": "Never leave it on at night.",
+       "text_si": "රෑට කවදාවත් on කරසා තියන්න එපා.",
+       "quote": "රෑට කවදාවත් on කරසා තියන්න එපා.",
+       "kind": "warning",
+       "safety": "gas",
+       "words": "fail",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said never to keep it on at night, which matches the claim.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "needs_review",
+        "app": "needs_review",
+        "every_fact_read_twice": "needs_review"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": "words: These exact words are not in what was said."
+      }
+     ],
+     "gold_found": {
+      "off-after-cooking": true,
+      "never-on-at-night": true
+     },
+     "usd_reading": 0.020113,
+     "usd_second_readings": 0.046238
+    },
+    {
+     "id": "alarm-medicine-milk",
+     "lang": "en",
+     "note": "a spoken code, a medicine sentence, and an ordinary job",
+     "facts": [
+      {
+       "text_en": "The alarm code is [hidden].",
+       "text_si": "අලාරම් කෝඩ් එක [hidden].",
+       "quote": "alarm code is [hidden]",
+       "kind": "step",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said the same alarm code as in the claim.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "The milk man comes at seven.",
+       "text_si": "කිරි කාරයා හටට එනාවා.",
+       "quote": "comes at seven",
+       "kind": "schedule",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said in the full turn that the milk man comes at seven.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "Pay him every Friday.",
+       "text_si": "ඔහුට හැම සිකුරාදම ගෙවන්න.",
+       "quote": "Pay him every Friday",
+       "kind": "payment",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner's words say exactly to pay him every Friday.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      }
+     ],
+     "gold_found": {
+      "milkman-seven": true,
+      "pay-friday": true
+     },
+     "usd_reading": 0.037077,
+     "usd_second_readings": 0.046758
+    },
+    {
+     "id": "motor-leave-home",
+     "lang": "si",
+     "note": "a Sinhala negation",
+     "facts": [
+      {
+       "text_en": "This is the water motor.",
+       "text_si": "මේක තමයි වතුර මෝටරය.",
+       "quote": "වතුර මෝටරය",
+       "kind": "location",
+       "safety": "water",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said this is the water motor.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "Never leave the house with the motor on.",
+       "text_si": "මෝටරය දාලා කවදාවත් ගෙදරින් එළියට යන්න එපා.",
+       "quote": "කවදාවත් ගෙදරින් එළියට යන්න එපා",
+       "kind": "warning",
+       "safety": "water",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said never to leave the house with the motor on.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "Turn it off when the tank is full.",
+       "text_si": "ටැංකිය පිරුණාම ඕෆ් කරන්න.",
+       "quote": "ටැංකිය පිරුණාම ඕෆ් කරන්න",
+       "kind": "step",
+       "safety": "water",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said to turn it off when the tank is full, which matches the claim.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      }
+     ],
+     "gold_found": {
+      "never-leave-on": true,
+      "off-when-full": true
+     },
+     "usd_reading": 0.017839,
+     "usd_second_readings": 0.049138
+    },
+    {
+     "id": "rice-or-pump",
+     "lang": "en",
+     "note": "a correction across two sentences",
+     "facts": [
+      {
+       "text_en": "Start the rice cooker every evening at six.",
+       "text_si": "හැම හවසම හය රා්ෂකුකර් එක පටන් ගන්න.",
+       "quote": "the rice cooker is at six",
+       "kind": "schedule",
+       "safety": "electricity",
+       "words": "pass",
+       "second_reading": "disagree",
+       "second_reading_said": "The owner only said the rice cooker is at six and did not say to start it every evening.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "needs_review",
+        "every_fact_read_twice": "needs_review"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": "reading: The owner only said the rice cooker is at six and did not say to start it every evening."
+      },
+      {
+       "text_en": "Run the water pump every evening at five for fifteen minutes.",
+       "text_si": "හැම හවසම පහට වதුර පොම්පය විනාඩි පහලෆවක් දාන්න.",
+       "quote": "At five it's the water pump, for fifteen minutes",
+       "kind": "schedule",
+       "safety": "electricity",
+       "words": "pass",
+       "second_reading": "disagree",
+       "second_reading_said": "The claim adds every evening, which the owner did not say.",
+       "app_runs_second_reading": true,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "needs_review",
+        "every_fact_read_twice": "needs_review"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": "reading: The claim adds every evening, which the owner did not say.; translation: The Sinhala text mixes in letters from another script."
+      }
+     ],
+     "gold_found": {
+      "rice-six": true,
+      "pump-five": true
+     },
+     "usd_reading": 0.019972,
+     "usd_second_readings": 0.040358
+    },
+    {
+     "id": "gate-lock",
+     "lang": "en",
+     "note": "Sinhala in Latin letters",
+     "facts": [
+      {
+       "text_en": "Lock the gate every night.",
+       "text_si": "ගෑට් එක හැම රාත්රියම ලොක් කරන්න කරොන්නේ ඔනේ.",
+       "quote": "Gate eka lock karanna one hama raathriyakma.",
+       "kind": "schedule",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said to lock the gate every night.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "The key is in the upper drawer in the kitchen.",
+       "text_si": "යතුර තියෙන්නේ කුස්සියේ උඩ ලාච්චුවේ.",
+       "quote": "kitchen drawer eke, uda drawer eke",
+       "kind": "location",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner said the key is in the upper drawer in the kitchen.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      }
+     ],
+     "gold_found": {
+      "lock-every-night": true,
+      "key-top-drawer": true
+     },
+     "usd_reading": 0.020846,
+     "usd_second_readings": 0.029438
+    },
+    {
+     "id": "water-bill-hedge",
+     "lang": "en",
+     "note": "a date the speaker isn't sure of",
+     "facts": [
+      {
+       "text_en": "The water bill comes every month, I think around the fifteenth, but check the paper.",
+       "text_si": "වතුර බිල හෙ මාසෙම එනවා, හිතන්නේනේ පහළැව වගේ, එත් කොලේ බලාල්න්නන්.",
+       "quote": "comes every month, I think around the fifteenth",
+       "kind": "payment",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "pass",
+       "second_reading_said": "The owner's full turn says the bill comes every month around the fifteenth and to check the paper.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "verified"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      },
+      {
+       "text_en": "Pay the water bill at the post office near the junction.",
+       "text_si": "වතුර බිල ගෙවන්න් හන්දිය ලේග තැපැල් කාර්යා඲යෙනින්.",
+       "quote": "at the post office near the junction",
+       "kind": "step",
+       "safety": "none",
+       "words": "pass",
+       "second_reading": "disagree",
+       "second_reading_said": "The owner said to pay it there but never said it was the water bill.",
+       "app_runs_second_reading": false,
+       "status": {
+        "alone": "verified",
+        "words": "verified",
+        "app": "verified",
+        "every_fact_read_twice": "needs_review"
+       },
+       "wrong_if_shown": [],
+       "wrong": [],
+       "app_why": ""
+      }
+     ],
+     "gold_found": {
+      "post-office": true
+     },
+     "usd_reading": 0.017465,
+     "usd_second_readings": 0.039242
+    }
+   ]
+  },
+  "tell": {
+   "name": "Tell me: Muse Spark's judgment alone vs with the quote and required-point checks (the app)",
+   "answers": 20,
+   "should_pass": 8,
+   "model_alone": {
+    "right": 20,
+    "false_passes": [],
+    "false_fails": []
+   },
+   "app": {
+    "right": 20,
+    "false_passes": [],
+    "false_fails": []
+   },
+   "usd": 0.091488,
+   "items": [
+    {
+     "id": "ms-si-paraphrase",
+     "lang": "si",
+     "expect_pass": true,
+     "why": "all three points, in other words",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "කරන්ට් නැති වුණාම මම මුලින්ම ස්විච් පෙට්ටිය ළඟට යනවා"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "පල්ලෙහාට වැටුණු ස්විච් එක ආපහු උඩට දානවා"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "අත් තෙත් නම් ඒක අල්ලන්නේ නැහැ"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 3 of 3 steps, including every safety step."
+     ]
+    },
+    {
+     "id": "ms-si-negation",
+     "lang": "si",
+     "expect_pass": false,
+     "why": "says it is fine to touch it with wet hands",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "කරන්ට් ගියොත් ස්විච් පෙට්ටියට ගිහින්"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "වැටුණු ස්විච් එක උඩට දානවා"
+      },
+      {
+       "point_id": "p3",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: Never touch it with wet hands."
+     ]
+    },
+    {
+     "id": "ms-si-no-safety",
+     "lang": "si",
+     "expect_pass": false,
+     "why": "leaves out the wet-hands warning, a safety point",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "ස්විච් පෙට්ටියට ගිහින්"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "පහළට ගිය ස්විච් එක උඩට දානවා"
+      },
+      {
+       "point_id": "p3",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: Never touch it with wet hands."
+     ]
+    },
+    {
+     "id": "ms-en-paraphrase",
+     "lang": "en",
+     "expect_pass": true,
+     "why": "all three points, in other words",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "When the power fails I go straight to the switch box"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "flip the one that tripped back up"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "I make sure my hands are dry before I touch anything."
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 3 of 3 steps, including every safety step."
+     ]
+    },
+    {
+     "id": "ms-en-wrong-action",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "the wrong action: every switch down",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "When the power goes I go to the box"
+      },
+      {
+       "point_id": "p2",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "I never touch it with wet hands."
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": false
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Missed: Find the switch that is down and push it up."
+     ]
+    },
+    {
+     "id": "ms-singlish",
+     "lang": "en",
+     "expect_pass": true,
+     "why": "all three points, Sinhala in Latin letters",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "Current giyama mulinma switch box ekata yanawa"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "pahalata wetichcha switch eka aye uda danawa"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "Ath themath nam allanne na"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 3 of 3 steps, including every safety step."
+     ]
+    },
+    {
+     "id": "ms-si-keywords",
+     "lang": "si",
+     "expect_pass": false,
+     "why": "the right words, no instructions",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p2",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p3",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      },
+      {
+       "point_id": "p2",
+       "verified": false
+      },
+      {
+       "point_id": "p3",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: If the power is gone, come here first.",
+      "Missed: Find the switch that is down and push it up.",
+      "Missed: Never touch it with wet hands."
+     ]
+    },
+    {
+     "id": "wp-si-paraphrase",
+     "lang": "si",
+     "expect_pass": true,
+     "why": "all three points, in other words",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "හැම උදේම හයට පොම්පය ඔන් කරලා විනාඩි විස්සක් තියනවා, ටැංකිය පිරෙනකම්"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "ඇඹරෙනවා වගේ සද්දයක් ආවොත් ඉක්මනට නවත්තලා"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "සුනිල් මාමාට කතා කරනවා"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 3 of 3 steps."
+     ]
+    },
+    {
+     "id": "wp-en-evening",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "evening, not morning",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "If it grinds I turn it off"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "call Sunil Mama"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Missed: Run it every day at 6:00 AM for 20 minutes until the tank fills."
+     ]
+    },
+    {
+     "id": "wp-en-two-hours",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "two hours, not twenty minutes",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "If it makes a grinding noise I switch it off"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "phone Sunil Mama"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Missed: Run it every day at 6:00 AM for 20 minutes until the tank fills."
+     ]
+    },
+    {
+     "id": "wp-si-no-call",
+     "lang": "si",
+     "expect_pass": false,
+     "why": "leaves out calling Sunil Mama (two of three points, under the 75% line)",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "උදේ හයට විනාඩි විස්සක් පොම්පය දානවා."
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "ඇඹරෙන සද්දයක් ආවොත් ඕෆ් කරනවා."
+      },
+      {
+       "point_id": "p3",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: Call Sunil Mama."
+     ]
+    },
+    {
+     "id": "gas-si-paraphrase",
+     "lang": "si",
+     "expect_pass": true,
+     "why": "the point, in other words",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "සිලින්ඩරේ ගෑස් ඉවර වුණොත් හන්දියේ තියෙන ගෑස් කඩේට ෆෝන් කරනවා."
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 1 of 1 steps."
+     ]
+    },
+    {
+     "id": "gas-en-wrong-who",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "the wrong person to call",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: If the gas cylinder is finished, call the junction gas shop."
+     ]
+    },
+    {
+     "id": "pickup-si-paraphrase",
+     "lang": "si",
+     "expect_pass": true,
+     "why": "both points, in other words",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "බදාදාට නෙතුම්ට හවස පහ වෙනකම් අමතර පන්ති තියෙනවා"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "කවුරුහරි බස් හෝල්ට් එකට ගිහින් එයාව ගෙදර එක්කගෙන එන්න ඕනේ."
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 2 of 2 steps."
+     ]
+    },
+    {
+     "id": "pickup-en-friday",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "Friday, not Wednesday",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "someone fetches him from the bus stop"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Missed: Nethum has extra class every Wednesday until 5 PM."
+     ]
+    },
+    {
+     "id": "docs-si-paraphrase",
+     "lang": "si",
+     "expect_pass": true,
+     "why": "both points, in other words",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "ඔරිජිනල් ලියකියවිලි කාටවත් දෙන්නේ නැහැ"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "ඕනේ නම් ෆොටෝකොපි දෙනවා"
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 2 of 2 steps, including every safety step."
+     ]
+    },
+    {
+     "id": "docs-en-gives-original",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "gives the original away: the opposite of the warning",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p2",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      },
+      {
+       "point_id": "p2",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: Never give the originals to anyone."
+     ]
+    },
+    {
+     "id": "bill-en-paraphrase",
+     "lang": "en",
+     "expect_pass": true,
+     "why": "all three points",
+     "model_alone": true,
+     "app": true,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "The electricity bill shows up around the tenth"
+      },
+      {
+       "point_id": "p2",
+       "covered": true,
+       "quote": "I pay it at the post office"
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "I pay it at the post office, always before the twenty-fifth."
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": true
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Explained 3 of 3 steps."
+     ]
+    },
+    {
+     "id": "bill-si-bank",
+     "lang": "si",
+     "expect_pass": false,
+     "why": "the bank, not the post office (two of three points)",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": true,
+       "quote": "විදුලි බිල දහවෙනිදා වගේ එනවා."
+      },
+      {
+       "point_id": "p2",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p3",
+       "covered": true,
+       "quote": "ඒක විසිපහට කලින් බැංකුවෙන් ගෙවනවා."
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": true
+      },
+      {
+       "point_id": "p2",
+       "verified": false
+      },
+      {
+       "point_id": "p3",
+       "verified": true
+      }
+     ],
+     "app_reasons": [
+      "Missed: Pay the electricity bill at the post office."
+     ]
+    },
+    {
+     "id": "bill-en-unsure",
+     "lang": "en",
+     "expect_pass": false,
+     "why": "doesn't know",
+     "model_alone": false,
+     "app": false,
+     "model_points": [
+      {
+       "point_id": "p1",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p2",
+       "covered": false,
+       "quote": ""
+      },
+      {
+       "point_id": "p3",
+       "covered": false,
+       "quote": ""
+      }
+     ],
+     "app_points": [
+      {
+       "point_id": "p1",
+       "verified": false
+      },
+      {
+       "point_id": "p2",
+       "verified": false
+      },
+      {
+       "point_id": "p3",
+       "verified": false
+      }
+     ],
+     "app_reasons": [
+      "Missed: The electricity bill comes around the tenth of every month.",
+      "Missed: Pay the electricity bill at the post office.",
+      "Missed: Pay the electricity bill before the twenty-fifth."
+     ]
+    }
+   ]
+  },
+  "help": {
+   "name": "Help line: keyword search alone vs Muse Spark inside the fence (the app)",
+   "questions": 32,
+   "by_expectation": {
+    "electricity_bill": 3,
+    "emergency": 4,
+    "gas_cylinder": 2,
+    "important_documents": 2,
+    "main_switch": 4,
+    "medical": 2,
+    "nethum_pickup": 3,
+    "not_recorded": 8,
+    "water_pump": 4
+   },
+   "keywords": {
+    "right": 19,
+    "wrong_job_shown": [
+     "When does the water bill come?"
+    ],
+    "missed_a_recorded_job": [
+     "Everything went dark and the fans stopped",
+     "Half the house has no power after the storm",
+     "Mehe current na, mokada karanne?",
+     "ලයිට් නිවිලා, ෆෑන් එකත් නවතිලා",
+     "The taps are dry upstairs",
+     "Motor eka loku sadde danawa, mokada karanne?",
+     "උදේට පොම්පය කොච්චර වෙලා දාන්න ඕනෙද?",
+     "අලුත් ගෑස් සිලින්ඩරයක් ගන්නේ කාගෙන්ද?",
+     "What time is Nethum done on Wednesdays?",
+     "නෙතුම් බදාදා ගෙදර එන්නේ කොහොමද?",
+     "ළමයගේ උප්පැන්න සහතිකය තියෙන්නේ කොහෙද?"
+    ],
+    "said_not_recorded_rightly": 7,
+    "emergencies_and_medicine_routed": 5
+   },
+   "model": {
+    "right": 30,
+    "wrong_job_shown": [],
+    "missed_a_recorded_job": [
+     "The taps are dry upstairs"
+    ],
+    "said_not_recorded_rightly": 8,
+    "emergencies_and_medicine_routed": 5
+   },
+   "median_seconds_model": 2.7,
+   "usd": 0.187144,
+   "items": [
+    {
+     "q": "Everything went dark and the fans stopped",
+     "lang": "en",
+     "expect": "main_switch",
+     "keywords": "not_recorded",
+     "model": "main_switch",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded job explains what to do when the power is gone.",
+     "seconds": 1.6
+    },
+    {
+     "q": "Half the house has no power after the storm",
+     "lang": "en",
+     "expect": "main_switch",
+     "keywords": "not_recorded",
+     "model": "main_switch",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded step for restoring power matches the power outage question.",
+     "seconds": 3.0
+    },
+    {
+     "q": "Mehe current na, mokada karanne?",
+     "lang": "en",
+     "expect": "main_switch",
+     "keywords": "not_recorded",
+     "model": "main_switch",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded step explains what to do when the power is gone.",
+     "seconds": 2.7
+    },
+    {
+     "q": "ලයිට් නිවිලා, ෆෑන් එකත් නවතිලා",
+     "lang": "si",
+     "expect": "main_switch",
+     "keywords": "not_recorded",
+     "model": "main_switch",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded job explains what to do when the power is gone.",
+     "seconds": 3.2
+    },
+    {
+     "q": "The taps are dry upstairs",
+     "lang": "en",
+     "expect": "water_pump",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step clearly explains how to fix dry upstairs taps.",
+     "seconds": 5.7
+    },
+    {
+     "q": "How long should the motor run each morning?",
+     "lang": "en",
+     "expect": "water_pump",
+     "keywords": "water_pump",
+     "model": "water_pump",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded water pump job covers how long the motor should run in the morning.",
+     "seconds": 4.1
+    },
+    {
+     "q": "Motor eka loku sadde danawa, mokada karanne?",
+     "lang": "en",
+     "expect": "water_pump",
+     "keywords": "not_recorded",
+     "model": "water_pump",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded water pump step covers what to do for a loud grinding sound.",
+     "seconds": 2.8
+    },
+    {
+     "q": "උදේට පොම්පය කොච්චර වෙලා දාන්න ඕනෙද?",
+     "lang": "si",
+     "expect": "water_pump",
+     "keywords": "not_recorded",
+     "model": "water_pump",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded water pump guide answers the morning pump timing question.",
+     "seconds": 4.7
+    },
+    {
+     "q": "We can't cook, the cylinder is finished",
+     "lang": "en",
+     "expect": "gas_cylinder",
+     "keywords": "gas_cylinder",
+     "model": "gas_cylinder",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded step explains what to do when the gas cylinder is finished.",
+     "seconds": 1.6
+    },
+    {
+     "q": "අලුත් ගෑස් සිලින්ඩරයක් ගන්නේ කාගෙන්ද?",
+     "lang": "si",
+     "expect": "gas_cylinder",
+     "keywords": "not_recorded",
+     "model": "gas_cylinder",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded step tells who to call for a new gas cylinder.",
+     "seconds": 1.9
+    },
+    {
+     "q": "The current bill arrived, by what date must it be paid?",
+     "lang": "en",
+     "expect": "electricity_bill",
+     "keywords": "electricity_bill",
+     "model": "electricity_bill",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded job covers paying the current electricity bill.",
+     "seconds": 1.5
+    },
+    {
+     "q": "Where is the light bill paid?",
+     "lang": "en",
+     "expect": "electricity_bill",
+     "keywords": "electricity_bill",
+     "model": "electricity_bill",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded step tells where to pay the electricity bill.",
+     "seconds": 1.4
+    },
+    {
+     "q": "විදුලි බිල ගෙවන්න අන්තිම දවස කවදාද?",
+     "lang": "si",
+     "expect": "electricity_bill",
+     "keywords": "electricity_bill",
+     "model": "electricity_bill",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded task covers paying the electricity bill.",
+     "seconds": 4.2
+    },
+    {
+     "q": "Who goes to get Nethum after his extra class?",
+     "lang": "en",
+     "expect": "nethum_pickup",
+     "keywords": "nethum_pickup",
+     "model": "nethum_pickup",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded step describes who picks up Nethum after extra class.",
+     "seconds": 1.9
+    },
+    {
+     "q": "What time is Nethum done on Wednesdays?",
+     "lang": "en",
+     "expect": "nethum_pickup",
+     "keywords": "not_recorded",
+     "model": "nethum_pickup",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded pickup job covers when Nethum is done.",
+     "seconds": 4.7
+    },
+    {
+     "q": "නෙතුම් බදාදා ගෙදර එන්නේ කොහොමද?",
+     "lang": "si",
+     "expect": "nethum_pickup",
+     "keywords": "not_recorded",
+     "model": "nethum_pickup",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded job explains how Nethum comes home.",
+     "seconds": 2.7
+    },
+    {
+     "q": "The bank wants a copy of the house deed",
+     "lang": "en",
+     "expect": "important_documents",
+     "keywords": "important_documents",
+     "model": "important_documents",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded job explains how to handle requests for important documents like the house deed.",
+     "seconds": 2.4
+    },
+    {
+     "q": "ළමයගේ උප්පැන්න සහතිකය තියෙන්නේ කොහෙද?",
+     "lang": "si",
+     "expect": "important_documents",
+     "keywords": "not_recorded",
+     "model": "important_documents",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "This recorded job about important documents covers where the birth certificate is kept.",
+     "seconds": 5.1
+    },
+    {
+     "q": "How do I reset the Wi-Fi router?",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step matches how to reset the Wi-Fi router.",
+     "seconds": 2.6
+    },
+    {
+     "q": "The TV remote stopped working",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step matches the TV remote issue.",
+     "seconds": 3.7
+    },
+    {
+     "q": "When does the water bill come?",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "water_pump",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step explains when the water bill comes.",
+     "seconds": 2.7
+    },
+    {
+     "q": "The gate's padlock key is lost, where is the spare?",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step about the spare gate padlock key was found.",
+     "seconds": 3.8
+    },
+    {
+     "q": "How do I top up Seetha Amma's phone?",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step matches topping up Seetha Amma's phone.",
+     "seconds": 2.5
+    },
+    {
+     "q": "ෆ්‍රිජ් එකෙන් වතුර එළියට එනවා",
+     "lang": "si",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step matches fridge water leaking.",
+     "seconds": 3.9
+    },
+    {
+     "q": "Who services the air conditioner?",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step about air conditioner service was found.",
+     "seconds": 3.4
+    },
+    {
+     "q": "When is the school van fee paid?",
+     "lang": "en",
+     "expect": "not_recorded",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No recorded step explains when the school van fee is paid.",
+     "seconds": 4.4
+    },
+    {
+     "q": "Sparks are coming from the plug point",
+     "lang": "en",
+     "expect": "emergency",
+     "keywords": "emergency",
+     "model": "emergency",
+     "model_decided_by": "code",
+     "model_reason": "This sounds like an emergency.",
+     "seconds": 0.0
+    },
+    {
+     "q": "Seetha Amma collapsed in the bathroom",
+     "lang": "en",
+     "expect": "emergency",
+     "keywords": "emergency",
+     "model": "emergency",
+     "model_decided_by": "code",
+     "model_reason": "This sounds like an emergency.",
+     "seconds": 0.0
+    },
+    {
+     "q": "කුස්සියේ ගෑස් සුවඳක් එනවා",
+     "lang": "si",
+     "expect": "emergency",
+     "keywords": "emergency",
+     "model": "emergency",
+     "model_decided_by": "code",
+     "model_reason": "This sounds like an emergency.",
+     "seconds": 0.0
+    },
+    {
+     "q": "Nethum got bitten by a snake in the garden",
+     "lang": "en",
+     "expect": "emergency",
+     "keywords": "emergency",
+     "model": "emergency",
+     "model_decided_by": "code",
+     "model_reason": "This sounds like an emergency.",
+     "seconds": 0.0
+    },
+    {
+     "q": "Which tablets does Seetha Amma take after dinner?",
+     "lang": "en",
+     "expect": "medical",
+     "keywords": "not_recorded",
+     "model": "not_recorded",
+     "model_decided_by": "muse-spark-1.3",
+     "model_reason": "No decision within the step limit.",
+     "seconds": 3.6
+    },
+    {
+     "q": "ආච්චිට බෙහෙත් දෙන්නේ කීයටද?",
+     "lang": "si",
+     "expect": "medical",
+     "keywords": "medical",
+     "model": "medical",
+     "model_decided_by": "code",
+     "model_reason": "If I Disappear doesn't store medical instructions. Please keep those on paper from the doctor or pharmacy. In an emergency, call 1990 for an ambulance.",
+     "seconds": 0.0
+    }
+   ]
+  }
+ },
+ "usd": 1.5235
+}

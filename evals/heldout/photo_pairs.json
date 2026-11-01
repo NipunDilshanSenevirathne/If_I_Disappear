@@ -1,0 +1,273 @@
+{
+ "about": "Held-out photo pairs for 'show me'. Written and frozen before any run on them; never used to tune the prompts or the rules. Photos: The Metropolitan Museum of Art, Open Access (public domain, CC0); see SOURCES.md.",
+ "expect": {
+  "same": "the same object: should be verified",
+  "different": "a different object of the same kind: must not be verified",
+  "unclear_same": "the same object, hard to see: verified or 'cannot verify' are both fine, 'different' is wrong",
+  "unclear_none": "no object to see: must not be verified",
+  "unclear_different": "a different object, hard to see: must not be verified"
+ },
+ "items": [
+  {
+   "id": "same-padlock-angle",
+   "expect": "same",
+   "noun": "padlock",
+   "description": "The heavy iron padlock with the thick curved shackle.",
+   "reference": "photos/met-463365-0.jpg",
+   "attempt": "photos/met-463365-1.jpg",
+   "note": "the same padlock, turned"
+  },
+  {
+   "id": "same-padlock-front",
+   "expect": "same",
+   "noun": "padlock",
+   "description": "The big old iron padlock with a shaped front and holes like eyes.",
+   "reference": "photos/met-468867-0.jpg",
+   "attempt": "photos/met-468867-4.jpg",
+   "note": "the same padlock, another photograph from the front"
+  },
+  {
+   "id": "same-padlock-key-out",
+   "expect": "same",
+   "noun": "padlock",
+   "description": "The long iron padlock with a ring on the key end.",
+   "reference": "photos/met-463363-0.jpg",
+   "attempt": "photos/met-463363-1.jpg",
+   "note": "the same padlock with its key drawn out"
+  },
+  {
+   "id": "same-kettle-other-side",
+   "expect": "same",
+   "noun": "kettle",
+   "description": "The black iron kettle with a ring on the lid and a long thin spout.",
+   "reference": "photos/met-4595-0.jpg",
+   "attempt": "photos/met-4595-2.jpg",
+   "note": "the same kettle from the other side"
+  },
+  {
+   "id": "same-kettle-copper",
+   "expect": "same",
+   "noun": "kettle",
+   "description": "The egg-shaped copper kettle with a brass handle and spout.",
+   "reference": "photos/met-207823-0.jpg",
+   "attempt": "photos/met-207823-1.jpg",
+   "note": "the same copper kettle, turned"
+  },
+  {
+   "id": "same-kettle-lacquer",
+   "expect": "same",
+   "noun": "kettle",
+   "description": "The brown kettle with a copper handle and a patterned body.",
+   "reference": "photos/met-61002-0.jpg",
+   "attempt": "photos/met-61002-1.jpg",
+   "note": "the same kettle, turned"
+  },
+  {
+   "id": "same-teapot-back",
+   "expect": "same",
+   "noun": "teapot",
+   "description": "The white china teapot painted with flowers, with spouts shaped like animal heads.",
+   "reference": "photos/met-687439-0.jpg",
+   "attempt": "photos/met-687439-1.jpg",
+   "note": "the same teapot from the back, painted differently on that side"
+  },
+  {
+   "id": "same-teapot-cabbage",
+   "expect": "same",
+   "noun": "teapot",
+   "description": "The white teapot shaped like cabbage leaves, with a twig handle.",
+   "reference": "photos/met-671539-0.jpg",
+   "attempt": "photos/met-671539-1.jpg",
+   "note": "the same teapot from the other side"
+  },
+  {
+   "id": "same-clock-angle",
+   "expect": "same",
+   "noun": "clock",
+   "description": "The dark red wooden clock with a white face and small brass finials on top.",
+   "reference": "photos/met-211388-0.jpg",
+   "attempt": "photos/met-211388-2.jpg",
+   "note": "the same clock from an angle"
+  },
+  {
+   "id": "same-clock-dome",
+   "expect": "same",
+   "noun": "clock",
+   "description": "The tall wooden clock with a small dial under a glass dome.",
+   "reference": "photos/met-14298-0.jpg",
+   "attempt": "photos/met-14298-2.jpg",
+   "note": "the same clock, another photograph"
+  },
+  {
+   "id": "same-teapot-side-handle",
+   "expect": "same",
+   "noun": "teapot",
+   "description": "The silver teapot with a dark wooden side handle and chains on it.",
+   "reference": "photos/met-200114-0.jpg",
+   "attempt": "photos/met-200114-1.jpg",
+   "note": "the same teapot, turned"
+  },
+  {
+   "id": "same-kettle-modern",
+   "expect": "same",
+   "noun": "kettle",
+   "description": "The round silver kettle with a black bar handle across the top.",
+   "reference": "photos/met-823191-0.jpg",
+   "attempt": "photos/met-823191-1.jpg",
+   "note": "the same kettle, turned"
+  },
+  {
+   "id": "diff-padlock-iron",
+   "expect": "different",
+   "noun": "padlock",
+   "description": "The heavy iron padlock with the thick curved shackle.",
+   "reference": "photos/met-463365-0.jpg",
+   "attempt": "photos/met-468867-0.jpg",
+   "note": "another old iron padlock"
+  },
+  {
+   "id": "diff-padlock-long",
+   "expect": "different",
+   "noun": "padlock",
+   "description": "The long iron padlock with a ring on the key end.",
+   "reference": "photos/met-463363-0.jpg",
+   "attempt": "photos/met-463361-2.jpg",
+   "note": "another long iron padlock"
+  },
+  {
+   "id": "diff-kettle-black",
+   "expect": "different",
+   "noun": "kettle",
+   "description": "The black iron kettle with a ring on the lid and a long thin spout.",
+   "reference": "photos/met-4595-0.jpg",
+   "attempt": "photos/met-61002-3.jpg",
+   "note": "another dark kettle, in an old black-and-white photograph"
+  },
+  {
+   "id": "diff-kettle-copper",
+   "expect": "different",
+   "noun": "kettle",
+   "description": "The egg-shaped copper kettle with a brass handle and spout.",
+   "reference": "photos/met-207823-0.jpg",
+   "attempt": "photos/met-449024-0.jpg",
+   "note": "another copper vessel with a handle"
+  },
+  {
+   "id": "diff-teapot-silver-straight",
+   "expect": "different",
+   "noun": "teapot",
+   "description": "The silver teapot with a straight spout, a black handle and an engraved side.",
+   "reference": "photos/met-8356-0.jpg",
+   "attempt": "photos/met-8380-0.jpg",
+   "note": "another silver teapot with a straight spout"
+  },
+  {
+   "id": "diff-teapot-silver-shield",
+   "expect": "different",
+   "noun": "teapot",
+   "description": "The silver teapot with a carved wooden handle and an engraved shield.",
+   "reference": "photos/met-8372-0.jpg",
+   "attempt": "photos/met-8381-0.jpg",
+   "note": "another silver teapot"
+  },
+  {
+   "id": "diff-teapot-white",
+   "expect": "different",
+   "noun": "teapot",
+   "description": "The white teapot shaped like cabbage leaves, with a twig handle.",
+   "reference": "photos/met-671539-0.jpg",
+   "attempt": "photos/met-8351-0.jpg",
+   "note": "another white moulded teapot"
+  },
+  {
+   "id": "diff-clock-carriage",
+   "expect": "different",
+   "noun": "clock",
+   "description": "The gold carriage clock with a brown front and a round face.",
+   "reference": "photos/met-14696-0.jpg",
+   "attempt": "photos/met-1454-0.jpg",
+   "note": "another carriage clock"
+  },
+  {
+   "id": "diff-lamp-turquoise",
+   "expect": "different",
+   "noun": "oil lamp",
+   "description": "The turquoise glazed oil lamp with a tall neck and a long spout.",
+   "reference": "photos/met-450378-0.jpg",
+   "attempt": "photos/met-450377-0.jpg",
+   "note": "another turquoise oil lamp of the same kind"
+  },
+  {
+   "id": "diff-teapot-round-silver",
+   "expect": "different",
+   "noun": "teapot",
+   "description": "The engraved round silver teapot with a black handle.",
+   "reference": "photos/met-8361-0.jpg",
+   "attempt": "photos/met-8336-0.jpg",
+   "note": "another round silver teapot"
+  },
+  {
+   "id": "unclear-clock-old-photo",
+   "expect": "unclear_same",
+   "noun": "clock",
+   "description": "The gold carriage clock with a brown front and a round face.",
+   "reference": "photos/met-14696-0.jpg",
+   "attempt": "photos/met-14696-1.jpg",
+   "note": "the same clock in an old black-and-white photograph"
+  },
+  {
+   "id": "unclear-teapot-in-a-group",
+   "expect": "unclear_same",
+   "noun": "teapot",
+   "description": "The pewter teapot with a tall lid and a black handle.",
+   "reference": "photos/met-8375-0.jpg",
+   "attempt": "photos/met-8375-3.jpg",
+   "note": "the same teapot, small, among other things, black and white"
+  },
+  {
+   "id": "unclear-padlock-from-above",
+   "expect": "unclear_same",
+   "noun": "padlock",
+   "description": "The big old iron padlock with a shaped front and holes like eyes.",
+   "reference": "photos/met-468867-0.jpg",
+   "attempt": "photos/met-468867-3.jpg",
+   "note": "the same padlock from the side and above"
+  },
+  {
+   "id": "unclear-pot-old-photo",
+   "expect": "unclear_same",
+   "noun": "pot",
+   "description": "The copper pot with engraved bands and a curved handle.",
+   "reference": "photos/met-449024-0.jpg",
+   "attempt": "photos/met-449024-3.jpg",
+   "note": "the same pot in an old black-and-white photograph"
+  },
+  {
+   "id": "unclear-kettle-dim-blurred",
+   "expect": "unclear_same",
+   "noun": "kettle",
+   "description": "The black iron kettle with a ring on the lid and a long thin spout.",
+   "reference": "photos/met-4595-0.jpg",
+   "attempt": "photos/degraded-4595-1.jpg",
+   "note": "the same kettle, blurred and dark (made from met-4595-1)"
+  },
+  {
+   "id": "unclear-only-the-marks",
+   "expect": "unclear_none",
+   "noun": "teapot",
+   "description": "The straight-sided silver teapot with a black handle and a long thin spout.",
+   "reference": "photos/met-8381-0.jpg",
+   "attempt": "photos/met-8381-1.jpg",
+   "note": "a close-up of the maker's marks: no teapot to see"
+  },
+  {
+   "id": "unclear-other-teapot-dim",
+   "expect": "unclear_different",
+   "noun": "teapot",
+   "description": "The silver teapot with a straight spout, a black handle and an engraved side.",
+   "reference": "photos/met-8356-0.jpg",
+   "attempt": "photos/degraded-8380-0.jpg",
+   "note": "another silver teapot, blurred and dark (made from met-8380-0)"
+  }
+ ]
+}

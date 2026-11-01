@@ -1,0 +1,50 @@
+{
+ "model": "muse-image-1.0",
+ "photos": {
+  "breaker": {
+   "prompt": "A realistic phone photo of the main electrical switch box inside a Sri Lankan home: a wall-mounted distribution board with its grey cover open, showing one row of white circuit breakers and a larger main switch, one breaker switched down. Painted cream wall, soft afternoon light from a window, slightly off-centre. Landscape 16:9, eye level. No people, no readable text, no brand names or logos.",
+   "response_id": "resp_6ae1e732cbe9fc606a534c36",
+   "made_at": "2026-10-28T12:14:43Z",
+   "original_size": [
+    2048,
+    1152
+   ]
+  },
+  "breaker-other": {
+   "prompt": "A realistic phone photo of a different home electrical distribution board: an older black metal fuse box with a rotary main switch and a row of round ceramic fuse holders, mounted on a pale blue painted wall in a Sri Lankan house, a coiled cable hanging beside it. Daylight. Landscape 16:9, eye level. No people, no readable text, no brand names or logos.",
+   "response_id": "resp_6ae1e73e441a9a8c96a44791",
+   "made_at": "2026-10-28T12:14:54Z",
+   "original_size": [
+    2048,
+    1152
+   ]
+  },
+  "pump": {
+   "prompt": "A realistic phone photo of a small electric water pump (a blue monoblock motor pump) bolted onto a low concrete slab beside a black plastic water tank, outside at the side of a Sri Lankan house, white PVC pipes running from the pump up the wall, a small switch box on the wall. Morning light. Landscape 16:9, eye level. No people, no readable text, no brand names or logos.",
+   "response_id": "resp_6ae1e754ec4fb4d19e074274",
+   "made_at": "2026-10-28T12:15:16Z",
+   "original_size": [
+    2048,
+    1152
+   ]
+  },
+  "interior": {
+   "prompt": "A realistic phone photo of a simple Sri Lankan home kitchen in the evening: a two-burner gas cooker on a tiled counter, a red LPG gas cylinder with its regulator standing on the floor beside the counter, and a white fridge at the right edge with one handwritten paper note held on its door by a magnet. Warm light. Landscape 16:9, eye level. No people, no readable text, no brand names or logos.",
+   "response_id": "resp_6ae1e75ec15fc6f3cea24a0e",
+   "made_at": "2026-10-28T12:15:26Z",
+   "original_size": [
+    1920,
+    1280
+   ]
+  },
+  "documents": {
+   "prompt": "A realistic phone photo looking into an open wooden bedroom cupboard (almirah) in a Sri Lankan home: on the middle shelf, a neat stack of white document files and white ring binders, folded clothes on the shelf above. Soft daylight. Landscape 16:9, eye level. No people, no readable text, no brand names or logos.",
+   "response_id": "resp_6ae1e770b0de4b31cae141e3",
+   "made_at": "2026-10-28T12:15:44Z",
+   "original_size": [
+    2048,
+    1152
+   ]
+  }
+ }
+}

@@ -1,0 +1,30 @@
+flowchart TB
+  rec["<b>A walk-through</b> · video and voice"]:::person
+
+  subgraph WORDS["In the words · code"]
+    pat["<b>privacy/scrub.py</b><br/>English and Sinhala, spoken digits too<br/>PINs · passwords · one-time codes<br/>gate, lock and alarm codes<br/>card numbers (Luhn) · NIC numbers<br/>bank account numbers"]:::privacy
+    hid["“The gate code is [hidden].”<br/>in every transcript and fact"]:::ok
+    mut["Its piece of speech silenced<br/>in the stored video (3.5 s)"]:::ok
+    pat --> hid
+    pat --> mut
+  end
+
+  subgraph PICS["In the pictures · SAM 3.1 + code"]
+    look["<b>SAM 3.1</b> looks through the whole video<br/>for credit cards, identity cards<br/>and phone screens · two frames a second,<br/>on a copy made from the upload at 1280 px"]:::meta
+    bl["<b>Code</b> blurs each box in the video,<br/>half a second either side of every frame<br/>it was seen in, and in the stills"]:::ok
+    look --> bl
+  end
+
+  subgraph REFUSE["Refused · code"]
+    med["<b>Medicine instructions</b><br/>“half a tablet of her<br/>pressure medicine every morning”"]:::bad
+    lo["Never a step · listed for<br/>the owner under Not used,<br/>with the reason"]:::ok
+    med --> lo
+  end
+
+  stage["<b>A staging folder</b> · nothing of the recording<br/>is kept, or can be opened, until all of this is done"]:::code
+  store[("<b>Only the household's own folder</b> · no copies of model output anywhere else ·<br/>Delete this home removes it all")]:::store
+
+  rec --> pat & look & med
+  hid & mut & bl & lo --> stage --> store
+
+%%CLASSES%%

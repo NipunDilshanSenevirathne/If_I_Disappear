@@ -1,0 +1,9 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:21:47Z",
+ "output": {
+  "verdict": "uphold",
+  "reason": "The owner said to turn it off immediately if a grinding noise comes.",
+  "reason_si": "අයිතිකාරයා ඇඹරෙන සද්දයක් ආවොත් වහාම ඕෆ් කරන්න කියලා කිව්වා."
+ }
+}

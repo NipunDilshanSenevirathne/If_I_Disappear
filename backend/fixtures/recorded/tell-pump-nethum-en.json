@@ -1,0 +1,25 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:33Z",
+ "output": {
+  "feedback_en": "You explained the 6 AM timing for 20 minutes well, but you missed the grinding sound warning and calling Sunil Mama.",
+  "feedback_si": "ඔබ උදෑසන 6 ට විනාඩි 20 ක් ගැන හොඳින් පැහැදිලි කළා, නමුත් ඇඹරුම් ශබ්දය පිළිබඳ අනතුරු ඇඟවීම සහ සුනිල් මාමාට කතා කිරීම මඟ හැරුණා.",
+  "points": [
+   {
+    "covered": true,
+    "point_id": "p1",
+    "quote": "I switch the pump on at six in the morning and leave it for twenty minutes until the tank is full"
+   },
+   {
+    "covered": false,
+    "point_id": "p2",
+    "quote": ""
+   },
+   {
+    "covered": false,
+    "point_id": "p3",
+    "quote": ""
+   }
+  ]
+ }
+}

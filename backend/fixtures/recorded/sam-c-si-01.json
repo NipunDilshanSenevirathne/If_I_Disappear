@@ -1,0 +1,10 @@
+{
+ "model": "sam-3.1",
+ "recorded_at": "2026-10-28T12:20:20Z",
+ "output": {
+  "noun": "circuit breaker box",
+  "text": "<0f>0<|box;x1=187;y1=0;x2=569;y2=450;w=960;h=540;c=0.8632478713989258|><|mask;x=0;y=0;c=0.8632478713989258;data=451,383,!!!!%%D5)$Ap3_!7F^sAEqfLA=C'U_]Ki)s:mymNk:*1BL4M{]0JYBb_=xjHO!P{5sUYBV6o(K8?Dj3rCsN9(LX6$0&-HRN((d^r[W)7'9aLL!&Y*+KrMxHSAHo^ei*HMf5wn1jC=&o%OJdZT+B+eiOtBIHyd9*08jT9W4VgjPwj#HXar5^m/VP57{nfbUOo(0iQ3$G=+eZ&hCm!D*.gJyPj%]@v[lud+UD]Uyyv`SbF*AYWXdC?W-qjDUAEZ@K^.mSH15yW+2e8t&Z'`5o6=(r'(O&-D{bIvE:5s8cp'yqvpU.NjK+/VrXH3`GhrRZUfuB'`J6YL|>\n",
+  "w": 960,
+  "h": 540
+ }
+}

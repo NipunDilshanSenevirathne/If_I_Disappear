@@ -1,0 +1,15 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:24:16Z",
+ "output": {
+  "points": [
+   {
+    "point_id": "p1",
+    "covered": true,
+    "quote": "ගෑස් ඉවර වුණාම හන්දියේ ගෑස් කඩේට කෝල් කරනවා."
+   }
+  ],
+  "feedback_si": "හොඳයි! ගෑස් ඉවර වුණාම කාටද කතා කරන්නේ කියලා හරියට කිව්වා.",
+  "feedback_en": "Good! You correctly explained who to call when the gas runs out."
+ }
+}

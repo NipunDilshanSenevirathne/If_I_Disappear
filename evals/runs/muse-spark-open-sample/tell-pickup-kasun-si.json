@@ -1,0 +1,20 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:24:33Z",
+ "output": {
+  "points": [
+   {
+    "point_id": "p1",
+    "covered": false,
+    "quote": ""
+   },
+   {
+    "point_id": "p2",
+    "covered": true,
+    "quote": "බස් නැවතුම්පොළට ගිහින් නෙතුම්ව එක්කගෙන එනවා"
+   }
+  ],
+  "feedback_si": "ඔයා දෙවෙනි කොටස හරියට කිව්වා - බස් නැවතුම්පොළට ගිහින් එක්කගෙන එන එක. හැබැයි නෙතුම්ට බදාදා හවස පහ වෙනකම් අමතර පන්ති තියෙනවා කියන එක ඔයාගේ කතාවේ තිබුණේ නැහැ.",
+  "feedback_en": "You correctly mentioned the second part - going to the bus stop to pick him up. But you didn't mention that Nethum has extra classes until 5pm on Wednesday."
+ }
+}

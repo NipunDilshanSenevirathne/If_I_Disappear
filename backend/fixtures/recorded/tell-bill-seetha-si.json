@@ -1,0 +1,25 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:44Z",
+ "output": {
+  "feedback_en": "All three points were covered clearly.",
+  "feedback_si": "කරුණු තුනම පැහැදිලිව කියලා තිබුණා.",
+  "points": [
+   {
+    "covered": true,
+    "point_id": "p1",
+    "quote": "ලයිට් බිල දහවෙනිදා විතර එනවා"
+   },
+   {
+    "covered": true,
+    "point_id": "p2",
+    "quote": "විසිපස්වෙනිදට කලින් තැපැල් කන්තෝරුවේ ගෙවනවා"
+   },
+   {
+    "covered": true,
+    "point_id": "p3",
+    "quote": "විසිපස්වෙනිදට කලින් තැපැල් කන්තෝරුවේ ගෙවනවා"
+   }
+  ]
+ }
+}

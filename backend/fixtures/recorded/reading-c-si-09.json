@@ -1,0 +1,10 @@
+{
+ "model": "muse-wonder-1.0",
+ "recorded_at": "2026-10-28T12:21:06Z",
+ "output": {
+  "reason": "The owner said to call the junction gas shop if the gas cylinder finishes.",
+  "reason_si": "ගෑස් සිලින්ඩරය ඉවර වුණොත් හන්දියේ ගෑස් කඩේට කෝල් කරන්න කියලා අයිතිකාරයා කිව්වා.",
+  "verdict": "uphold"
+ },
+ "label_fixed": "recorded with model=muse-wonder-1.0; label corrected 2026-10-28"
+}

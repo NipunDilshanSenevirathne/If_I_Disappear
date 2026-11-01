@@ -1,0 +1,21 @@
+flowchart TB
+  claim["<b>One fact from Muse Spark 1.3</b><br/>“Never touch the main switch box with wet hands.”<br/>quote · turn · time · noun · point · safety: electricity"]:::meta
+
+  claim --> w1 & w2 & w3
+
+  w1["<b>1 · The words</b> · code<br/>the quote is in its own speaking turn,<br/>word for word, at the right moment,<br/>and at least 6 characters long"]:::code
+  w2["<b>2 · The pixels</b> · SAM 3.1 + code<br/>SAM 3.1 outlines the noun on the still;<br/>Muse Spark's point must fall inside<br/>a mask with confidence ≥ 0.5"]:::meta
+  w3["<b>3 · A second reading</b> · Muse Wonder 1.0<br/>electricity, gas and fire facts: it reads<br/>the words, the turn, the still and SAM's box,<br/>and may only uphold or flag"]:::meta
+
+  w1 & w2 & w3 --> gate{{"<b>Pinned rules</b> · policy.json<br/>its SHA-256 is pinned in code;<br/>the server won't start if it changes"}}:::code
+
+  gate -->|"medicine, in English or Sinhala"| blocked["<b>Blocked</b><br/>never becomes a step"]:::bad
+  gate -->|"a witness disagreed, or other<br/>letters inside the Sinhala"| review["<b>Needs review</b><br/>the owner sees both<br/>pieces of evidence"]:::warn
+  gate -->|"every required witness passed"| verified["<b>Verified</b>"]:::ok
+
+  review --> owner{{"The owner"}}:::person
+  verified --> owner
+  owner -->|accept| job["<b>Part of the handover</b>"]:::ok
+  owner -->|reject| rej["Rejected · still in the log"]:::ext
+
+%%CLASSES%%

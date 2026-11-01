@@ -1,0 +1,17 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:36:13Z",
+ "output": {
+  "explanation_en": "Both photos show the same three upright white files and the four stacked white binders on the middle shelf of the wooden bedroom cupboard. Their colour, shape, hole and label details, relative position, the loose paper stack on the left, the folded clothes on the shelf above, and the wooden cupboard interior all match with no differences.",
+  "explanation_si": "ඡායාරූප දෙකෙහිම පෙන්වන්නේ ලී නිදන කාමර අල්මාරියේ මැද රාක්කයේ ඇති එකම සිටුවා ඇති සුදු ෆයිල් තුන සහ තිරස්ව තබා ඇති සුදු බයින්ඩර් හතරයි. ඒවායේ වර්ණය, හැඩය, පතුලේ ඇති රවුම් සිදුර සහ ලේබල් රාමුව, එකිනෙකට සාපේක්ෂ පිහිටීම, වම් පැත්තේ ඇති ලිහිල් කඩදාසි ගොඩ, උඩ රාක්කයේ නැමූ ඇඳුම් සහ ලී අල්මාරියේ ඇතුළත පෙනුම සියල්ල ගැලපේ.",
+  "matched_features": [
+   "three upright white files with circular finger-hole at bottom and rectangular label holder on spine",
+   "four white D-ring binders stacked horizontally to the left of the upright files with metal rings and papers visible",
+   "loose stack of white papers further left on same shelf",
+   "same dark wooden cupboard interior, shelf and door with matching wood grain",
+   "folded clothes on upper shelf in light blue, cream/beige and olive-green stacks in same order"
+  ],
+  "mismatches": [],
+  "same_object": true
+ }
+}

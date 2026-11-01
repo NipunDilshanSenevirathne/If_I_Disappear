@@ -1,0 +1,10 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:27:18Z",
+ "output": {
+  "task_key": null,
+  "decided_by": "muse-spark-1.3",
+  "reason": "No recorded step about fixing the washing machine was found.",
+  "reason_si": "වොෂින් මැෂින් එක හදන විදිහ ගැන සටහනක් හමු වුණේ නැහැ."
+ }
+}

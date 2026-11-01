@@ -1,0 +1,10 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:27:10Z",
+ "output": {
+  "task_key": "electricity_bill",
+  "decided_by": "muse-spark-1.3",
+  "reason": "This recorded job explains when and how to pay the electricity bill.",
+  "reason_si": "මේකෙන් විදුලි බිල කවදාද කොහොමද ගෙවන්නේ කියලා කියනවා."
+ }
+}

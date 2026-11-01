@@ -1,0 +1,32 @@
+flowchart TB
+  subgraph WHO["Every event names who wrote it"]
+    direction LR
+    am["model:muse-spark-1.3<br/>model:sam-3.1 · model:muse-wonder-1.0"]:::meta
+    ac["code"]:::code
+    ao["owner · a person<br/>a help channel"]:::person
+    ar["recorded:… · sample:…<br/>in the sample home"]:::ext
+  end
+
+  app["<b>append(type, payload, actor)</b> · one writer at a time"]:::code
+
+  subgraph CHAIN["ledger.jsonl · append-only"]
+    direction LR
+    e1["<b>#1</b> household.created<br/>digest₁ = SHA-256(seq, time,<br/>type, actor, payload, prev = 0)"]:::store
+    e2["<b>#2</b> person.added<br/>prev = digest₁"]:::store
+    e3["<b>#3</b> recording.added<br/>prev = digest₂"]:::store
+    en["… <b>#n</b><br/>prev = digestₙ₋₁"]:::store
+    e1 --> e2 --> e3 --> en
+  end
+
+  proj["<b>project(events) → state</b><br/>a pure function: no clock, no model"]:::code
+  ver["<b>verify_chain()</b><br/>recomputes every digest"]:::code
+  out["Board · jobs · coverage ·<br/>simulation · plan · questions"]:::ok
+  gold["Golden test: the sample board<br/>rebuilt from its log, byte for byte"]:::ok
+  ev["Evidence page: “The chain is<br/>intact: n entries, none changed”"]:::ok
+
+  WHO --> app --> CHAIN
+  CHAIN --> proj & ver
+  proj --> out & gold
+  ver --> ev
+
+%%CLASSES%%

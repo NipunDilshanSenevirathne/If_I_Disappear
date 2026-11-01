@@ -1,0 +1,25 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:26Z",
+ "output": {
+  "feedback_en": "Excellent, you covered all three steps clearly.",
+  "feedback_si": "හොඳයි, පියවර තුනම පැහැදිලිව කියලා තියෙනවා.",
+  "points": [
+   {
+    "covered": true,
+    "point_id": "p1",
+    "quote": "කරන්ට් ගියොත් මුලින්ම ස්විච් පෙට්ටියට යනවා."
+   },
+   {
+    "covered": true,
+    "point_id": "p2",
+    "quote": "පහළට වැටිච්ච ස්විච් එක උඩට තල්ලු කරනවා."
+   },
+   {
+    "covered": true,
+    "point_id": "p3",
+    "quote": "තෙත් අතින් අල්ලන්නේ නැහැ."
+   }
+  ]
+ }
+}

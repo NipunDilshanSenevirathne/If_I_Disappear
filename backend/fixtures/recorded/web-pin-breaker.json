@@ -1,0 +1,10 @@
+{
+ "model": "sam-3.1",
+ "recorded_at": "2026-10-28T12:36:40Z",
+ "output": {
+  "noun": "electrical panel",
+  "text": "<0f>0<|box;x1=176;y1=0;x2=784;y2=717;w=960;h=720;c=0.5857605338096619|><|mask;x=0;y=0;c=0.5857605338096619;data=718,609,!!!!&SCZIeZq_xHaHyZO7G3-].A[5*TWH)T#.!96qbkKa_UxRlz.EngHEDh.6y53nO*LNCTMZ_ZBKsOc*B&mqvmuz]mIja`uU3up`P?M..DuN:wT5'/lD/3v2xuHsa`7m2vnWq1RB8bkQGytO]OEtaMObn$#t?6yuhd95pXJ2N#`fm^Xeo1W2_P3FpvJbn[]^yIdU7d@3]GtV#!3V`BZZh3#r@kQ'ZJYnkFI(np4X_9-n^Z(^[-:Iw%r2CGcn42d-CVZxQo8SJ_AB[ZX+w+eq0r^-aCPSZvU[ff!s(p1c^ke.eXBVS31pBZx:2/sN{W{FwdFIPq=33gg_JH*3?7QDZ[qSeM`?Ofij[9S]nNAY=Bu$mUp95=*{$7=Ee9#_7`7$DR`lNN2cafnOzuAZR49oY'q$w0v1af3NoEguk`rlBimWm{h`z4cW?O%72rBqy)(/{D.'N=hac!wn4s:Pf7{k#5vf3-dN)(RGe`lV&!!|>\n",
+  "w": 960,
+  "h": 720
+ }
+}

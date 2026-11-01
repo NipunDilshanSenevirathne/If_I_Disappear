@@ -1,0 +1,28 @@
+flowchart LR
+  subgraph BEFORE["The weeks before she leaves"]
+    direction TB
+    b1["<b>Walk and talk</b><br/>Dilini films the house once,<br/>in Sinhala or English"]:::person
+    b2["<b>Review</b><br/>she accepts each checked fact"]:::person
+    b3["<b>Prove it</b><br/>Kasun, Seetha Amma and Nethum<br/>show and explain each job"]:::person
+    b4["<b>The board</b><br/>“if I left tomorrow, what would stop?”<br/>4 of 6, then 3, then none"]:::ok
+    b1 --> b2 --> b3 --> b4
+  end
+
+  subgraph DAY["The day she leaves"]
+    direction TB
+    d1["<b>On the wall</b><br/>a fridge card · a QR sticker<br/>on each object"]:::app
+    d2["<b>On every phone</b><br/>the offline pack:<br/>it opens with no signal"]:::app
+    d1 --> d2
+  end
+
+  subgraph AWAY["The two years away"]
+    direction TB
+    a1["<b>“What do I do?”</b><br/>on the web, by voice, on WhatsApp:<br/>only her own recorded steps"]:::meta
+    a2["<b>A gas smell</b><br/>emergency numbers first,<br/>decided by code"]:::bad
+    a3["<b>Proofs run out after 120 days</b><br/>the board shows when,<br/>and they prove it again"]:::warn
+    a1 --> a2 --> a3
+  end
+
+  BEFORE --> DAY --> AWAY
+
+%%CLASSES%%

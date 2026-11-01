@@ -1,0 +1,35 @@
+flowchart TB
+  subgraph SHOW["Show me · point the phone at the object"]
+    ph["A photo from the person staying"]:::person
+    find["<b>SAM 3.1</b> finds every instance of<br/>the job's noun, confidence ≥ 0.5"]:::meta
+    none["Nothing found:<br/>“I couldn't find a water pump”"]:::bad
+    pair["<b>Code</b> frames both photos alike<br/>around what SAM 3.1 found"]:::code
+    cmp["<b>Muse Spark 1.3</b> compares it with the<br/>owner's still: the same object?<br/>which features match, which don't"]:::meta
+    dec{{"<b>Code:</b> the same object,<br/>and ≥ 2 concrete features"}}:::code
+    shown["<b>Shown</b>"]:::ok
+    nconf["“Couldn't confirm this is<br/>the same water pump”"]:::bad
+    ph --> find
+    find -->|none| none
+    find --> pair --> cmp --> dec
+    dec -->|yes| shown
+    dec -->|no| nconf
+  end
+
+  subgraph TELL["Tell me · explain it in your own words"]
+    ex["Spoken or typed, in Sinhala,<br/>English or Singlish"]:::person
+    hear["Speech to text · secrets hidden"]:::privacy
+    chk["<b>Muse Spark 1.3</b>: is each recorded<br/>point covered? and the exact<br/>words that cover it"]:::meta
+    req["<b>Code</b> finds each of those quotes<br/>in what was really said"]:::code
+    dt{{"<b>Code:</b> ≥ 75% of the points,<br/>and every safety point"}}:::code
+    told["<b>Explained</b>"]:::ok
+    miss["“Missed: if it grinds,<br/>switch it off at once”"]:::bad
+    ex --> hear --> chk --> req --> dt
+    dt -->|yes| told
+    dt -->|no| miss
+  end
+
+  cov[("<b>Coverage</b> · proven for 120 days ·<br/>a safety job needs both")]:::store
+  shown --> cov
+  told --> cov
+
+%%CLASSES%%

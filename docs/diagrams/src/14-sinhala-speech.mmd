@@ -1,0 +1,23 @@
+flowchart TB
+  rec["<b>A walk-through in Sinhala</b><br/>“මේ තියෙන්නේ ප්‍රධාන ස්විච් පෙට්ටිය.”"]:::person
+  wav["<b>FFmpeg</b> · 16 kHz mono WAV"]:::code
+  vad["<b>Cut at pauses</b> · media/vad.py<br/>pieces of at most 28 s, under the model's 40 s limit;<br/>each piece keeps its own start and end time"]:::code
+
+  subgraph SVC["services/sinhala-asr · a small FastAPI service · a token on every request"]
+    direction TB
+    asr["<b>Omnilingual ASR</b> · Meta's open weights, self-hosted<br/>omniASR_LLM_1B_v2 on a GPU, told the language (sin_Sinh)<br/>omniASR_CTC_1B_v2 on a CPU"]:::open
+    zwj["<b>Code</b> puts back the zero-width joiner that the<br/>tokenizer writes as ⁇ : චිත් ⁇ රපට becomes චිත්‍රපට"]:::code
+    asr --> zwj
+  end
+
+  guard{{"<b>Code:</b> are at least half<br/>of the letters Sinhala?"}}:::code
+  ok["<b>A timed Sinhala turn</b><br/>Muse Spark 1.3 reads it; its quotes<br/>must be found in it word for word"]:::ok
+  unc["<b>Unclear</b> · never read into a fact<br/>listed on the review page, so the<br/>owner can say it again"]:::warn
+  meas[("<b>Measured</b> on 189 public Sinhala clips, 12 speakers<br/>12.4% character error rate · 3.2× real time on 2 CPUs")]:::store
+
+  rec --> wav --> vad --> SVC --> guard
+  guard -->|yes| ok
+  guard -->|"no: the right sounds in Telugu, Kannada,<br/>Malayalam, Gujarati or Latin letters"| unc
+  SVC -.- meas
+
+%%CLASSES%%

@@ -1,0 +1,9 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:22:37Z",
+ "output": {
+  "verdict": "uphold",
+  "reason": "The owner said the gas shop's number is on the fridge.",
+  "reason_si": "අයිතිකරු කිව්වා ගෑස් කඩේ නම්බර් එක ෆ්‍රිජ් එකේ තියෙනවා කියලා."
+ }
+}

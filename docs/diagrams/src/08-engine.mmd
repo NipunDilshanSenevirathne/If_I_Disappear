@@ -1,0 +1,23 @@
+flowchart TB
+  acc[("Facts the owner accepted")]:::store
+  pr[("Proofs · show and tell ·<br/>each valid for 120 days")]:::store
+
+  jobs["<b>Jobs</b><br/>name · type · safety · object · schedule ·<br/>steps · warnings · contacts"]:::code
+  cov["<b>Coverage</b> per person and job<br/>yes · no · unknown<br/>(unknown when nothing was recorded)"]:::code
+
+  tom["<b>If she left tomorrow</b><br/>4 of 6 jobs would stop"]:::bad
+  sim["<b>The absence, day by day</b><br/>what is due, and who is proven;<br/>proofs can run out mid-absence"]:::code
+  plan["<b>Teaching plan</b><br/>a 0/1 knapsack each day: the most<br/>important lessons within 20 minutes"]:::code
+  gaps["<b>What she forgot to say</b><br/>where · how · if it fails ·<br/>who to call · when"]:::code
+
+  first["First problem: 20 November,<br/>the gas cylinder"]:::warn
+  q["Questions in her language,<br/>answered by voice or text"]:::person
+
+  acc --> jobs --> cov
+  pr --> cov
+  cov --> tom
+  cov --> sim --> first
+  cov --> plan
+  jobs --> gaps --> q
+
+%%CLASSES%%

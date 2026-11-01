@@ -1,0 +1,9 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:22:19Z",
+ "output": {
+  "verdict": "uphold",
+  "reason": "Owner's exact words say to call the gas shop at the junction if the gas cylinder finishes.",
+  "reason_si": "අයිතිකරු හරියටම කිව්වා ගෑස් සිලින්ඩරය ඉවර වුණොත් හන්දියේ ගෑස් කඩේට කෝල් කරන්න කියලා."
+ }
+}

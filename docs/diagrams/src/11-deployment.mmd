@@ -1,0 +1,20 @@
+flowchart TB
+  visitor["<b>A judge, or a family's phones</b><br/>any browser · installable · offline pack"]:::person
+
+  subgraph HF["Hugging Face Spaces · basic CPU (a PRO account) · one command each: deploy/huggingface/push.py"]
+    direction LR
+    appspace["<b>The app</b> · Docker · user 1000<br/>web app + API + the sample home<br/>with a key: real homes, by invite code"]:::code
+    sispace["<b>Sinhala speech</b> · Docker · user 1000<br/>Omnilingual ASR, CTC 1B on CPU<br/>token required"]:::open
+  end
+
+  meta["<b>Meta Model API</b><br/>Muse Spark · Muse Wonder ·<br/>SAM 3.1 · Muse Voice Transcribe"]:::meta
+  wa["<b>WhatsApp Cloud API</b><br/>optional · signed webhook"]:::ext
+  alt["<b>Or, with a disk for real homes</b><br/>Cloud Run + a bucket at /data<br/>(deploy/cloud-run.sh), or any Docker host"]:::ext
+
+  visitor -->|https| appspace
+  appspace -->|"live mode: MODEL_API_KEY ·<br/>daily and lifetime spending caps"| meta
+  appspace -->|"SINHALA_ASR_URL + token"| sispace
+  appspace <--> wa
+  appspace -.- alt
+
+%%CLASSES%%

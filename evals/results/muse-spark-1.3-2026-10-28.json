@@ -1,0 +1,282 @@
+{
+ "run_at": "2026-10-28T12:39:52Z",
+ "policy_sha256": "074eaf944d8e4b42355a01b6f37ec9ab9269e77171a4983e43e9645c2afeeafa",
+ "code": [
+  {
+   "name": "Words witness: misquotes caught",
+   "misquotes": 81,
+   "caught": 81,
+   "catch_rate": 100.0,
+   "harmless_variants": 105,
+   "harmless_failed": 0,
+   "missed_examples": []
+  },
+  {
+   "name": "Privacy scrubber",
+   "secrets": 16,
+   "hidden": 16,
+   "recall": 100.0,
+   "ordinary": 15,
+   "wrongly_hidden": 0,
+   "mistakes": []
+  },
+  {
+   "name": "Rules: medical instructions refused",
+   "cases": 17,
+   "correct": 16,
+   "medical": 9,
+   "medical_refused": 9,
+   "mistakes": [
+    {
+     "text": "The dose of fertiliser for the plants is one spoon.",
+     "expected_blocked": false
+    }
+   ]
+  },
+  {
+   "name": "Rules: mixed-script Sinhala sent to review",
+   "cases": 8,
+   "correct": 8,
+   "mistakes": []
+  },
+  {
+   "name": "Help line, code only (no model)",
+   "questions": 40,
+   "correct": 37,
+   "accuracy": 92.5,
+   "wrong_job_shown": 1,
+   "mistakes": [
+    {
+     "q": "The lights went out in the whole house",
+     "expect": "main_switch",
+     "got": "not_recorded"
+    },
+    {
+     "q": "ගෙදර ලයිට් ඔක්කොම නිවිලා",
+     "expect": "main_switch",
+     "got": "not_recorded"
+    },
+    {
+     "q": "How do I pay the water bill?",
+     "expect": "not_recorded",
+     "got": "water_pump"
+    }
+   ]
+  }
+ ],
+ "model": [
+  {
+   "name": "Help line, muse-spark-1.3 with the fence",
+   "questions": 40,
+   "correct": 39,
+   "accuracy": 97.5,
+   "wrong_job_shown": 0,
+   "seconds": 105.1,
+   "mistakes": [
+    {
+     "q": "Does Nethum have class on Wednesday?",
+     "expect": "nethum_pickup",
+     "got": "not_recorded"
+    }
+   ],
+   "cost_usd": 0.1913
+  },
+  {
+   "name": "Tell me, muse-spark-1.3 + code",
+   "answers": 20,
+   "correct": 19,
+   "accuracy": 95.0,
+   "false_passes": 0,
+   "mistakes": [
+    {
+     "id": "pick-si",
+     "expect_pass": true,
+     "got_pass": false,
+     "reasons": [
+      "Missed: Nethum has extra class every Wednesday until 5 PM."
+     ]
+    }
+   ],
+   "cost_usd": 0.0811
+  },
+  {
+   "name": "Show me photo match, muse-spark-1.3 + code",
+   "pairs": 12,
+   "correct": 12,
+   "accuracy": 100.0,
+   "false_accepts": 0,
+   "mistakes": [],
+   "cost_usd": 0.0941
+  },
+  {
+   "name": "Reading walk-throughs, muse-spark-1.3 + witnesses",
+   "transcripts": 7,
+   "claims": 22,
+   "verbatim_quotes": 22,
+   "verbatim_rate": 100.0,
+   "medical_claims_not_refused": 0,
+   "secret_values_in_claims": 0,
+   "mixed_script_caught": 0,
+   "job_types_corrected_by_code": 0,
+   "per_transcript": [
+    {
+     "id": "gas-regulator-en",
+     "claims": 6,
+     "verbatim_quotes": 6,
+     "kinds": [
+      "contact",
+      "location",
+      "schedule",
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "gas"
+     ],
+     "jobs": {
+      "gas_cylinder": {
+       "stated_type": "supply",
+       "type": "supply"
+      }
+     }
+    },
+    {
+     "id": "tank-garbage-si",
+     "claims": 4,
+     "verbatim_quotes": 4,
+     "kinds": [
+      "location",
+      "schedule",
+      "step"
+     ],
+     "safety": [
+      "electricity",
+      "none"
+     ],
+     "jobs": {
+      "water_tank_switch": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      },
+      "garbage_collection": {
+       "stated_type": "schedule",
+       "type": "schedule"
+      }
+     }
+    },
+    {
+     "id": "card-medicine-en",
+     "claims": 3,
+     "verbatim_quotes": 3,
+     "kinds": [
+      "location",
+      "payment"
+     ],
+     "safety": [
+      "none"
+     ],
+     "jobs": {
+      "bank_card": {
+       "stated_type": "other",
+       "type": "other"
+      },
+      "doctors_paper": {
+       "stated_type": "document",
+       "type": "document"
+      },
+      "water_bill": {
+       "stated_type": "payment",
+       "type": "payment"
+      }
+     }
+    },
+    {
+     "id": "codemixed-si",
+     "claims": 2,
+     "verbatim_quotes": 2,
+     "kinds": [
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "electricity",
+      "none"
+     ],
+     "jobs": {
+      "fridge_plug": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      },
+      "generator": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      }
+     }
+    },
+    {
+     "id": "keys-gate-en",
+     "claims": 3,
+     "verbatim_quotes": 3,
+     "kinds": [
+      "location",
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "none"
+     ],
+     "jobs": {
+      "spare_keys": {
+       "stated_type": "other",
+       "type": "other"
+      },
+      "front_gate_lock": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      }
+     }
+    },
+    {
+     "id": "gas-leak-si",
+     "claims": 3,
+     "verbatim_quotes": 3,
+     "kinds": [
+      "contact",
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "gas"
+     ],
+     "jobs": {
+      "gas_leak": {
+       "stated_type": "other",
+       "type": "other"
+      }
+     }
+    },
+    {
+     "id": "pin-medicine-si",
+     "claims": 1,
+     "verbatim_quotes": 1,
+     "kinds": [
+      "payment"
+     ],
+     "safety": [
+      "none"
+     ],
+     "jobs": {
+      "electricity_bill": {
+       "stated_type": "payment",
+       "type": "payment"
+      }
+     }
+    }
+   ],
+   "cost_usd": 0.1495
+  }
+ ],
+ "model_id": "muse-spark-1.3",
+ "provider": "meta",
+ "cost_usd": 0.5161
+}

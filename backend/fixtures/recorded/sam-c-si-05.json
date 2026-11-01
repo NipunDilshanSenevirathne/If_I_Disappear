@@ -1,0 +1,10 @@
+{
+ "model": "sam-3.1",
+ "recorded_at": "2026-10-28T12:20:56Z",
+ "output": {
+  "noun": "water pump",
+  "text": "<0f>0<|box;x1=221;y1=339;x2=403;y2=449;w=960;h=540;c=0.6097560524940491|><|mask;x=0;y=0;c=0.6097560524940491;data=111,183,!!!!#QCOhw/PE%H.n//)hV8@GIRK2wUspt%g1ZF@fX-VTz9/xqTUPp$VXyq%d5dZ[^2.BD^(2tgbcn=_I5Y?]4!%DzA5'#dAs?q-5Qz9)VSs-5v`T)*wTI[{**/Vgpx[b3%s0e_Bi?T]A((jFWDcHIdCs21j42n`=VBU1o|>\n",
+  "w": 960,
+  "h": 540
+ }
+}

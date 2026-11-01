@@ -1,0 +1,1617 @@
+{
+ "costs_usd": 0.0,
+ "counts": {
+  "at_risk": 1,
+  "covered": 2,
+  "uncovered": 3,
+  "unknown": 0
+ },
+ "gaps": [
+  {
+   "question_en": "What are the steps for “Gas cylinder”, one by one?",
+   "question_si": "“ගෑස් සිලින්ඩරය” කරන්නේ කොහොමද? පියවරෙන් පියවර කියන්න.",
+   "safety": "gas",
+   "slot": "how",
+   "task_key": "gas_cylinder"
+  },
+  {
+   "question_en": "Who should they call for help with the main switch box?",
+   "question_si": "ප්‍රධාන ස්විච් පෙට්ටිය ගැන උදව් ඕනේ වුණොත් එයාලා කාටද කෝල් කරන්න ඕනේ?",
+   "safety": "electricity",
+   "slot": "who_to_call",
+   "task_key": "main_switch"
+  }
+ ],
+ "headline": {
+  "stop_tomorrow": 4,
+  "task_keys": [
+   "electricity_bill",
+   "gas_cylinder",
+   "nethum_pickup",
+   "water_pump"
+  ],
+  "total": 6
+ },
+ "household": {
+  "absence": {
+   "end": "2028-11-19",
+   "start": "2026-11-20"
+  },
+  "created_at": "2026-10-26T13:00:00Z",
+  "default_language": "si",
+  "id": "sample",
+  "name": "The Rathnayake home",
+  "sample": true
+ },
+ "leaving": {
+  "id": "p-owner",
+  "language": "si",
+  "name": "Dilini",
+  "relation": "Mother",
+  "role": "leaving",
+  "whatsapp": null
+ },
+ "ledger": {
+  "events": 111,
+  "head": "1b46a801a7e2682dca1b82d0f0e22bafff9d9d69a2c6b698974f1c5e87ccfbf1"
+ },
+ "people": [
+  {
+   "id": "p-owner",
+   "language": "si",
+   "name": "Dilini",
+   "relation": "Mother",
+   "role": "leaving",
+   "whatsapp": null
+  },
+  {
+   "id": "p-kasun",
+   "language": "si",
+   "name": "Kasun",
+   "relation": "Husband",
+   "role": "staying",
+   "whatsapp": null
+  },
+  {
+   "id": "p-seetha",
+   "language": "si",
+   "name": "Seetha Amma",
+   "relation": "Dilini's mother",
+   "role": "staying",
+   "whatsapp": null
+  },
+  {
+   "id": "p-nethum",
+   "language": "en",
+   "name": "Nethum",
+   "relation": "Son, 14",
+   "role": "staying",
+   "whatsapp": null
+  }
+ ],
+ "plan": {
+  "days": [
+   {
+    "date": "2026-10-28",
+    "minutes": 16,
+    "sessions": [
+     {
+      "minutes": 6,
+      "person_id": "p-kasun",
+      "task_key": "gas_cylinder",
+      "value": 60,
+      "why": "safety"
+     },
+     {
+      "minutes": 10,
+      "person_id": "p-nethum",
+      "task_key": "water_pump",
+      "value": 60,
+      "why": "safety"
+     }
+    ]
+   },
+   {
+    "date": "2026-10-29",
+    "minutes": 10,
+    "sessions": [
+     {
+      "minutes": 5,
+      "person_id": "p-kasun",
+      "task_key": "electricity_bill",
+      "value": 20,
+      "why": "monthly"
+     },
+     {
+      "minutes": 5,
+      "person_id": "p-kasun",
+      "task_key": "nethum_pickup",
+      "value": 20,
+      "why": "weekly"
+     }
+    ]
+   }
+  ],
+  "days_available": 23,
+  "minutes_per_day": 20,
+  "unscheduled": []
+ },
+ "review": {
+  "blocked": 0,
+  "left_out": 1,
+  "needs_review": 1,
+  "verified": 1
+ },
+ "simulation": {
+  "asked_end": "2028-11-19",
+  "capped": false,
+  "days": 731,
+  "end": "2028-11-19",
+  "first_stop": {
+   "date": "2026-11-20",
+   "task_key": "gas_cylinder"
+  },
+  "start": "2026-11-20",
+  "tasks": [
+   {
+    "first_stop": "2026-12-10",
+    "next": "2026-12-10",
+    "occurrences": 24,
+    "stops": 24,
+    "task_key": "electricity_bill"
+   },
+   {
+    "first_stop": "2026-11-20",
+    "next": "2026-11-20",
+    "occurrences": 1,
+    "stops": 1,
+    "task_key": "gas_cylinder"
+   },
+   {
+    "first_stop": null,
+    "next": "2026-11-20",
+    "occurrences": 1,
+    "stops": 0,
+    "task_key": "important_documents"
+   },
+   {
+    "first_stop": null,
+    "next": "2026-11-20",
+    "occurrences": 1,
+    "stops": 0,
+    "task_key": "main_switch"
+   },
+   {
+    "first_stop": "2026-11-25",
+    "next": "2026-11-25",
+    "occurrences": 104,
+    "stops": 104,
+    "task_key": "nethum_pickup"
+   },
+   {
+    "first_stop": "2026-11-20",
+    "next": "2026-11-20",
+    "occurrences": 731,
+    "stops": 731,
+    "task_key": "water_pump"
+   }
+  ],
+  "weeks": [
+   {
+    "at_risk": 3,
+    "covered": 2,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2026-11-16"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2026-11-23"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2026-11-30"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2026-12-07"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2026-12-14"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2026-12-21"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2026-12-28"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-01-04"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-01-11"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-01-18"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-01-25"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-02-01"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-02-08"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-02-15"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-02-22"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-03-01"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-03-08"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-03-15"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-03-22"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-03-29"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-04-05"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-04-12"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-04-19"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-04-26"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-05-03"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-05-10"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-05-17"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-05-24"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-05-31"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-06-07"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-06-14"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-06-21"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-06-28"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-07-05"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-07-12"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-07-19"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-07-26"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-08-02"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-08-09"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-08-16"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-08-23"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-08-30"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-09-06"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-09-13"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-09-20"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-09-27"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-10-04"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-10-11"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-10-18"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-10-25"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-11-01"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-11-08"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-11-15"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-11-22"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-11-29"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2027-12-06"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-12-13"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-12-20"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2027-12-27"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-01-03"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-01-10"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-01-17"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-01-24"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-01-31"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-02-07"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-02-14"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-02-21"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-02-28"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-03-06"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-03-13"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-03-20"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-03-27"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-04-03"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-04-10"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-04-17"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-04-24"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-05-01"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-05-08"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-05-15"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-05-22"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-05-29"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-06-05"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-06-12"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-06-19"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-06-26"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-07-03"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-07-10"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-07-17"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-07-24"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-07-31"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-08-07"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-08-14"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-08-21"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-08-28"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-09-04"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-09-11"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-09-18"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-09-25"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-10-02"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-10-09"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-10-16"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-10-23"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-10-30"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 2,
+    "unknown": 0,
+    "week_start": "2028-11-06"
+   },
+   {
+    "at_risk": 7,
+    "covered": 0,
+    "uncovered": 1,
+    "unknown": 0,
+    "week_start": "2028-11-13"
+   }
+  ]
+ },
+ "tasks": [
+  {
+   "clip": null,
+   "contacts": [
+    {
+     "id": "c-si-09",
+     "name": "හන්දියේ ගෑස් කඩේ",
+     "quote": "හන්දියේ ගෑස් කඩේට කෝල් කරන්න",
+     "recording_id": "rec-walk-si",
+     "role": "gas cylinder supply",
+     "text_en": "If the gas cylinder is finished, call the junction gas shop.",
+     "text_si": "ගෑස් සිලින්ඩරය ඉවර වුණොත් හන්දියේ ගෑස් කඩේට කෝල් කරන්න.",
+     "time": 25.0
+    }
+   ],
+   "coverage": "uncovered",
+   "facts": [],
+   "gaps": 1,
+   "key": "gas_cylinder",
+   "lesson_minutes": 6,
+   "next": "2026-11-20",
+   "notes": [],
+   "object": null,
+   "people": [
+    {
+     "name": "Kasun",
+     "person_id": "p-kasun",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Seetha Amma",
+     "person_id": "p-seetha",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Nethum",
+     "person_id": "p-nethum",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    }
+   ],
+   "points": [
+    {
+     "kind": "contact",
+     "point_id": "p1",
+     "safety": false,
+     "text_en": "If the gas cylinder is finished, call the junction gas shop.",
+     "text_si": "ගෑස් සිලින්ඩරය ඉවර වුණොත් හන්දියේ ගෑස් කඩේට කෝල් කරන්න."
+    }
+   ],
+   "safety": "gas",
+   "schedule": {
+    "day_of_month": null,
+    "duration_min": null,
+    "freq": "when_needed",
+    "time": null,
+    "weekday": null
+   },
+   "steps": [],
+   "title_en": "Gas cylinder",
+   "title_si": "ගෑස් සිලින්ඩරය",
+   "type": "supply",
+   "warnings": []
+  },
+  {
+   "clip": {
+    "end": 20.0,
+    "recording_id": "rec-walk-en",
+    "start": 11.0
+   },
+   "contacts": [],
+   "coverage": "uncovered",
+   "facts": [
+    {
+     "id": "c-en-07",
+     "kind": "payment",
+     "quote": "around the tenth of every month",
+     "recording_id": "rec-walk-en",
+     "text_en": "The electricity bill comes around the tenth of every month.",
+     "text_si": "විදුලි බිල හැම මාසෙම දහවෙනිදා වගේ එනවා.",
+     "time": 13.0
+    },
+    {
+     "id": "c-en-09",
+     "kind": "payment",
+     "quote": "before the twenty-fifth",
+     "recording_id": "rec-walk-en",
+     "text_en": "Pay the electricity bill before the twenty-fifth.",
+     "text_si": "විදුලි බිල විසිපස්වෙනිදාට කලින් ගෙවන්න.",
+     "time": 17.0
+    }
+   ],
+   "gaps": 0,
+   "key": "electricity_bill",
+   "lesson_minutes": 5,
+   "next": "2026-12-10",
+   "notes": [],
+   "object": null,
+   "people": [
+    {
+     "name": "Kasun",
+     "person_id": "p-kasun",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Seetha Amma",
+     "person_id": "p-seetha",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Nethum",
+     "person_id": "p-nethum",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    }
+   ],
+   "points": [
+    {
+     "kind": "payment",
+     "point_id": "p1",
+     "safety": false,
+     "text_en": "The electricity bill comes around the tenth of every month.",
+     "text_si": "විදුලි බිල හැම මාසෙම දහවෙනිදා වගේ එනවා."
+    },
+    {
+     "kind": "step",
+     "point_id": "p2",
+     "safety": false,
+     "text_en": "Pay the electricity bill at the post office.",
+     "text_si": "විදුලි බිල තැපැල් කාර්යාලයෙන් ගෙවන්න."
+    },
+    {
+     "kind": "payment",
+     "point_id": "p3",
+     "safety": false,
+     "text_en": "Pay the electricity bill before the twenty-fifth.",
+     "text_si": "විදුලි බිල විසිපස්වෙනිදාට කලින් ගෙවන්න."
+    }
+   ],
+   "safety": "none",
+   "schedule": {
+    "day_of_month": 10,
+    "duration_min": null,
+    "freq": "monthly",
+    "time": null,
+    "weekday": null
+   },
+   "steps": [
+    {
+     "id": "c-en-08",
+     "quote": "at the post office",
+     "recording_id": "rec-walk-en",
+     "text_en": "Pay the electricity bill at the post office.",
+     "text_si": "විදුලි බිල තැපැල් කාර්යාලයෙන් ගෙවන්න.",
+     "time": 15.0
+    }
+   ],
+   "title_en": "Electricity bill",
+   "title_si": "විදුලි බිල",
+   "type": "payment",
+   "warnings": []
+  },
+  {
+   "clip": {
+    "end": 36.0,
+    "recording_id": "rec-walk-si",
+    "start": 29.0
+   },
+   "contacts": [],
+   "coverage": "uncovered",
+   "facts": [
+    {
+     "id": "c-si-11",
+     "kind": "schedule",
+     "quote": "හැම බදාදාම හවස පහ වෙනකම් අමතර පන්ති",
+     "recording_id": "rec-walk-si",
+     "text_en": "Nethum has extra class every Wednesday until 5 PM.",
+     "text_si": "නෙතුම්ට හැම බදාදාම හවස පහ වෙනකම් අමතර පන්ති.",
+     "time": 31.0
+    }
+   ],
+   "gaps": 0,
+   "key": "nethum_pickup",
+   "lesson_minutes": 5,
+   "next": "2026-11-25",
+   "notes": [],
+   "object": null,
+   "people": [
+    {
+     "name": "Kasun",
+     "person_id": "p-kasun",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Seetha Amma",
+     "person_id": "p-seetha",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Nethum",
+     "person_id": "p-nethum",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    }
+   ],
+   "points": [
+    {
+     "kind": "schedule",
+     "point_id": "p1",
+     "safety": false,
+     "text_en": "Nethum has extra class every Wednesday until 5 PM.",
+     "text_si": "නෙතුම්ට හැම බදාදාම හවස පහ වෙනකම් අමතර පන්ති."
+    },
+    {
+     "kind": "step",
+     "point_id": "p2",
+     "safety": false,
+     "text_en": "Someone must go to the bus stop and bring him.",
+     "text_si": "කවුරුහරි බස් නැවතුම්පොළට ගිහින් එයාව එක්කගෙන එන්න ඕනේ."
+    }
+   ],
+   "safety": "none",
+   "schedule": {
+    "day_of_month": null,
+    "duration_min": null,
+    "freq": "weekly",
+    "time": "17:00",
+    "weekday": 2
+   },
+   "steps": [
+    {
+     "id": "c-si-12",
+     "quote": "බස් නැවතුම්පොළට ගිහින් එයාව එක්කගෙන එන්න ඕනේ",
+     "recording_id": "rec-walk-si",
+     "text_en": "Someone must go to the bus stop and bring him.",
+     "text_si": "කවුරුහරි බස් නැවතුම්පොළට ගිහින් එයාව එක්කගෙන එන්න ඕනේ.",
+     "time": 33.0
+    }
+   ],
+   "title_en": "Nethum pickup",
+   "title_si": "නෙතුම් එක්කගෙන ඒම",
+   "type": "schedule",
+   "warnings": []
+  },
+  {
+   "clip": {
+    "end": 22.0,
+    "recording_id": "rec-walk-si",
+    "start": 11.0
+   },
+   "contacts": [
+    {
+     "id": "c-si-08",
+     "name": "සුනිල් මාමා",
+     "quote": "සුනිල් මාමට කෝල් කරන්න",
+     "recording_id": "rec-walk-si",
+     "role": "water pump repair",
+     "text_en": "Call Sunil Mama.",
+     "text_si": "සුනිල් මාමට කෝල් කරන්න.",
+     "time": 21.0
+    }
+   ],
+   "coverage": "at_risk",
+   "facts": [
+    {
+     "id": "c-si-05",
+     "kind": "location",
+     "quote": "වතුර පොම්පය",
+     "recording_id": "rec-walk-si",
+     "text_en": "This is the water pump.",
+     "text_si": "මේ තමයි වතුර පොම්පය.",
+     "time": 13.0
+    },
+    {
+     "id": "c-si-06",
+     "kind": "schedule",
+     "quote": "හැමදාම උදේ හයට විනාඩි විස්සක් දාන්න",
+     "recording_id": "rec-walk-si",
+     "text_en": "Run it every day at 6:00 AM for 20 minutes until the tank fills.",
+     "text_si": "හැමදාම උදේ හයට විනාඩි විස්සක් දාන්න, ටැංකිය පිරෙනකම්.",
+     "time": 15.0
+    }
+   ],
+   "gaps": 0,
+   "key": "water_pump",
+   "lesson_minutes": 10,
+   "next": "2026-11-20",
+   "notes": [],
+   "object": {
+    "claim_id": "c-si-05",
+    "keyframe_id": "kf0006",
+    "keyframe_path": "rec-walk-si/kf/kf_0006.jpg",
+    "mask": {
+     "bottom": 450.0,
+     "confidence": 0.6097560524940491,
+     "height": 540,
+     "left": 221.0,
+     "object_id": "0",
+     "path": "matrix(1.00000 0 0 1.00000 221.00 339.00)|M69.5 0L70 -0.5L71 -0.5L72 -0.5L73 -0.5L74 -0.5L75 -0.5L76 -0.5L77 -0.5L78 -0.5L79 -0.5L79.5 0L80 0.5L81 0.5L82 0.5L83 0.5L84 0.5L85 0.5L85.5 1L86 1.5L87 1.5L88 1.5L89 1.5L90 1.5L91 1.5L92 1.5L92.5 2L93 2.5L94 2.5L95 2.5L96 2.5L97 2.5L98 2.5L99 2.5L100 2.5L101 2.5L102 2.5L102.5 3L103 3.5L104 3.5L104.5 4L104.5 5L105 5.5L105.5 6L105.5 7L105.5 8L105.5 9L105.5 10L105.5 11L105.5 12L105 12.5L104.5 13L104.5 14L104.5 15L104.5 16L104.5 17L104.5 18L104.5 19L104.5 20L105 20.5L106 20.5L106.5 21L107 21.5L108 21.5L109 21.5L109.5 22L110 22.5L111 22.5L112 22.5L112.5 23L113 23.5L114 23.5L114.5 23L115 22.5L115.5 22L115 21.5L114.5 21L114.5 20L114.5 19L114.5 18L114 17.5L113.5 17L113.5 16L113.5 15L114 14.5L114.5 14L114.5 13L114.5 12L115 11.5L115.5 11L116 10.5L117 10.5L118 10.5L119 10.5L120 10.5L121 10.5L122 10.5L123 10.5L123.5 11L124 11.5L124.5 11L125 10.5L126 10.5L127 10.5L128 10.5L129 10.5L130 10.5L131 10.5L132 10.5L133 10.5L134 10.5L135 10.5L136 10.5L137 10.5L137.5 11L138 11.5L138.5 12L139 12.5L139.5 13L139.5 14L139.5 15L139.5 16L139.5 17L139.5 18L139 18.5L138.5 19L138.5 20L138.5 21L138 21.5L137.5 22L137.5 23L137 23.5L136.5 24L136.5 25L136.5 26L136.5 27L136.5 28L136.5 29L137 29.5L137.5 30L138 30.5L139 30.5L140 30.5L141 30.5L142 30.5L143 30.5L143.5 30L144 29.5L145 29.5L146 29.5L147 29.5L148 29.5L149 29.5L150 29.5L151 29.5L152 29.5L153 29.5L154 29.5L155 29.5L156 29.5L157 29.5L157.5 30L158 30.5L159 30.5L159.5 31L160 31.5L161 31.5L161.5 32L161.5 33L162 33.5L162.5 34L162.5 35L163 35.5L163.5 36L164 36.5L164.5 37L164.5 38L164.5 39L165 39.5L165.5 40L165.5 41L165.5 42L166 42.5L166.5 43L166.5 44L167 44.5L167.5 45L168 45.5L168.5 46L169 46.5L170 46.5L171 46.5L171.5 47L172 47.5L173 47.5L173.5 48L174 48.5L175 48.5L175.5 49L176 49.5L176.5 50L177 50.5L178 50.5L178.5 51L179 51.5L180 51.5L180.5 52L181 52.5L181.5 53L182 53.5L182.5 54L182.5 55L182.5 56L182.5 57L182.5 58L182.5 59L182.5 60L182.5 61L182 61.5L181.5 62L181.5 63L181.5 64L181.5 65L181 65.5L180.5 66L180 66.5L179 66.5L178.5 67L178 67.5L177.5 68L177 68.5L176 68.5L175.5 69L175 69.5L174 69.5L173 69.5L172.5 70L172 70.5L171 70.5L170 70.5L169 70.5L168 70.5L167 70.5L166.5 71L166 71.5L165 71.5L164 71.5L163 71.5L162 71.5L161.5 72L161.5 73L161.5 74L161.5 75L161.5 76L161 76.5L160.5 77L160.5 78L160.5 79L160 79.5L159.5 80L159.5 81L159.5 82L160 82.5L161 82.5L162 82.5L163 82.5L164 82.5L165 82.5L165.5 83L166 83.5L167 83.5L168 83.5L168.5 84L169 84.5L169.5 85L169.5 86L169.5 87L169 87.5L168.5 88L168.5 89L168 89.5L167 89.5L166.5 90L166 90.5L165 90.5L164.5 91L164 91.5L163 91.5L162 91.5L161 91.5L160 91.5L159 91.5L158.5 91L158 90.5L157 90.5L156 90.5L155 90.5L154 90.5L153 90.5L152.5 91L152 91.5L151 91.5L150.5 92L150 92.5L149 92.5L148 92.5L147.5 93L147 93.5L146 93.5L145 93.5L144.5 94L144 94.5L143 94.5L142 94.5L141.5 95L141 95.5L140 95.5L139.5 96L139 96.5L138 96.5L137.5 97L137 97.5L136 97.5L135.5 98L135 98.5L134.5 99L134 99.5L133.5 100L133 100.5L132.5 101L132.5 102L132.5 103L132 103.5L131.5 104L131.5 105L131 105.5L130.5 106L130 106.5L129.5 107L129 107.5L128 107.5L127.5 108L127 108.5L126 108.5L125.5 109L125 109.5L124 109.5L123.5 110L123 110.5L122 110.5L121 110.5L120 110.5L119 110.5L118 110.5L117 110.5L116 110.5L115 110.5L114 110.5L113.5 110L113 109.5L112 109.5L111 109.5L110 109.5L109 109.5L108 109.5L107.5 109L107 108.5L106 108.5L105 108.5L104 108.5L103 108.5L102 108.5L101 108.5L100.5 108L100 107.5L99 107.5L98 107.5L97 107.5L96 107.5L95 107.5L94.5 107L94 106.5L93 106.5L92 106.5L91 106.5L90.5 106L90 105.5L89.5 105L89.5 104L89.5 103L89.5 102L89.5 101L90 100.5L90.5 100L91 99.5L92 99.5L92.5 99L93 98.5L94 98.5L94.5 98L95 97.5L96 97.5L96.5 97L97 96.5L97.5 96L98 95.5L98.5 95L99 94.5L99.5 94L99.5 93L100 92.5L101 92.5L101.5 92L102 91.5L102.5 91L102.5 90L103 89.5L103.5 89L103.5 88L103.5 87L103.5 86L103.5 85L103.5 84L103.5 83L103.5 82L103.5 81L103.5 80L103 79.5L102.5 79L102 78.5L101.5 78L101 77.5L100 77.5L99 77.5L98.5 78L98 78.5L97.5 79L97 79.5L96 79.5L95 79.5L94.5 79L94 78.5L93.5 79L93 79.5L92.5 80L92 80.5L91.5 81L91 81.5L90.5 82L90 82.5L89 82.5L88 82.5L87.5 83L87 83.5L86 83.5L85 83.5L84 83.5L83 83.5L82.5 84L82 84.5L81.5 85L81.5 86L81 86.5L80.5 87L80.5 88L80 88.5L79.5 89L79.5 90L79 90.5L78.5 91L78 91.5L77.5 92L77 92.5L76.5 93L76 93.5L75 93.5L74.5 94L74 94.5L73 94.5L72 94.5L71.5 95L71 95.5L70 95.5L69.5 96L69 96.5L68 96.5L67.5 97L67 97.5L66 97.5L65 97.5L64 97.5L63 97.5L62.5 97L62 96.5L61 96.5L60 96.5L59 96.5L58 96.5L57.5 96L57 95.5L56 95.5L55 95.5L54 95.5L53 95.5L52 95.5L51.5 95L51 94.5L50 94.5L49 94.5L48 94.5L47 94.5L46.5 94L46 93.5L45 93.5L44 93.5L43 93.5L42 93.5L41 93.5L40 93.5L39.5 93L39 92.5L38 92.5L37 92.5L36 92.5L35 92.5L34 92.5L33.5 92L33 91.5L32 91.5L31 91.5L30 91.5L29 91.5L28 91.5L27.5 91L27 90.5L26 90.5L25 90.5L24 90.5L23.5 90L23 89.5L22 89.5L21.5 89L21.5 88L21.5 87L21.5 86L22 85.5L22.5 85L23 84.5L24 84.5L24.5 84L25 83.5L26 83.5L26.5 83L27 82.5L28 82.5L28.5 82L29 81.5L30 81.5L30.5 81L31 80.5L31.5 80L32 79.5L32.5 79L33 78.5L34 78.5L34.5 78L34.5 77L34.5 76L34 75.5L33.5 75L33 74.5L32 74.5L31 74.5L30.5 74L30 73.5L29 73.5L28 73.5L27 73.5L26 73.5L25.5 73L25 72.5L24 72.5L23 72.5L22 72.5L21 72.5L20 72.5L19 72.5L18 72.5L17.5 72L17 71.5L16 71.5L15 71.5L14.5 71L14 70.5L13 70.5L12 70.5L11.5 70L11 69.5L10.5 69L10 68.5L9.5 68L9 67.5L8.5 67L8 66.5L7.5 66L7 65.5L6.5 65L6 64.5L5.5 64L5 63.5L4.5 63L4 62.5L3.5 62L3.5 61L3 60.5L2.5 60L2.5 59L2 58.5L1.5 58L1.5 57L1.5 56L1 55.5L0.5 55L0.5 54L0.5 53L0 52.5L-0.5 52L-0.5 51L-0.5 50L-0.5 49L-0.5 48L-0.5 47L-0.5 46L-0.5 45L-0.5 44L-0.5 43L-0.5 42L-0.5 41L-0.5 40L0 39.5L0.5 39L0.5 38L0.5 37L0.5 36L0.5 35L1 34.5L1.5 34L1.5 33L1.5 32L1.5 31L2 30.5L2.5 30L2.5 29L2.5 28L3 27.5L3.5 27L4 26.5L4.5 26L4.5 25L5 24.5L5.5 24L6 23.5L6.5 23L6.5 22L7 21.5L7.5 21L8 20.5L8.5 20L9 19.5L9.5 19L10 18.5L10.5 18L11 17.5L11.5 17L12 16.5L12.5 16L13 15.5L14 15.5L14.5 15L15 14.5L15.5 14L16 13.5L17 13.5L17.5 13L18 12.5L19 12.5L19.5 12L20 11.5L21 11.5L21.5 11L22 10.5L23 10.5L24 10.5L24.5 10L25 9.5L26 9.5L27 9.5L28 9.5L29 9.5L30 9.5L31 9.5L32 9.5L33 9.5L34 9.5L35 9.5L36 9.5L37 9.5L38 9.5L39 9.5L40 9.5L41 9.5L42 9.5L42.5 9L43 8.5L43.5 8L44 7.5L44.5 7L44.5 6L45 5.5L46 5.5L46.5 5L47 4.5L48 4.5L48.5 4L49 3.5L50 3.5L51 3.5L52 3.5L53 3.5L53.5 3L54 2.5L55 2.5L56 2.5L57 2.5L58 2.5L58.5 2L59 1.5L60 1.5L61 1.5L62 1.5L63 1.5L63.5 1L64 0.5L65 0.5L66 0.5L67 0.5L68 0.5L69 0.5Z",
+     "right": 404.0,
+     "top": 339.0,
+     "width": 960
+    },
+    "noun": "water pump",
+    "recording_id": "rec-walk-si",
+    "time": 13.0
+   },
+   "people": [
+    {
+     "name": "Kasun",
+     "person_id": "p-kasun",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Seetha Amma",
+     "person_id": "p-seetha",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Nethum",
+     "person_id": "p-nethum",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": false
+    }
+   ],
+   "points": [
+    {
+     "kind": "schedule",
+     "point_id": "p1",
+     "safety": false,
+     "text_en": "Run it every day at 6:00 AM for 20 minutes until the tank fills.",
+     "text_si": "හැමදාම උදේ හයට විනාඩි විස්සක් දාන්න, ටැංකිය පිරෙනකම්."
+    },
+    {
+     "kind": "step",
+     "point_id": "p2",
+     "safety": false,
+     "text_en": "If there is a grinding sound, turn it off immediately.",
+     "text_si": "ඇඹරෙන සද්දයක් ආවොත් වහාම ඕෆ් කරන්න."
+    },
+    {
+     "kind": "contact",
+     "point_id": "p3",
+     "safety": false,
+     "text_en": "Call Sunil Mama.",
+     "text_si": "සුනිල් මාමට කෝල් කරන්න."
+    }
+   ],
+   "safety": "water",
+   "schedule": {
+    "day_of_month": null,
+    "duration_min": 20,
+    "freq": "daily",
+    "time": "06:00",
+    "weekday": null
+   },
+   "steps": [
+    {
+     "id": "c-si-07",
+     "quote": "වහාම ඕෆ් කරලා",
+     "recording_id": "rec-walk-si",
+     "text_en": "If there is a grinding sound, turn it off immediately.",
+     "text_si": "ඇඹරෙන සද්දයක් ආවොත් වහාම ඕෆ් කරන්න.",
+     "time": 19.0
+    }
+   ],
+   "title_en": "Water pump",
+   "title_si": "වතුර පොම්පය",
+   "type": "appliance",
+   "warnings": []
+  },
+  {
+   "clip": {
+    "end": 12.0,
+    "recording_id": "rec-walk-si",
+    "start": 0.0
+   },
+   "contacts": [],
+   "coverage": "covered",
+   "facts": [
+    {
+     "id": "c-si-01",
+     "kind": "location",
+     "quote": "ප්‍රධාන ස්විච් පෙට්ටිය",
+     "recording_id": "rec-walk-si",
+     "text_en": "This is the main switch box.",
+     "text_si": "මේ තියෙන්නේ ප්‍රධාන ස්විච් පෙට්ටිය.",
+     "time": 1.0
+    }
+   ],
+   "gaps": 1,
+   "key": "main_switch",
+   "lesson_minutes": 12,
+   "next": "2026-11-20",
+   "notes": [],
+   "object": {
+    "claim_id": "c-si-01",
+    "keyframe_id": "kf0000",
+    "keyframe_path": "rec-walk-si/kf/kf_0000.jpg",
+    "mask": {
+     "bottom": 451.0,
+     "confidence": 0.8632478713989258,
+     "height": 540,
+     "left": 187.0,
+     "object_id": "0",
+     "path": "matrix(1.00000 0 0 1.00000 187.00 0.00)|M49.5 0L50 -0.5L51 -0.5L52 -0.5L53 -0.5L54 -0.5L55 -0.5L56 -0.5L57 -0.5L58 -0.5L59 -0.5L60 -0.5L61 -0.5L62 -0.5L63 -0.5L64 -0.5L65 -0.5L66 -0.5L67 -0.5L68 -0.5L69 -0.5L70 -0.5L71 -0.5L72 -0.5L73 -0.5L74 -0.5L75 -0.5L76 -0.5L77 -0.5L78 -0.5L79 -0.5L80 -0.5L81 -0.5L82 -0.5L83 -0.5L84 -0.5L85 -0.5L86 -0.5L87 -0.5L88 -0.5L89 -0.5L90 -0.5L91 -0.5L92 -0.5L93 -0.5L94 -0.5L95 -0.5L96 -0.5L97 -0.5L98 -0.5L99 -0.5L100 -0.5L101 -0.5L102 -0.5L103 -0.5L104 -0.5L105 -0.5L106 -0.5L107 -0.5L108 -0.5L109 -0.5L110 -0.5L111 -0.5L112 -0.5L113 -0.5L114 -0.5L115 -0.5L116 -0.5L117 -0.5L118 -0.5L119 -0.5L120 -0.5L121 -0.5L122 -0.5L123 -0.5L124 -0.5L125 -0.5L126 -0.5L127 -0.5L128 -0.5L129 -0.5L130 -0.5L131 -0.5L132 -0.5L133 -0.5L134 -0.5L135 -0.5L136 -0.5L136.5 0L137 0.5L138 0.5L139 0.5L140 0.5L141 0.5L142 0.5L142.5 1L143 1.5L144 1.5L145 1.5L146 1.5L147 1.5L148 1.5L149 1.5L150 1.5L151 1.5L152 1.5L153 1.5L153.5 2L154 2.5L155 2.5L156 2.5L157 2.5L158 2.5L159 2.5L160 2.5L161 2.5L162 2.5L163 2.5L164 2.5L164.5 3L165 3.5L166 3.5L167 3.5L168 3.5L169 3.5L170 3.5L171 3.5L171.5 4L172 4.5L173 4.5L174 4.5L175 4.5L176 4.5L177 4.5L177.5 5L178 5.5L179 5.5L180 5.5L180.5 6L181 6.5L182 6.5L183 6.5L183.5 7L184 7.5L185 7.5L186 7.5L187 7.5L188 7.5L189 7.5L189.5 8L190 8.5L191 8.5L192 8.5L193 8.5L194 8.5L195 8.5L195.5 9L196 9.5L197 9.5L198 9.5L199 9.5L200 9.5L201 9.5L202 9.5L202.5 10L203 10.5L204 10.5L205 10.5L206 10.5L206.5 11L207 11.5L208 11.5L208.5 11L209 10.5L210 10.5L210.5 10L211 9.5L211.5 9L212 8.5L212.5 8L213 7.5L213.5 7L214 6.5L214.5 6L215 5.5L216 5.5L217 5.5L218 5.5L219 5.5L220 5.5L221 5.5L222 5.5L222.5 6L223 6.5L224 6.5L225 6.5L226 6.5L227 6.5L227.5 7L228 7.5L229 7.5L230 7.5L231 7.5L231.5 8L232 8.5L233 8.5L234 8.5L235 8.5L236 8.5L236.5 9L237 9.5L238 9.5L239 9.5L240 9.5L241 9.5L242 9.5L243 9.5L244 9.5L244.5 10L245 10.5L246 10.5L247 10.5L248 10.5L249 10.5L249.5 11L250 11.5L251 11.5L252 11.5L253 11.5L253.5 12L254 12.5L255 12.5L256 12.5L256.5 13L257 13.5L258 13.5L258.5 14L259 14.5L260 14.5L260.5 15L261 15.5L261.5 16L262 16.5L262.5 17L262.5 18L263 18.5L263.5 19L263.5 20L264 20.5L265 20.5L265.5 21L266 21.5L266.5 22L267 22.5L268 22.5L269 22.5L270 22.5L270.5 23L271 23.5L272 23.5L273 23.5L274 23.5L275 23.5L276 23.5L277 23.5L278 23.5L278.5 24L279 24.5L280 24.5L281 24.5L282 24.5L283 24.5L284 24.5L285 24.5L285.5 25L286 25.5L287 25.5L288 25.5L289 25.5L290 25.5L290.5 26L291 26.5L292 26.5L293 26.5L294 26.5L294.5 27L295 27.5L296 27.5L297 27.5L298 27.5L299 27.5L300 27.5L300.5 28L301 28.5L302 28.5L303 28.5L304 28.5L305 28.5L306 28.5L306.5 29L307 29.5L308 29.5L309 29.5L310 29.5L311 29.5L312 29.5L312.5 30L313 30.5L314 30.5L315 30.5L316 30.5L316.5 31L317 31.5L318 31.5L319 31.5L320 31.5L321 31.5L321.5 32L322 32.5L323 32.5L324 32.5L325 32.5L326 32.5L326.5 33L327 33.5L328 33.5L329 33.5L330 33.5L331 33.5L331.5 34L332 34.5L333 34.5L334 34.5L335 34.5L336 34.5L337 34.5L337.5 35L338 35.5L339 35.5L340 35.5L341 35.5L342 35.5L343 35.5L343.5 36L344 36.5L345 36.5L346 36.5L347 36.5L348 36.5L348.5 37L349 37.5L350 37.5L351 37.5L352 37.5L353 37.5L354 37.5L355 37.5L355.5 38L356 38.5L357 38.5L358 38.5L359 38.5L360 38.5L360.5 39L361 39.5L362 39.5L363 39.5L364 39.5L365 39.5L365.5 40L366 40.5L367 40.5L368 40.5L368.5 41L369 41.5L370 41.5L370.5 42L371 42.5L372 42.5L372.5 43L373 43.5L374 43.5L374.5 44L375 44.5L375.5 45L375.5 46L376 46.5L376.5 47L377 47.5L378 47.5L378.5 48L379 48.5L379.5 49L380 49.5L380.5 50L381 50.5L381.5 51L381.5 52L382 52.5L382.5 53L382.5 54L382.5 55L382.5 56L382.5 57L382.5 58L382.5 59L382 59.5L381.5 60L381.5 61L381 61.5L380.5 62L380.5 63L380.5 64L380 64.5L379.5 65L379.5 66L379 66.5L378.5 67L378.5 68L378 68.5L377.5 69L377.5 70L377.5 71L377 71.5L376.5 72L376.5 73L376 73.5L375.5 74L375.5 75L375.5 76L375 76.5L374.5 77L374.5 78L374 78.5L373.5 79L373.5 80L373.5 81L373 81.5L372.5 82L372.5 83L372.5 84L372 84.5L371.5 85L371.5 86L371 86.5L370.5 87L370.5 88L370 88.5L369.5 89L369.5 90L369.5 91L369 91.5L368.5 92L368.5 93L368 93.5L367.5 94L367.5 95L367 95.5L366.5 96L366.5 97L366 97.5L365.5 98L365.5 99L365.5 100L365 100.5L364.5 101L364.5 102L364 102.5L363.5 103L363.5 104L363 104.5L362.5 105L362.5 106L362.5 107L362 107.5L361.5 108L361.5 109L361 109.5L360.5 110L360.5 111L360.5 112L360 112.5L359.5 113L359.5 114L359 114.5L358.5 115L358.5 116L358.5 117L358 117.5L357.5 118L357.5 119L357 119.5L356.5 120L356.5 121L356 121.5L355.5 122L355.5 123L355 123.5L354.5 124L354.5 125L354 125.5L353.5 126L353.5 127L353 127.5L352.5 128L352.5 129L352.5 130L352 130.5L351.5 131L351.5 132L351 132.5L350.5 133L350.5 134L350.5 135L350 135.5L349.5 136L349.5 137L349 137.5L348.5 138L348.5 139L348 139.5L347.5 140L347.5 141L347.5 142L347 142.5L346.5 143L346.5 144L346 144.5L345.5 145L345.5 146L345.5 147L345 147.5L344.5 148L344.5 149L344 149.5L343.5 150L343.5 151L343.5 152L343 152.5L342.5 153L342.5 154L342 154.5L341.5 155L341.5 156L341 156.5L340.5 157L340.5 158L340.5 159L340 159.5L339.5 160L339.5 161L339 161.5L338.5 162L338.5 163L338 163.5L337.5 164L337.5 165L337 165.5L336.5 166L336.5 167L336 167.5L335.5 168L335.5 169L335 169.5L334.5 170L334.5 171L334.5 172L334 172.5L333.5 173L333.5 174L333.5 175L333 175.5L332.5 176L332.5 177L332.5 178L332 178.5L331.5 179L331.5 180L331 180.5L330.5 181L330.5 182L330 182.5L329.5 183L329.5 184L329 184.5L328.5 185L328.5 186L328.5 187L328 187.5L327.5 188L327.5 189L327.5 190L327 190.5L326.5 191L326.5 192L326 192.5L325.5 193L325.5 194L325 194.5L324.5 195L324.5 196L324 196.5L323.5 197L323.5 198L323.5 199L323 199.5L322.5 200L322.5 201L322 201.5L321.5 202L321.5 203L321.5 204L321 204.5L320.5 205L320.5 206L320 206.5L319.5 207L319.5 208L319 208.5L318.5 209L318.5 210L318 210.5L317.5 211L317 211.5L316.5 212L316 212.5L315.5 213L315 213.5L314.5 214L314 214.5L313 214.5L312 214.5L311.5 215L311 215.5L310 215.5L309 215.5L308 215.5L307 215.5L306 215.5L305 215.5L304 215.5L303 215.5L302 215.5L301 215.5L300 215.5L299 215.5L298 215.5L297 215.5L296 215.5L295 215.5L294 215.5L293 215.5L292.5 216L292 216.5L291 216.5L290.5 217L290 217.5L289.5 218L289.5 219L289.5 220L290 220.5L290.5 221L290.5 222L291 222.5L291.5 223L292 223.5L293 223.5L294 223.5L295 223.5L296 223.5L296.5 223L297 222.5L298 222.5L299 222.5L300 222.5L300.5 223L301 223.5L302 223.5L303 223.5L304 223.5L305 223.5L306 223.5L307 223.5L308 223.5L309 223.5L310 223.5L310.5 224L311 224.5L312 224.5L313 224.5L314 224.5L314.5 225L315 225.5L316 225.5L316.5 226L317 226.5L318 226.5L318.5 227L319 227.5L319.5 228L319.5 229L320 229.5L320.5 230L321 230.5L321.5 231L321.5 232L321.5 233L322 233.5L322.5 234L322.5 235L322.5 236L322.5 237L322.5 238L322.5 239L322.5 240L322.5 241L323 241.5L323.5 242L323.5 243L323.5 244L323.5 245L323 245.5L322.5 246L322.5 247L322.5 248L322.5 249L322.5 250L322.5 251L322.5 252L323 252.5L323.5 253L323.5 254L323.5 255L323.5 256L323.5 257L323.5 258L323.5 259L323.5 260L323.5 261L323.5 262L323.5 263L323.5 264L323.5 265L323.5 266L323.5 267L323 267.5L322.5 268L322.5 269L322.5 270L322.5 271L322.5 272L322.5 273L322.5 274L322.5 275L322.5 276L322.5 277L322.5 278L322.5 279L323 279.5L323.5 280L323.5 281L323.5 282L323.5 283L323.5 284L323.5 285L323.5 286L323.5 287L323.5 288L323.5 289L323.5 290L323.5 291L323.5 292L323.5 293L323.5 294L323.5 295L323.5 296L323.5 297L323.5 298L323.5 299L323.5 300L323.5 301L323.5 302L323.5 303L323.5 304L323.5 305L323.5 306L323.5 307L323.5 308L323.5 309L323.5 310L323.5 311L323.5 312L323.5 313L324 313.5L324.5 314L324.5 315L324.5 316L324.5 317L324.5 318L324.5 319L324.5 320L324.5 321L324.5 322L325 322.5L325.5 323L325.5 324L325.5 325L325.5 326L325.5 327L325.5 328L325.5 329L325.5 330L325.5 331L325.5 332L325 332.5L324.5 333L324.5 334L324.5 335L324.5 336L324.5 337L324 337.5L323.5 338L324 338.5L324.5 339L324.5 340L324.5 341L324 341.5L323.5 342L323.5 343L323.5 344L323.5 345L323.5 346L323.5 347L323.5 348L323.5 349L323.5 350L324 350.5L324.5 351L324.5 352L324.5 353L324.5 354L324.5 355L324.5 356L324.5 357L324.5 358L324.5 359L324.5 360L324 360.5L323.5 361L323.5 362L323.5 363L323.5 364L323.5 365L323.5 366L323.5 367L323.5 368L323.5 369L323.5 370L323.5 371L323.5 372L323.5 373L323.5 374L323.5 375L323.5 376L323.5 377L323.5 378L323.5 379L323.5 380L323.5 381L323.5 382L323.5 383L323.5 384L323.5 385L323.5 386L323.5 387L323.5 388L323.5 389L323.5 390L323.5 391L323.5 392L323.5 393L323.5 394L323.5 395L323 395.5L322.5 396L323 396.5L323.5 397L323.5 398L323.5 399L323.5 400L323.5 401L323.5 402L323 402.5L322.5 403L322.5 404L323 404.5L323.5 405L323.5 406L323.5 407L323.5 408L323.5 409L323.5 410L323.5 411L323.5 412L323.5 413L323.5 414L323.5 415L323.5 416L323.5 417L323.5 418L323.5 419L323.5 420L323.5 421L323 421.5L322.5 422L322.5 423L322.5 424L322.5 425L322 425.5L321.5 426L321.5 427L321.5 428L321 428.5L320 428.5L319.5 429L319 429.5L318.5 430L318 430.5L317.5 431L317 431.5L316 431.5L315.5 432L315 432.5L314 432.5L313 432.5L312 432.5L311 432.5L310.5 433L310 433.5L309 433.5L308 433.5L307 433.5L306 433.5L305 433.5L304 433.5L303 433.5L302 433.5L301 433.5L300 433.5L299.5 434L299 434.5L298 434.5L297 434.5L296 434.5L295 434.5L294 434.5L293 434.5L292 434.5L291 434.5L290.5 435L290 435.5L289 435.5L288 435.5L287 435.5L286 435.5L285 435.5L284 435.5L283 435.5L282 435.5L281 435.5L280 435.5L279 435.5L278 435.5L277 435.5L276 435.5L275 435.5L274 435.5L273 435.5L272 435.5L271 435.5L270 435.5L269 435.5L268 435.5L267 435.5L266 435.5L265.5 436L265 436.5L264 436.5L263 436.5L262 436.5L261 436.5L260 436.5L259 436.5L258 436.5L257 436.5L256 436.5L255 436.5L254.5 437L254 437.5L253 437.5L252 437.5L251 437.5L250 437.5L249 437.5L248 437.5L247 437.5L246 437.5L245 437.5L244 437.5L243 437.5L242 437.5L241 437.5L240 437.5L239 437.5L238 437.5L237 437.5L236 437.5L235.5 438L235 438.5L234 438.5L233 438.5L232.5 438L232 437.5L231 437.5L230 437.5L229 437.5L228 437.5L227 437.5L226 437.5L225 437.5L224 437.5L223.5 438L223 438.5L222 438.5L221 438.5L220 438.5L219 438.5L218 438.5L217 438.5L216 438.5L215 438.5L214 438.5L213 438.5L212 438.5L211 438.5L210 438.5L209.5 439L209 439.5L208 439.5L207 439.5L206 439.5L205 439.5L204 439.5L203 439.5L202 439.5L201 439.5L200 439.5L199 439.5L198 439.5L197 439.5L196 439.5L195 439.5L194 439.5L193 439.5L192 439.5L191 439.5L190 439.5L189 439.5L188 439.5L187.5 440L187 440.5L186 440.5L185 440.5L184.5 441L184 441.5L183 441.5L182 441.5L181 441.5L180 441.5L179 441.5L178 441.5L177 441.5L176 441.5L175 441.5L174 441.5L173 441.5L172 441.5L171.5 442L171 442.5L170 442.5L169 442.5L168 442.5L167 442.5L166 442.5L165 442.5L164 442.5L163 442.5L162 442.5L161 442.5L160 442.5L159 442.5L158 442.5L157 442.5L156 442.5L155.5 443L155 443.5L154 443.5L153 443.5L152 443.5L151 443.5L150 443.5L149 443.5L148 443.5L147 443.5L146 443.5L145 443.5L144 443.5L143 443.5L142.5 444L142 444.5L141 444.5L140 444.5L139 444.5L138 444.5L137 444.5L136 444.5L135 444.5L134 444.5L133 444.5L132.5 445L132 445.5L131 445.5L130 445.5L129 445.5L128 445.5L127 445.5L126 445.5L125 445.5L124 445.5L123 445.5L122 445.5L121 445.5L120 445.5L119 445.5L118 445.5L117 445.5L116 445.5L115 445.5L114 445.5L113 445.5L112 445.5L111.5 445L111 444.5L110 444.5L109 444.5L108 444.5L107 444.5L106 444.5L105 444.5L104.5 445L104 445.5L103 445.5L102 445.5L101 445.5L100 445.5L99.5 446L99 446.5L98 446.5L97 446.5L96 446.5L95 446.5L94 446.5L93 446.5L92 446.5L91 446.5L90 446.5L89 446.5L88.5 447L88 447.5L87 447.5L86 447.5L85 447.5L84 447.5L83 447.5L82 447.5L81 447.5L80 447.5L79 447.5L78 447.5L77 447.5L76.5 448L76 448.5L75 448.5L74 448.5L73 448.5L72 448.5L71 448.5L70 448.5L69 448.5L68 448.5L67 448.5L66 448.5L65 448.5L64 448.5L63.5 449L63 449.5L62 449.5L61 449.5L60 449.5L59 449.5L58 449.5L57 449.5L56 449.5L55 449.5L54 449.5L53.5 450L53 450.5L52 450.5L51 450.5L50 450.5L49 450.5L48 450.5L47 450.5L46 450.5L45 450.5L44 450.5L43 450.5L42 450.5L41 450.5L40 450.5L39 450.5L38 450.5L37 450.5L36 450.5L35 450.5L34 450.5L33 450.5L32 450.5L31 450.5L30 450.5L29 450.5L28 450.5L27 450.5L26 450.5L25 450.5L24 450.5L23.5 450L23 449.5L22 449.5L21 449.5L20 449.5L19.5 449L19 448.5L18 448.5L17.5 448L17 447.5L16 447.5L15.5 447L15 446.5L14.5 446L14 445.5L13.5 445L13.5 444L13 443.5L12.5 443L12 442.5L11.5 442L11 441.5L10.5 441L10 440.5L9.5 440L9 439.5L8.5 439L8 438.5L7.5 438L7 437.5L6.5 437L6 436.5L5 436.5L4.5 436L4 435.5L3.5 435L3 434.5L2.5 434L2.5 433L2 432.5L1.5 432L1.5 431L1.5 430L1.5 429L1.5 428L1 427.5L0.5 427L0.5 426L0.5 425L0.5 424L0.5 423L0.5 422L0.5 421L0.5 420L0.5 419L0.5 418L0.5 417L0.5 416L0.5 415L0.5 414L0.5 413L0.5 412L0.5 411L1 410.5L1.5 410L1.5 409L1.5 408L1.5 407L1 406.5L0.5 406L0.5 405L0.5 404L1 403.5L1.5 403L1.5 402L1.5 401L1.5 400L1 399.5L0.5 399L0.5 398L0.5 397L0.5 396L0.5 395L0.5 394L0.5 393L0.5 392L0.5 391L0.5 390L0.5 389L0.5 388L1 387.5L1.5 387L1.5 386L1 385.5L0.5 385L0.5 384L0.5 383L0.5 382L0.5 381L0.5 380L0.5 379L0.5 378L0.5 377L0.5 376L0.5 375L0 374.5L-0.5 374L-0.5 373L-0.5 372L-0.5 371L-0.5 370L-0.5 369L-0.5 368L-0.5 367L-0.5 366L-0.5 365L-0.5 364L-0.5 363L-0.5 362L-0.5 361L-0.5 360L-0.5 359L-0.5 358L0 357.5L0.5 357L0 356.5L-0.5 356L-0.5 355L-0.5 354L0 353.5L0.5 353L0.5 352L0 351.5L-0.5 351L0 350.5L0.5 350L0.5 349L0.5 348L0 347.5L-0.5 347L-0.5 346L-0.5 345L-0.5 344L-0.5 343L-0.5 342L-0.5 341L0 340.5L0.5 340L0.5 339L0.5 338L0.5 337L0.5 336L0.5 335L0.5 334L0.5 333L0.5 332L0.5 331L0.5 330L0.5 329L0.5 328L1 327.5L1.5 327L1.5 326L1.5 325L1.5 324L1.5 323L1.5 322L1.5 321L1 320.5L0.5 320L0.5 319L0.5 318L0.5 317L0.5 316L0.5 315L0.5 314L1 313.5L1.5 313L1.5 312L1.5 311L1.5 310L1.5 309L1 308.5L0.5 308L0.5 307L1 306.5L1.5 306L1.5 305L1.5 304L1 303.5L0.5 303L0.5 302L1 301.5L1.5 301L1.5 300L1.5 299L1.5 298L1.5 297L1.5 296L1.5 295L1.5 294L1 293.5L0.5 293L0.5 292L0.5 291L0.5 290L0.5 289L0.5 288L0.5 287L0.5 286L0.5 285L0.5 284L0.5 283L1 282.5L1.5 282L1.5 281L1.5 280L1.5 279L1.5 278L1.5 277L1.5 276L1.5 275L1.5 274L2 273.5L2.5 273L2.5 272L2.5 271L2.5 270L2.5 269L2.5 268L2.5 267L2.5 266L2.5 265L2.5 264L2.5 263L2.5 262L2.5 261L2.5 260L2.5 259L2 258.5L1.5 258L1.5 257L1.5 256L1.5 255L1.5 254L1.5 253L1.5 252L2 251.5L2.5 251L2.5 250L2.5 249L2 248.5L1.5 248L1.5 247L2 246.5L2.5 246L2 245.5L1.5 245L1.5 244L1.5 243L2 242.5L2.5 242L2.5 241L2.5 240L2.5 239L2.5 238L2.5 237L2.5 236L2.5 235L2.5 234L2.5 233L3 232.5L3.5 232L3.5 231L3.5 230L3.5 229L3.5 228L4 227.5L4.5 227L4.5 226L5 225.5L5.5 225L6 224.5L6.5 224L7 223.5L7.5 223L8 222.5L8.5 222L9 221.5L10 221.5L10.5 221L11 220.5L12 220.5L12.5 220L13 219.5L14 219.5L14.5 219L15 218.5L15.5 218L16 217.5L16.5 217L16.5 216L17 215.5L17.5 215L18 214.5L18.5 214L19 213.5L19.5 213L20 212.5L20.5 212L21 211.5L22 211.5L22.5 211L23 210.5L24 210.5L25 210.5L25.5 210L26 209.5L27 209.5L28 209.5L29 209.5L30 209.5L31 209.5L32 209.5L33 209.5L34 209.5L35 209.5L36 209.5L37 209.5L38 209.5L39 209.5L40 209.5L41 209.5L42 209.5L43 209.5L44 209.5L44.5 209L45 208.5L46 208.5L47 208.5L47.5 208L47.5 207L47.5 206L48 205.5L48.5 205L48 204.5L47.5 204L47.5 203L47 202.5L46.5 202L46 201.5L45 201.5L44 201.5L43 201.5L42 201.5L41.5 201L41 200.5L40 200.5L39 200.5L38 200.5L37 200.5L36 200.5L35 200.5L34 200.5L33 200.5L32 200.5L31 200.5L30 200.5L29 200.5L28 200.5L27 200.5L26 200.5L25.5 200L25 199.5L24 199.5L23 199.5L22 199.5L21 199.5L20.5 199L20 198.5L19.5 198L19 197.5L18 197.5L17.5 197L17 196.5L16.5 196L16 195.5L15.5 195L15.5 194L15 193.5L14.5 193L14.5 192L14.5 191L14.5 190L14.5 189L14.5 188L14.5 187L14.5 186L14 185.5L13.5 185L13.5 184L13.5 183L13.5 182L13.5 181L13.5 180L13.5 179L13.5 178L13.5 177L13.5 176L13 175.5L12.5 175L12.5 174L12.5 173L12.5 172L13 171.5L13.5 171L13.5 170L13.5 169L13.5 168L13.5 167L13.5 166L13.5 165L14 164.5L14.5 164L14.5 163L14.5 162L14.5 161L14.5 160L14.5 159L14.5 158L15 157.5L15.5 157L15.5 156L15.5 155L15.5 154L15.5 153L16 152.5L16.5 152L16.5 151L16.5 150L16.5 149L16.5 148L17 147.5L17.5 147L17.5 146L17.5 145L17.5 144L17.5 143L18 142.5L18.5 142L18.5 141L18.5 140L18.5 139L18.5 138L18.5 137L18.5 136L18.5 135L18.5 134L19 133.5L19.5 133L19.5 132L19.5 131L19.5 130L19.5 129L19.5 128L19.5 127L20 126.5L20.5 126L20.5 125L20.5 124L20.5 123L21 122.5L21.5 122L21.5 121L21.5 120L21.5 119L21.5 118L21.5 117L21.5 116L21.5 115L22 114.5L22.5 114L22.5 113L22.5 112L22.5 111L22.5 110L22.5 109L23 108.5L23.5 108L23.5 107L23.5 106L23.5 105L23.5 104L23.5 103L23.5 102L23.5 101L24 100.5L24.5 100L24.5 99L24.5 98L24.5 97L24.5 96L25 95.5L25.5 95L25.5 94L25.5 93L25.5 92L25.5 91L25.5 90L25.5 89L26 88.5L26.5 88L26.5 87L26.5 86L26.5 85L26.5 84L26.5 83L27 82.5L27.5 82L27.5 81L27.5 80L27.5 79L27.5 78L28 77.5L28.5 77L28.5 76L28.5 75L28.5 74L28.5 73L29 72.5L29.5 72L29.5 71L29.5 70L29.5 69L29.5 68L30 67.5L30.5 67L30.5 66L30.5 65L30.5 64L30.5 63L30.5 62L31 61.5L31.5 61L31.5 60L31.5 59L31.5 58L31.5 57L31.5 56L32 55.5L32.5 55L32.5 54L32.5 53L32.5 52L32.5 51L32.5 50L33 49.5L33.5 49L33.5 48L33.5 47L33.5 46L33.5 45L33.5 44L34 43.5L34.5 43L34.5 42L34.5 41L34.5 40L34.5 39L35 38.5L35.5 38L35.5 37L35.5 36L35.5 35L35.5 34L35.5 33L35.5 32L35.5 31L36 30.5L36.5 30L36.5 29L36.5 28L36.5 27L36.5 26L37 25.5L37.5 25L37.5 24L37.5 23L37.5 22L37.5 21L37.5 20L37.5 19L37.5 18L38 17.5L38.5 17L38.5 16L38.5 15L38.5 14L38.5 13L39 12.5L39.5 12L39.5 11L39.5 10L39.5 9L39.5 8L39.5 7L40 6.5L40.5 6L40.5 5L41 4.5L41.5 4L41.5 3L42 2.5L42.5 2L43 1.5L44 1.5L45 1.5L45.5 1L46 0.5L47 0.5L48 0.5L49 0.5ZM109.5 206L110 205.5L111 205.5L111.5 206L112 206.5L113 206.5L114 206.5L115 206.5L116 206.5L117 206.5L118 206.5L119 206.5L120 206.5L121 206.5L122 206.5L123 206.5L124 206.5L125 206.5L126 206.5L126.5 207L127 207.5L128 207.5L129 207.5L130 207.5L131 207.5L132 207.5L133 207.5L134 207.5L135 207.5L135.5 208L136 208.5L137 208.5L138 208.5L139 208.5L140 208.5L141 208.5L142 208.5L143 208.5L144 208.5L145 208.5L145.5 209L146 209.5L146.5 210L147 210.5L148 210.5L149 210.5L150 210.5L151 210.5L151.5 211L152 211.5L152.5 212L153 212.5L154 212.5L155 212.5L155.5 212L156 211.5L157 211.5L157.5 211L158 210.5L159 210.5L160 210.5L161 210.5L162 210.5L162.5 211L163 211.5L164 211.5L165 211.5L165.5 212L166 212.5L166.5 213L167 213.5L167.5 214L167 214.5L166 214.5L165 214.5L164 214.5L163 214.5L162 214.5L161 214.5L160 214.5L159 214.5L158 214.5L157 214.5L156 214.5L155 214.5L154 214.5L153 214.5L152 214.5L151 214.5L150.5 214L150 213.5L149 213.5L148 213.5L147.5 213L147 212.5L146 212.5L145 212.5L144.5 212L144 211.5L143 211.5L142.5 211L142 210.5L141.5 210L141 209.5L140.5 210L140 210.5L139.5 211L139.5 212L139 212.5L138 212.5L137 212.5L136 212.5L135 212.5L134 212.5L133 212.5L132.5 212L133 211.5L133.5 211L133 210.5L132 210.5L131 210.5L130 210.5L129.5 210L129 209.5L128 209.5L127 209.5L126 209.5L125 209.5L124.5 210L124 210.5L123.5 210L123 209.5L122 209.5L121.5 209L121 208.5L120 208.5L119 208.5L118 208.5L117.5 209L117 209.5L116.5 210L116 210.5L115 210.5L114 210.5L113.5 211L113 211.5L112 211.5L111 211.5L110 211.5L109.5 211L109 210.5L108 210.5L107 210.5L106.5 210L106 209.5L105 209.5L104 209.5L103.5 209L103.5 208L104 207.5L104.5 207L105 206.5L105.5 207L106 207.5L107 207.5L107.5 207L108 206.5L109 206.5ZM185.5 212L186 211.5L187 211.5L188 211.5L189 211.5L190 211.5L191 211.5L192 211.5L193 211.5L194 211.5L195 211.5L196 211.5L197 211.5L198 211.5L199 211.5L200 211.5L201 211.5L202 211.5L203 211.5L204 211.5L204.5 212L205 212.5L206 212.5L207 212.5L208 212.5L208.5 213L208 213.5L207.5 214L208 214.5L208.5 215L208.5 216L208 216.5L207 216.5L206 216.5L205 216.5L204 216.5L203 216.5L202 216.5L201 216.5L200 216.5L199 216.5L198 216.5L197 216.5L196 216.5L195 216.5L194 216.5L193 216.5L192 216.5L191 216.5L190 216.5L189 216.5L188 216.5L187 216.5L186.5 216L186.5 215L186 214.5L185.5 214L185.5 213Z",
+     "right": 570.0,
+     "top": 0.0,
+     "width": 960
+    },
+    "noun": "circuit breaker box",
+    "recording_id": "rec-walk-si",
+    "time": 1.0
+   },
+   "people": [
+    {
+     "name": "Kasun",
+     "person_id": "p-kasun",
+     "proven": true,
+     "proven_until": "2027-02-24",
+     "show": true,
+     "stale": [],
+     "tell": true
+    },
+    {
+     "name": "Seetha Amma",
+     "person_id": "p-seetha",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Nethum",
+     "person_id": "p-nethum",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    }
+   ],
+   "points": [
+    {
+     "kind": "step",
+     "point_id": "p1",
+     "safety": true,
+     "text_en": "If the power is gone, come here first.",
+     "text_si": "කරන්ට් ගියොත් මුලින්ම මෙතනට එන්න."
+    },
+    {
+     "kind": "step",
+     "point_id": "p2",
+     "safety": true,
+     "text_en": "Find the switch that is down and push it up.",
+     "text_si": "පහළට වැටිලා තියෙන ස්විච් එක හොයාගෙන ඒක උඩට තල්ලු කරන්න."
+    },
+    {
+     "kind": "warning",
+     "point_id": "p3",
+     "safety": true,
+     "text_en": "Never touch it with wet hands.",
+     "text_si": "තෙත් අතින් කවදාවත් අල්ලන්න එපා."
+    }
+   ],
+   "safety": "electricity",
+   "schedule": {
+    "day_of_month": null,
+    "duration_min": null,
+    "freq": "when_needed",
+    "time": null,
+    "weekday": null
+   },
+   "steps": [
+    {
+     "id": "c-si-02",
+     "quote": "කරන්ට් ගියොත් මුලින්ම මෙතනට එන්න",
+     "recording_id": "rec-walk-si",
+     "text_en": "If the power is gone, come here first.",
+     "text_si": "කරන්ට් ගියොත් මුලින්ම මෙතනට එන්න.",
+     "time": 3.0
+    },
+    {
+     "id": "c-si-03",
+     "quote": "ඒක උඩට තල්ලු කරන්න",
+     "recording_id": "rec-walk-si",
+     "text_en": "Find the switch that is down and push it up.",
+     "text_si": "පහළට වැටිලා තියෙන ස්විච් එක හොයාගෙන ඒක උඩට තල්ලු කරන්න.",
+     "time": 7.0
+    }
+   ],
+   "title_en": "Main switch box",
+   "title_si": "ප්‍රධාන ස්විච් පෙට්ටිය",
+   "type": "appliance",
+   "warnings": [
+    {
+     "id": "c-si-04",
+     "quote": "තෙත් අතින් කවදාවත් අල්ලන්න එපා",
+     "recording_id": "rec-walk-si",
+     "text_en": "Never touch it with wet hands.",
+     "text_si": "තෙත් අතින් කවදාවත් අල්ලන්න එපා.",
+     "time": 9.0
+    }
+   ]
+  },
+  {
+   "clip": {
+    "end": 12.0,
+    "recording_id": "rec-walk-en",
+    "start": 0.0
+   },
+   "contacts": [],
+   "coverage": "covered",
+   "facts": [
+    {
+     "id": "c-en-01",
+     "kind": "location",
+     "quote": "in these white files in the bedroom cupboard",
+     "recording_id": "rec-walk-en",
+     "text_en": "The important papers are in the white files in the bedroom cupboard.",
+     "text_si": "වැදගත් ලියකියවිලි නිදන කාමරේ අල්මාරියේ තියෙන සුදු ෆයිල්වල තියෙනවා.",
+     "time": 1.0
+    },
+    {
+     "id": "c-en-02",
+     "kind": "item",
+     "quote": "the house deed",
+     "recording_id": "rec-walk-en",
+     "text_en": "The white files hold the house deed.",
+     "text_si": "සුදු ෆයිල්වල ගෙදර ඔප්පුව තියෙනවා.",
+     "time": 3.0
+    },
+    {
+     "id": "c-en-03",
+     "kind": "item",
+     "quote": "the birth certificates",
+     "recording_id": "rec-walk-en",
+     "text_en": "The white files hold the birth certificates.",
+     "text_si": "සුදු ෆයිල්වල උපන් සහතික තියෙනවා.",
+     "time": 5.0
+    }
+   ],
+   "gaps": 0,
+   "key": "important_documents",
+   "lesson_minutes": 7,
+   "next": "2026-11-20",
+   "notes": [],
+   "object": {
+    "claim_id": "c-en-01",
+    "keyframe_id": "kf0000",
+    "keyframe_path": "rec-walk-en/kf/kf_0000.jpg",
+    "mask": null,
+    "noun": "white files",
+    "recording_id": "rec-walk-en",
+    "time": 1.0
+   },
+   "people": [
+    {
+     "name": "Kasun",
+     "person_id": "p-kasun",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    },
+    {
+     "name": "Seetha Amma",
+     "person_id": "p-seetha",
+     "proven": true,
+     "proven_until": "2027-02-24",
+     "show": null,
+     "stale": [],
+     "tell": true
+    },
+    {
+     "name": "Nethum",
+     "person_id": "p-nethum",
+     "proven": false,
+     "proven_until": null,
+     "show": null,
+     "stale": [],
+     "tell": null
+    }
+   ],
+   "points": [
+    {
+     "kind": "warning",
+     "point_id": "p1",
+     "safety": true,
+     "text_en": "Never give the originals to anyone.",
+     "text_si": "මුල් ලියකියවිලි කාටවත් දෙන්න එපා."
+    },
+    {
+     "kind": "step",
+     "point_id": "p2",
+     "safety": false,
+     "text_en": "Give photocopies instead.",
+     "text_si": "ඒ වෙනුවට ෆොටෝකොපි දෙන්න."
+    }
+   ],
+   "safety": "none",
+   "schedule": {
+    "day_of_month": null,
+    "duration_min": null,
+    "freq": "when_needed",
+    "time": null,
+    "weekday": null
+   },
+   "steps": [
+    {
+     "id": "c-en-06",
+     "quote": "Give photocopies instead.",
+     "recording_id": "rec-walk-en",
+     "text_en": "Give photocopies instead.",
+     "text_si": "ඒ වෙනුවට ෆොටෝකොපි දෙන්න.",
+     "time": 9.0
+    }
+   ],
+   "title_en": "Important documents",
+   "title_si": "වැදගත් ලියකියවිලි",
+   "type": "document",
+   "warnings": [
+    {
+     "id": "c-en-05",
+     "quote": "Never give the originals to anyone.",
+     "recording_id": "rec-walk-en",
+     "text_en": "Never give the originals to anyone.",
+     "text_si": "මුල් ලියකියවිලි කාටවත් දෙන්න එපා.",
+     "time": 7.0
+    }
+   ]
+  }
+ ],
+ "today": "2026-10-28"
+}

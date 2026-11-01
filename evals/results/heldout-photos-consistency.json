@@ -1,0 +1,447 @@
+{
+ "runs": [
+  "heldout-muse-spark-1.3.json",
+  "heldout-photos-repeat-2.json",
+  "heldout-photos-repeat-3.json"
+ ],
+ "pairs": [
+  {
+   "id": "same-padlock-angle",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "mismatch",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "cannot_verify",
+    "cannot_verify",
+    "cannot_verify"
+   ]
+  },
+  {
+   "id": "same-padlock-front",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "mismatch",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-padlock-key-out",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "same-kettle-other-side",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-kettle-copper",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-kettle-lacquer",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-teapot-back",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "mismatch",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-teapot-cabbage",
+   "expect": "same",
+   "spark_alone": [
+    "mismatch",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "same-clock-angle",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "same-clock-dome",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-teapot-side-handle",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "mismatch",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "mismatch",
+    "verified"
+   ]
+  },
+  {
+   "id": "same-kettle-modern",
+   "expect": "same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "diff-padlock-iron",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "diff-padlock-long",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "cannot_verify",
+    "cannot_verify",
+    "cannot_verify"
+   ]
+  },
+  {
+   "id": "diff-kettle-black",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "diff-kettle-copper",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "cannot_verify",
+    "cannot_verify",
+    "cannot_verify"
+   ]
+  },
+  {
+   "id": "diff-teapot-silver-straight",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "diff-teapot-silver-shield",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "diff-teapot-white",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "diff-clock-carriage",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "diff-lamp-turquoise",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "cannot_verify",
+    "cannot_verify",
+    "cannot_verify"
+   ]
+  },
+  {
+   "id": "diff-teapot-round-silver",
+   "expect": "different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "unclear-clock-old-photo",
+   "expect": "unclear_same",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "verified",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "unclear-teapot-in-a-group",
+   "expect": "unclear_same",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "unclear-padlock-from-above",
+   "expect": "unclear_same",
+   "spark_alone": [
+    "mismatch",
+    "verified",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "cannot_verify",
+    "cannot_verify",
+    "cannot_verify"
+   ]
+  },
+  {
+   "id": "unclear-pot-old-photo",
+   "expect": "unclear_same",
+   "spark_alone": [
+    "verified",
+    "verified",
+    "verified"
+   ],
+   "sam_then_spark": [
+    "verified",
+    "verified",
+    "verified"
+   ]
+  },
+  {
+   "id": "unclear-kettle-dim-blurred",
+   "expect": "unclear_same",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  },
+  {
+   "id": "unclear-only-the-marks",
+   "expect": "unclear_none",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "cannot_verify",
+    "cannot_verify",
+    "cannot_verify"
+   ]
+  },
+  {
+   "id": "unclear-other-teapot-dim",
+   "expect": "unclear_different",
+   "spark_alone": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ],
+   "sam_then_spark": [
+    "mismatch",
+    "mismatch",
+    "mismatch"
+   ]
+  }
+ ],
+ "sides": {
+  "spark_alone": {
+   "pairs": 29,
+   "same_answer_every_run": 22,
+   "false_accepts_in_all_runs": 0,
+   "same_object_confirmed_per_run": [
+    11,
+    9,
+    11
+   ],
+   "right_per_run": [
+    24,
+    23,
+    25
+   ]
+  },
+  "sam_then_spark": {
+   "pairs": 29,
+   "same_answer_every_run": 25,
+   "false_accepts_in_all_runs": 0,
+   "same_object_confirmed_per_run": [
+    9,
+    7,
+    8
+   ],
+   "right_per_run": [
+    23,
+    22,
+    22
+   ]
+  }
+ }
+}

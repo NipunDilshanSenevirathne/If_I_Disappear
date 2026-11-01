@@ -1,0 +1,20 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:50Z",
+ "output": {
+  "feedback_en": "You covered the pickup from the bus stop, but you missed mentioning Nethum's extra classes every Wednesday until 5pm.",
+  "feedback_si": "ඔබ බස් නැවතුම්පොළට ගිහින් එක්කගෙන එන එක කිව්වා, නමුත් හැම බදාදාම හවස පහ වෙනකම් අමතර පන්ති තියෙනවා කියන එක කිව්වේ නැහැ.",
+  "points": [
+   {
+    "covered": false,
+    "point_id": "p1",
+    "quote": ""
+   },
+   {
+    "covered": true,
+    "point_id": "p2",
+    "quote": "බස් නැවතුම්පොළට ගිහින් නෙතුම්ව එක්කගෙන එනවා."
+   }
+  ]
+ }
+}

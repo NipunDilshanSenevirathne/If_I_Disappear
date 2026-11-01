@@ -1,0 +1,10 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:58Z",
+ "output": {
+  "task_key": "main_switch",
+  "decided_by": "muse-spark-1.3",
+  "reason": "This recorded job explains what to do when the power is gone.",
+  "reason_si": "ලයිට් ගියාම මොකද කරන්නේ කියලා මේ සටහනේ තියෙනවා."
+ }
+}

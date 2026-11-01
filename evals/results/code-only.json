@@ -1,0 +1,68 @@
+{
+ "run_at": "2026-10-31T22:33:15Z",
+ "policy_sha256": "147480f1443462fa9230885672ed61fc0566937d698a4938e2d9305b662c9dfb",
+ "code": [
+  {
+   "name": "Words witness: misquotes caught",
+   "misquotes": 81,
+   "caught": 81,
+   "catch_rate": 100.0,
+   "harmless_variants": 105,
+   "harmless_failed": 0,
+   "missed_examples": []
+  },
+  {
+   "name": "Privacy scrubber",
+   "secrets": 16,
+   "hidden": 16,
+   "recall": 100.0,
+   "ordinary": 15,
+   "wrongly_hidden": 0,
+   "mistakes": []
+  },
+  {
+   "name": "Rules: medical instructions refused",
+   "cases": 22,
+   "correct": 21,
+   "medical": 12,
+   "medical_refused": 12,
+   "mistakes": [
+    {
+     "text": "The dose of fertiliser for the plants is one spoon.",
+     "expected_blocked": false
+    }
+   ]
+  },
+  {
+   "name": "Rules: mixed-script Sinhala sent to review",
+   "cases": 8,
+   "correct": 8,
+   "mistakes": []
+  },
+  {
+   "name": "Help line, code only (no model)",
+   "questions": 40,
+   "correct": 37,
+   "accuracy": 92.5,
+   "wrong_job_shown": 1,
+   "mistakes": [
+    {
+     "q": "The lights went out in the whole house",
+     "expect": "main_switch",
+     "got": "not_recorded"
+    },
+    {
+     "q": "ගෙදර ලයිට් ඔක්කොම නිවිලා",
+     "expect": "main_switch",
+     "got": "not_recorded"
+    },
+    {
+     "q": "How do I pay the water bill?",
+     "expect": "not_recorded",
+     "got": "water_pump"
+    }
+   ]
+  }
+ ],
+ "model": []
+}

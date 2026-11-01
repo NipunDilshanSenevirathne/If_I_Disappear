@@ -1,0 +1,512 @@
+{
+ "checked_at": "2026-10-31T20:37:15Z",
+ "result": "passed",
+ "server": {
+  "version": "1.0.0",
+  "mode": "live",
+  "models": {
+   "spark": "muse-spark-1.3",
+   "wonder": "muse-wonder-1.0",
+   "sam": "sam-3.1",
+   "voice": "muse-voice-transcribe-1.0",
+   "sinhala": "omnilingual-asr"
+  },
+  "sinhala_speech": true,
+  "policy_sha256": "147480f1443462fa9230885672ed61fc0566937d698a4938e2d9305b662c9dfb"
+ },
+ "video": {
+  "kind": "synthetic",
+  "voice": "eSpeak NG (en-gb)",
+  "seconds": 47.67,
+  "rooms": [
+   {
+    "photo": "breaker.jpg",
+    "start": 0.0,
+    "end": 18.06
+   },
+   {
+    "photo": "pump.jpg",
+    "start": 18.06,
+    "end": 35.32
+   },
+   {
+    "photo": "interior.jpg",
+    "start": 35.32,
+    "end": 47.67
+   }
+  ],
+  "script": [
+   "This is the main switch box, next to the kitchen door.",
+   "If the power goes off, come here first.",
+   "Find the switch that has dropped down, and push it back up.",
+   "Never touch it with wet hands.",
+   "This is the water pump, behind the house.",
+   "Every morning at six, switch it on for twenty minutes, until the tank is full.",
+   "If it makes a grinding noise, switch it off at once, and call Sunil.",
+   "This is the gas cylinder, in the kitchen.",
+   "When it runs out, call the gas shop at the junction.",
+   "The gate code is two five eight zero."
+  ]
+ },
+ "pipeline": {
+  "status": "done",
+  "error": null,
+  "seconds": 85.3,
+  "steps": [
+   {
+    "step": "convert",
+    "detail": "",
+    "at_s": 0.0
+   },
+   {
+    "step": "hear",
+    "detail": "English (Muse Voice Transcribe)",
+    "at_s": 6.0
+   },
+   {
+    "step": "privacy",
+    "detail": "",
+    "at_s": 12.0
+   },
+   {
+    "step": "read",
+    "detail": "muse-spark-1.3",
+    "at_s": 20.1
+   },
+   {
+    "step": "check",
+    "detail": "10 claims",
+    "at_s": 66.6
+   },
+   {
+    "step": "decide",
+    "detail": "",
+    "at_s": 85.3
+   }
+  ]
+ },
+ "heard": {
+  "engine": "muse-voice-transcribe-1.0",
+  "turns": [
+   {
+    "id": "t1",
+    "start": 0.66,
+    "end": 4.65,
+    "text": "this is the is the main switch box next to the kitchen door.."
+   },
+   {
+    "id": "t2",
+    "start": 5.49,
+    "end": 8.4,
+    "text": "if the power power goes off come here first."
+   },
+   {
+    "id": "t3",
+    "start": 9.21,
+    "end": 13.56,
+    "text": "find thefind the switch that has dropped down and push it back up."
+   },
+   {
+    "id": "t4",
+    "start": 14.37,
+    "end": 16.59,
+    "text": "Never touch it with wet hands."
+   },
+   {
+    "id": "t5",
+    "start": 17.91,
+    "end": 21.09,
+    "text": "this is the water pump behind the house.!"
+   },
+   {
+    "id": "t6",
+    "start": 21.93,
+    "end": 27.78,
+    "text": "every morning at six, switch it on for twenty minutes until the tank is full."
+   },
+   {
+    "id": "t7",
+    "start": 28.59,
+    "end": 33.84,
+    "text": "If it it makes a grinding noise, switch it switch it off at once and call Sunil.."
+   },
+   {
+    "id": "t8",
+    "start": 35.16,
+    "end": 37.92,
+    "text": "this is the gosselinder in the kitchen."
+   },
+   {
+    "id": "t9",
+    "start": 38.76,
+    "end": 42.54,
+    "text": "When it runs out, call the gas shop shop at the junction.."
+   },
+   {
+    "id": "t10",
+    "start": 43.35,
+    "end": 46.2,
+    "text": "The gate code is [hidden]."
+   }
+  ]
+ },
+ "privacy": {
+  "secret_said": "the gate code",
+  "secret_in_any_text": false,
+  "hidden": [
+   {
+    "count": 1,
+    "kinds": [
+     "lock_code"
+    ],
+    "turn_id": "t10"
+   }
+  ],
+  "muted_spans": [
+   [
+    43.05,
+    46.5
+   ]
+  ],
+  "blurred": 0
+ },
+ "facts": [
+  {
+   "id": "c-8a4237a44a",
+   "status": "verified",
+   "kind": "location",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "The main switch box is next to the kitchen door.",
+   "text_si": "මේන් ස්විච් බොක්ස් එක කුස්සියේ දොර ගාව තියෙනවා",
+   "quote": "main switch box next to the kitchen door",
+   "said_at": 1.0,
+   "turn": "t1",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-07de4520c2",
+   "status": "verified",
+   "kind": "step",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "If the power goes off, come to the main switch box first.",
+   "text_si": "ලයිට් ගියොත් මුලින්ම මේන් ස්විච් බොක්ස් එක ලඟට එන්න",
+   "quote": "come here first",
+   "said_at": 5.49,
+   "turn": "t2",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-16f5ea411d",
+   "status": "verified",
+   "kind": "step",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "Push the switch that has dropped down back up.",
+   "text_si": "බැහැලා තියෙන ස්විච් එක ආයෙත් උඩට දාන්න",
+   "quote": "push it back up",
+   "said_at": 9.21,
+   "turn": "t3",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-4ea0bcd420",
+   "status": "verified",
+   "kind": "warning",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "Never touch the main switch box with wet hands.",
+   "text_si": "තෙත අතින් මේන් ස්විච් බොක්ස් එකට කවදාවත් අත තියන්න එපා",
+   "quote": "Never touch it with wet hands.",
+   "said_at": 14.37,
+   "turn": "t4",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-7b367992bc",
+   "status": "verified",
+   "kind": "location",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "The water pump is behind the house.",
+   "text_si": "වතුර පොම්පය ගෙට පිටිපස්සේ තියෙනවා",
+   "quote": "water pump behind the house",
+   "said_at": 19.0,
+   "turn": "t5",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-0fb3ab3b6a",
+   "status": "verified",
+   "kind": "schedule",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "Switch on the water pump every morning at six for twenty minutes until the tank is full.",
+   "text_si": "හැමදාම උදේ හයට වතුර පොම්පය දාන්න ටැංකිය පිරෙනකම් විනාඩි විස්සක්",
+   "quote": "every morning at six, switch it on for twenty minutes",
+   "said_at": 23.0,
+   "turn": "t6",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-61dc8ac61b",
+   "status": "verified",
+   "kind": "step",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "If the water pump makes a grinding noise, switch it off at once.",
+   "text_si": "වතුර පොම්පයෙන් කිරි කිරි ගාන සද්දයක් ආවොත් එකපාරම ඕෆ් කරන්න",
+   "quote": "switch it switch it off at once",
+   "said_at": 29.0,
+   "turn": "t7",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-2529aaec0a",
+   "status": "verified",
+   "kind": "contact",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "Call Sunil if the water pump makes a grinding noise.",
+   "text_si": "වතුර පොම්පයෙන් කිරි කිරි ගාන සද්දයක් ආවොත් සුනිල්ට කතා කරන්න",
+   "quote": "call Sunil",
+   "said_at": 31.0,
+   "turn": "t7",
+   "noun": "",
+   "witnesses": {
+    "words": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-2a954a3011",
+   "status": "verified",
+   "kind": "location",
+   "job": "gas_cylinder",
+   "safety": "gas",
+   "text_en": "The gas cylinder is in the kitchen.",
+   "text_si": "ගෑස් සිලින්ඩරය කුස්සියේ තියෙනවා",
+   "quote": "gosselinder in the kitchen",
+   "said_at": 37.0,
+   "turn": "t8",
+   "noun": "gas cylinder",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-2f11552478",
+   "status": "verified",
+   "kind": "contact",
+   "job": "gas_cylinder",
+   "safety": "gas",
+   "text_en": "When the gas runs out, call the gas shop at the junction.",
+   "text_si": "ගෑස් ඉවර උනොත් හන්දියේ ගෑස් කඩේට කතා කරන්න",
+   "quote": "call the gas shop shop at the junction",
+   "said_at": 40.0,
+   "turn": "t9",
+   "noun": "",
+   "witnesses": {
+    "words": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  }
+ ],
+ "fact_counts": {
+  "verified": 10
+ },
+ "tracking": {
+  "expected": 3,
+  "tracked": [
+   {
+    "claim": "c-8a4237a44a",
+    "frames_with_mask": 35
+   },
+   {
+    "claim": "c-7b367992bc",
+    "frames_with_mask": 36
+   },
+   {
+    "claim": "c-2a954a3011",
+    "frames_with_mask": 38
+   }
+  ],
+  "failed": [],
+  "seconds": 29.4
+ },
+ "board": {
+  "headline": {
+   "stop_tomorrow": 3,
+   "total": 3,
+   "task_keys": [
+    "gas_cylinder",
+    "main_switch",
+    "water_pump"
+   ]
+  },
+  "jobs": [
+   {
+    "key": "gas_cylinder",
+    "title_en": "Gas cylinder",
+    "type": "supply",
+    "safety": "gas",
+    "object": "gas cylinder"
+   },
+   {
+    "key": "main_switch",
+    "title_en": "Main switch",
+    "type": "appliance",
+    "safety": "electricity",
+    "object": "electrical panel"
+   },
+   {
+    "key": "water_pump",
+    "title_en": "Water pump",
+    "type": "appliance",
+    "safety": "water",
+    "object": "water pump"
+   }
+  ]
+ },
+ "help": [
+  {
+   "question": "The power went off. What do I do?",
+   "expected": "switch",
+   "task": "Main switch",
+   "emergency": false,
+   "decided_by": "muse-spark-1.3",
+   "reason": "This recorded job explains what to do when the power goes off.",
+   "as_expected": true
+  },
+  {
+   "question": "I can smell gas in the kitchen",
+   "expected": "emergency",
+   "task": null,
+   "emergency": true,
+   "decided_by": "code",
+   "reason": "This sounds like an emergency.",
+   "as_expected": true
+  }
+ ],
+ "tell": {
+  "job": "Water pump",
+  "answer": "Every morning at six I switch it on for twenty minutes until the tank is full. If it grinds, I switch it off at once and call Sunil.",
+  "passed": true,
+  "reasons": [
+   "Explained 3 of 3 steps."
+  ]
+ },
+ "show": {
+  "job": "Water pump",
+  "photo": "backend/fixtures/sample/media/samples/pump-right.jpg",
+  "passed": true,
+  "reasons": [
+   "That's the right water pump. Matched: bright blue horizontal pump with left motor and right volute in same orientation, finned motor body with rear fan cowl and top terminal box in same position, white PVC vertical discharge pipe entering top with grey coupler above."
+  ]
+ },
+ "log": {
+  "events": 114,
+  "chain_ok": true,
+  "broken_at": null
+ },
+ "cost": {
+  "by_model": {
+   "muse-spark-1.3": 0.099007,
+   "muse-voice-transcribe-1.0": 0.0016,
+   "muse-wonder-1.0": 0.127978,
+   "sam-3.1": 0.1095
+  },
+  "by_purpose": {
+   "muse-spark-1.3: claims": {
+    "calls": 1,
+    "usd": 0.069537
+   },
+   "muse-spark-1.3: help": {
+    "calls": 2,
+    "usd": 0.003976
+   },
+   "muse-spark-1.3: show-me": {
+    "calls": 1,
+    "usd": 0.010601
+   },
+   "muse-spark-1.3: sinhala": {
+    "calls": 1,
+    "usd": 0.010329
+   },
+   "muse-spark-1.3: tell-me": {
+    "calls": 1,
+    "usd": 0.004564
+   },
+   "muse-voice-transcribe-1.0: speech-en": {
+    "calls": 10,
+    "usd": 0.0016
+   },
+   "muse-wonder-1.0: second-reading": {
+    "calls": 6,
+    "usd": 0.127978
+   },
+   "sam-3.1: pin-and-track": {
+    "calls": 3,
+    "usd": 0.03
+   },
+   "sam-3.1: pixels-witness": {
+    "calls": 8,
+    "usd": 0.02
+   },
+   "sam-3.1: privacy": {
+    "calls": 3,
+    "usd": 0.057
+   },
+   "sam-3.1: show-me": {
+    "calls": 1,
+    "usd": 0.0025
+   }
+  },
+  "total_usd": 0.338085
+ },
+ "deleted": true
+}

@@ -1,0 +1,1402 @@
+{
+ "checked_at": "2026-10-31T20:30:47.625Z",
+ "lang": "si",
+ "base_is_local": true,
+ "checks": [
+  {
+   "name": "server: live, with Meta’s models",
+   "ok": true,
+   "detail": "{\"spark\":\"muse-spark-1.3\",\"wonder\":\"muse-wonder-1.0\",\"sam\":\"sam-3.1\",\"voice\":\"muse-voice-transcribe-1.0\",\"sinhala\":\"omnilingual-asr\"}"
+  },
+  {
+   "name": "server: Sinhala speech is on",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "start: the home is made, with the owner’s private link",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "people: two people staying are added",
+   "ok": true,
+   "detail": "අමාලි:leaving, රුවන්:staying, දිලිනි:staying"
+  },
+  {
+   "name": "record: the walk-through went up",
+   "ok": true,
+   "detail": "200 in 0.2 s"
+  },
+  {
+   "name": "record: the six steps finish",
+   "ok": true,
+   "detail": "done  "
+  },
+  {
+   "name": "record: the server reports the steps in order",
+   "ok": true,
+   "detail": "convert,hear,privacy,read,check,decide"
+  },
+  {
+   "name": "record: the page says it is ready for review",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "record: the page ticked the steps off as they finished, not all at the end",
+   "ok": true,
+   "detail": "0@0.2 1@12.3 2@18.3 3@54.8 4@113.2 6@138.8"
+  },
+  {
+   "name": "privacy: SAM 3.1 looked through the whole video, not only the stills",
+   "ok": true,
+   "detail": "video"
+  },
+  {
+   "name": "privacy: the card on the shelf was found while the camera was on it",
+   "ok": true,
+   "detail": "[{\"concept\":\"credit card\",\"count\":20,\"first\":34.5,\"last\":44}]"
+  },
+  {
+   "name": "privacy: in the kept video the card’s digits are blurred away",
+   "ok": true,
+   "detail": "sharpness 0.001 of the original"
+  },
+  {
+   "name": "privacy: and the rest of the picture is left sharp",
+   "ok": true,
+   "detail": "sharpness 0.836 of the original"
+  },
+  {
+   "name": "privacy: the spoken gate code is in no text the app keeps",
+   "ok": true,
+   "detail": "1 hidden"
+  },
+  {
+   "name": "privacy: the medicine sentence is refused, not turned into a job",
+   "ok": true,
+   "detail": "Amma takes the pressure pill at eight every night."
+  },
+  {
+   "name": "privacy: nothing of the upload is left outside the home’s folder",
+   "ok": true,
+   "detail": "0 temp, 0 parts"
+  },
+  {
+   "name": "review: there are facts to review",
+   "ok": true,
+   "detail": "15 waiting"
+  },
+  {
+   "name": "review: a reworded fact is marked as the owner’s own words",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "review: the other language is marked as not yet translated",
+   "ok": true,
+   "detail": "{\"edited\":[\"si\"],\"untranslated\":[\"en\"]}"
+  },
+  {
+   "name": "review: a fact can be rejected",
+   "ok": true,
+   "detail": "If the power goes off, come to the main switch box first."
+  },
+  {
+   "name": "review: the rest are accepted, the reworded one with them",
+   "ok": true,
+   "detail": "14 accepted of 15"
+  },
+  {
+   "name": "review: “Not used” shows the medicine sentence, refused by code",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "review: and shows nothing of the code",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "board: SAM 3.1 tracked every accepted object through its clip",
+   "ok": true,
+   "detail": "5 of 5 in 55 s"
+  },
+  {
+   "name": "board: the five jobs said in the walk-through are on the board",
+   "ok": true,
+   "detail": "switch=main_switch pump=water_pump documents=important_documents padlock=back_gate clock=hall_clock"
+  },
+  {
+   "name": "board: each job has its title in both languages",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "board: the page lists them",
+   "ok": true,
+   "detail": "5 cards"
+  },
+  {
+   "name": "clip: the words of the rejected fact are silent in the job’s clip",
+   "ok": true,
+   "detail": "[{\"turn\":\"t1\",\"accepted\":true,\"rms\":3141},{\"turn\":\"t2\",\"accepted\":false,\"rms\":0},{\"turn\":\"t3\",\"accepted\":true,\"rms\":3338},{\"turn\":\"t4\",\"accepted\":true,\"rms\":3501}]"
+  },
+  {
+   "name": "clip: the accepted facts are heard",
+   "ok": true,
+   "detail": "3141,3338,3501"
+  },
+  {
+   "name": "clip: undone, the clip is cut again and those words are heard",
+   "ok": true,
+   "detail": "rms 3360"
+  },
+  {
+   "name": "show me: the app’s own picture is refused as not a new photo",
+   "ok": true,
+   "detail": "400 refused:not_new"
+  },
+  {
+   "name": "show me: a different padlock does not pass",
+   "ok": true,
+   "detail": "mismatch: [\"Couldn't confirm this is the same padlock. Photo B is not the same physical padlock as Photo A. Both are old dark rust"
+  },
+  {
+   "name": "show me: a hard view of the same padlock is not called a different one",
+   "ok": true,
+   "detail": "cannot_verify: [\"I couldn't find a padlock in this photo. Take it again from the front, closer, with more light.\"]"
+  },
+  {
+   "name": "show me: a new photo of the same clock passes",
+   "ok": true,
+   "detail": "verified: [\"That's the right clock. Matched: tall lighthouse-form wood case with glass dome and crown finial, round white dial with black Roman numerals centered under do"
+  },
+  {
+   "name": "show me: SAM 3.1’s outline is drawn on the photo",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "tell me: an explanation with every point passes",
+   "ok": true,
+   "detail": "[\"Explained 2 of 2 steps, including every safety step.\"]"
+  },
+  {
+   "name": "tell me: leaving out the safety step does not pass",
+   "ok": true,
+   "detail": "[\"Missed: Do not run the water pump at night.\"]"
+  },
+  {
+   "name": "tell me: the steps pasted back are refused",
+   "ok": true,
+   "detail": "400 copied"
+  },
+  {
+   "name": "tell me by voice: words the speech model can’t make out are not judged; it asks again",
+   "ok": true,
+   "detail": "400 unclear \"The words couldn't be made out. Please say it again, a little slower.\""
+  },
+  {
+   "name": "help: “කරන්ට් ගියා, මොකද කරන්නේ?” → job (switch)",
+   "ok": true,
+   "detail": "job main_switch muse-spark-1.3"
+  },
+  {
+   "name": "help: “පිටිපස්සේ ගේට්ටුවේ ඉබ්බාගේ යතුර කොහෙද?” → job (padlock)",
+   "ok": true,
+   "detail": "job back_gate muse-spark-1.3"
+  },
+  {
+   "name": "help: “රෙදි සෝදන මැෂිම හදන්නේ කොහොමද?” → none",
+   "ok": true,
+   "detail": "none  muse-spark-1.3"
+  },
+  {
+   "name": "help: “අම්මා රෑට ප්‍රෙෂර් පෙති කීයක් බොනවද?” → medical",
+   "ok": true,
+   "detail": "medical  code"
+  },
+  {
+   "name": "help: “කුස්සියේ ගෑස් ගඳක් එනවා” → emergency",
+   "ok": true,
+   "detail": "emergency  code"
+  },
+  {
+   "name": "help: “මගේ ATM PIN එක 4321. ගෙදර ඔප්පු තියෙන්නේ කොහෙද?” → job (documents)",
+   "ok": true,
+   "detail": "job important_documents muse-spark-1.3"
+  },
+  {
+   "name": "help: the PIN in the question is shown back hidden",
+   "ok": true,
+   "detail": "“මගේ ATM PIN එක [hidden]. ගෙදර ඔප්පු තියෙන්නේ කොහෙද?”"
+  },
+  {
+   "name": "help: and is not kept anywhere in the log",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "whatsapp: a power cut asked in Sinhala gets the main switch steps, in Sinhala",
+   "ok": true,
+   "detail": "මේන් ස්විච් එක\nමෙන්න අමාලි කියපු විදිහ:\n1. ලයිට් ගියොත් ඉස්සෙල්ලාම ප්‍රධාන ස්විච් පෙට්ටිය ලඟට එන්න.\n2. බැහැලා තියෙන ස්වි"
+  },
+  {
+   "name": "whatsapp: a typed question gets the padlock job",
+   "ok": true,
+   "detail": "පිටිපස්සෙ ගේට්ටුව\nමෙන්න අමාලි කියපු විදිහ:\nවීඩියෝ එක බලන්න: http://localhost:8080/l/<link>…"
+  },
+  {
+   "name": "help by voice: the question is heard",
+   "ok": true,
+   "detail": "ආරංචය ගමපුරා පැතිරගියේ විදුලි වේගයනේ"
+  },
+  {
+   "name": "help by voice: heard in Sinhala letters",
+   "ok": true,
+   "detail": "ආරංචය ගමපුරා පැතිරගියේ විදුලි වේගයනේ"
+  },
+  {
+   "name": "help by voice: a question about nothing recorded is answered honestly",
+   "ok": true,
+   "detail": "null muse-spark-1.3"
+  },
+  {
+   "name": "gap by voice: words the speech model can’t make out are refused, not read",
+   "ok": true,
+   "detail": "400 unclear"
+  },
+  {
+   "name": "sticker: its clip is the job’s own cut",
+   "ok": true,
+   "detail": "main_switch-0-174-4f53cda1.mp4 main_switch-0-174-4f53cda1.webm"
+  },
+  {
+   "name": "sticker: on a phone that never opened the home, the clip plays",
+   "ok": true,
+   "detail": "{\"t\":1.5,\"error\":null}"
+  },
+  {
+   "name": "sticker: with SAM 3.1’s outline drawn over it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "sticker: cannot open another job’s picture",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "name": "sticker: cannot open the whole walk-through",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "name": "person link: cannot open the log",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "name": "person link: cannot open the whole walk-through, with every word said",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "name": "person link: cannot open the recording itself, transcript and all",
+   "ok": true,
+   "detail": "403"
+  },
+  {
+   "name": "person link: a job shows its own clip, with no transcript",
+   "ok": true,
+   "detail": "200 0 turns"
+  },
+  {
+   "name": "removed: her link stops working at once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "removed: and her phone lets go of the home",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "replaced: an old sticker stops working",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "replaced: the owner carries on with the new link",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "offline: the whole home is saved on this phone",
+   "ok": true,
+   "detail": "{\"at\":\"2026-10-31T20:36:44.837Z\",\"saved\":27,\"total\":27,\"failed\":0}"
+  },
+  {
+   "name": "offline: the server really is out of reach",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "offline: the board opens",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "offline: a sticker opens its job from the saved copy",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "offline: with its clip",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "log: every change is in the hash chain, and it is intact",
+   "ok": true,
+   "detail": "189 events"
+  },
+  {
+   "name": "evidence page: shows the chain as intact",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "delete: the home is gone",
+   "ok": true,
+   "detail": "404"
+  },
+  {
+   "name": "delete: nothing of it is left in the server’s data folder",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no script errors on any page",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "stages": {
+  "start": 2.1,
+  "record": 140.1,
+  "privacy": 0.5,
+  "review": 5.6,
+  "board": 56.8,
+  "clip sound": 4.1,
+  "prove": 55.8,
+  "prove by voice": 19.2,
+  "help": 34.6,
+  "help by voice": 14.5,
+  "gap by voice": 1.3,
+  "links": 10.8,
+  "offline": 12.9,
+  "log and delete": 2
+ },
+ "video": {
+  "file": "walk-en.mp4",
+  "voice": "eSpeak NG (en-gb)",
+  "seconds": 70.71,
+  "lines": 15
+ },
+ "server": {
+  "version": "1.0.0",
+  "mode": "live",
+  "models": {
+   "spark": "muse-spark-1.3",
+   "wonder": "muse-wonder-1.0",
+   "sam": "sam-3.1",
+   "voice": "muse-voice-transcribe-1.0",
+   "sinhala": "omnilingual-asr"
+  },
+  "sinhala_speech": true,
+  "invite_only": true,
+  "max_upload_mb": 1024
+ },
+ "people": [
+  {
+   "id": "p-owner",
+   "name": "අමාලි",
+   "role": "leaving",
+   "language": "si"
+  },
+  {
+   "id": "p-2ae4c3335b",
+   "name": "රුවන්",
+   "role": "staying",
+   "language": "si"
+  },
+  {
+   "id": "p-32630cb7de",
+   "name": "දිලිනි",
+   "role": "staying",
+   "language": "si"
+  }
+ ],
+ "ui_steps": [
+  {
+   "done": 0,
+   "at_s": 0.2
+  },
+  {
+   "done": 1,
+   "at_s": 12.3
+  },
+  {
+   "done": 2,
+   "at_s": 18.3
+  },
+  {
+   "done": 3,
+   "at_s": 54.8
+  },
+  {
+   "done": 4,
+   "at_s": 113.2
+  },
+  {
+   "done": 6,
+   "at_s": 138.8
+  }
+ ],
+ "pipeline": {
+  "status": "done",
+  "seconds": 138.8,
+  "steps": [
+   {
+    "step": "convert",
+    "detail": "",
+    "at_s": 0.2
+   },
+   {
+    "step": "hear",
+    "detail": "English (Muse Voice Transcribe)",
+    "at_s": 10.2
+   },
+   {
+    "step": "privacy",
+    "detail": "",
+    "at_s": 16.3
+   },
+   {
+    "step": "read",
+    "detail": "muse-spark-1.3",
+    "at_s": 52.8
+   },
+   {
+    "step": "check",
+    "detail": "15 claims",
+    "at_s": 113.2
+   },
+   {
+    "step": "decide",
+    "detail": "",
+    "at_s": 138.8
+   }
+  ]
+ },
+ "heard": {
+  "engine": "muse-voice-transcribe-1.0",
+  "turns": [
+   {
+    "id": "t1",
+    "start": 0.66,
+    "end": 4.65,
+    "text": "this is the main switch box next to the kitchen door."
+   },
+   {
+    "id": "t2",
+    "start": 5.49,
+    "end": 8.4,
+    "text": "If the power goes off, come here first.."
+   },
+   {
+    "id": "t3",
+    "start": 9.21,
+    "end": 13.56,
+    "text": "and the switch that has dropped down down and push it back up."
+   },
+   {
+    "id": "t4",
+    "start": 14.37,
+    "end": 16.59,
+    "text": "Never touch it with wet hands.."
+   },
+   {
+    "id": "t5",
+    "start": 17.91,
+    "end": 21.09,
+    "text": "this is the water pump, behind the house."
+   },
+   {
+    "id": "t6",
+    "start": 21.93,
+    "end": 27.78,
+    "text": "every morning at six, switch it it on for twenty minutes, until the tank is full.:"
+   },
+   {
+    "id": "t7",
+    "start": 28.62,
+    "end": 30.27,
+    "text": "Do not run it at night."
+   },
+   {
+    "id": "t8",
+    "start": 31.59,
+    "end": 37.5,
+    "text": "these white files in the bedroom cupboard hold the house deed and the birth certificates."
+   },
+   {
+    "id": "t9",
+    "start": 38.28,
+    "end": 42.72,
+    "text": "never give the originals to anyone. Give photocopies instead."
+   },
+   {
+    "id": "t10",
+    "start": 44.07,
+    "end": 46.41,
+    "text": "this is the padlock on the back gate.."
+   },
+   {
+    "id": "t11",
+    "start": 47.22,
+    "end": 52.29,
+    "text": "Lock it every night. The key hangs on the hook inside the kitchen door.:"
+   },
+   {
+    "id": "t12",
+    "start": 53.61,
+    "end": 55.56,
+    "text": "thisthis is the clock in the hall."
+   },
+   {
+    "id": "t13",
+    "start": 56.37,
+    "end": 61.08,
+    "text": "wind it every Sunday morning. Never turn the hands backwards."
+   },
+   {
+    "id": "t14",
+    "start": 62.4,
+    "end": 65.25,
+    "text": "The gate code is [hidden]"
+   },
+   {
+    "id": "t15",
+    "start": 66.03,
+    "end": 69.24,
+    "text": "Amma takes the pressure pill at eight every night."
+   }
+  ]
+ },
+ "privacy": {
+  "method": "video",
+  "redactions": [
+   {
+    "concept": "credit card",
+    "count": 20,
+    "first": 34.5,
+    "last": 44
+   }
+  ],
+  "hidden": [
+   {
+    "count": 1,
+    "kinds": [
+     "lock_code"
+    ],
+    "turn_id": "t14"
+   }
+  ],
+  "muted": [
+   [
+    62.1,
+    65.55
+   ]
+  ],
+  "card_sharpness_kept_vs_original": 0.001,
+  "shelf_sharpness_kept_vs_original": 0.836,
+  "medical": [
+   "Amma takes the pressure pill at eight every night."
+  ]
+ },
+ "facts": [
+  {
+   "id": "c-4230f1ab2e",
+   "status": "verified",
+   "kind": "location",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "The main switch box is next to the kitchen door.",
+   "text_si": "මේන් ස්විච් පෙට්ටිය තියෙන්නෙ කුස්සියෙ දොර ගාව.",
+   "quote": "this is the main switch box next to the kitchen door.",
+   "time": 1,
+   "turn": "t1",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-2ac844d488",
+   "status": "verified",
+   "kind": "step",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "If the power goes off, come to the main switch box first.",
+   "text_si": "ලයිට් ගියොත් ඉස්සෙල්ලාම ප්‍රධාන ස්විච් පෙට්ටිය ලඟට එන්න.",
+   "quote": "If the power goes off, come here first..",
+   "time": 5.49,
+   "turn": "t2",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-44cba3f6b9",
+   "status": "verified",
+   "kind": "step",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "Push the switch that has dropped down back up.",
+   "text_si": "බැහැලා තියෙන ස්විච් එක ආයෙ උඩට දාන්න.",
+   "quote": "and the switch that has dropped down down and push it back up.",
+   "time": 9.21,
+   "turn": "t3",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-c065169050",
+   "status": "verified",
+   "kind": "warning",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "Never touch the main switch box with wet hands.",
+   "text_si": "තෙත අතින් මේන් ස්විච් පෙට්ටියට කවදාවත් අත තියන්න එපා.",
+   "quote": "Never touch it with wet hands..",
+   "time": 14.37,
+   "turn": "t4",
+   "noun": "electrical panel",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-696070b80a",
+   "status": "needs_review",
+   "kind": "location",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "The water pump is behind the house.",
+   "text_si": "වතුර පොම්පය තියෙන්නෙ ගේ පිටිපස්සෙන්.",
+   "quote": "this is the water pump, behind the house.",
+   "time": 19,
+   "turn": "t5",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "fail"
+   },
+   "reason": "pixels: SAM 3.1 found no “water pump” in this frame."
+  },
+  {
+   "id": "c-8e1ddbc41c",
+   "status": "verified",
+   "kind": "schedule",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "Switch the water pump on every morning at six for twenty minutes until the tank is full.",
+   "text_si": "හැමදාම උදේ හයට වතුර පොම්පය දාලා ටැංකිය පිරෙනකන් විනාඩි විස්සක් තියන්න.",
+   "quote": "every morning at six, switch it it on for twenty minutes, until the tank is full.:",
+   "time": 21.93,
+   "turn": "t6",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-d935e2fff1",
+   "status": "verified",
+   "kind": "warning",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "Do not run the water pump at night.",
+   "text_si": "රෑට වතුර පොම්පය දාන්න එපා.",
+   "quote": "Do not run it at night.",
+   "time": 28.62,
+   "turn": "t7",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-5adf8128fe",
+   "status": "verified",
+   "kind": "item",
+   "job": "important_documents",
+   "safety": "none",
+   "text_en": "The white files in the bedroom cupboard hold the house deed and the birth certificates.",
+   "text_si": "නිදන කාමරේ අල්මාරියෙ තියෙන සුදු ෆයිල්වල ගේ ඔප්පුවයි උපන් සහතිකයි තියෙනවා.",
+   "quote": "these white files in the bedroom cupboard hold the house deed and the birth certificates.",
+   "time": 33,
+   "turn": "t8",
+   "noun": "white folder",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-936604a2f9",
+   "status": "verified",
+   "kind": "warning",
+   "job": "important_documents",
+   "safety": "none",
+   "text_en": "Never give the original documents to anyone, give photocopies instead.",
+   "text_si": "මුල් ලියකියවිලි කාටවත් දෙන්න එපා, ෆොටෝකොපි දෙන්න.",
+   "quote": "never give the originals to anyone. Give photocopies instead.",
+   "time": 39,
+   "turn": "t9",
+   "noun": "",
+   "witnesses": {
+    "words": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-29fb6831eb",
+   "status": "verified",
+   "kind": "location",
+   "job": "back_gate",
+   "safety": "none",
+   "text_en": "This is the padlock on the back gate.",
+   "text_si": "මේ තියෙන්නෙ පිටිපස්සෙ ගේට්ටුවෙ දාන පෑඩ්ලොක් එක.",
+   "quote": "this is the padlock on the back gate..",
+   "time": 45,
+   "turn": "t10",
+   "noun": "padlock",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-b8bf4d1192",
+   "status": "verified",
+   "kind": "schedule",
+   "job": "back_gate",
+   "safety": "none",
+   "text_en": "Lock the back gate padlock every night.",
+   "text_si": "හැමදාම රෑට පිටිපස්සෙ ගේට්ටුවෙ පෑඩ්ලොක් එක දාන්න.",
+   "quote": "Lock it every night.",
+   "time": 49,
+   "turn": "t11",
+   "noun": "padlock",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-f753cc7271",
+   "status": "verified",
+   "kind": "location",
+   "job": "back_gate",
+   "safety": "none",
+   "text_en": "The back gate key hangs on the hook inside the kitchen door.",
+   "text_si": "පිටිපස්සෙ ගේට්ටුවෙ යතුර එල්ලලා තියෙන්නෙ කුස්සියෙ දොර ඇතුළු පැත්තෙ කොක්කෙ.",
+   "quote": "The key hangs on the hook inside the kitchen door.",
+   "time": 51,
+   "turn": "t11",
+   "noun": "",
+   "witnesses": {
+    "words": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-cec78d30e5",
+   "status": "verified",
+   "kind": "location",
+   "job": "hall_clock",
+   "safety": "none",
+   "text_en": "This is the clock in the hall.",
+   "text_si": "මේ තියෙන්නෙ හෝල් එකේ ඔරලෝසුව.",
+   "quote": "thisthis is the clock in the hall.",
+   "time": 55,
+   "turn": "t12",
+   "noun": "clock",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-c356fd6547",
+   "status": "verified",
+   "kind": "schedule",
+   "job": "hall_clock",
+   "safety": "none",
+   "text_en": "Wind the hall clock every Sunday morning.",
+   "text_si": "හැම ඉරිදම උදේට හෝල් එකේ ඔරලෝසුවට යතුර දෙන්න.",
+   "quote": "wind it every Sunday morning.",
+   "time": 57,
+   "turn": "t13",
+   "noun": "clock",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-3ecd220e7f",
+   "status": "verified",
+   "kind": "warning",
+   "job": "hall_clock",
+   "safety": "none",
+   "text_en": "Never turn the hall clock hands backwards.",
+   "text_si": "හෝල් එකේ ඔරලෝසුවෙ කටු කවදාවත් ආපස්සට කරකවන්න එපා.",
+   "quote": "Never turn the hands backwards.",
+   "time": 59,
+   "turn": "t13",
+   "noun": "clock",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  }
+ ],
+ "left_out": [
+  {
+   "reason": "unused",
+   "text": "The gate code is [hidden]",
+   "start": 62.4
+  },
+  {
+   "reason": "medical",
+   "text": "Amma takes the pressure pill at eight every night.",
+   "start": 66.03
+  }
+ ],
+ "tracking": {
+  "objects": 5,
+  "seconds": 55,
+  "tracked": [
+   {
+    "claim": "c-4230f1ab2e",
+    "frames": 35
+   },
+   {
+    "claim": "c-29fb6831eb",
+    "frames": 34
+   },
+   {
+    "claim": "c-5adf8128fe",
+    "frames": 36
+   },
+   {
+    "claim": "c-8e1ddbc41c",
+    "frames": 40
+   },
+   {
+    "claim": "c-cec78d30e5",
+    "frames": 36
+   }
+  ],
+  "failed": []
+ },
+ "board": [
+  {
+   "key": "main_switch",
+   "title_en": "Main switch",
+   "title_si": "මේන් ස්විච් එක",
+   "safety": "electricity",
+   "coverage": "uncovered",
+   "object": "electrical panel",
+   "clip": {
+    "recording_id": "rec-9ba75fd7e7",
+    "start": 0,
+    "end": 17.369999999999997
+   },
+   "points": 2
+  },
+  {
+   "key": "water_pump",
+   "title_en": "Water pump",
+   "title_si": "වතුර පොම්පය",
+   "safety": "water",
+   "coverage": "uncovered",
+   "object": "water pump",
+   "clip": {
+    "recording_id": "rec-9ba75fd7e7",
+    "start": 17,
+    "end": 31.62
+   },
+   "points": 2
+  },
+  {
+   "key": "back_gate",
+   "title_en": "Back gate",
+   "title_si": "පිටිපස්සෙ ගේට්ටුව",
+   "safety": "none",
+   "coverage": "uncovered",
+   "object": "padlock",
+   "clip": {
+    "recording_id": "rec-9ba75fd7e7",
+    "start": 43,
+    "end": 54
+   },
+   "points": 1
+  },
+  {
+   "key": "hall_clock",
+   "title_en": "Hall clock",
+   "title_si": "හෝල් එකේ ඔරලෝසුව",
+   "safety": "none",
+   "coverage": "uncovered",
+   "object": "clock",
+   "clip": {
+    "recording_id": "rec-9ba75fd7e7",
+    "start": 53,
+    "end": 62
+   },
+   "points": 2
+  },
+  {
+   "key": "important_documents",
+   "title_en": "Important documents",
+   "title_si": "වැදගත් ලියකියවිලි",
+   "safety": "none",
+   "coverage": "uncovered",
+   "object": "white folder",
+   "clip": {
+    "recording_id": "rec-9ba75fd7e7",
+    "start": 31,
+    "end": 42
+   },
+   "points": 1
+  }
+ ],
+ "clip_sound": {
+  "job": "main_switch",
+  "clip_start": 0,
+  "seconds": 17.4,
+  "levels": [
+   {
+    "turn": "t1",
+    "accepted": true,
+    "rms": 3141
+   },
+   {
+    "turn": "t2",
+    "accepted": false,
+    "rms": 0
+   },
+   {
+    "turn": "t3",
+    "accepted": true,
+    "rms": 3338
+   },
+   {
+    "turn": "t4",
+    "accepted": true,
+    "rms": 3501
+   }
+  ],
+  "after_undo": {
+   "clip_changed": true,
+   "rms": 3360
+  }
+ },
+ "proofs": [
+  {
+   "kind": "show",
+   "job": "back_gate",
+   "label": "the app’s own picture, saved again",
+   "status": 400,
+   "outcome": "refused:not_new",
+   "reasons": "This looks like a picture from the walk-through. Take a new photo of the real thing.",
+   "seconds": 0.2,
+   "shown": "මේක ඇවිදගෙන පටිගත කරපු වීඩියෝවේ පින්තූරයක් වගේ. ඇත්ත දේ අලුත් ෆොටෝ එකක් ගන්න."
+  },
+  {
+   "kind": "show",
+   "job": "back_gate",
+   "label": "a different padlock",
+   "status": 200,
+   "outcome": "mismatch",
+   "passed": false,
+   "reasons": [
+    "Couldn't confirm this is the same padlock. Photo B is not the same physical padlock as Photo A. Both are old dark rusted iron padlocks with an arched shackle, but the body construction is fundamentally different. A has an ornate wide lobed body with side notches, four circular holes/openings and a central cover plate with an irregular bottom projection. B has a plain rectangular block body with no holes, no plate, straight sides and a flat bottom. The shackle shape and silhouette also differ, with A showing a short shackle with a rivet. These are two different objects of similar type."
+   ],
+   "seconds": 13.2,
+   "shown": "තාම නැහැ\n\nමේ ඒකමයි කියලා තහවුරු කරගන්න බැරි වුණා. B ඡායාරූපයේ ඇත්තේ A ඡායාරූපයේ ඇති අගුලම නොවේ. දෙකම පැරණි මලකඩ කෑ යකඩ අගුළු වුවත් ශරීරයේ නිර්මාණය සම්පූර්ණයෙන්ම වෙනස්. A හි ශරීරය පැති කැපුම් සහිත, රවු",
+   "matched": [
+    "Both are old dark brown rusted iron padlocks",
+    "Both have a thick arched shackle on top",
+    "Both photographed on plain white background"
+   ],
+   "mismatches": [
+    "Body shape: A has wide ornate lobed body, B has plain rectangular block",
+    "A shows four circular holes/side notches and central vertical plate, B shows none",
+    "Silhouette sides: A has distinct side cutouts and lower lobes, B has straight vertical sides",
+    "Bottom profile: A irregular with central projection, B flat straight edge",
+    "Shackle: A short with visible rivet on right joint, B taller U-shape with no rivet"
+   ],
+   "confidence": 0.9569892287254333
+  },
+  {
+   "kind": "show",
+   "job": "back_gate",
+   "label": "the same padlock from the side, hard to tell",
+   "status": 200,
+   "outcome": "cannot_verify",
+   "passed": false,
+   "reasons": [
+    "I couldn't find a padlock in this photo. Take it again from the front, closer, with more light."
+   ],
+   "seconds": 1.7,
+   "shown": "මේ ෆොටෝ එකෙන් කියන්න බැහැ\n\nමේ ෆොටෝ එකේ පිටිපස්සෙ ගේට්ටුව පේන්නේ නැහැ. ඉස්සරහින්, ළඟට ගිහින්, එළිය වැඩි තැනක ආයෙත් ෆොටෝ එකක් ගන්න."
+  },
+  {
+   "kind": "show",
+   "job": "hall_clock",
+   "label": "a new photo of the same clock",
+   "status": 200,
+   "outcome": "verified",
+   "passed": true,
+   "reasons": [
+    "That's the right clock. Matched: tall lighthouse-form wood case with glass dome and crown finial, round white dial with black Roman numerals centered under dome, brass collar ring directly below dome."
+   ],
+   "seconds": 22.5,
+   "shown": "සමත්\n\nහරි, ඒ තමයි හරියටම ඒක.\n\nඡායාරූප දෙකෙහිම එකම ප්‍රදීපාගාර හැඩයේ ශාලා ඔරලෝසුව පෙනේ. වීදුරු ආවරණය සහ ඉහළ කිරුළ හැඩැති මුදුන, කළු රෝම ඉලක්කම් සහිත සුදු මුහුණත, ආවරණයට පහළින් පිත්තල වළල්ල, සිහින් වන ල",
+   "matched": [
+    "tall lighthouse-form wood case with glass dome and crown finial",
+    "round white dial with black Roman numerals centered under dome",
+    "brass collar ring directly below dome",
+    "tapering polished wood column on octagonal base",
+    "gilt decorative mount centered on front base panel",
+    "gilt ball feet with prominent front-center foot",
+    "plain light background in both photos"
+   ],
+   "mismatches": [],
+   "confidence": 0.7697842121124268
+  },
+  {
+   "kind": "tell",
+   "job": "water_pump",
+   "answer": "හැමදාම උදේ හයට මම වතුර මෝටරය විනාඩි විස්සකට දානවා, ටැංකිය පිරෙනකම්. රෑට නම් කවදාවත් දාන්නේ නැහැ.",
+   "label": "every point",
+   "status": 200,
+   "passed": true,
+   "code": null,
+   "reasons": [
+    "Explained 2 of 2 steps, including every safety step."
+   ],
+   "points": [
+    {
+     "text": "Switch the water pump on every morning at six for twenty minutes until the tank is full.",
+     "safety": false,
+     "said": true,
+     "quoted": true,
+     "quote": "හැමදාම උදේ හයට මම වතුර මෝටරය විනාඩි විස්සකට දානවා, ටැංකිය පිරෙනකම්"
+    },
+    {
+     "text": "Do not run the water pump at night.",
+     "safety": true,
+     "said": true,
+     "quoted": true,
+     "quote": "රෑට නම් කවදාවත් දාන්නේ නැහැ"
+    }
+   ],
+   "seconds": 3.9
+  },
+  {
+   "kind": "tell",
+   "job": "water_pump",
+   "answer": "උදේට මම මෝටරය දානවා.",
+   "label": "the safety step left out",
+   "status": 200,
+   "passed": false,
+   "code": null,
+   "reasons": [
+    "Missed: Do not run the water pump at night."
+   ],
+   "points": [
+    {
+     "text": "Switch the water pump on every morning at six for twenty minutes until the tank is full.",
+     "safety": false,
+     "said": false,
+     "quoted": false,
+     "quote": ""
+    },
+    {
+     "text": "Do not run the water pump at night.",
+     "safety": true,
+     "said": false,
+     "quoted": false,
+     "quote": ""
+    }
+   ],
+   "seconds": 6.6
+  },
+  {
+   "kind": "tell",
+   "job": "water_pump",
+   "answer": "හැමදාම උදේ හයට වතුර පොම්පය දාලා ටැංකිය පිරෙනකන් විනාඩි විස්සක් තියන්න. රෑට වතුර පොම්පය දාන්න එපා.",
+   "label": "the steps pasted back",
+   "status": 400,
+   "code": "copied",
+   "reasons": "That is the written steps, copied. Explain it in your own words, or say it out loud.",
+   "points": [],
+   "seconds": 0.1
+  },
+  {
+   "kind": "tell (spoken)",
+   "job": "main_switch",
+   "said": "කරන්ට් ගියොත් මම කුස්සියේ දොර ළඟ තියෙන ස්විච් පෙට්ටියට යනවා. පහළට වැටිච්ච ස්විච් එක ආපහු උඩට දානවා. තෙත අත්වලින් නම් අල්ලන්නේ නැහැ.",
+   "status": 400,
+   "code": "unclear",
+   "transcript": "",
+   "reasons": "The words couldn't be made out. Please say it again, a little slower.",
+   "points": []
+  }
+ ],
+ "help": [
+  {
+   "q": "කරන්ට් ගියා, මොකද කරන්නේ?",
+   "expect": "job",
+   "job": "switch",
+   "got": "job",
+   "task": "main_switch",
+   "decided_by": "muse-spark-1.3",
+   "seconds": 5.8,
+   "shown_question": "“කරන්ට් ගියා, මොකද කරන්නේ?”"
+  },
+  {
+   "q": "පිටිපස්සේ ගේට්ටුවේ ඉබ්බාගේ යතුර කොහෙද?",
+   "expect": "job",
+   "job": "padlock",
+   "got": "job",
+   "task": "back_gate",
+   "decided_by": "muse-spark-1.3",
+   "seconds": 3.8,
+   "shown_question": "“පිටිපස්සේ ගේට්ටුවේ ඉබ්බාගේ යතුර කොහෙද?”"
+  },
+  {
+   "q": "රෙදි සෝදන මැෂිම හදන්නේ කොහොමද?",
+   "expect": "none",
+   "job": null,
+   "got": "none",
+   "task": null,
+   "decided_by": "muse-spark-1.3",
+   "seconds": 8.3,
+   "shown_question": "“රෙදි සෝදන මැෂිම හදන්නේ කොහොමද?”"
+  },
+  {
+   "q": "අම්මා රෑට ප්‍රෙෂර් පෙති කීයක් බොනවද?",
+   "expect": "medical",
+   "job": null,
+   "got": "medical",
+   "task": null,
+   "decided_by": "code",
+   "seconds": 0.1,
+   "shown_question": "“අම්මා රෑට ප්‍රෙෂර් පෙති කීයක් බොනවද?”"
+  },
+  {
+   "q": "කුස්සියේ ගෑස් ගඳක් එනවා",
+   "expect": "emergency",
+   "job": null,
+   "got": "emergency",
+   "task": null,
+   "decided_by": "code",
+   "seconds": 0.1,
+   "shown_question": "“කුස්සියේ ගෑස් ගඳක් එනවා”"
+  },
+  {
+   "q": "මගේ ATM PIN එක 4321. ගෙදර ඔප්පු තියෙන්නේ කොහෙද?",
+   "expect": "job",
+   "job": "documents",
+   "got": "job",
+   "task": "important_documents",
+   "decided_by": "muse-spark-1.3",
+   "seconds": 4.1,
+   "shown_question": "“මගේ ATM PIN එක [hidden]. ගෙදර ඔප්පු තියෙන්නේ කොහෙද?”"
+  }
+ ],
+ "whatsapp": [
+  {
+   "reply": "මේන් ස්විච් එක\nමෙන්න අමාලි කියපු විදිහ:\n1. ලයිට් ගියොත් ඉස්සෙල්ලාම ප්‍රධාන ස්විච් පෙට්ටිය ලඟට එන්න.\n2. බැහැලා තියෙන ස්විච් එක ආයෙ උඩට දාන්න.\nඅවධානයට: තෙත අතින් මේන් ස්විච් පෙට්ටියට කවදාවත් අත තියන්න එපා.\nවීඩියෝ එක බලන්න: http://localhost:8080/l/<link>…",
+   "decided_by": "muse-spark-1.3",
+   "reason": "This recorded step explains what to do when the power goes off."
+  },
+  {
+   "reply": "පිටිපස්සෙ ගේට්ටුව\nමෙන්න අමාලි කියපු විදිහ:\nවීඩියෝ එක බලන්න: http://localhost:8080/l/<link>…",
+   "decided_by": "muse-spark-1.3",
+   "reason": "This recorded step covers the back gate and its key."
+  }
+ ],
+ "help_voice": {
+  "said": "ආරංචිය ගම පුරා පැතිර ගියේ විදුලි වේගයෙනි",
+  "voice": "recording sin_9228_2840141256.wav",
+  "status": 200,
+  "question": "ආරංචය ගමපුරා පැතිරගියේ විදුලි වේගයනේ",
+  "task": null,
+  "decided_by": "muse-spark-1.3",
+  "code": null,
+  "cer": 8.8
+ },
+ "gap_voice": {
+  "gaps": [
+   {
+    "task": "back_gate",
+    "slot": "how",
+    "q": "What are the steps for “Back gate”, one by one?"
+   },
+   {
+    "task": "back_gate",
+    "slot": "if_fails",
+    "q": "What should they do if the back gate stops working?"
+   },
+   {
+    "task": "back_gate",
+    "slot": "who_to_call",
+    "q": "Who should they call for help with the back gate?"
+   },
+   {
+    "task": "hall_clock",
+    "slot": "how",
+    "q": "What are the steps for “Hall clock”, one by one?"
+   },
+   {
+    "task": "hall_clock",
+    "slot": "who_to_call",
+    "q": "Who should they call for help with the hall clock?"
+   },
+   {
+    "task": "main_switch",
+    "slot": "who_to_call",
+    "q": "Who should they call for help with the main switch?"
+   },
+   {
+    "task": "water_pump",
+    "slot": "how",
+    "q": "What are the steps for “Water pump”, one by one?"
+   },
+   {
+    "task": "water_pump",
+    "slot": "who_to_call",
+    "q": "Who should they call for help with the water pump?"
+   }
+  ],
+  "asked": "What are the steps for “Water pump”, one by one?",
+  "said": "ඒක ලොකු සද්දයක් දානවා නම් ඒක ඕෆ් කරලා සුනිල් මාමට කතා කරන්න.",
+  "status": 400,
+  "error": "unclear",
+  "seconds": 1.1,
+  "facts": []
+ },
+ "offline": {
+  "seconds": 10,
+  "saved": {
+   "at": "2026-10-31T20:36:44.837Z",
+   "saved": 27,
+   "total": 27,
+   "failed": 0
+  }
+ },
+ "log": {
+  "events": 189,
+  "chain_ok": true,
+  "broken_at": null
+ },
+ "cost": {
+  "total_usd": 0.451502,
+  "by_purpose": {
+   "muse-voice-transcribe-1.0: speech-en": {
+    "calls": 15,
+    "usd": 0.0024
+   },
+   "sam-3.1: privacy": {
+    "calls": 3,
+    "usd": 0.0846
+   },
+   "muse-spark-1.3: claims": {
+    "calls": 1,
+    "usd": 0.097348
+   },
+   "muse-spark-1.3: sinhala": {
+    "calls": 1,
+    "usd": 0.011649
+   },
+   "sam-3.1: pixels-witness": {
+    "calls": 13,
+    "usd": 0.0325
+   },
+   "muse-wonder-1.0: second-reading": {
+    "calls": 4,
+    "usd": 0.083315
+   },
+   "sam-3.1: pin-and-track": {
+    "calls": 5,
+    "usd": 0.05
+   },
+   "sam-3.1: show-me": {
+    "calls": 3,
+    "usd": 0.0075
+   },
+   "muse-spark-1.3: show-me": {
+    "calls": 2,
+    "usd": 0.028728
+   },
+   "muse-spark-1.3: tell-me": {
+    "calls": 2,
+    "usd": 0.011519
+   },
+   "muse-spark-1.3: help": {
+    "calls": 17,
+    "usd": 0.041943
+   }
+  }
+ },
+ "deleted": true,
+ "result": "passed",
+ "passed": 76,
+ "failed": 0
+}

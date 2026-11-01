@@ -1,0 +1,21 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:23:38Z",
+ "output": {
+  "same_object": true,
+  "matched_features": [
+   "Same heavily rusted manual water pump - main vertical column, conical hopper on left and pump head on right connected by lower flange marked '123.B.'",
+   "Raised triple-wave embossing on side spigot body and on lower vertical column - identical position and shape",
+   "Side spigot with threaded outlet pointing left and small drain screw underneath - same orientation, thread count and rust texture",
+   "Flange connection with identical bolt/nut positions, corrosion pattern and gap alignment",
+   "Silver hex nut and exposed threads on vertical rod entering pump head - same height and thread exposure",
+   "Pump handle arm on far right - same angle, rust colour and curve",
+   "Surroundings identical: off-white wall on left with same mottled texture, blurred grey steps / wall in background on right"
+  ],
+  "mismatches": [
+   "None - rust pattern, markings, colours, position of parts and background are identical in A and B"
+  ],
+  "explanation_si": "Photo B shows the same physical rusted hand pump as Photo A, not just the same model.",
+  "explanation_en": "Photo B shows the same physical rusted pump as Photo A. All identifying markings, corrosion details, and surroundings match."
+ }
+}

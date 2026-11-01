@@ -1,0 +1,10 @@
+{
+ "model": "muse-wonder-1.0",
+ "recorded_at": "2026-10-28T12:20:54Z",
+ "output": {
+  "reason": "The owner said never touch it with a wet hand, which matches the claim.",
+  "reason_si": "අයිතිකරු කිව්වා තෙත් අතින් කවදාවත් අල්ලන්න එපා කියලා, ඒක මේ කියමනට ගැලපෙනවා.",
+  "verdict": "uphold"
+ },
+ "label_fixed": "recorded with model=muse-wonder-1.0; label corrected 2026-10-28"
+}

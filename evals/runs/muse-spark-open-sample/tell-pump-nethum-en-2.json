@@ -1,0 +1,25 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:24:11Z",
+ "output": {
+  "points": [
+   {
+    "point_id": "p1",
+    "covered": true,
+    "quote": "I run it at six every morning for twenty minutes until the tank is full."
+   },
+   {
+    "point_id": "p2",
+    "covered": true,
+    "quote": "If it makes a grinding noise I switch it off straight away"
+   },
+   {
+    "point_id": "p3",
+    "covered": true,
+    "quote": "If it makes a grinding noise I switch it off straight away and call Sunil Mama."
+   }
+  ],
+  "feedback_en": "feedback for this task is now available in the teacher dashboard. Please open the dashboard to view it.",
+  "feedback_si": "මේ කාර්යය පිළිබඳ ප්‍රතිපෝෂණය දැන් ගුරු උපකරණ පුවරුවේ ඇත. කරුණාකර එය බැලීමට උපකරණ පුවරුව විවෘත කරන්න."
+ }
+}

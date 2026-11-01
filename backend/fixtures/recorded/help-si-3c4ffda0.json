@@ -1,0 +1,10 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:27:13Z",
+ "output": {
+  "task_key": "gas_cylinder",
+  "decided_by": "muse-spark-1.3",
+  "reason": "This recorded step explains what to do when the gas is finished.",
+  "reason_si": "මේ සටහනේ ගෑස් ඉවර වුණාම මොනවද කරන්න ඕනේ කියලා තියෙනවා."
+ }
+}

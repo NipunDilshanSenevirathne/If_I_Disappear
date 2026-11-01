@@ -1,0 +1,10 @@
+{
+ "model": "muse-wonder-1.0",
+ "recorded_at": "2026-10-28T12:20:27Z",
+ "output": {
+  "reason": "The owner said this is the main switch box and the boxed object matches it.",
+  "reason_si": "අයිතිකරු කිව්වා මේක ප්‍රධාන ස්විච් පෙට්ටිය කියලා, කොටුවෙන් පෙන්නන දේත් ඒකමයි.",
+  "verdict": "uphold"
+ },
+ "label_fixed": "recorded with model=muse-wonder-1.0; label corrected 2026-10-28"
+}

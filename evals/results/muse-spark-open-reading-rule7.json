@@ -1,0 +1,239 @@
+{
+ "run_at": "2026-10-28T13:48:37Z",
+ "policy_sha256": "1d1229b8f112ee7a69a39d286d7ddfc9658d2d7c92854eba45d82e0e6dfa11b6",
+ "code": [
+  {
+   "name": "Words witness: misquotes caught",
+   "misquotes": 81,
+   "caught": 81,
+   "catch_rate": 100.0,
+   "harmless_variants": 105,
+   "harmless_failed": 0,
+   "missed_examples": []
+  },
+  {
+   "name": "Privacy scrubber",
+   "secrets": 16,
+   "hidden": 16,
+   "recall": 100.0,
+   "ordinary": 15,
+   "wrongly_hidden": 0,
+   "mistakes": []
+  },
+  {
+   "name": "Rules: medical instructions refused",
+   "cases": 17,
+   "correct": 16,
+   "medical": 9,
+   "medical_refused": 9,
+   "mistakes": [
+    {
+     "text": "The dose of fertiliser for the plants is one spoon.",
+     "expected_blocked": false
+    }
+   ]
+  },
+  {
+   "name": "Rules: mixed-script Sinhala sent to review",
+   "cases": 8,
+   "correct": 8,
+   "mistakes": []
+  },
+  {
+   "name": "Help line, code only (no model)",
+   "questions": 40,
+   "correct": 37,
+   "accuracy": 92.5,
+   "wrong_job_shown": 1,
+   "mistakes": [
+    {
+     "q": "The lights went out in the whole house",
+     "expect": "main_switch",
+     "got": "not_recorded"
+    },
+    {
+     "q": "ගෙදර ලයිට් ඔක්කොම නිවිලා",
+     "expect": "main_switch",
+     "got": "not_recorded"
+    },
+    {
+     "q": "How do I pay the water bill?",
+     "expect": "not_recorded",
+     "got": "water_pump"
+    }
+   ]
+  }
+ ],
+ "model": [
+  {
+   "name": "Reading walk-throughs, accounts/fireworks/models/muse-spark-open + witnesses",
+   "transcripts": 7,
+   "claims": 22,
+   "verbatim_quotes": 22,
+   "verbatim_rate": 100.0,
+   "medical_claims_not_refused": 0,
+   "secret_values_in_claims": 0,
+   "mixed_script_caught": 0,
+   "job_types_corrected_by_code": 0,
+   "per_transcript": [
+    {
+     "id": "gas-regulator-en",
+     "claims": 6,
+     "verbatim_quotes": 6,
+     "kinds": [
+      "contact",
+      "location",
+      "schedule",
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "gas"
+     ],
+     "jobs": {
+      "gas_cylinder": {
+       "stated_type": "supply",
+       "type": "supply"
+      }
+     }
+    },
+    {
+     "id": "tank-garbage-si",
+     "claims": 4,
+     "verbatim_quotes": 4,
+     "kinds": [
+      "item",
+      "location",
+      "schedule",
+      "step"
+     ],
+     "safety": [
+      "electricity",
+      "none"
+     ],
+     "jobs": {
+      "water_tank_switch": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      },
+      "garbage_collection": {
+       "stated_type": "schedule",
+       "type": "schedule"
+      }
+     }
+    },
+    {
+     "id": "card-medicine-en",
+     "claims": 3,
+     "verbatim_quotes": 3,
+     "kinds": [
+      "location",
+      "payment"
+     ],
+     "safety": [
+      "none"
+     ],
+     "jobs": {
+      "bank_card": {
+       "stated_type": "other",
+       "type": "other"
+      },
+      "doctors_paper": {
+       "stated_type": "document",
+       "type": "document"
+      },
+      "water_bill": {
+       "stated_type": "payment",
+       "type": "payment"
+      }
+     }
+    },
+    {
+     "id": "codemixed-si",
+     "claims": 2,
+     "verbatim_quotes": 2,
+     "kinds": [
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "electricity"
+     ],
+     "jobs": {
+      "fridge_plug": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      },
+      "generator_operation": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      }
+     }
+    },
+    {
+     "id": "keys-gate-en",
+     "claims": 3,
+     "verbatim_quotes": 3,
+     "kinds": [
+      "location",
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "none"
+     ],
+     "jobs": {
+      "spare_keys": {
+       "stated_type": "other",
+       "type": "other"
+      },
+      "front_gate": {
+       "stated_type": "appliance",
+       "type": "appliance"
+      }
+     }
+    },
+    {
+     "id": "gas-leak-si",
+     "claims": 3,
+     "verbatim_quotes": 3,
+     "kinds": [
+      "contact",
+      "step",
+      "warning"
+     ],
+     "safety": [
+      "gas"
+     ],
+     "jobs": {
+      "gas_leak": {
+       "stated_type": "other",
+       "type": "other"
+      }
+     }
+    },
+    {
+     "id": "pin-medicine-si",
+     "claims": 1,
+     "verbatim_quotes": 1,
+     "kinds": [
+      "payment"
+     ],
+     "safety": [
+      "none"
+     ],
+     "jobs": {
+      "electricity_bill": {
+       "stated_type": "payment",
+       "type": "payment"
+      }
+     }
+    }
+   ],
+   "cost_usd": 0.1534
+  }
+ ],
+ "model_id": "accounts/fireworks/models/muse-spark-open",
+ "provider": "fireworks",
+ "cost_usd": 0.1534
+}

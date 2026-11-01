@@ -1,0 +1,19 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:23:13Z",
+ "output": {
+  "same_object": true,
+  "matched_features": [
+   "Same lower row of white miniature circuit breakers with continuous dark blue toggle bar, same number and spacing visible in both crops",
+   "Same white slotted cable duct running horizontally between upper and lower rows with identical tooth spacing and shape",
+   "Same wiring colours visible behind duct - yellow, red, blue and black braided leads in same positions",
+   "Same breaker markings - small green status windows and printed text on white breaker faces in same positions",
+   "Same white enclosure framing and lighting/shadowing consistent with a closer crop of the same panel"
+  ],
+  "mismatches": [
+   "No clear mismatches observed - Photo B is a tighter, slightly different angle crop of the lower breaker row shown in Photo A, so the upper contactor row visible in Photo A is out of frame in Photo B but remaining visible elements are consistent"
+  ],
+  "explanation_si": "Photo B appears to be the same physical electrical panel as Photo A, shown as a closer view of the lower breaker row. No distinguishing differences in labels, colours or enclosure were observed, within the resolution of the images.",
+  "explanation_en": "Photo B appears to be the same physical electrical panel as Photo A, shown as a closer view of the lower breaker row. No distinguishing differences in labels, colours or enclosure were observed, within the resolution of the images."
+ }
+}

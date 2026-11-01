@@ -1,0 +1,20 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:28:39Z",
+ "output": {
+  "points": [
+   {
+    "point_id": "p1",
+    "covered": true,
+    "quote": "නෙතුම්ට හැම බදාදාම හවස පහ වෙනකම් අමතර පන්ති තියෙනවා."
+   },
+   {
+    "point_id": "p2",
+    "covered": true,
+    "quote": "ඒ වෙලාවට මම බස් නැවතුම්පොළට ගිහින් එයාව එක්කගෙන එනවා."
+   }
+  ],
+  "feedback_si": "සියලුම කරුණු ආවරණය කර ඇත.",
+  "feedback_en": "All points have been covered."
+ }
+}

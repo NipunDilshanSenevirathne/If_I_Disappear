@@ -1,0 +1,17 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:35:51Z",
+ "output": {
+  "explanation_en": "Photo A is a modern light-grey plastic box with lid open showing a row of white MCB breakers. Photo B is an old black metal box with five cream ceramic fuse holders and a large black rotary knob on top. Enclosure colour, material, switch type, layout, and wall surroundings are all completely different, so this is not the same physical object.",
+  "explanation_si": "A ඡායාරූපයේ පියන විවෘත කර ඇති ලා අළු පැහැති නවීන ප්ලාස්ටික් පෙට්ටියක් සුදු MCB බ්‍රේකර පේළියක් සමඟ පෙනේ. B ඡායාරූපයේ ක්‍රීම් පැහැති ෆියුස් රඳවන පහක් සහ ඉහළින් විශාල කළු රවුම් බොත්තමක් සහිත පැරණි කළු යකඩ පෙට්ටියක් පෙනේ. පෙට්ටියේ වර්ණය, ද්‍රව්‍යය, ස්විච් වර්ගය, සැකැස්ම සහ බිත්තියේ පසුබිම සම්පූර්ණයෙන්ම වෙනස් බැවින් මෙය එකම භෞතික වස්තුව නොවේ.",
+  "matched_features": [],
+  "mismatches": [
+   "Enclosure: light-grey plastic box with open lid vs black metal box",
+   "Switching elements: row of 7 white MCB toggles vs 5 cream ceramic fuse holders with black centers",
+   "Top control: none vs large black rotary knob",
+   "Wiring and surroundings: internal brown/blue/black wires inside vs coiled black cable hanging on right side outside",
+   "Wall: smooth beige wall vs weathered pale blue-white wall"
+  ],
+  "same_object": false
+ }
+}

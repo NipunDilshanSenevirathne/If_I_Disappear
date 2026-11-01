@@ -1,0 +1,10 @@
+{
+ "model": "sam-3.1",
+ "recorded_at": "2026-10-28T12:21:06Z",
+ "output": {
+  "noun": "refrigerator",
+  "text": "<0f>0<|box;x1=700;y1=41;x2=959;y2=539;w=960;h=540;c=0.9532163739204407|><|mask;x=0;y=0;c=0.9532163739204407;data=499,260,!!!!#sAHKX_'V_*7@co8O1JO-v*tXKWe)ousCO[nf/]rN!AI{*f0rx&n9E6y'6Qdvmh+WFIK@etW&u0%=n6LncxFAk1-cE`T5xM%49MA5V_UY:kua.s/kJ_c?K?x_%fE`?Z4K&#=PY:T:T[nI&YVv*v`BAB1I8geciF4Elv^)Q+(I)Q(kSv87uy*&5Wrr$$h#pC(LuY{v0$+Y`!!|>\n",
+  "w": 960,
+  "h": 540
+ }
+}

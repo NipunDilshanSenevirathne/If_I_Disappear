@@ -1,0 +1,10 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:25:08Z",
+ "output": {
+  "task_key": "nethum_pickup",
+  "decided_by": "accounts/fireworks/models/muse-spark-open",
+  "reason": "This task tells when and where to pick up Nethum.",
+  "reason_si": "මේ කාර්යයෙන් කියනවා නෙතුම්ව කවදාද කොහෙන්ද එක්කගෙන එන්න ඕන කියලා."
+ }
+}

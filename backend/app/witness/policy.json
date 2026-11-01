@@ -1,0 +1,93 @@
+{
+    "version": 1,
+    "description": "The rules every claim must pass. Models cannot edit this file: its SHA-256 is pinned in code and checked at startup and in the tests.",
+    "thresholds": {
+        "sam_min_confidence": 0.5,
+        "quote_min_chars": 6,
+        "quote_time_slack_before_s": 2.0,
+        "quote_time_slack_after_s": 4.0,
+        "show_min_confidence": 0.5,
+        "show_min_matched_features": 2,
+        "tell_min_coverage": 0.75,
+        "proof_valid_days": 120,
+        "help_min_score": 0.18
+    },
+    "required_witnesses": {
+        "none": [
+            "words"
+        ],
+        "water": [
+            "words",
+            "pixels"
+        ],
+        "electricity": [
+            "words",
+            "pixels",
+            "reading"
+        ],
+        "gas": [
+            "words",
+            "pixels",
+            "reading"
+        ],
+        "fire": [
+            "words",
+            "pixels",
+            "reading"
+        ]
+    },
+    "object_claims_require_pixels": true,
+    "safety_tasks_require_show_and_tell": true,
+    "blocked_topics": {
+        "reason_en": "If I Disappear doesn't store medical instructions. Please keep those on paper from the doctor or pharmacy.",
+        "reason_si": "If I Disappear \u0dc0\u0ddb\u0daf\u0dca\u200d\u0dba \u0d8b\u0db4\u0daf\u0dd9\u0dc3\u0dca \u0d9c\u0db6\u0da9\u0dcf \u0d9a\u0dbb\u0db1\u0dca\u0db1\u0dda \u0db1\u0dd0\u0dc4\u0dd0. \u0d92\u0dc0\u0dcf \u0dc0\u0ddb\u0daf\u0dca\u200d\u0dba\u0dc0\u0dbb\u0dba\u0dcf\u0d9c\u0dd9\u0db1\u0dca \u0dc4\u0ddd \u0dc6\u0dcf\u0db8\u0dc3\u0dd2\u0dba\u0dd9\u0db1\u0dca \u0dbd\u0dd0\u0db6\u0dd4\u0dab\u0dd4 \u0d9a\u0da9\u0daf\u0dcf\u0dc3\u0dd2\u0dba\u0d9a \u0dad\u0dd2\u0dba\u0dcf\u0d9c\u0db1\u0dca\u0db1.",
+        "en": [
+            "dose",
+            "dosage",
+            "mg",
+            "milligram",
+            "pill",
+            "pills",
+            "medicine",
+            "medicines",
+            "medication",
+            "prescription",
+            "insulin",
+            "inhaler",
+            "antibiotic",
+            "tablets",
+            "capsule",
+            "capsules",
+            "painkiller",
+            "painkillers",
+            "eye drops",
+            "ear drops",
+            "cough syrup"
+        ],
+        "si": [
+            "\u0db6\u0dd9\u0dc4\u0dd9\u0dad\u0dca",
+            "\u0d96\u0dc2\u0db0",
+            "\u0db8\u0dcf\u0dad\u0dca\u200d\u0dbb\u0dcf\u0dc0",
+            "\u0db4\u0dca\u200d\u0dbb\u0dad\u0dd2\u0da2\u0dd3\u0dc0\u0d9a",
+            "\u0d89\u0db1\u0dca\u0dc3\u0dd2\u0dba\u0dd4\u0dbd\u0dd2\u0db1\u0dca",
+            "\u0db4\u0dd9\u0dad\u0dd2 \u0db6\u0ddc\u0db1",
+            "\u0db4\u0dd9\u0dad\u0dca\u0dad \u0db6\u0ddc\u0db1",
+            "\u0db4\u0dd9\u0dad\u0dca\u0dad\u0d9a\u0dca \u0db6\u0ddc\u0db1",
+            "\u0db4\u0dca\u200d\u0dbb\u0dd9\u0dc2\u0dbb\u0dca \u0db4\u0dd9\u0dad\u0dca",
+            "\u0db4\u0dca\u200d\u0dbb\u0dd9\u0dc2\u0dbb\u0dca \u0db4\u0dd9\u0dad\u0dd2",
+            "\u0dc3\u0dd3\u0db1\u0dd2 \u0db4\u0dd9\u0dad\u0dca",
+            "\u0dc3\u0dd3\u0db1\u0dd2 \u0db4\u0dd9\u0dad\u0dd2",
+            "\u0d9a\u0dd0\u0db4\u0dca\u0dc3\u0dd2\u0dba\u0dd4\u0dbd"
+        ]
+    },
+    "never_store": [
+        "pin",
+        "password",
+        "otp",
+        "lock_code",
+        "card_number",
+        "nic",
+        "bank_account"
+    ],
+    "translations_in_own_script": true
+}

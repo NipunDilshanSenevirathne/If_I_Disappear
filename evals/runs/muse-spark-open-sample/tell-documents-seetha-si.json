@@ -1,0 +1,20 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:24:43Z",
+ "output": {
+  "points": [
+   {
+    "point_id": "p1",
+    "covered": true,
+    "quote": "මුල් පිටපත් කාටවත් දෙන්නේ නැහැ"
+   },
+   {
+    "point_id": "p2",
+    "covered": true,
+    "quote": "ෆොටෝකොපි දෙනවා"
+   }
+  ],
+  "feedback_en": "The second point has to be said in one of those exact ways: මුල් පිටපත් වෙනුවට ෆොටෝකොපි දෙනවා. / මුල් පිටපත් වෙනුවට ෆොටෝකොපිය දෙන්න. You said: ෆොටෝකොපි දෙනවා. That does not give the same steps. Say: මුල් පිටපත් වෙනුවට ෆොටෝකොපි දෙනවා.",
+  "feedback_si": "දෙවැනි කරුණ මේ ආකාරවලින් එකකින් හරියටම කිව යුතුයි: මුල් පිටපත් වෙනුවට ෆොටෝකොපි දෙනවා. / මුල් පිටපත් වෙනුවට ෆොටෝකොපිය දෙන්න. ඔබ කිව්වේ: ෆොටෝකොපි දෙනවා. එය එකම පියවර නොවේ. මෙසේ කියන්න: මුල් පිටපත් වෙනුවට ෆොටෝකොපි දෙනවා."
+ }
+}

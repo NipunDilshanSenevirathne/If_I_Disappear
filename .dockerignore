@@ -1,0 +1,16 @@
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+backend/data
+backend/static
+backend/fixtures/_build
+backend/fixtures/_sample_new
+backend/fixtures/source-images
+backend/fixtures/base
+backend/fixtures/recorded
+evals
+docs
+services
+.git
+.env
+*.log

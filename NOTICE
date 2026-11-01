@@ -1,0 +1,10 @@
+If I Disappear
+Copyright 2026 Nipun Dilshan Senevirathne
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It uses, and does not include, Meta's models through the Meta Model API (Muse Spark,
+Muse Wonder, SAM 3.1, Muse Voice Transcribe) and Meta's open-source Omnilingual ASR
+(Apache 2.0). The SAM parser and React components (@meta-sam/parser, @meta-sam/react,
+meta-sam-parser) are used under the SAM License. Photos are used under the Unsplash
+License and fonts under the SIL Open Font License 1.1; see CREDITS.md.

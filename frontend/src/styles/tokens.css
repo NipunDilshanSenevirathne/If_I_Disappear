@@ -1,0 +1,128 @@
+/* If I Disappear: design tokens.
+   Night: the house after dark, when the power goes. Lamp: the oil lamp that gets lit then.
+   Paddy, laterite and dusk carry status, always alongside a word and an icon. */
+:root {
+  color-scheme: light;
+
+  --night: #10212a;
+  --night-2: #18303b;
+  --night-3: #234452;
+
+  --bg: #f2f5f6;
+  --surface: #ffffff;
+  --surface-2: #f7f9fa;
+  --line: #dce3e6;
+  --line-strong: #c3ced3;
+
+  --text: #13232b;
+  --text-2: #44565f;
+  --text-3: #5e6f77;
+  --on-dark: #ffffff;
+  --on-dark-2: #c9d5da;
+
+  --lamp: #f7b547;
+  --lamp-strong: #e99b1e;
+  --lamp-ink: #8a5300;
+  --lamp-soft: #fdf1da;
+  --on-lamp: #10212a;
+
+  --ok: #23784a;
+  --ok-ink: #1e6a41;
+  --ok-soft: #e3f3ea;
+  --bad: #b0452b;
+  --bad-ink: #a13e26;
+  --bad-soft: #f8e6e0;
+  --unknown: #5b6470;
+  --unknown-soft: #e8ebee;
+  --risk: #8a5300;
+  --risk-soft: #fdf1da;
+
+  --recorded-soft: #e3ecf8;
+  --recorded-ink: #285890;
+
+  --mask: #f7b547;
+  --mask-fill: rgba(247, 181, 71, 0.16);
+  --point: #ffffff;
+
+  --font: 'Outfit Variable', 'Yaldevi Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-si: 'Yaldevi Variable', 'Outfit Variable', 'Noto Sans Sinhala', system-ui, sans-serif;
+
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  --shadow-1: 0 1px 2px rgba(16, 33, 42, 0.06), 0 2px 8px rgba(16, 33, 42, 0.05);
+  --shadow-2: 0 2px 6px rgba(16, 33, 42, 0.06), 0 18px 36px -20px rgba(16, 33, 42, 0.28);
+  --shadow-lamp: 0 26px 50px -24px rgba(138, 83, 0, 0.45), 0 4px 12px rgba(16, 33, 42, 0.08);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --fast: 140ms;
+  --med: 240ms;
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1180px;
+  --app-maxw: 760px;
+  --nav-h: 68px;
+  --top-h: 60px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #0c1a21;
+    --surface: #132831;
+    --surface-2: #18303b;
+    --line: #26414d;
+    --line-strong: #34525f;
+    --text: #e8eff1;
+    --text-2: #a7b8bf;
+    --text-3: #93a5ad;
+    --lamp-ink: #f7b547;
+    --lamp-soft: rgba(247, 181, 71, 0.14);
+    --ok: #5cc28a;
+    --ok-ink: #6fcf97;
+    --ok-soft: rgba(92, 194, 138, 0.14);
+    --bad: #f08a6e;
+    --bad-ink: #f49a80;
+    --bad-soft: rgba(240, 138, 110, 0.15);
+    --unknown: #b5bdc7;
+    --unknown-soft: rgba(181, 189, 199, 0.14);
+    --risk: #f7b547;
+    --risk-soft: rgba(247, 181, 71, 0.14);
+    --recorded-soft: rgba(120, 170, 230, 0.15);
+    --recorded-ink: #9cc3f0;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-2: 0 2px 8px rgba(0, 0, 0, 0.35), 0 18px 36px -20px rgba(0, 0, 0, 0.6);
+    --shadow-lamp: 0 26px 50px -24px rgba(0, 0, 0, 0.7);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0c1a21;
+  --surface: #132831;
+  --surface-2: #18303b;
+  --line: #26414d;
+  --line-strong: #34525f;
+  --text: #e8eff1;
+  --text-2: #a7b8bf;
+  --text-3: #93a5ad;
+  --lamp-ink: #f7b547;
+  --lamp-soft: rgba(247, 181, 71, 0.14);
+  --ok: #5cc28a;
+  --ok-ink: #6fcf97;
+  --ok-soft: rgba(92, 194, 138, 0.14);
+  --bad: #f08a6e;
+  --bad-ink: #f49a80;
+  --bad-soft: rgba(240, 138, 110, 0.15);
+  --unknown: #b5bdc7;
+  --unknown-soft: rgba(181, 189, 199, 0.14);
+  --risk: #f7b547;
+  --risk-soft: rgba(247, 181, 71, 0.14);
+  --recorded-soft: rgba(120, 170, 230, 0.15);
+  --recorded-ink: #9cc3f0;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 2px 8px rgba(0, 0, 0, 0.35), 0 18px 36px -20px rgba(0, 0, 0, 0.6);
+  --shadow-lamp: 0 26px 50px -24px rgba(0, 0, 0, 0.7);
+}

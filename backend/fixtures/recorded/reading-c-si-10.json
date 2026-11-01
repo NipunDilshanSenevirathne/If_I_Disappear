@@ -1,0 +1,10 @@
+{
+ "model": "muse-wonder-1.0",
+ "recorded_at": "2026-10-28T12:21:14Z",
+ "output": {
+  "reason": "The owner's words directly say the number is on the fridge.",
+  "reason_si": "අයිතිකරු කිව්ව වචනවලින් කෙලින්ම කියවෙනවා නම්බර් එක ෆ්‍රිජ් එකේ තියෙනවා කියලා.",
+  "verdict": "uphold"
+ },
+ "label_fixed": "recorded with model=muse-wonder-1.0; label corrected 2026-10-28"
+}

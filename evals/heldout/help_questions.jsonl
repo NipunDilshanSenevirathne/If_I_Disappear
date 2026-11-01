@@ -1,0 +1,32 @@
+{"q": "Everything went dark and the fans stopped", "lang": "en", "expect": "main_switch"}
+{"q": "Half the house has no power after the storm", "lang": "en", "expect": "main_switch"}
+{"q": "Mehe current na, mokada karanne?", "lang": "en", "expect": "main_switch"}
+{"q": "ලයිට් නිවිලා, ෆෑන් එකත් නවතිලා", "lang": "si", "expect": "main_switch"}
+{"q": "The taps are dry upstairs", "lang": "en", "expect": "water_pump"}
+{"q": "How long should the motor run each morning?", "lang": "en", "expect": "water_pump"}
+{"q": "Motor eka loku sadde danawa, mokada karanne?", "lang": "en", "expect": "water_pump"}
+{"q": "උදේට පොම්පය කොච්චර වෙලා දාන්න ඕනෙද?", "lang": "si", "expect": "water_pump"}
+{"q": "We can't cook, the cylinder is finished", "lang": "en", "expect": "gas_cylinder"}
+{"q": "අලුත් ගෑස් සිලින්ඩරයක් ගන්නේ කාගෙන්ද?", "lang": "si", "expect": "gas_cylinder"}
+{"q": "The current bill arrived, by what date must it be paid?", "lang": "en", "expect": "electricity_bill"}
+{"q": "Where is the light bill paid?", "lang": "en", "expect": "electricity_bill"}
+{"q": "විදුලි බිල ගෙවන්න අන්තිම දවස කවදාද?", "lang": "si", "expect": "electricity_bill"}
+{"q": "Who goes to get Nethum after his extra class?", "lang": "en", "expect": "nethum_pickup"}
+{"q": "What time is Nethum done on Wednesdays?", "lang": "en", "expect": "nethum_pickup"}
+{"q": "නෙතුම් බදාදා ගෙදර එන්නේ කොහොමද?", "lang": "si", "expect": "nethum_pickup"}
+{"q": "The bank wants a copy of the house deed", "lang": "en", "expect": "important_documents"}
+{"q": "ළමයගේ උප්පැන්න සහතිකය තියෙන්නේ කොහෙද?", "lang": "si", "expect": "important_documents"}
+{"q": "How do I reset the Wi-Fi router?", "lang": "en", "expect": "not_recorded"}
+{"q": "The TV remote stopped working", "lang": "en", "expect": "not_recorded"}
+{"q": "When does the water bill come?", "lang": "en", "expect": "not_recorded"}
+{"q": "The gate's padlock key is lost, where is the spare?", "lang": "en", "expect": "not_recorded"}
+{"q": "How do I top up Seetha Amma's phone?", "lang": "en", "expect": "not_recorded"}
+{"q": "ෆ්‍රිජ් එකෙන් වතුර එළියට එනවා", "lang": "si", "expect": "not_recorded"}
+{"q": "Who services the air conditioner?", "lang": "en", "expect": "not_recorded"}
+{"q": "When is the school van fee paid?", "lang": "en", "expect": "not_recorded"}
+{"q": "Sparks are coming from the plug point", "lang": "en", "expect": "emergency"}
+{"q": "Seetha Amma collapsed in the bathroom", "lang": "en", "expect": "emergency"}
+{"q": "කුස්සියේ ගෑස් සුවඳක් එනවා", "lang": "si", "expect": "emergency"}
+{"q": "Nethum got bitten by a snake in the garden", "lang": "en", "expect": "emergency"}
+{"q": "Which tablets does Seetha Amma take after dinner?", "lang": "en", "expect": "medical"}
+{"q": "ආච්චිට බෙහෙත් දෙන්නේ කීයටද?", "lang": "si", "expect": "medical"}

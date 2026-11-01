@@ -1,0 +1,10 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:27:05Z",
+ "output": {
+  "task_key": "water_pump",
+  "decided_by": "muse-spark-1.3",
+  "reason": "This recorded job covers what to do when the pump makes a grinding sound.",
+  "reason_si": "මේකෙ පොම්පෙන් ග්‍රයින්ඩින් සද්දයක් ආවම මොකද කරන්න ඕන කියලා තියෙනවා."
+ }
+}

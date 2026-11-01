@@ -1,0 +1,407 @@
+{
+ "checked_at": "2026-10-28T13:27:13Z",
+ "result": "passed",
+ "server": {
+  "version": "1.0.0",
+  "mode": "live",
+  "models": {
+   "spark": "muse-spark-1.3",
+   "wonder": "muse-wonder-1.0",
+   "sam": "sam-3.1",
+   "voice": "muse-voice-transcribe-1.0",
+   "sinhala": null
+  },
+  "sinhala_speech": false,
+  "policy_sha256": "1d1229b8f112ee7a69a39d286d7ddfc9658d2d7c92854eba45d82e0e6dfa11b6"
+ },
+ "video": {
+  "kind": "synthetic",
+  "voice": "eSpeak NG (en-gb)",
+  "seconds": 47.67,
+  "rooms": [
+   {
+    "photo": "breaker.jpg",
+    "start": 0.0,
+    "end": 18.06
+   },
+   {
+    "photo": "pump.jpg",
+    "start": 18.06,
+    "end": 35.32
+   },
+   {
+    "photo": "interior.jpg",
+    "start": 35.32,
+    "end": 47.67
+   }
+  ],
+  "script": [
+   "This is the main switch box, next to the kitchen door.",
+   "If the power goes off, come here first.",
+   "Find the switch that has dropped down, and push it back up.",
+   "Never touch it with wet hands.",
+   "This is the water pump, behind the house.",
+   "Every morning at six, switch it on for twenty minutes, until the tank is full.",
+   "If it makes a grinding noise, switch it off at once, and call Sunil.",
+   "This is the gas cylinder, in the kitchen.",
+   "When it runs out, call the gas shop at the junction.",
+   "The gate code is two five eight zero."
+  ]
+ },
+ "pipeline": {
+  "status": "done",
+  "error": null,
+  "seconds": 134.9,
+  "steps": [
+   {
+    "step": "convert",
+    "detail": "",
+    "at_s": 0.0
+   },
+   {
+    "step": "hear",
+    "detail": "English (Muse Voice Transcribe)",
+    "at_s": 8.1
+   },
+   {
+    "step": "privacy",
+    "detail": "",
+    "at_s": 16.1
+   },
+   {
+    "step": "read",
+    "detail": "muse-spark-1.3",
+    "at_s": 38.2
+   },
+   {
+    "step": "check",
+    "detail": "10 claims",
+    "at_s": 84.4
+   },
+   {
+    "step": "decide",
+    "detail": "",
+    "at_s": 134.9
+   }
+  ]
+ },
+ "heard": {
+  "engine": "muse-voice-transcribe-1.0",
+  "turns": [
+   "This is the main switch box, next to the kitchen door if the power goes off off, come here first find the switch that has dropped down and push it back up never touch it with with wet hands",
+   "This is the water pump behind the house every morning at six, switch it on for 20 minutes until the tank is full if it makes a grinding noise, switch it off at once and call Sunil This is the gas cylinder in the kitchen when when it runs out, call the gas the gas shop at the junction the gate code is [hidden]"
+  ]
+ },
+ "privacy": {
+  "secret_said": "the gate code",
+  "secret_in_any_text": false,
+  "hidden": [
+   {
+    "count": 1,
+    "kinds": [
+     "lock_code"
+    ],
+    "turn_id": "t3"
+   }
+  ],
+  "muted_spans": [
+   [
+    17.68,
+    47.0
+   ]
+  ],
+  "blurred": 0
+ },
+ "facts": [
+  {
+   "id": "c-257db86aa9",
+   "status": "verified",
+   "kind": "location",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "The main switch box is next to the kitchen door.",
+   "quote": "main switch box, next to the kitchen door",
+   "noun": "circuit breaker",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-989352aaec",
+   "status": "verified",
+   "kind": "step",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "If the power goes off, come here first.",
+   "quote": "come here first",
+   "noun": "circuit breaker",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-a0d11078a9",
+   "status": "verified",
+   "kind": "step",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "Find the switch that has dropped down and push it back up.",
+   "quote": "find the switch that has dropped down and push it back up",
+   "noun": "circuit breaker",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-ce3e9d78f1",
+   "status": "verified",
+   "kind": "warning",
+   "job": "main_switch",
+   "safety": "electricity",
+   "text_en": "Never touch the main switch box with wet hands.",
+   "quote": "never touch it with with wet hands",
+   "noun": "circuit breaker",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-ba46b09d19",
+   "status": "verified",
+   "kind": "location",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "The water pump is behind the house.",
+   "quote": "water pump behind the house",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-37bf7828ea",
+   "status": "verified",
+   "kind": "schedule",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "Switch on the water pump every morning at six for 20 minutes.",
+   "quote": "every morning at six, switch it on for 20 minutes",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-0b293fbcdf",
+   "status": "verified",
+   "kind": "step",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "If the water pump makes a grinding noise, switch it off at once.",
+   "quote": "if it makes a grinding noise, switch it off at once",
+   "noun": "water pump",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-154d02a6b1",
+   "status": "verified",
+   "kind": "contact",
+   "job": "water_pump",
+   "safety": "water",
+   "text_en": "Call Sunil.",
+   "quote": "call Sunil",
+   "noun": "",
+   "witnesses": {
+    "words": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-4c08c062f1",
+   "status": "verified",
+   "kind": "location",
+   "job": "gas_cylinder",
+   "safety": "gas",
+   "text_en": "The gas cylinder is in the kitchen.",
+   "quote": "gas cylinder in the kitchen",
+   "noun": "gas cylinder",
+   "witnesses": {
+    "words": "pass",
+    "pixels": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  },
+  {
+   "id": "c-e5ef0e6629",
+   "status": "verified",
+   "kind": "contact",
+   "job": "gas_cylinder",
+   "safety": "gas",
+   "text_en": "When the gas runs out, call the gas shop at the junction.",
+   "quote": "gas shop at the junction",
+   "noun": "",
+   "witnesses": {
+    "words": "pass",
+    "reading": "pass"
+   },
+   "reason": ""
+  }
+ ],
+ "fact_counts": {
+  "verified": 10
+ },
+ "tracking": {
+  "expected": 8,
+  "tracked": [
+   {
+    "claim": "c-4c08c062f1",
+    "frames_with_mask": 38
+   },
+   {
+    "claim": "c-ba46b09d19",
+    "frames_with_mask": 35
+   },
+   {
+    "claim": "c-37bf7828ea",
+    "frames_with_mask": 40
+   },
+   {
+    "claim": "c-0b293fbcdf",
+    "frames_with_mask": 40
+   }
+  ],
+  "failed": [],
+  "seconds": 240.6
+ },
+ "board": {
+  "headline": {
+   "stop_tomorrow": 3,
+   "total": 3,
+   "task_keys": [
+    "gas_cylinder",
+    "main_switch",
+    "water_pump"
+   ]
+  },
+  "jobs": [
+   {
+    "key": "gas_cylinder",
+    "title_en": "Gas cylinder",
+    "type": "supply",
+    "safety": "gas",
+    "object": false
+   },
+   {
+    "key": "main_switch",
+    "title_en": "Main switch box",
+    "type": "appliance",
+    "safety": "electricity",
+    "object": false
+   },
+   {
+    "key": "water_pump",
+    "title_en": "Water pump",
+    "type": "appliance",
+    "safety": "water",
+    "object": false
+   }
+  ]
+ },
+ "help": [
+  {
+   "question": "The power went off. What do I do?",
+   "expected": "switch",
+   "task": "Main switch box",
+   "emergency": false,
+   "decided_by": "muse-spark-1.3",
+   "reason": "This recorded step explains what to do when the power goes off.",
+   "as_expected": true
+  },
+  {
+   "question": "I can smell gas in the kitchen",
+   "expected": "emergency",
+   "task": null,
+   "emergency": true,
+   "decided_by": "code",
+   "reason": "This sounds like an emergency.",
+   "as_expected": true
+  }
+ ],
+ "tell": {
+  "job": "Water pump",
+  "answer": "Every morning at six I switch it on for twenty minutes until the tank is full. If it grinds, I switch it off at once and call Sunil.",
+  "passed": true,
+  "reasons": null,
+  "decided_by": null
+ },
+ "log": {
+  "events": 140,
+  "chain_ok": true,
+  "broken_at": null
+ },
+ "cost": {
+  "by_model": {
+   "muse-spark-1.3": 0.081657,
+   "muse-voice-transcribe-1.0": 0.00235,
+   "muse-wonder-1.0": 0.121089,
+   "sam-3.1": 0.19
+  },
+  "by_purpose": {
+   "muse-spark-1.3: claims": {
+    "calls": 1,
+    "usd": 0.072572
+   },
+   "muse-spark-1.3: help": {
+    "calls": 2,
+    "usd": 0.00382
+   },
+   "muse-spark-1.3: tell-me": {
+    "calls": 1,
+    "usd": 0.005265
+   },
+   "muse-voice-transcribe-1.0: speech-en": {
+    "calls": 1,
+    "usd": 0.00235
+   },
+   "muse-wonder-1.0: second-reading": {
+    "calls": 6,
+    "usd": 0.121089
+   },
+   "sam-3.1: pin-and-track": {
+    "calls": 8,
+    "usd": 0.08
+   },
+   "sam-3.1: pixels-witness": {
+    "calls": 8,
+    "usd": 0.02
+   },
+   "sam-3.1: privacy": {
+    "calls": 36,
+    "usd": 0.09
+   }
+  },
+  "total_usd": 0.395096
+ },
+ "deleted": true
+}

@@ -1,0 +1,128 @@
+{
+ "checked_at": "2026-10-31T17:44:09Z",
+ "provider": "meta",
+ "base_url": "https://api.meta.ai/v1",
+ "models": {
+  "reading": "muse-spark-1.3",
+  "second_reading": "muse-wonder-1.0",
+  "sam": "sam-3.1",
+  "voice": "muse-voice-transcribe-1.0"
+ },
+ "usd": 0.058002,
+ "checks": [
+  {
+   "check": "model list",
+   "status": "pass",
+   "detail": "all listed",
+   "usd": 0.0,
+   "ms": 1827,
+   "models": [
+    "muse-image-1.0",
+    "muse-spark-1.1",
+    "muse-spark-1.2",
+    "muse-spark-1.2-contributor",
+    "muse-spark-1.3",
+    "muse-spark-1.3-contributor",
+    "muse-voice-transcribe-1.0",
+    "muse-wonder-1.0",
+    "sam-3.1"
+   ]
+  },
+  {
+   "check": "strict JSON (English + Sinhala)",
+   "status": "pass",
+   "detail": "'Resetting Circuit Breaker' / 'මේන් ස්විච් එක දැම්මා', safety electricity",
+   "usd": 0.003952,
+   "ms": 4697,
+   "output": {
+    "safety": "electricity",
+    "title_en": "Resetting Circuit Breaker",
+    "title_si": "මේන් ස්විච් එක දැම්මා"
+   }
+  },
+  {
+   "check": "image input and a point",
+   "status": "pass",
+   "detail": "visible=True, point=(0.36, 0.60)",
+   "usd": 0.003256,
+   "ms": 2797,
+   "output": {
+    "point_x": 0.365,
+    "point_y": 0.6,
+    "visible": true
+   }
+  },
+  {
+   "check": "tool calling",
+   "status": "pass",
+   "detail": "called search_steps({'query': 'power went off power outage'})",
+   "usd": 0.001202,
+   "ms": 817
+  },
+  {
+   "check": "prompt caching (informational)",
+   "status": "pass",
+   "detail": "cached input tokens on the repeat: 2417 (first call 2417)",
+   "usd": 0.013653,
+   "ms": 13697,
+   "cached_tokens": [
+    2417,
+    2417
+   ]
+  },
+  {
+   "check": "second reading",
+   "status": "pass",
+   "detail": "muse-wonder-1.0: uphold (The owner said to push the fallen switch up.)",
+   "usd": 0.018089,
+   "ms": 5029,
+   "output": {
+    "reason": "The owner said to push the fallen switch up.",
+    "reason_si": "අයිතිකරු කිව්වෙ වැටිලා තියෙන ස්විච් එක උඩට තල්ලු කරන්න කියලයි.",
+    "verdict": "uphold"
+   }
+  },
+  {
+   "check": "SAM 3.1 by name",
+   "status": "pass",
+   "detail": "'electrical panel': 1 object(s), best confidence 0.64, box 185,0,565,448; 'circuit breaker': 1 object(s)",
+   "usd": 0.005,
+   "ms": 5841
+  },
+  {
+   "check": "SAM 3.1 by point",
+   "status": "pass",
+   "detail": "1 object(s) at the point",
+   "usd": 0.0025,
+   "ms": 902
+  },
+  {
+   "check": "SAM 3.1 video tracking",
+   "status": "pass",
+   "detail": "masks on 20 of 20 frames",
+   "usd": 0.01,
+   "ms": 6692
+  },
+  {
+   "check": "Muse Voice Transcribe",
+   "status": "pass",
+   "detail": "returned: {\"sessionId\": \"voyager/transcribe/44783C089C644354A5BED48FDB40A50D\", \"transcript\": \"The main switch box is next to the kitchen door. if the power goes off Push ",
+   "usd": 0.00035,
+   "ms": 1983
+  },
+  {
+   "check": "Sinhala speech service",
+   "status": "pass",
+   "detail": "HTTP 200: {\"ok\":true,\"model\":\"omniASR_CTC_300M_v2\",\"ready\":true}",
+   "usd": 0.0,
+   "ms": 49
+  },
+  {
+   "check": "WhatsApp Cloud API",
+   "status": "skipped",
+   "detail": "run with --whatsapp",
+   "usd": 0.0,
+   "ms": 0
+  }
+ ]
+}

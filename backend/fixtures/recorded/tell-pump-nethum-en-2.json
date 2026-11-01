@@ -1,0 +1,25 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:36Z",
+ "output": {
+  "feedback_en": "Excellent, you covered all three points clearly.",
+  "feedback_si": "ඉතා හොඳයි, ඔබ කරුණු තුනම පැහැදිලිව කියා තිබෙනවා.",
+  "points": [
+   {
+    "covered": true,
+    "point_id": "p1",
+    "quote": "I run it at six every morning for twenty minutes until the tank is full."
+   },
+   {
+    "covered": true,
+    "point_id": "p2",
+    "quote": "If it makes a grinding noise I switch it off straight away"
+   },
+   {
+    "covered": true,
+    "point_id": "p3",
+    "quote": "and call Sunil Mama."
+   }
+  ]
+ }
+}

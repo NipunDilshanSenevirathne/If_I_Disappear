@@ -1,0 +1,17 @@
+# secrets
+.env
+*.env
+!.env.example
+# dependencies and builds
+node_modules/
+__pycache__/
+.pytest_cache/
+backend/static/
+backend/data/
+data/
+backend/fixtures/_build/
+backend/fixtures/_sample_new/
+# local runs
+*.log
+evals/results/20*.json
+.DS_Store

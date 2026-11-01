@@ -1,0 +1,20 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:26:54Z",
+ "output": {
+  "feedback_en": "Well done, you covered both points.",
+  "feedback_si": "හොඳයි, කරුණු දෙකම කියලා තියෙනවා.",
+  "points": [
+   {
+    "covered": true,
+    "point_id": "p1",
+    "quote": "නෙතුම්ට හැම බදාදාම හවස පහ වෙනකම් අමතර පන්ති තියෙනවා."
+   },
+   {
+    "covered": true,
+    "point_id": "p2",
+    "quote": "ඒ වෙලාවට මම බස් නැවතුම්පොළට ගිහින් එයාව එක්කගෙන එනවා."
+   }
+  ]
+ }
+}

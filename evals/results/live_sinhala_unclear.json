@@ -1,0 +1,193 @@
+{
+ "checked_at": "2026-10-31T20:40:53Z",
+ "video": "walk-si.mp4",
+ "checks": [
+  {
+   "name": "server: live, with Sinhala speech on",
+   "ok": true,
+   "detail": "omnilingual-asr"
+  },
+  {
+   "name": "the pipeline finishes",
+   "ok": true,
+   "detail": "done "
+  },
+  {
+   "name": "Omnilingual ASR heard the walk-through in pieces",
+   "ok": true,
+   "detail": "15 pieces, omnilingual-asr"
+  },
+  {
+   "name": "every piece not in Sinhala letters is marked not understood",
+   "ok": true,
+   "detail": "15"
+  },
+  {
+   "name": "no facts are read from it",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "name": "and no reading call was made (nothing can come from the pictures alone)",
+   "ok": true,
+   "detail": "{\"sam-3.1: privacy\": 0.1062}"
+  },
+  {
+   "name": "the owner sees each piece listed as not understood",
+   "ok": true,
+   "detail": "15 of 15"
+  },
+  {
+   "name": "the privacy pass still ran over the whole video, and found the card",
+   "ok": true,
+   "detail": "[{\"concept\": \"credit card\", \"count\": 24, \"first\": 41.5, \"last\": 53.0}]"
+  },
+  {
+   "name": "the board has no jobs",
+   "ok": true,
+   "detail": "0"
+  },
+  {
+   "name": "the home is deleted",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "pipeline": {
+  "status": "done",
+  "code": null,
+  "seconds": 74.5,
+  "steps": [
+   {
+    "step": "convert",
+    "detail": "",
+    "at_s": 0.0
+   },
+   {
+    "step": "hear",
+    "detail": "Sinhala (Omnilingual ASR)",
+    "at_s": 12.1
+   },
+   {
+    "step": "privacy",
+    "detail": "",
+    "at_s": 26.2
+   },
+   {
+    "step": "read",
+    "detail": "muse-spark-1.3",
+    "at_s": 74.5
+   },
+   {
+    "step": "check",
+    "detail": "0 claims",
+    "at_s": 74.5
+   },
+   {
+    "step": "decide",
+    "detail": "",
+    "at_s": 74.5
+   }
+  ]
+ },
+ "heard": [
+  {
+   "start": 0.63,
+   "end": 5.64,
+   "text": "me tnne pranana swic pestia qusie goralanga",
+   "unclear": true
+  },
+  {
+   "start": 6.57,
+   "end": 9.42,
+   "text": "cารันtียอส บ ล น มแmต ntn",
+   "unclear": true
+  },
+  {
+   "start": 10.35,
+   "end": 16.47,
+   "text": "pahalota wedilādin a swicek hoyakena ekapa hudatadan",
+   "unclear": true
+  },
+  {
+   "start": 17.37,
+   "end": 20.61,
+   "text": "ttra wlinka wtawtalln pa",
+   "unclear": true
+  },
+  {
+   "start": 21.96,
+   "end": 26.28,
+   "text": "ม่ดีแอนน ว่าท รมอจารยา แค่จรผีดีปัเซ",
+   "unclear": true
+  },
+  {
+   "start": 27.18,
+   "end": 33.45,
+   "text": "hematamaldehajata tänki apire akamwi avi uisak motarajatana",
+   "unclear": true
+  },
+  {
+   "start": 34.29,
+   "end": 36.81,
+   "text": "แรกจะโมจะรเยอจานอหพา",
+   "unclear": true
+  },
+  {
+   "start": 38.16,
+   "end": 45.96,
+   "text": "nidana camare almarie dname sudufailwylagedery opuwa i upena sachadica i denawa",
+   "unclear": true
+  },
+  {
+   "start": 46.83,
+   "end": 51.69,
+   "text": "mutitptcatวdeนอpa ft tpdนอ",
+   "unclear": true
+  },
+  {
+   "start": 53.07,
+   "end": 56.67,
+   "text": "me tennpitipässekestueipa",
+   "unclear": true
+  },
+  {
+   "start": 57.54,
+   "end": 65.1,
+   "text": "hemadāmareta e ka lok carana iadur elle lādne kusie dor edule koke",
+   "unclear": true
+  },
+  {
+   "start": 66.45,
+   "end": 69.15,
+   "text": "มtนน sาน อรลสู",
+   "unclear": true
+  },
+  {
+   "start": 70.05,
+   "end": 77.16,
+   "text": "hema iri tāma u teekata kitena katukawa tāwat passata karakawan a epa",
+   "unclear": true
+  },
+  {
+   "start": 78.51,
+   "end": 82.02,
+   "text": "getueko veka veka paha ata bindu",
+   "unclear": true
+  },
+  {
+   "start": 82.86,
+   "end": 86.85,
+   "text": "amma hematamarä atata presar pet ta bonwa",
+   "unclear": true
+  }
+ ],
+ "cost": {
+  "by_purpose": {
+   "sam-3.1: privacy": 0.1062
+  },
+  "total_usd": 0.1062
+ },
+ "passed": 10,
+ "failed": 0
+}

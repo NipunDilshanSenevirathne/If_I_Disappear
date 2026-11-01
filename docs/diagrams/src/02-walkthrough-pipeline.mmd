@@ -1,0 +1,50 @@
+flowchart TB
+  vid["<b>A phone video</b> · a walk through the house, up to 10 minutes<br/>sent in 8 MB pieces that carry on after a dropped connection"]:::person
+
+  subgraph S1["1 · Convert · 12 s in the last live run, for 71 seconds of video"]
+    direction LR
+    conv["<b>FFmpeg</b><br/>H.264 MP4 · 16 kHz WAV · a still every 2 seconds"]:::code
+  end
+
+  subgraph S2["2 · Hear · 8 s"]
+    direction LR
+    cut["<b>Cut at pauses</b><br/>about a sentence a piece"]:::code
+    en["<b>Muse Voice Transcribe</b><br/>English · family names as keywords ·<br/>4 pieces at a time"]:::meta
+    si["<b>Omnilingual ASR</b><br/>Sinhala · sin_Sinh"]:::open
+    unc["Not Sinhala letters?<br/>marked unclear, never read"]:::warn
+    cut -->|English| en
+    cut -->|Sinhala| si
+    si -.-> unc
+  end
+
+  subgraph S3["3 · Privacy · 49 s"]
+    direction LR
+    scrub["<b>Code</b> hides secrets in the words<br/>and silences them in the video"]:::privacy
+    blur["<b>SAM 3.1</b> searches the whole video, 2 frames a second,<br/>in a 1280-pixel copy of the upload, for cards, ID cards and<br/>screens · code blurs them in the video and the stills"]:::meta
+    scrub --> blur
+  end
+
+  subgraph S4["4 · Read · 58 s"]
+    direction LR
+    read["<b>Muse Spark 1.3</b> · one call · strict JSON schema<br/>facts, each with the exact quote, its time,<br/>a noun for SAM 3.1 and a point on a still"]:::meta
+    tr["<b>Muse Spark 1.3</b> · a short call for the Sinhala<br/>used only if it is well formed"]:::meta
+    read --> tr
+  end
+
+  subgraph S5["5 · Check · 31 s"]
+    direction LR
+    wit["<b>Three witnesses</b>, four facts at a time<br/>the words, for every fact · the pixels, for every object ·<br/>a second reading, for electricity, gas and fire"]:::code
+  end
+
+  subgraph S6["6 · Decide"]
+    direction LR
+    gate{{"Pinned rules"}}:::code
+    own["<b>The owner</b><br/>accepts or rejects"]:::person
+    gate --> own
+  end
+
+  log[("<b>Hash-chained log</b> · every step above is an event")]:::store
+
+  vid --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> log
+
+%%CLASSES%%

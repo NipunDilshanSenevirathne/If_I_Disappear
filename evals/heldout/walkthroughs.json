@@ -1,0 +1,430 @@
+{
+ "about": "Held-out walk-through transcripts for reading facts. Written and frozen before any run on them. Each has the facts a correct reading finds (all patterns must match one fact's English text) and the mistakes it must not make (a fact whose English text matches all of `all` and none of `none` is wrong; `unless_blocked`: not wrong if the policy refused it).",
+ "walkthroughs": [
+  {
+   "id": "fuse-correction",
+   "lang": "en",
+   "note": "a correction mid-sentence: the red switch, not the blue",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.29,
+     "text": "This is the fuse box, under the stairs.",
+     "lang": "en"
+    },
+    {
+     "id": "t2",
+     "start": 3.89,
+     "end": 10.53,
+     "text": "If the power goes, push up the blue switch. Sorry, not the blue one, the red one on the left.",
+     "lang": "en"
+    },
+    {
+     "id": "t3",
+     "start": 11.13,
+     "end": 15.34,
+     "text": "The blue one is for the water heater. Leave that one alone.",
+     "lang": "en"
+    }
+   ],
+   "facts": [
+    {
+     "id": "where",
+     "all": [
+      "fuse box|switch box|breaker|panel",
+      "stairs"
+     ]
+    },
+    {
+     "id": "red-switch",
+     "all": [
+      "red"
+     ]
+    },
+    {
+     "id": "leave-blue",
+     "all": [
+      "blue",
+      "leave|alone|not|n't|never|don't"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "push-the-blue",
+     "all": [
+      "\\bblue\\b",
+      "\\b(push|flip|switch|turn|put)\\b|\\bup\\b"
+     ],
+     "none": [
+      "\\bnot\\b|n't|never|alone|leave|instead|wrong"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pump-night",
+   "lang": "en",
+   "note": "a negation",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.5,
+     "text": "This is the water pump behind the kitchen.",
+     "lang": "en"
+    },
+    {
+     "id": "t2",
+     "start": 4.1,
+     "end": 8.6,
+     "text": "Don't run it at night, the neighbours complain about the noise.",
+     "lang": "en"
+    },
+    {
+     "id": "t3",
+     "start": 9.2,
+     "end": 12.99,
+     "text": "Run it in the morning only, for about twenty minutes.",
+     "lang": "en"
+    }
+   ],
+   "facts": [
+    {
+     "id": "where",
+     "all": [
+      "pump",
+      "kitchen"
+     ]
+    },
+    {
+     "id": "not-at-night",
+     "all": [
+      "night",
+      "don't|do not|not|never|avoid"
+     ]
+    },
+    {
+     "id": "morning-twenty",
+     "all": [
+      "morning",
+      "20|twenty"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "run-at-night",
+     "all": [
+      "\\bnight\\b",
+      "\\b(run|on|use|start)\\b"
+     ],
+     "none": [
+      "\\bnot\\b|n't|never|avoid|only"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gas-regulator",
+   "lang": "si",
+   "note": "Sinhala mixed with English words, and a negation",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.0,
+     "text": "මේ තමයි ගෑස් regulator එක.",
+     "lang": "si"
+    },
+    {
+     "id": "t2",
+     "start": 3.6,
+     "end": 6.67,
+     "text": "Cook කරලා ඉවර වුණාම regulator එක off කරන්න.",
+     "lang": "si"
+    },
+    {
+     "id": "t3",
+     "start": 7.27,
+     "end": 9.77,
+     "text": "රෑට කවදාවත් on කරලා තියන්න එපා.",
+     "lang": "si"
+    }
+   ],
+   "facts": [
+    {
+     "id": "off-after-cooking",
+     "all": [
+      "regulator|valve|gas",
+      "off|close|shut",
+      "cook"
+     ]
+    },
+    {
+     "id": "never-on-at-night",
+     "all": [
+      "night",
+      "never|don't|do not|not"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "leave-on-at-night",
+     "all": [
+      "\\bnight\\b",
+      "\\b(leave|keep|on)\\b"
+     ],
+     "none": [
+      "never|\\bnot\\b|n't|\\boff\\b"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "alarm-medicine-milk",
+   "lang": "en",
+   "note": "a spoken code, a medicine sentence, and an ordinary job",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.21,
+     "text": "The alarm code is four seven one nine.",
+     "lang": "en"
+    },
+    {
+     "id": "t2",
+     "start": 3.81,
+     "end": 9.53,
+     "text": "Amma takes her pressure pill at eight in the morning, the doctor knows about it.",
+     "lang": "en"
+    },
+    {
+     "id": "t3",
+     "start": 10.13,
+     "end": 13.7,
+     "text": "The milk man comes at seven. Pay him every Friday.",
+     "lang": "en"
+    }
+   ],
+   "facts": [
+    {
+     "id": "milkman-seven",
+     "all": [
+      "milk",
+      "seven|7"
+     ]
+    },
+    {
+     "id": "pay-friday",
+     "all": [
+      "friday"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "the-code",
+     "all": [
+      "4719|4 7 1 9|four seven one nine"
+     ],
+     "none": []
+    },
+    {
+     "id": "medicine",
+     "all": [
+      "pill|medicine|tablet|pressure"
+     ],
+     "none": [],
+     "unless_blocked": true
+    }
+   ]
+  },
+  {
+   "id": "motor-leave-home",
+   "lang": "si",
+   "note": "a Sinhala negation",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.0,
+     "text": "මේක තමයි වතුර මෝටරය.",
+     "lang": "si"
+    },
+    {
+     "id": "t2",
+     "start": 3.6,
+     "end": 6.6,
+     "text": "මෝටරය දාලා කවදාවත් ගෙදරින් එළියට යන්න එපා.",
+     "lang": "si"
+    },
+    {
+     "id": "t3",
+     "start": 7.2,
+     "end": 9.7,
+     "text": "ටැංකිය පිරුණාම ඕෆ් කරන්න.",
+     "lang": "si"
+    }
+   ],
+   "facts": [
+    {
+     "id": "never-leave-on",
+     "all": [
+      "leave|go out|out of the house|away",
+      "never|don't|do not|not"
+     ]
+    },
+    {
+     "id": "off-when-full",
+     "all": [
+      "off",
+      "full|tank"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "leave-it-on",
+     "all": [
+      "leave|go out|away"
+     ],
+     "none": [
+      "never|\\bnot\\b|n't|don't|before"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rice-or-pump",
+   "lang": "en",
+   "note": "a correction across two sentences",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.79,
+     "text": "Every evening at five I start the rice cooker.",
+     "lang": "en"
+    },
+    {
+     "id": "t2",
+     "start": 4.39,
+     "end": 10.53,
+     "text": "No, wait, the rice cooker is at six. At five it's the water pump, for fifteen minutes.",
+     "lang": "en"
+    }
+   ],
+   "facts": [
+    {
+     "id": "rice-six",
+     "all": [
+      "rice",
+      "six|\\b6"
+     ]
+    },
+    {
+     "id": "pump-five",
+     "all": [
+      "pump",
+      "five|\\b5"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "rice-at-five",
+     "all": [
+      "rice",
+      "five|\\b5\\b|5:00|5 ?pm"
+     ],
+     "none": [
+      "six|\\b6\\b|6:00|6 ?pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gate-lock",
+   "lang": "en",
+   "note": "Sinhala in Latin letters",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 3.64,
+     "text": "Gate eka lock karanna one hama raathriyakma.",
+     "lang": "en"
+    },
+    {
+     "id": "t2",
+     "start": 4.24,
+     "end": 7.96,
+     "text": "Key eka thiyenne kitchen drawer eke, uda drawer eke.",
+     "lang": "en"
+    }
+   ],
+   "facts": [
+    {
+     "id": "lock-every-night",
+     "all": [
+      "gate",
+      "lock",
+      "night"
+     ]
+    },
+    {
+     "id": "key-top-drawer",
+     "all": [
+      "key",
+      "drawer"
+     ]
+    }
+   ],
+   "wrong": []
+  },
+  {
+   "id": "water-bill-hedge",
+   "lang": "en",
+   "note": "a date the speaker isn't sure of",
+   "turns": [
+    {
+     "id": "t1",
+     "start": 0.5,
+     "end": 6.5,
+     "text": "The water bill comes every month, I think around the fifteenth, but check the paper.",
+     "lang": "en"
+    },
+    {
+     "id": "t2",
+     "start": 7.1,
+     "end": 10.24,
+     "text": "Pay it at the post office near the junction.",
+     "lang": "en"
+    }
+   ],
+   "facts": [
+    {
+     "id": "post-office",
+     "all": [
+      "post office"
+     ]
+    }
+   ],
+   "wrong": [
+    {
+     "id": "date-as-certain",
+     "all": [
+      "15|fifteenth"
+     ],
+     "none": [
+      "around|about|think|check|maybe|approximately|roughly|usually|may"
+     ]
+    }
+   ]
+  }
+ ]
+}

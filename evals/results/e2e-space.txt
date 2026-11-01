@@ -1,0 +1,122 @@
+(node:1952) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS  landing: headline shows
+PASS  landing: three pinned objects
+PASS  landing: try button links to the sample
+PASS  landing 375px: no sideways scrolling  (0px)
+PASS  axe landing: no serious or critical issues
+PASS  landing: a server with a key offers a real home too
+PASS  start: a server with a key asks for the invite code
+PASS  start: and asks for the name of the home and who is leaving
+PASS  sample: private copy created  (demo-47ef3897228c)
+PASS  board: headline 4 of 6
+PASS  board: six jobs listed
+PASS  board: gap questions shown
+PASS  board: the whole two-year absence is simulated, to the day she is back
+PASS  board: a long absence is drawn a month to a bar
+PASS  board: and its heading says month by month
+PASS  board 375px: no sideways scrolling  (0px)
+PASS  axe board: no serious or critical issues
+PASS  task: title
+PASS  task: clip or still with outline
+PASS  task: two numbered steps
+PASS  task: the owner’s Sinhala words shown under the English
+PASS  task: Kasun proven
+PASS  axe task: no serious or critical issues
+PASS  show me: a photo with no pump in it does not pass, and says it couldn’t tell
+PASS  show me: the right pump passes
+PASS  show me: SAM outline drawn on the photo
+PASS  tell me: missing the safety step fails
+PASS  tell me: full answer passes and the job turns green
+PASS  axe prove: no serious or critical issues
+PASS  board: headline now 3 of 6
+PASS  help: grinding pump finds the water pump
+PASS  help: says who chose the answer
+PASS  help: gas smell is treated as an emergency
+PASS  help: unrecorded things are not guessed
+PASS  help: a medicine question is answered by code, with who can help
+PASS  whatsapp preview: reply with the recorded steps
+PASS  axe help: no serious or critical issues
+PASS  review: two facts wait for the owner
+PASS  review: their witnesses are listed
+PASS  review: the flagged one says why (SAM 3.1 and Muse Spark disagreed)
+PASS  review: accepting it works
+PASS  axe review: no serious or critical issues
+PASS  review: the medicine sentence is shown as not used
+PASS  review: code says why: medical
+PASS  axe review not used: no serious or critical issues
+PASS  review: all facts listed
+PASS  gap: answered question disappears
+PASS  gap: typed answer shown as the owner’s note
+PASS  card: a QR code for each job
+PASS  stickers: six stickers
+PASS  links: one per person staying
+PASS  axe card: no serious or critical issues
+PASS  evidence: chain intact
+PASS  axe evidence: no serious or critical issues
+PASS  people: a new person is added
+PASS  axe people: no serious or critical issues
+PASS  sinhala: board in Sinhala
+PASS  sinhala: html lang switches
+PASS  board in Sinhala 375px: no sideways scrolling  (0px)
+PASS  axe board in Sinhala: no serious or critical issues
+PASS  sticker: opens its job without signing in
+PASS  sticker: emergency numbers shown
+PASS  sticker: shows its own clip
+PASS  sticker: cannot open the whole home  (403)
+PASS  axe sticker: no serious or critical issues
+PASS  person link: opens the home
+PASS  person link: no recording tab for family
+PASS  person link: the full log is not on the family’s menu
+PASS  person link: the log is refused to family links  (403)
+PASS  person link: the whole walk-through is not for family links  (403)
+PASS  sticker: its clip is the job’s own cut, not the whole walk-through  (main_switch-0-120-4f53cda1.mp4 main_switch-0-120-4f53cda1.webm)
+PASS  sticker: the clip really plays, with no owner on the phone  ({"t":1.5,"ready":4,"error":null,"src":"main_switch-0-120-4f53cda1.webm"})
+PASS  sticker: SAM 3.1’s outline is drawn while it plays
+PASS  edit: the fact is marked as the owner’s own words
+PASS  edit: Kasun, who proved the old steps, is asked to explain the new ones
+PASS  edit: the job no longer counts as covered
+PASS  review: a fact shows its Sinhala too, as the family will read it
+PASS  edit: fixing only the translation keeps the owner’s own words  ({"en":"Pay the electricity bill at the post office.","untranslated":[]})
+PASS  removed: Kasun’s phone opens the home before
+PASS  removed: his link stops working at once
+PASS  removed: and his phone lets go of the home
+PASS  replaced: an old sticker stops working
+PASS  replaced: the owner carries on with the new link
+PASS  offline: saved on this phone
+PASS  offline: the server really is out of reach
+PASS  offline: the board still opens with no connection
+PASS  offline: says it is offline
+PASS  offline: a sticker opens its job from the saved pack
+PASS  offline: the sticker page says it is the saved copy
+PASS  offline: the sticker still shows its clip
+PASS  offline: a pack with pieces missing says so  (Saved 19 of 24 on this phone. 5 didn’t save: connect to the internet and save again. Last )
+PASS  offline: and is not called complete
+PASS  offline: this phone’s copy can be removed, apart from the home  (0 left)
+PASS  clip: when a clip can’t be had, the page says so and shows the still
+PASS  rules: fingerprint matches
+PASS  axe rules: no serious or critical issues
+PASS  credits: photos credited
+PASS  not found page
+PASS  unknown API paths return 404, not the app  (404)
+PASS  delete: the home is gone  (404)
+PASS  landing 1440px: no sideways scrolling  (0px)
+PASS  tour: a first visit opens the welcome card
+PASS  axe tour welcome: no serious or critical issues
+PASS  axe tour step: no serious or critical issues
+PASS  tour: each of the 14 steps opens its page and spotlights its part
+PASS  tour: the last step leads to the finish card
+PASS  tour: closing it leaves the app to use
+PASS  tour: the compass in the top bar starts it again
+PASS  tour: Back returns to the step before
+PASS  tour: Escape ends it
+PASS  tour: once closed, it does not open again by itself
+PASS  tour: the landing page offers it again
+PASS  tour: opening the sample home straight away offers it too
+PASS  tour welcome 375px: no sideways scrolling  (0px)
+PASS  tour 375px: a sheet at the bottom, with the spotlit part showing above it  ([{"place":"sheet","above":true,"fits":true},{"place":"sheet","above":true,"fits":true},{"place":"sheet","above":true,"fits":true},{"place":"sheet","above":true,"fits":true},{"place":"sheet","above":true,"fits":true}])
+PASS  tour 375px: no sideways scrolling  (0px)
+PASS  tour: no script errors
+PASS  no script errors on any page
+
+118 passed, 0 failed

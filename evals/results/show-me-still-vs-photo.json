@@ -1,0 +1,370 @@
+{
+ "what": "Show me, against a still from a walk-through: the comparison the hosted runs got wrong.",
+ "prompt_before": "You compare two photos for a home handover check.\nPhoto A is the object as the home owner showed it. Photo B is what a family member is pointing their phone at now.\nDecide only whether B shows the same physical object as A (the same switch, the same pump), not just the same kind of object.\nList concrete visual features that match (labels, colours, position of parts, wall, surroundings) and any that do not.\nBe strict: if you cannot tell, answer false. Do not give instructions.",
+ "prompt_now": "You compare two photos for a home handover check.\nPhoto A is the object as the home owner showed it: a still from the owner's phone video, so it is often softer, more compressed and in other light than Photo B. Photo B is what a family member is pointing their phone at now.\nDecide only whether B shows the same physical object as A (the same switch, the same pump), not just the same kind of object.\nList concrete visual features that match (labels, marks, colours, the shape and position of parts, wall, surroundings) and any that do not.\nLight, white balance, the camera and compression change how dark or warm colours look and how much fine texture (wood grain, scratches, dirt) shows. A different shade, or texture that is clearer in one photo, is not a mismatch on its own. A mismatch is something clearly visible in both photos that really differs: a part, label, mark or shape one has and the other doesn't, or a different colour, not a different shade of it.\nBe strict: if you cannot tell, answer false. Do not give instructions.",
+ "runs": [
+  {
+   "run_at": "2026-11-01T06:05:00Z",
+   "model": "muse-spark-1.3",
+   "usd": 0.1878,
+   "note": "Run on 1 November with the same code path before this script existed: SAM 3.1 outlined the clock and the padlock in the walk-through's stills and in the photos (four calls, included in usd), checks.comparison_pair made the crops saved in evals/data/show-me-still, then spark.compare_photos and checks.decide_show.",
+   "summary": {
+    "before / clock-same": {
+     "verified": 2,
+     "mismatch": 2,
+     "cannot_verify": 0
+    },
+    "before / padlock-different": {
+     "verified": 0,
+     "mismatch": 4,
+     "cannot_verify": 0
+    },
+    "now / clock-same": {
+     "verified": 4,
+     "mismatch": 0,
+     "cannot_verify": 0
+    },
+    "now / padlock-different": {
+     "verified": 0,
+     "mismatch": 4,
+     "cannot_verify": 0
+    }
+   },
+   "rows": [
+    {
+     "prompt": "before",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 1,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "lighthouse-form wooden pedestal with octagonal base on gilt ball feet",
+      "clear glass dome with crown finial over the dial",
+      "round white dial with black Roman numerals",
+      "brass collar between wooden column and dome",
+      "gilt floral emblem centred on front of base",
+      "plain light studio background"
+     ],
+     "mismatches": [
+      "wood tone and figure on tapered column: dark uniform in A vs light flame-figured in B",
+      "figuring on octagonal base panels: plain dark in A vs prominent burl in B",
+      "brass collar colour: dull dark in A vs bright polished gold in B",
+      "front gilt emblem appearance: dark indistinct in A vs bright detailed in B"
+     ],
+     "why": "Both show the same model of dome-top pedestal hall clock with wooden tapered column, octagonal base on gilt ball feet, glass dome with finial, white Roman dial and gilt front mount. However invariant physical details do not match exactly: wood tone and figure on the column and base panels, brightness of the brass collar, and colour/detail of the front gilt emblem differ. As wood grain should be identical for the same physical object, identity cannot be confirmed with certainty, so it is judged as not the same object.",
+     "seconds": 13.5
+    },
+    {
+     "prompt": "before",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 2,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "same lighthouse-form clock with glass dome on tall tapered wooden column and octagonal base",
+      "round white dial with black Roman numerals under dome with brass bezel",
+      "gilt floral crest centered on front base panel",
+      "gilt ball feet with front-center foot",
+      "plain light background with no other surroundings"
+     ],
+     "mismatches": [
+      "wood colour and grain on column: dark reddish uniform in A vs lighter mottled flame/burl figure in B",
+      "wood tone on octagonal base panels: dark uniform in A vs lighter burl with visible figure in B",
+      "brass collar under dome looks darker/thinner in A vs brighter/thicker gold in B",
+      "front gilt crest looks darker/smaller in A vs brighter/larger in B"
+     ],
+     "why": "Both photos show the same model of dome-top hall clock, but the wood tone and grain on the tapered column and octagonal base do not match, and the brass collar and front gilt crest look different in colour and finish. This is more than a time/hand change and cannot be confirmed as lighting alone, so it cannot be confirmed as the same physical clock.",
+     "seconds": 15.8
+    },
+    {
+     "prompt": "before",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 3,
+     "outcome": "verified",
+     "same_object": true,
+     "matched": [
+      "tapered lighthouse wooden column on octagonal pedestal base",
+      "clear glass dome with faceted crown finial on top",
+      "round white dial with black Roman numerals inside dome",
+      "brass collar ring between glass and wood",
+      "central gilt eagle-floral mount on front face of base",
+      "three gilt ball feet with one centred front",
+      "plain light studio background in both"
+     ],
+     "mismatches": [
+      "dial hands show different time position",
+      "wood tone appears darker in A and lighter in B due to lighting/exposure"
+     ],
+     "why": "Both photos show the same lighthouse-form table clock: tall tapered wooden pedestal on an octagonal base, glass dome on top with faceted finial, round white Roman-numeral dial with black hands on a cross support, brass collar under the dome, central gilt ornament on the front base panel, and three gilt ball feet with one centred at front. Proportions and positions of all parts match. The only differences are photographic exposure making the wood look lighter in B and the dial hands in a different position, which is expected for a running clock and does not indicate a different object.",
+     "seconds": 14.2
+    },
+    {
+     "prompt": "before",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 4,
+     "outcome": "verified",
+     "same_object": true,
+     "matched": [
+      "octagonal wooden pedestal base on gilt ball feet",
+      "gilt foliate crest emblem centered on front base panel",
+      "tall tapered mahogany column with brass collar at top",
+      "clear bell-shaped glass dome with faceted crown finial",
+      "round white dial with black Roman numerals under the dome"
+     ],
+     "mismatches": [],
+     "why": "Both photos show the same distinctive pedestal clock. The octagonal base, gilt ball feet, central gilt emblem, tapered column, brass collar, glass dome with crown finial, and Roman-numeral dial are identical in shape and position. Differences in sharpness and hand position are due to photo quality and time passing, not a different object.",
+     "seconds": 16.0
+    },
+    {
+     "prompt": "before",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 1,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "both are old dark brown/black rusted iron padlocks",
+      "both have a U-shaped top shackle",
+      "both photographed against plain white/light background"
+     ],
+     "mismatches": [
+      "Photo A body front is ornate with 4 circular holes and central vertical plate, Photo B body is plain solid block with no holes or plate",
+      "shackle proportions differ: A has short low arch with small opening, B has tall high narrow arch with large opening",
+      "bottom shape differs: A has sculpted pointed projection with side scrolls, B has flat straight rectangular bottom"
+     ],
+     "why": "Photo B does not show the same physical padlock as Photo A. Photo A has an ornate sculpted front with four circular holes and a central vertical plate, a sculpted pointed bottom, and a short low shackle with a small opening. Photo B shows a plain solid block body with no holes or central plate, a flat rectangular bottom, and a tall high arched shackle with a large opening. While both are dark rusted iron padlocks photographed on a white background, the body detailing and shackle proportions do not match, so they are different objects.",
+     "seconds": 21.4
+    },
+    {
+     "prompt": "before",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 2,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "Both are dark brown rusted iron padlocks with thick arched shackle",
+      "Both photographed against plain white background"
+     ],
+     "mismatches": [
+      "Shackle proportions differ: short low clearance in A vs tall high clearance in B",
+      "Body in A has face-like side notches, four circular holes and central plate, B body is plain solid block with no holes",
+      "Side rivet at shackle-body junction visible in A not seen in B",
+      "Body side profile wavy/notched in A vs straight rectangular in B"
+     ],
+     "why": "Photo B is not the same physical padlock as Photo A. Both are dark rusted iron with a thick arched shackle, but A has a distinctive ornate front with face-like side notches, four circular holes and a central plate, and a short low shackle opening with a side rivet. B shows a plain solid block body with no holes or ornament and a tall high shackle opening. The difference in shackle height and body form cannot be explained as front vs back view.",
+     "seconds": 10.3
+    },
+    {
+     "prompt": "before",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 3,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "both are dark brown-black rusted iron padlocks",
+      "both have a thick U-shaped shackle on top of a block-like body",
+      "both photographed against a plain white background"
+     ],
+     "mismatches": [
+      "shackle opening in A is short and small vs tall elongated arch in B",
+      "body front in A has face-like ornament with symmetric round holes and central vertical plate vs plain solid block with no holes in B",
+      "bottom edge in A has downward pointed projection vs straight flat bottom edge in B",
+      "small rivet visible on right side of shackle in A not visible in B"
+     ],
+     "why": "Photo B is not the same physical padlock as Photo A. Both are dark rusted iron padlocks, but A has a figural front with symmetric round holes, side notches and a central vertical plate with a pointed lower projection and a short shackle opening, while B is a plain solid block with a flat bottom and a tall arched shackle opening and no holes or face detail. The differences in body ornamentation and shackle height/shape are too large to be explained as just front vs back view.",
+     "seconds": 13.5
+    },
+    {
+     "prompt": "before",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 4,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "both are dark brown-black rusted iron padlocks with thick U-shaped top shackle",
+      "both photographed against plain white background"
+     ],
+     "mismatches": [
+      "Photo A body has face-like ornament with four circular holes and central vertical plate, Photo B body is plain solid with no holes or plate",
+      "Photo A shackle opening is short and narrow, Photo B shackle opening is tall and wide",
+      "Photo A bottom edge has pointed V-shaped projection, Photo B bottom edge is flat straight",
+      "Photo A shows top-right rivet/pin on shackle joint, Photo B shows no such rivet"
+     ],
+     "why": "Photo B is not the same physical padlock as Photo A. Photo A is an ornate face-like lock with four circular holes, a central vertical plate and a pointed bottom edge. Photo B is a plain solid block with no holes, no plate and a flat bottom, with a taller shackle opening. The distinctive shapes do not correspond.",
+     "seconds": 9.9
+    },
+    {
+     "prompt": "now",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 1,
+     "outcome": "verified",
+     "same_object": true,
+     "matched": [
+      "tall tapered wooden column on octagonal pedestal base",
+      "clear glass dome with crown-shaped finial over dial",
+      "brass collar ring between glass and wood",
+      "round white dial with black Roman numerals",
+      "gold floral crest ornament centered on front face of base",
+      "four gold ball feet under base",
+      "reddish-brown wood colour and overall proportions"
+     ],
+     "mismatches": [],
+     "why": "Both photos show the same distinctive hall clock. Tall tapered wooden column on octagonal pedestal, clear glass dome with crown finial, brass collar ring, round white dial with black Roman numerals, gold floral crest centered on front of base, and four gold ball feet all match in shape, colour and position. Photo A is softer, darker and more compressed as expected from a phone video still, while Photo B is sharper and lighter, so wood grain detail and brightness look different. There is no differing part, label, mark or shape. Different hand position is normal for a working clock.",
+     "seconds": 14.3
+    },
+    {
+     "prompt": "now",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 2,
+     "outcome": "verified",
+     "same_object": true,
+     "matched": [
+      "glass dome with crown/faceted finial over dial",
+      "round white dial with black Roman numerals and black bezel",
+      "central movement bar with small gold ball",
+      "brass collar between glass and wood column",
+      "tall tapered wood column with moulding above base",
+      "octagonal wood base",
+      "gold crest/floral mount centred on front base panel",
+      "ball feet with front-centre foot visible and side feet",
+      "overall front-on proportions and symmetry"
+     ],
+     "mismatches": [],
+     "why": "Both photos show the same tall dome clock: round white Roman dial with black bezel under a glass dome with crown finial, brass collar, tall tapered wood column, octagonal wood base with central gold crest mount, and ball feet. Proportions, shapes and positions of all parts match. The wood looks darker in Photo A and lighter with clearer grain in Photo B, and the hands show a different time, but shade/texture clarity differences from light, camera and compression and normal hand movement are not mismatches. No part, mark or shape clearly differs.",
+     "seconds": 13.5
+    },
+    {
+     "prompt": "now",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 3,
+     "outcome": "verified",
+     "same_object": true,
+     "matched": [
+      "tall tapered wooden column on octagonal pedestal base",
+      "four gilt ball feet with one centered at front",
+      "central gilt ornamental mount centered on front face of base",
+      "glass dome cover with small glass finial on top",
+      "white circular dial with black Roman numerals and dark bezel centered under dome",
+      "brass collar ring between wood column and dome",
+      "plain light background in both views"
+     ],
+     "mismatches": [],
+     "why": "Both photos show the same distinctive clock form: tall tapered wood column on an octagonal pedestal, glass dome with finial on top, white Roman dial, brass collar, central gilt mount on the front of the base, and four gilt ball feet with one centered at front. Position and shape of all parts match. Wood tone looks darker in A and lighter with clearer grain in B, and the hands show a different time, but shade/texture clarity differences from light, white balance and compression are not a physical difference, and a working clock is expected to show different time.",
+     "seconds": 11.2
+    },
+    {
+     "prompt": "now",
+     "case": "clock-same",
+     "expect": "same",
+     "run": 4,
+     "outcome": "verified",
+     "same_object": true,
+     "matched": [
+      "glass dome with small crown finial on top",
+      "round white dial with black Roman numerals and dark rim under dome",
+      "brass collar ring directly below glass",
+      "tall tapered wooden pedestal column",
+      "octagonal wooden lower base",
+      "central gilt crest/floral mount on front facet of base",
+      "gilt ball feet with one centered at front",
+      "same overall proportions and arrangement of parts"
+     ],
+     "mismatches": [],
+     "why": "Both images show the same tall pedestal clock with glass dome. The dome with crown finial, round white dial with Roman numerals, brass collar, tapered wooden column, octagonal base with central gilt mount, and gilt ball feet all match in shape and position. The wood looks darker in A and lighter with clearer grain in B, and the hands show a different time, but shade/texture clarity differences are from light, resolution and compression, and time change is expected for a working clock. No differing part, mark or shape is visible.",
+     "seconds": 13.4
+    },
+    {
+     "prompt": "now",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 1,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "Both are dark brown/black rusted iron padlocks with thick arched shackle",
+      "Similar aged iron patina/material",
+      "Both photographed against plain light background"
+     ],
+     "mismatches": [
+      "Photo A body has face-like ornamentation with central vertical plate and multiple round holes/notches; Photo B body is plain solid block with no holes or plate",
+      "Bottom silhouette in A has central point and curved cutouts; in B bottom edge is flat and straight",
+      "Side profile in A is wavy with cutouts/seam; in B sides are flat straight planes",
+      "Shackle in A is short with visible rivet/pin on right; in B shackle is taller arch entering flush with no rivet"
+     ],
+     "why": "Both are dark rusty iron padlocks with a thick arched shackle, but the bodies are fundamentally different. Photo A shows an ornate front with a central vertical plate, 3-4 round holes/notches and a wavy side profile, plus a bottom with a central downward point and curved cutouts, and a rivet on the shackle. Photo B shows a plain rectangular block body with no holes, no central plate, no side waviness, and a flat straight bottom edge, with a taller plain arch and no rivet. A front-vs-back view cannot explain the different silhouette and missing through-holes.",
+     "seconds": 11.7
+    },
+    {
+     "prompt": "now",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 2,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "Both are dark brown-black rusted iron padlocks",
+      "Both have a thick inverted-U square-section shackle on top centre of body",
+      "Both photographed against plain white background"
+     ],
+     "mismatches": [
+      "Body form: A has ornate front with central plate, round holes and irregular notched side profile; B has plain straight-sided rectangular block with no holes or plate",
+      "Shackle proportions: A has short low arch with small opening; B has tall high U-arch with large opening about equal to body height",
+      "Upright side silhouette does not match: protrusions and cutouts seen in A outline are absent in B despite same orientation"
+     ],
+     "why": "Both are the same kind - old dark iron padlocks with a thick top shackle - but not the same physical object. Photo A shows an ornate front with a central vertical plate, round holes and an irregular notched side profile, with a short low shackle arch. Photo B shows a plain straight-sided rectangular block with no holes or plates and a tall high U-arch shackle. The side silhouette in the same upright orientation is incompatible with a front vs back view of one lock, and there are no unique marks linking them.",
+     "seconds": 15.6
+    },
+    {
+     "prompt": "now",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 3,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "both are dark brown-black rusted iron padlocks",
+      "both have a thick U-shaped top shackle",
+      "plain white background in both photos"
+     ],
+     "mismatches": [
+      "Photo A has central vertical plate on front, Photo B has plain flat body with no plate",
+      "Photo A has multiple round holes/cutouts on body, Photo B body is solid with no holes",
+      "Photo A has irregular sculpted side profile, Photo B has straight rectangular sides",
+      "Photo A has pointed sculpted bottom projection, Photo B has straight flat bottom edge"
+     ],
+     "why": "Photo B is not the same physical padlock as Photo A. Both are dark rusted iron with a thick U-shackle, but Photo A has a highly sculpted front with a central vertical plate, multiple round holes and irregular side and bottom cutouts with a pointed lower projection, while Photo B has a plain solid rectangular body with a flat bottom, straight sides and no holes or central plate. Holes and sculpted profile that go through the body would be visible from either side, and they are completely absent in B.",
+     "seconds": 10.8
+    },
+    {
+     "prompt": "now",
+     "case": "padlock-different",
+     "expect": "different",
+     "run": 4,
+     "outcome": "mismatch",
+     "same_object": false,
+     "matched": [
+      "both are dark brown-black aged iron padlocks with rust mottling",
+      "both have a thick U-shaped shackle mounted on top of a block body"
+     ],
+     "mismatches": [
+      "A has ornate face-like front with central rectangular plate, B has plain flat rectangular body with no plate",
+      "A has four round holes and side horizontal notches, B has no holes or side notches and flat bottom edge",
+      "A shackle is low with flat top and round rivet at right base, B shackle is tall smoothly rounded arch with no rivet"
+     ],
+     "why": "Photo B is not the same physical padlock as Photo A. Photo A is a figural front with a face-like plate, side notches, four round holes and a central vertical plate and pointed bottom. Photo B is a plain rectangular block with a flat bottom, no holes, no central plate and no side lobes. The shackle in A is low with a flat top and a round rivet at the right base, while in B it is a tall smooth rounded arch with no rivet. Such structural holes and shapes would be visible from either side and cannot be explained by light, white balance or front vs back view.",
+     "seconds": 13.1
+    }
+   ]
+  }
+ ]
+}

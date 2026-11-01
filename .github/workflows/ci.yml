@@ -1,0 +1,85 @@
+# Tests on every push: backend tests and code evaluations, the web app's types and build,
+# the end-to-end browser checks against the sample home (judge mode, no keys needed), and the
+# live screens against a live-mode server whose key is not real (nothing is spent).
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+      - run: pip install -r backend/requirements-dev.txt
+      - name: Tests
+        working-directory: backend
+        run: python -m pytest -q
+      - name: Sinhala speech service, its contract with the backend (a stand-in for the model)
+        run: OMNIASR_PRELOAD=0 python -m pytest -q services/sinhala-asr
+      - name: Lint
+        run: python -m pyflakes backend/app scripts evals services deploy
+      - name: Evaluation, code checks only (no model, no cost)
+        run: python evals/run_evals.py
+
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - working-directory: frontend
+        run: npm ci && npx tsc --noEmit -p . && npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: static
+          path: backend/static
+
+  e2e:
+    needs: [backend, web]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/download-artifact@v4
+        with:
+          name: static
+          path: backend/static
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+      - run: pip install -r backend/requirements.txt
+      - working-directory: frontend
+        run: npm ci && npm install --no-save playwright@1.56.0 && npx playwright install --with-deps chromium
+      - name: Start the app in judge mode
+        working-directory: backend
+        run: |
+          IID_DATA_DIR=$RUNNER_TEMP/data IID_RATE_LIMIT_SCALE=50 nohup python -m uvicorn app.main:app --port 8080 > $RUNNER_TEMP/server.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:8080/api/health && break; sleep 1; done
+      - name: End-to-end checks
+        run: BASE=http://127.0.0.1:8080 node frontend/tests/e2e.cjs
+      - name: Start the app in live mode, with a key that is not real and model addresses that go nowhere
+        working-directory: backend
+        run: |
+          IID_DATA_DIR=$RUNNER_TEMP/data-live IID_RATE_LIMIT_SCALE=50 MODEL_API_KEY=not-a-real-key IID_MODE=live \
+            IID_ADMIN_TOKEN=ui-test-invite IID_MAX_UPLOAD_MB=1 IID_UPLOAD_CHUNK_KB=256 IID_DAILY_BUDGET_USD=0 \
+            META_BASE_URL=http://127.0.0.1:9/v1 VOICE_TRANSCRIBE_URL=http://127.0.0.1:9/asr \
+            nohup python -m uvicorn app.main:app --port 8086 > $RUNNER_TEMP/server-live.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:8086/api/health && break; sleep 1; done
+      - name: The live screens (start a home, refuse an oversized video, send one in pieces, slow uploads, the spending cap, a file that isn't a video, a blocked microphone)
+        run: BASE=http://127.0.0.1:8086 INVITE=ui-test-invite node frontend/tests/live_ui.cjs
+      - name: The server logs hold no links and none of the tests' secrets
+        run: |
+          ! grep -E "t=eyJ|/l/eyJ|/api/s/eyJ|4321|8812|2580" $RUNNER_TEMP/server.log $RUNNER_TEMP/server-live.log

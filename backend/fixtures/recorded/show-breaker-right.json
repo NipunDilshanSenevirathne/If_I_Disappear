@@ -1,0 +1,17 @@
+{
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28T12:35:38Z",
+ "output": {
+  "explanation_en": "Both images show the same grey surface-mounted breaker box with open flip lid on the same beige wall. Lid shape with inner rectangle, two hinge positions, left-side wall shadow, large white main block on the left with a row of smaller white breakers to its right, and the same brown, blue and black bottom wires to a small white terminal block all correspond. Apparent sharpness difference is photographic quality and angle, not a different physical box.",
+  "explanation_si": "ඡායාරූප දෙකේම එකම අළු පැහැති මතුපිට සවි කරන ලද බ්‍රේකර් පෙට්ටිය එකම ක්‍රීම් පැහැ බිත්තිය මත විවෘත පියනක් සහිතව පෙනේ. ඇතුළු සෘජුකෝණාස්‍රය සහිත පියනේ හැඩය, සරනේරු දෙකේ පිහිටීම, වම් පැත්තේ බිත්ති සෙවණැල්ල, වම් පැත්තේ විශාල සුදු ප්‍රධාන කොටස සහ එහි දකුණට කුඩා සුදු බ්‍රේකර් පේළිය, සහ පහළ සුදු ටර්මිනලයට යන එකම දුඹුරු, නිල් සහ කළු වයර් සියල්ල ගැලපේ. පැහැදිලිකමේ වෙනස කැමරාවේ සහ කෝණයේ වෙනසක් පමණි.",
+  "matched_features": [
+   "Grey plastic enclosure with flip-up lid and rectangular inner panel",
+   "Two lid hinges in same positions",
+   "Beige wall with shadow on left side of box",
+   "Large white main breaker on left with row of smaller white breakers to its right",
+   "Same bottom wire colours brown blue black looping to small white terminal block"
+  ],
+  "mismatches": [],
+  "same_object": true
+ }
+}

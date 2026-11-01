@@ -1,0 +1,10 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:24:51Z",
+ "output": {
+  "task_key": "main_switch",
+  "decided_by": "accounts/fireworks/models/muse-spark-open",
+  "reason": "This recorded step explains what to do when the power goes out.",
+  "reason_si": "මේ සටහනෙන් කරන්ට් ගියාම මොකද කරන්න ඕන කියලා කියනවා."
+ }
+}

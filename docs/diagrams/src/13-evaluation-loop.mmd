@@ -1,0 +1,18 @@
+flowchart TB
+  sets[("<b>Evaluation sets</b>, written before the runs<br/>81 misquotes and 105 harmless variants ·<br/>31 privacy sentences · 17 medical-rule cases ·<br/>40 questions · 20 explanations ·<br/>12 photo pairs · 7 walk-throughs")]:::store
+  live["<b>The live check</b><br/>the whole server on<br/>Meta's API, 3 runs"]:::meta
+  si["<b>Sinhala voices</b><br/>189 public clips,<br/>12 speakers"]:::open
+
+  two["<b>Two models, the same code</b><br/>Muse Spark 1.3 · Muse Spark Open"]:::meta
+  res[("<b>Results, every failure kept</b><br/>evals/results/*.json")]:::store
+  find["<b>What real runs taught us</b><br/>over-muting · a debug folder · tracking per fact ·<br/>the owner's own nouns · two broken installs ·<br/>a missing joiner · the wrong alphabet"]:::bad
+  fix["<b>Code, prompt and policy changes</b>"]:::code
+  tests["<b>Tests</b><br/>230 backend · 5 service · 120 browser · golden replay"]:::ok
+
+  sets --> two --> res
+  live --> res
+  si --> res
+  res --> find --> fix --> tests
+  tests -. "re-run after every change" .-> two
+
+%%CLASSES%%

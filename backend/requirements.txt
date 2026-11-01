@@ -1,0 +1,13 @@
+# Runtime (pinned; Python 3.12+). ffmpeg and ffprobe must be on PATH.
+fastapi==0.162.0
+starlette==1.10.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.1
+python-multipart==0.0.32
+httpx==0.28.1
+openai==3.40.0
+itsdangerous==2.2.0
+pillow==13.0.0
+numpy==2.5.4
+meta-sam-parser==0.1.0
+tzdata==2026.5

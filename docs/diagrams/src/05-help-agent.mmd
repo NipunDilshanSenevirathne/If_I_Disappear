@@ -1,0 +1,27 @@
+flowchart TB
+  q["<b>A question</b> · in the app, by voice, or on WhatsApp<br/>“The pump is making a grinding noise”"]:::person
+  em{{"<b>Code first:</b> is it an emergency?<br/>a gas smell · fire · smoke · a shock · in English and Sinhala"}}:::code
+  nums["<b>Emergency numbers, before any model</b><br/>Fire and rescue 110 · Ambulance 1990 · Police 119"]:::bad
+  live{{"Live models?"}}:::code
+  ret["<b>Code</b> searches the recorded jobs<br/>(no model)"]:::code
+  loop["<b>Muse Spark 1.3</b> · tool loop<br/>tool_choice auto · at most 4 turns"]:::meta
+  t1["<b>search_steps</b>(query)<br/>code searches the recorded jobs"]:::code
+  t2["<b>answer_with_task</b>(key, reason)"]:::meta
+  t3["<b>not_recorded</b>(reason)"]:::meta
+  fence{{"<b>The fence:</b> was that job<br/>in the search results?"}}:::code
+  refuse["Refused"]:::bad
+  ans["<b>Dilini's own recorded steps</b><br/>her words, her clip, who to call"]:::ok
+  nr["“That wasn't recorded”<br/>with the household's contacts"]:::ext
+
+  q --> em
+  em -->|yes| nums
+  em -->|no| live
+  live -->|"no key, or Meta's API failing"| ret --> ans
+  live -->|yes| loop
+  loop <--> t1
+  loop --> t2 --> fence
+  fence -->|no| refuse
+  fence -->|yes| ans
+  loop --> t3 --> nr
+
+%%CLASSES%%

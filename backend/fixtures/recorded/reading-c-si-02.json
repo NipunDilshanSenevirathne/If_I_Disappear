@@ -1,0 +1,10 @@
+{
+ "model": "muse-wonder-1.0",
+ "recorded_at": "2026-10-28T12:20:36Z",
+ "output": {
+  "reason": "The owner said exactly that if the power goes, come here first.",
+  "reason_si": "අයිතිකරු හරියටම කිව්වෙ කරන්ට් ගියොත් මුලින්ම මෙතනට එන්න කියලයි.",
+  "verdict": "uphold"
+ },
+ "label_fixed": "recorded with model=muse-wonder-1.0; label corrected 2026-10-28"
+}

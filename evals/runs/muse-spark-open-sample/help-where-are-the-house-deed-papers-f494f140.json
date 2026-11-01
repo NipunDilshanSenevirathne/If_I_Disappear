@@ -1,0 +1,10 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:24:58Z",
+ "output": {
+  "task_key": "important_documents",
+  "decided_by": "accounts/fireworks/models/muse-spark-open",
+  "reason": "This recorded step describes where the important documents including house deeds are kept.",
+  "reason_si": "මෙම සටහනේ ඔප්පු ඇතුළු වැදගත් ලියකියවිලි තබා ඇති තැන විස්තර කර ඇත."
+ }
+}

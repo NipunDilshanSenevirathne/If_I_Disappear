@@ -1,0 +1,17 @@
+flowchart TB
+  sec["<b>Every link is signed with IID_LINK_SECRET</b><br/>role · household · person or job · link version"]:::code
+
+  own["<b>The owner's link</b> · 400 days<br/>everything: the whole walk-through,<br/>review, the log, people, links,<br/>delete the home"]:::person
+  per["<b>A person's link</b> · 400 days<br/>the accepted jobs, each with its own clip<br/>and still · prove as themselves, ask ·<br/>no transcripts, no review, no log"]:::person
+  stk["<b>A sticker</b> · 5 years<br/>that one job, its clip and its still,<br/>nothing else"]:::person
+
+  chk["<b>Every request is checked</b> · scope.py<br/>signature · age · role · version ·<br/>which jobs and which media it may open"]:::code
+  clip["<b>A job's own clip</b>, cut by code from the video<br/>after the privacy pass, where its facts were said ·<br/>speech no accepted fact came from is silenced"]:::privacy
+  rot["<b>Replace links</b> · version + 1<br/>every old link and sticker stops at once ·<br/>removing a person stops theirs"]:::code
+
+  sec --> own & per & stk
+  own & per & stk --> chk
+  chk --> clip
+  own --> rot
+
+%%CLASSES%%

@@ -1,0 +1,25 @@
+{
+ "model": "accounts/fireworks/models/muse-spark-open",
+ "recorded_at": "2026-10-28T06:23:57Z",
+ "output": {
+  "points": [
+   {
+    "point_id": "p1",
+    "covered": true,
+    "quote": "කරන්ට් ගියොත් මුලින්ම ස්විච් පෙට්ටියට යනවා."
+   },
+   {
+    "point_id": "p2",
+    "covered": true,
+    "quote": "පහළට වැටිච්ච ස්විච් එක උඩට තල්ලු කරනවා."
+   },
+   {
+    "point_id": "p3",
+    "covered": true,
+    "quote": "තෙත් අතින් අල්ලන්නේ නැහැ."
+   }
+  ],
+  "feedback_en": "All 3 points were covered using paraphrases.",
+  "feedback_si": "මුලු කරුණු 3 ම ව්‍යවහාර භාෂාවෙන් ආවරණය කර ඇත."
+ }
+}
