@@ -30,7 +30,7 @@
 
 **Proof it works.** The whole web app ran live on Meta's Model API, the way a family uses it, once in English and once in Sinhala: a six-room walk-through recorded, a bank card on a shelf found and blurred, a spoken gate code hidden and silenced, a medicine sentence refused, the facts reviewed, jobs proven by photo and by voice, the help line, stickers, offline, and the home deleted. **76 of 76 checks in each**, for about fifty cents a run. On the hosted copy, after the last fix: **74 of 75** (the one miss was the test machine's network dropping a download). Plus 371 automated checks, an evaluation on two Meta models (run twice, every failure kept), held-out sets frozen before they ran, and Sinhala speech measured on 189 real recordings.
 
-## For the judges: the rubric and the evidence
+## : the rubric and the evidence
 
 | Criterion | What If I Disappear does for it | Where to see it |
 |---|---|---|
