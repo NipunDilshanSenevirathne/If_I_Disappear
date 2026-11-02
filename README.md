@@ -22,7 +22,7 @@
 
 **Contents:** [In thirty seconds](#in-thirty-seconds) · [The rubric and the evidence](#for-the-judges-the-rubric-and-the-evidence) · [The problem](#the-problem) · [Who it helps](#who-it-helps) · [What it does](#what-it-does) · [How it works](#how-it-works) · [Meta's models](#metas-models-and-what-they-do-together) · [What surprised us](#what-surprised-us) · [Engineering](#engineering) · [Proof it works](#proof-it-works) · [Try it](#try-it) · [Privacy](#privacy-and-safety) · [Run it yourself](#run-it-yourself) · [Documents](#repository-and-documents)
 
-## In thirty seconds
+## In thirty seconds (Although I am using Sri Lankan migrant workers as an example, the situation is exactly the same in every other country.)
 
 **The problem.** 310,915 Sri Lankans left for work abroad in 2025, about 850 a day. Each leaves a home that still has to run, and what keeps it running (the main switch in a power cut, the water pump, the gas, the bills, the deeds, the school pickup) usually lives in one person's head. It gets handed over in a rush, from memory, and nobody knows who can really do what until something breaks.
 
