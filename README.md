@@ -2,6 +2,11 @@
 
 **Before someone leaves home for months, to work abroad or for a long hospital stay , If I Disappear finds what only they know or hold, shows what will stop and when, and builds the smallest plan the family can do and practise. Film the house once: Meta's models turn it into checked handover steps in Sinhala and English, we check this as When a parent leaves Sri Lanka to work abroad, the house still has to run.** If I Disappear turns one walk through the house, explained out loud in Sinhala or English, into checked, bilingual handover steps, and proves, before the parent leaves, that someone at home can really do each job.
 
+#On 3 November 2026 (Today), If I Disappear was successfully tested in a real household environment using the my  own home.
+I personally recorded a walkthrough of the house using a mobile phone and processed the recording through the live application. The system successfully analyzed the recording and automatically generated the household dashboard, responsibilities, instructions, continuity information, and QR-enabled handover card without requiring any manual entry of household jobs or instructions.
+The end-to-end workflow operated as expected, and all demonstrated features functioned correctly during the test.
+Test Result: PASSED  Successfully validated in a real-home environment on 3 November 2026. see folder (Real Home Tested)
+
 #To run the project locally, download the ZIP file above (Unzip and read Run it yourself in readme), extract its contents, and follow the instructions in the README file.
 
 [![Meta Global AI Developer Hackathon 2026, Indie track](https://img.shields.io/badge/Meta%20Global%20AI%20Hackathon%202026-Indie%20track-0866ff)](docs/HACKATHON.md)
